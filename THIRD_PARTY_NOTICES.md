@@ -6,25 +6,17 @@ El catálogo base, las traducciones locales, los medios y el código tienen proc
 
 Fuente: <https://github.com/yuhonas/free-exercise-db>. Autoría: yuhonas y colaboradores. Dataset e imágenes publicados bajo Unlicense según el repositorio. Se incluye el texto en `data/upstream/LICENSE-Free-Exercise-DB.txt`. El README de la fuente reconoce su origen en [exercises.json](https://github.com/wrkout/exercises.json).
 
-El snapshot se encuentra en `data/upstream/free-exercise-db.json`; fecha, método y checksum en `manifest.json`. En las respuestas se omiten pasos vacíos y se agregan traducciones locales, alias y metadatos de medios. Los textos originales no se presentan como traducciones al español. Las imágenes se enlazan sin modificaciones.
+El snapshot se encuentra en data/upstream/free-exercise-db.json. Se aprovechan nombres, clasificaciones e instrucciones; las fotografías de esta fuente no se muestran ni se sirven.
 
-## GIFs de Wikimedia Commons
+## Flow Exercise Dataset
 
-Se enlazan archivos sin modificaciones. Cada entrada de `data/media.json` registra el título, autor, URL del archivo, página fuente, licencia y atribución. La API reproduce estos campos para que el tracker conserve el crédito.
+Fuente: https://github.com/ozansozuozgit/flow-exercise-dataset. Se incluye el aviso MIT para datos e instrucciones, y la dedicación CC0-1.0 de los cuadros SVG hasta donde los autores tienen derechos. Se conservaron LICENSE, ARTWORK-LICENSE, NOTICE.md, checksums y los 13 prompts disponibles bajo data/flow-exercise-dataset/.
 
-| Archivo | Autor | Licencia |
-| --- | --- | --- |
-| [Pushups wbs.gif](https://commons.wikimedia.org/wiki/File:Pushups_wbs.gif) | Wensceslao | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
-| [Squats wbs.gif](https://commons.wikimedia.org/wiki/File:Squats_wbs.gif) | Wensceslao | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
-| [Jumpingrope wbs.gif](https://commons.wikimedia.org/wiki/File:Jumpingrope_wbs.gif) | Wensceslao | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
-| [Situps wbs.gif](https://commons.wikimedia.org/wiki/File:Situps_wbs.gif) | Wensceslao | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
-| [Pullup.gif](https://commons.wikimedia.org/wiki/File:Pullup.gif) | Extremistpullup | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
-| [Man Lifting Barbell Deadlift GIF Animation Loop.gif](https://commons.wikimedia.org/wiki/File:Man_Lifting_Barbell_Deadlift_GIF_Animation_Loop.gif) | [Videoplasty.com](https://videoplasty.com/) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
-| [Man Lifting Dumbbells GIF Animation Loop.gif](https://commons.wikimedia.org/wiki/File:Man_Lifting_Dumbbells_GIF_Animation_Loop.gif) | [Videoplasty.com](https://videoplasty.com/) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
-| [Man on a Treadmill GIF Animation Loop.gif](https://commons.wikimedia.org/wiki/File:Man_on_a_Treadmill_GIF_Animation_Loop.gif) | [Videoplasty.com](https://videoplasty.com/) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
-| [Man on an Exercise Bike GIF Animation Loop.gif](https://commons.wikimedia.org/wiki/File:Man_on_an_Exercise_Bike_GIF_Animation_Loop.gif) | [Videoplasty.com](https://videoplasty.com/) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+El aviso de la fuente declara que solo conserva 13 de los prompts originales de las 1,257 animaciones. No afirma procedencia clean-room verificada ni clearance jurídico de terceros. La licencia solo dedica los derechos que los autores pueden dedicar. La aceptación del usuario de este riesgo no elimina la limitacion: revisa cada medio antes de uso publico o instruccional. El SVG se sirve localmente y la API entrega atribución y enlace a la fuente.
 
-Muestra el crédito completo (título, autor, fuente y licencia), con los enlaces correspondientes. Si modificas un archivo, declara los cambios y aplica las condiciones de la licencia original a la adaptación. Estos medios no pasan a ser MIT por estar referenciados en ApiGym.
+## Wikimedia Commons
+
+Los GIFs investigados de Commons no se incluyen en el catálogo actual. data/media.json esta vacio por defecto; el operador puede importar medios propios o con licencia expresa usando la herramienta documentada.
 
 ## Fuentes investigadas
 

@@ -17,9 +17,10 @@ async function load() {
     $('#results').replaceChildren();
     for (const e of data) {
       const card = el('article', null, 'card'); const image = el('img'); image.alt = e.name; image.loading = 'lazy';
-      if (e.media.thumbnailUrl) image.src = e.media.thumbnailUrl;
+      if (e.media.thumbnailUrl) image.src = e.media.thumbnailUrl; else image.hidden = true;
+      if (e.media.animation?.type === 'svg-sequence') image.classList.add('sketch');
       image.addEventListener('error', () => {image.hidden = true;}, {once:true});
-      card.append(image, el('span', e.media.animation ? 'GIF / VIDEO' : e.media.imageSequence ? 'POSICIONES' : 'SIN MEDIO', 'badge'), el('h2', e.name), el('p', e.primaryMuscles.join(' · ') + ' / ' + e.equipment));
+      card.append(image, el('span', e.media.animation?.type === 'svg-sequence' ? 'ILUSTRACIÓN ANIMADA' : e.media.animation ? 'GIF / VIDEO' : 'SIN ANIMACIÓN', 'badge'), el('h2', e.name), el('p', e.primaryMuscles.join(' · ') + ' / ' + e.equipment));
       const button = el('button', 'Ver ejercicio'); button.onclick = () => detail(e); card.append(button); $('#results').append(card);
     }
     $('#status').textContent = total ? `${total} ejercicios encontrados` : 'Sin resultados. Prueba otro nombre o filtro.';
@@ -32,9 +33,10 @@ function detail(e) {
   let media, frame = 0, active = false;
   const animation = e.media.animation; const sequence = e.media.imageSequence;
   if (animation?.type === 'video') { media = el('video'); media.src = animation.url; media.controls = true; media.loop = true; media.muted = true; media.playsInline = true; media.preload = 'none'; }
-  else { media = el('img'); media.alt = e.name; if (e.media.thumbnailUrl) media.src = e.media.thumbnailUrl; }
+  else if (animation?.type === 'svg-sequence') { media = el('img'); media.alt = e.name; media.src = animation.frames[animation.sequence[0]]; media.classList.add('sketch'); }
+  else { media = el('img'); media.alt = e.name; if (e.media.thumbnailUrl) media.src = e.media.thumbnailUrl; else media.hidden = true; }
   media.className = 'demonstration';
-  const notice = el('p',animation ? 'Demostración animada. Pulsa reproducir para cargarla.' : sequence ? 'Secuencia de posiciones de inicio y fin. No es movimiento continuo.' : 'Este ejercicio no tiene demostración disponible.');
+  const notice = el('p',animation?.type === 'svg-sequence' ? 'Ilustración animada en SVG. La secuencia es orientativa; revisa las instrucciones y la nota de procedencia.' : animation ? 'Demostración animada. Pulsa reproducir para cargarla.' : sequence ? 'Secuencia de posiciones de inicio y fin. No es movimiento continuo.' : 'Este ejercicio no tiene demostración disponible.');
   body.append(media, notice);
   media.addEventListener('error', () => {notice.textContent = 'No se pudo cargar el medio externo. Consulta las instrucciones o la fuente.';});
   const play = el('button', 'Reproducir');
@@ -43,6 +45,10 @@ function detail(e) {
     active = !active; playing = active; clearInterval(timer); play.textContent = active ? 'Pausar' : 'Reproducir';
     if (animation?.type === 'video') { if(active) media.play().catch(() => {notice.textContent = 'No se pudo reproducir el video.';}); else media.pause(); }
     else if (animation?.type === 'gif') media.src = active ? animation.url : e.media.thumbnailUrl;
+    else if (animation?.type === 'svg-sequence' && active) {
+      for(const url of animation.frames) { const preload = new Image(); preload.src = url; }
+      timer = setInterval(() => { if (!document.hidden) { frame = (frame + 1) % animation.sequence.length; media.src = animation.frames[animation.sequence[frame]]; } }, animation.frameDurationMs);
+    } else if (animation?.type === 'svg-sequence') media.src = animation.frames[animation.sequence[0]];
     else if (sequence && active) {
       for(const url of sequence.frames) { const preload = new Image(); preload.src = url; }
       timer = setInterval(() => { if (!document.hidden) { frame = (frame + 1) % sequence.frames.length; media.src = sequence.frames[frame]; } }, sequence.intervalMs);
@@ -52,7 +58,7 @@ function detail(e) {
   body.append(play);
   const credit = el('p', animation?.attribution || e.media.attribution, 'credit'); body.append(credit);
   const link = (label,url) => {const a=el('a',label); a.href=url; a.target='_blank'; a.rel='noopener noreferrer'; return a;};
-  if (animation) { body.append(link('Fuente del medio', animation.sourceUrl), document.createTextNode(' · '),link(animation.license, animation.licenseUrl)); if(animation.authorUrl) body.append(document.createTextNode(' · '),link(animation.author,animation.authorUrl)); }
+  if (animation) { body.append(link('Fuente del medio', animation.sourceUrl), document.createTextNode(' · '),link(animation.license, animation.licenseUrl)); if(animation.authorUrl) body.append(document.createTextNode(' · '),link(animation.author,animation.authorUrl)); if(animation.provenanceNote) body.append(el('p', animation.provenanceNote, 'credit')); }
   else body.append(link('Fuente de imágenes',e.source.url),document.createTextNode(' · '),link(e.source.license,e.source.licenseUrl));
   body.append(el('h3','Instrucciones')); const list = el('ol');
   for (const step of e.instructions) list.append(el('li',step));
@@ -69,7 +75,7 @@ document.addEventListener('visibilitychange',()=>{if(document.hidden && playing)
 async function init(){
   try { const [{data:tax},{data:stats}] = await Promise.all([api('/api/v1/taxonomy'),api('/api/v1/stats')]);
     for (const [name, entries] of [['muscle',tax.muscles],['equipment',tax.equipment]]) {const select=$(`select[name="${name}"]`); while(select.options.length>1)select.remove(1); for(const entry of entries){if(entry.count){const option=el('option',entry.name);option.value=entry.id;select.append(option);}}}
-    $('#stats').textContent=`${stats.total} ejercicios · ${stats.spanish} en español · ${stats.withAnimation} con GIF / video · ${stats.withImageSequence} con posiciones`;
+    $('#stats').textContent=`${stats.total} ejercicios · ${stats.spanish} en español · ${stats.withSvgAnimation} con ilustraciones animadas · ${stats.withoutAnimation} sin animación`;
     await load();
   } catch(e){$('#status').textContent=e.message;}
 }

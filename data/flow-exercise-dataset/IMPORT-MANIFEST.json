@@ -1,0 +1,12 @@
+{
+  "source": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+  "commit": "961bb2739015da373daa43b960c28ee839fe93e6",
+  "importedAt": "2026-11-06",
+  "exerciseCount": 1324,
+  "animatedExerciseCount": 1257,
+  "instructionsOnlyCount": 67,
+  "svgFrameCount": 3771,
+  "svgBytes": 44327551,
+  "retainedPromptCount": 13,
+  "notes": "Checksums are validated by npm run check. See NOTICE.md for provenance limits and rights caveat."
+}

@@ -8,18 +8,18 @@ Implementada con Node.js 24 y módulos estándar: **sin paquetes npm, base de da
 
 | Contenido | Cantidad |
 | --- | ---: |
-| Ejercicios del snapshot de Free Exercise DB | 876 |
-| Selección de ejercicios comunes con nombre, alias e instrucciones en español | 73 |
-| Ejercicios con imágenes de inicio y fin | 873 |
-| Ejercicios con GIF animado de Wikimedia Commons | 9 |
+| Ejercicios deduplicados | 2,069 |
+| Ilustraciones animadas SVG | 1,257 |
+| Fotos reales mostradas | 0 |
+| Ejercicios sin animación | 812 |
+| Traducciones completas al español | 73 |
 
-Los GIFs cubren flexiones, sentadilla con peso corporal, dominadas, peso muerto convencional, curl de bíceps con mancuernas, abdominal sit-up, salto de cuerda, carrera en caminadora y bicicleta estática. Son de resolución pequeña (75–152 px de ancho). Consulta dimensiones, autor y licencia en cada medio.
+Las ilustraciones SVG usan tres cuadros vectoriales por ejercicio, reproducidos en secuencia. ApiGym sirve los cuadros localmente desde /media/flow/:id/frame-0N.svg. El catálogo combina Flow Exercise Dataset con Free Exercise DB; si un nombre coincide, conserva el ID anterior y los demás reciben IDs flow-0001. El nivel queda como unknown cuando la fuente no lo especifica.
 
-**Las 873 secuencias de posiciones no son videos ni animaciones de movimiento continuo.** `media.animation` es `null` cuando no existe un GIF/video registrado. `hasAnimation=true` filtra exclusivamente GIFs y videos. No se sustituyen movimientos por demostraciones de otro ejercicio.
-
-El catálogo base conserva sus instrucciones originales en inglés. Si falta traducción, `language` indica `en` aunque `requestedLanguage` sea `es`. Las 73 traducciones fueron redactadas con asistencia de IA, no tienen revisión profesional y se identifican como `ai-authored-unreviewed`. Cuatro ejercicios originales no tienen instrucciones; se exponen con `instructionsAvailable=false`. Tres no tienen imágenes. No se inventa contenido para rellenarlos.
+La fuente Flow declara limitaciones de procedencia: solo conserva 13 de los prompts originales de las 1,257 animaciones y no promete verificación independiente de origen, forma física o derechos de terceros. El usuario aceptó integrar esta fuente con esa limitación. Se incluyen sus avisos, licencias y checksums en data/flow-exercise-dataset/; revisa NOTICE.md y ARTWORK-LICENSE. Los ejercicios sin SVG no reciben una ilustración inventada.
 
 ## Arrancar
+
 
 Requisito: Node.js 24. Desde esta carpeta:
 
@@ -40,7 +40,7 @@ No hace falta `npm install`. Abre:
 - OpenAPI 3.1: <http://localhost:3000/openapi.json>
 - Salud: <http://localhost:3000/health>
 
-El visor permite buscar, filtrar y abrir instrucciones. Reproduce GIFs o alterna posiciones con controles de pausa, respeta la preferencia de movimiento reducido al iniciar y detiene la reproducción al cerrar o esconder la pestaña. Las atribuciones se muestran junto a los medios.
+El visor permite buscar, filtrar y abrir instrucciones. Reproduce las ilustraciones SVG animadas, respeta la preferencia de movimiento reducido al iniciar y detiene la reproducción al cerrar o esconder la pestaña. No muestra fotos de personas.
 
 ## API
 
@@ -49,6 +49,7 @@ El visor permite buscar, filtrar y abrir instrucciones. Reproduce GIFs o alterna
 | GET | `/api/v1/exercises` | Búsqueda, filtros y paginación |
 | GET | `/api/v1/exercises/:id` | Detalle con instrucciones y medios |
 | GET | `/api/v1/exercises/:id/media` | URLs y atribuciones de medios |
+| GET | `/media/flow/:id/:frame` | Cuadro SVG servido por ApiGym |
 | GET | `/api/v1/exercises/batch?ids=…` | Resolver hasta 50 IDs de una rutina |
 | GET | `/api/v1/taxonomy` | Músculos, equipo, niveles y categorías con conteos |
 | GET | `/api/v1/stats` | Cobertura real y versión del catálogo |
@@ -71,10 +72,10 @@ Filtros combinables:
 | `q` | Hasta 200 caracteres; busca todas las palabras sin distinguir acentos en nombres, alias, músculos y equipo en español/inglés |
 | `muscle` | Músculo **principal** canónico, como `chest`, `biceps`, `quadriceps` |
 | `equipment` | Equipo canónico: `barbell`, `dumbbell`, `machine`, `cable`, `body only`, etc. |
-| `difficulty` | `beginner`, `intermediate`, `expert` |
+| `difficulty` | `beginner`, `intermediate`, `expert`, `unknown` |
 | `category` | `strength`, `cardio`, `stretching`, etc. |
 | `popular` | `true` o `false`; selección editorial de movimientos comunes, no ranking de uso medido |
-| `hasAnimation` | `true` o `false`; indica GIF/video registrado |
+| `hasAnimation` | `true` o `false`; incluye secuencias SVG, GIF y video |
 | `lang` | `es` (predeterminado) o `en` |
 | `limit` | Entero de 1 a 100, predeterminado 20 |
 | `offset` | Entero desde 0 |
@@ -104,14 +105,13 @@ const routineExercises = await gym.batch(['Barbell_Squat','Pushups']);
 
 Para mostrar medios:
 
-1. Si `media.animation.type === 'video'`, usa `<video controls loop muted playsinline>` con su `url`.
-2. Si es `gif`, usa `<img>` con su `url`. Ofrece pausa cambiando a la miniatura.
-3. Si es `null`, usa `imageSequence.frames` como posiciones, con su `intervalMs` y un rótulo que lo indique. Precarga las imágenes y ofrece pausa.
-4. Si tampoco hay posiciones, muestra las instrucciones disponibles.
+1. Si media.animation.type === svg-sequence, reproduce frames[sequence[i]] cada frameDurationMs; el SDK incluido entrega URLs absolutas.
+2. Si es video, usa <video controls loop muted playsinline> con su url. Si es gif, usa <img> y ofrece pausa.
+3. Si animation es null, muestra instrucciones y marca que no hay ilustracion.
 
-En React Native puedes mostrar los GIFs con un componente de imagen que los soporte y los videos con el reproductor elegido para tu plataforma. La API devuelve URLs HTTPS directas; no requiere cookies ni cabeceras de un proveedor de medios.
+En React Native muestra cada cuadro SVG con un componente de imagen y alterna los indices de la secuencia. El SDK resuelve las rutas locales contra `baseUrl`; conserva atribuciones y avisos de licencia.
 
-**Muestra siempre la atribución del medio junto con enlaces a `sourceUrl`, `licenseUrl` y `authorUrl` cuando exista.** `media.attribution` corresponde a las imágenes base; cada `animation` y `variant` tiene su propia atribución. Los GIFs Creative Commons conservan su licencia original. Consulta [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Muestra la atribucion y el enlace a la fuente y licencia de cada SVG. Los cuadros se sirven localmente desde ApiGym. Revisa la nota de procedencia antes de mostrar una ilustracion como guia de tecnica.
 
 Los IDs existentes no se deben renombrar. `data:refresh` detiene la actualización si la fuente elimina alguno; una futura eliminación requerirá conservar el registro o definir una migración explícita. El cliente puede usar `missingIds` para detectar referencias que no conoce este catálogo.
 
@@ -125,7 +125,6 @@ Copia `.env.example` a `.env` si necesitas cambiar la configuración:
 | `HOST` | `0.0.0.0` | Interfaz de escucha |
 | `CORS_ORIGINS` | `*` | Orígenes permitidos separados por coma |
 | `API_KEY` | vacío | Si se define, exige `X-API-Key` en `/api/v1/*` |
-| `MEDIA_BASE_URL` | Raw GitHub de Free Exercise DB | Base HTTP(S) de las imágenes de posiciones, con `/` final |
 
 Si usas clave, consérvala en el backend del tracker. Una clave enviada en una app pública o móvil no permanece secreta. CORS limita el acceso desde navegadores; no es autenticación. Las respuestas protegidas usan caché privada. `/health`, la documentación y el visor son públicos; el visor tiene un campo de clave solo en memoria.
 
@@ -136,14 +135,15 @@ docker run --rm -p 3000:3000 --env-file .env apigym
 
 El contenedor usa un usuario sin privilegios. También puedes ejecutar `npm start` en un host de Node. Coloca TLS, límites de tráfico y caché compartida en el proxy de tu despliegue según el uso real. No hay despliegue público configurado en este repo.
 
-**Los archivos multimedia se sirven desde GitHub/Wikimedia, no se incluyen como binarios.** Sus enlaces pueden dejar de funcionar o estar limitados. Para alojar imágenes en tu almacenamiento, conserva la estructura del catálogo y configura `MEDIA_BASE_URL`. Para GIF/video propio, añade las URLs de tu almacenamiento al manifiesto de medios. Consulta la licencia de cada archivo antes de modificarlo o republicarlo.
+Los cuadros SVG se incluyen localmente (~44 MB) y se sirven desde ApiGym. La API no muestra las fotos de la fuente Free Exercise DB. `data/media.json` permite agregar medios propios con licencia; verifica sus derechos antes de importarlo.
 
 ## Ampliar contenido
 
-- `data/upstream/free-exercise-db.json`: snapshot base incluido.
+- `data/flow-exercise-dataset/`: ejercicios, cuadros SVG, checksums, avisos y procedencia de la fuente Flow.
+- `data/upstream/free-exercise-db.json`: metadatos adicionales (sus fotos no se sirven).
 - `data/upstream/manifest.json`: fuente, fecha, conteo y SHA-256 local.
 - `data/translations.es.json`: traducciones/alias por ID, sin alterar IDs.
-- `data/media.json`: GIFs/videos y atribuciones por ejercicio.
+- `data/media.json`: medios adicionales importados por el operador, si los hay.
 - [docs/research.md](docs/research.md): investigación y selección de fuentes.
 
 Para registrar un video/GIF de tu propiedad o con permiso de redistribución, usa un archivo como [docs/media.example.json](docs/media.example.json) y reemplaza las URLs de ejemplo y todos los datos de licencia por los reales:
@@ -158,7 +158,7 @@ El importador combina por ejercicio + URL y rechaza ejercicios inexistentes, dup
 
 ```sh
 npm run data:refresh    # Necesita Internet; valida IDs antes de sustituir el snapshot
-npm run media:check     # Todos los GIF/videos + muestra de imágenes; necesita Internet
+npm run media:check     # Verifica medios HTTPS adicionales importados por el operador
 npm run media:check -- --all
 ```
 
@@ -175,4 +175,4 @@ npm test
 
 ## Licencias
 
-Código de ApiGym: MIT. Snapshot base: Unlicense, según Free Exercise DB. GIFs: Creative Commons por archivo. Las atribuciones originales y sus enlaces están tanto en el manifiesto como en la respuesta de la API y el visor. La licencia del código no sustituye la de los medios. Las fuentes revisadas y no importadas no conceden licencias sobre este catálogo.
+Codigo de ApiGym: MIT. Metadatos de Flow: MIT con atribucion; arte SVG: CC0-1.0 hasta donde los autores tienen derechos. La fuente declara que no existe garantia de clearance completo. Consulta data/flow-exercise-dataset/NOTICE.md y THIRD_PARTY_NOTICES.md.

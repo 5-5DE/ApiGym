@@ -11,7 +11,7 @@ const request = async path => {const r=await fetch(base+path);return {r,body:awa
 test('catálogo real y búsqueda en español sin acentos',async()=>{
   const {body}=await request('/api/v1/exercises?q=jalon%20al%20pecho&popular=true');
   assert.ok(body.data.some(e=>e.id==='Wide-Grip_Lat_Pulldown'));
-  assert.equal(stats().total,876);assert.equal(stats().spanish,73);
+  assert.equal(stats().total,2069);assert.equal(stats().spanish,73);assert.equal(stats().withSvgAnimation,1257);assert.equal(stats().withGifOrVideo,0);assert.equal(stats().withoutAnimation,812);
   for(const e of body.data){assert.equal(e.language,'es');assert.ok(e.instructions.length>=2);}
 });
 test('filtros combinados solo consideran músculos principales',async()=>{
@@ -41,13 +41,17 @@ test('detalle localizado, idioma original explícito y ausencia de instrucciones
   assert.equal(getExercise('Iron_Cross').instructionsAvailable,false);
   const missing=await request('/api/v1/exercises/nope');assert.equal(missing.r.status,404);
 });
-test('no inventa movimiento continuo a partir de imágenes estáticas',async()=>{
-  const {body}=await request('/api/v1/exercises/Barbell_Squat/media');
-  assert.equal(body.data.animation,null);assert.equal(body.data.imageSequence.type,'image-sequence');
-  assert.ok(body.data.imageSequence.frames.length>=2);assert.equal(body.data.exerciseId,'Barbell_Squat');
+test('sirve ilustraciones SVG y distingue medios estaticos',async()=>{
+  const {body}=await request('/api/v1/exercises/3_4_Sit-Up/media');
+  assert.equal(body.data.animation.type,'svg-sequence');assert.equal(body.data.animation.frames.length,3);
+  assert.equal(body.data.animation.sequence.join(','),'0,1,2,1');assert.equal(body.data.exerciseId,'3_4_Sit-Up');
+  const svg=await fetch(base+body.data.animation.frames[0]);assert.equal(svg.status,200);assert.match(svg.headers.get('content-type'),/image\/svg\+xml/);assert.match(await svg.text(),/<svg/i);
+  const still=(await request('/api/v1/exercises/flow-1383/media')).body.data;
+  assert.equal(still.animation?.type || null,null);assert.equal(still.exerciseId,'flow-1383');
   const animated=(await request('/api/v1/exercises?hasAnimation=true&limit=100')).body;
-  assert.equal(animated.pagination.total,9);for(const e of animated.data){assert.equal(e.media.animation.type,'gif');assert.ok(e.media.animation.attribution);assert.ok(e.media.animation.sourceUrl);}
-  for(const e of rawExercises){assert.ok(getExercise(e.id).media.images.every(url=>url.startsWith('https://')));}
+  assert.equal(animated.pagination.total,stats().withAnimation);assert.ok(animated.data.some(e=>e.media.animation.type==='svg-sequence'));
+  for(const e of animated.data){assert.equal(e.media.animation.type,'svg-sequence');assert.ok(e.media.animation.attribution);assert.ok(e.media.animation.sourceUrl);}
+  for(const e of rawExercises){assert.deepEqual(getExercise(e.id).media.images,[]);}
 });
 test('batch resuelve IDs en orden y conserva faltantes para el tracker',async()=>{
   const {body}=await request('/api/v1/exercises/batch?ids=Pushups,nope,Barbell_Squat,Pushups');
@@ -79,14 +83,14 @@ test('clave opcional se valida antes de caché; preflight respeta orígenes',asy
 test('taxonomía y documentación coinciden con el catálogo',async()=>{
   const {body}=await request('/api/v1/taxonomy');
   assert.equal(body.data.muscles.find(e=>e.id==='biceps').name,'Bíceps');
-  assert.equal(body.data.equipment.reduce((n,e)=>n+e.count,0),876);
+  assert.equal(body.data.equipment.reduce((n,e)=>n+e.count,0),2069);
   const spec=(await request('/openapi.json')).body;assert.equal(spec.openapi,'3.1.0');
   for(const path of ['/','/docs','/demo.js','/docs.js','/style.css']){const r=await fetch(base+path);assert.equal(r.status,200,path);assert.ok(r.headers.get('content-security-policy'));await r.text();}
 });
 test('SDK usa el contrato real, codifica filtros y propaga errores',async()=>{
   const api=createApiGymClient({baseUrl:base});
   const r=await api.list({q:'bíceps',equipment:'dumbbell',limit:3});assert.equal(r.data.length,3);
-  const detail=await api.get('Pushups');assert.equal(detail.data.name,'Flexiones de brazos');
+  const detail=await api.get('3_4_Sit-Up');assert.ok(detail.data.media.animation.type==='svg-sequence');assert.equal(new URL(detail.data.media.animation.frames[0]).host,new URL(base).host);
   const batch=await api.batch(['Pushups','nope']);assert.deepEqual(batch.missingIds,['nope']);
   await assert.rejects(()=>api.get('nope'),e=>e instanceof ApiGymError && e.status===404);
 });

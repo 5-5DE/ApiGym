@@ -4,8 +4,9 @@ Consulta: 6 de noviembre de 2026. Se distinguieron código abierto, acceso gratu
 
 | Fuente | Hallazgo en la fuente primaria | Decisión |
 | --- | --- | --- |
-| [Free Exercise DB](https://github.com/yuhonas/free-exercise-db) y [Unlicense](https://github.com/yuhonas/free-exercise-db/blob/main/LICENSE.md) | JSON, equipo, dificultad, músculos e imágenes de posiciones; snapshot recuperado con 876 registros | Base incluida, 873 registros con dos imágenes |
-| [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Fitness_animations) | Archivos animados con autor, licencia y conteo de cuadros por archivo | 9 referencias GIF incluidas; detalles por archivo en `data/media.json` |
+| [Flow Exercise Dataset](https://github.com/ozansozuozgit/flow-exercise-dataset) | 1,324 ejercicios y 1,257 animaciones SVG; licencia MIT para datos y CC0-1.0 para arte hasta donde los autores tienen derechos. NOTICE reconoce evidencia de prompts incompleta y ausencia de garantia de clearance independiente | Incluida con riesgo aceptado; revisar avisos y procedencia por medio |
+| [Free Exercise DB](https://github.com/yuhonas/free-exercise-db) y [Unlicense](https://github.com/yuhonas/free-exercise-db/blob/main/LICENSE.md) | JSON con metadatos de equipo, dificultad, musculos e instrucciones; snapshot de 876 registros | Base complementaria; las fotos no se muestran ni se sirven |
+| [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Fitness_animations) | Archivos animados con autor, licencia y conteo de cuadros por archivo | no se incluyen actualmente; `data/media.json` vacio por defecto |
 | [wger](https://github.com/wger-project/wger), [API oficial](https://wger.readthedocs.io/en/latest/api/api.html) | Software AGPL; datos Creative Commons por entrada; API pública con ejercicios y medios | Alternativa para ampliar; requiere conservar la licencia de cada traducción y medio. No importada |
 | [OpenExerciseDB](https://github.com/rfivesix/OpenExerciseDB) | Fork de wger con clasificación y textos en varios idiomas; CC BY-SA 4.0 y atribución por entrada | Alternativa de taxonomía/traducciones; no importada |
 | [ExerciseDB](https://github.com/ExerciseDB/exercisedb-api) | Anuncia 11,000+ ejercicios. El repo actual contiene README y LICENSE; una licencia de código no otorga permiso general sobre el catálogo o los medios de un servicio | Investigada; no se copió contenido del servicio |
@@ -24,4 +25,4 @@ La consulta de las páginas de Commons confirmó nombres, autores, licencias, re
 
 ## Criterio de cobertura
 
-El conjunto español prioriza movimientos habituales con barra, mancuernas, poleas, máquinas, peso corporal y cardio. `popular=true` significa selección editorial; no implica estadísticas de popularidad. No se asignaron GIFs genéricos a variaciones distintas. Las imágenes de inicio/fin se exponen como secuencia y no como movimiento continuo. La cobertura GIF sigue siendo parcial; el mecanismo de importación admite reemplazarla por material propio o debidamente licenciado.
+El catalogo final contiene 2,069 IDs y 1,257 ilustraciones SVG animadas. Conserva los IDs antiguos cuando hay una coincidencia exacta de nombre; los registros nuevos reciben el prefijo flow-. Los 812 registros sin una animacion SVG no muestran fotos reales como reemplazo. La fuente no provee dificultad, asi que esos ejercicios usan difficulty=unknown. Las 73 traducciones espanolas heredadas se identifican como borradores asistidos por IA y no revisados por un profesional.

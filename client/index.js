@@ -3,12 +3,17 @@ export class ApiGymError extends Error {
 }
 export function createApiGymClient({baseUrl,apiKey,fetch:fetcher=globalThis.fetch}) {
   const root=new URL(baseUrl);root.search='';root.hash='';if(!root.pathname.endsWith('/'))root.pathname+='/';
+  const fixMediaUrls=value=>{
+    if(Array.isArray(value))return value.map(fixMediaUrls);
+    if(value&&typeof value==='object')return Object.fromEntries(Object.entries(value).map(([key,item])=>[key,fixMediaUrls(item)]));
+    return typeof value==='string'&&value.startsWith('/media/flow/')?new URL(value,root).href:value;
+  };
   async function request(path,params={},signal){
     const url=new URL('api/v1/'+path,root);
     for(const [key,value] of Object.entries(params))if(value!==undefined&&value!==null)url.searchParams.set(key,String(value));
     const r=await fetcher(url,{headers:apiKey?{'X-API-Key':apiKey}:{},signal});const body=await r.json();
     if(!r.ok)throw new ApiGymError(r.status,body.error?.code || 'HTTP_ERROR',body.error?.message || 'Error al consultar ApiGym');
-    return body;
+    return fixMediaUrls(body);
   }
   return {
     list:(params,signal)=>request('exercises',params,signal),

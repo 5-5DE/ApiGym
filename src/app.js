@@ -2,6 +2,9 @@ import { createServer } from 'node:http';
 import { timingSafeEqual, createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { getExercise, queryExercises, taxonomy, stats, catalogVersion } from './catalog.js';
+import { readFileSync as readSync } from 'node:fs';
+const flowDataset = JSON.parse(readSync(new URL('../data/flow-exercise-dataset/data/exercises.json', import.meta.url), 'utf8'));
+const flowMediaPaths = new Set(flowDataset.filter(e => e.animation).flatMap(e => e.animation.frames.map(path => path.replace(/^assets\//, '/media/flow/'))));
 import { choice, checkParams, InputError } from './validation.js';
 import { openapi } from './openapi.js';
 
@@ -62,6 +65,12 @@ export function createApp({ corsOrigins = process.env.CORS_ORIGINS || '*', apiKe
         if (supplied.length !== expected.length || !timingSafeEqual(supplied, expected)) return error(401, 'UNAUTHORIZED', 'X-API-Key inválida o ausente');
       }
       if (staticFiles.has(path)) { const file = staticFiles.get(path); return send(200, file.body, {type: file.type}); }
+      if (path.startsWith('/media/flow/')) {
+        if (!flowMediaPaths.has(path)) return error(404, 'MEDIA_NOT_FOUND', 'Animación no encontrada');
+        const relative = path.replace(/^\/media\/flow\//, '');
+        const body = readSync(new URL(`../data/flow-exercise-dataset/assets/${relative}`, import.meta.url));
+        return send(200, body, {type:'image/svg+xml; charset=utf-8'});
+      }
       if (path === '/health') return send(200, {status: 'ok', catalogVersion}, {cache: false});
       if (path === '/openapi.json') return send(200, {...openapi,security:apiKey ? [{ApiKey:[]}] : [{}]});
       if (path === '/api/v1/exercises') return send(200, queryExercises(url.searchParams));

@@ -2,10 +2,11 @@ import { readFile, writeFile, rename } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { validateMedia, validateDataset } from '../src/validation.js';
+import { rawExercises } from '../src/catalog.js';
 
 export async function importMedia(inputPath, root = new URL('../', import.meta.url)) {
   const dataset = JSON.parse(await readFile(new URL('data/upstream/free-exercise-db.json', root), 'utf8'));
-  const ids = validateDataset(dataset);
+  const ids = root.href === new URL('../', import.meta.url).href ? new Set(rawExercises.map(e => e.id)) : validateDataset(dataset);
   const input = JSON.parse(await readFile(inputPath, 'utf8'));
   validateMedia(input, ids);
   const target = new URL('data/media.json', root);
