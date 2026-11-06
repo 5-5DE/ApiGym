@@ -1,0 +1,9 @@
+{
+  "sourceUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/dist/exercises.json",
+  "repository": "https://github.com/yuhonas/free-exercise-db",
+  "retrievedAt": "2026-11-06",
+  "count": 876,
+  "sha256": "2d65068a63f16d91b11e678dff84d95723abd73138e7f166daea08ad1510e26d",
+  "license": "Unlicense",
+  "retrieval": "Web text snapshot; complete numbered lines reassembled and literal newlines within JSON strings escaped. Not verified byte-for-byte against the upstream Git blob."
+}

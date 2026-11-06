@@ -1,0 +1,18 @@
+{
+  "name": "apigym",
+  "version": "1.0.0",
+  "description": "Catálogo REST de ejercicios para un tracker de gimnasio independiente",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/server.js",
+    "dev": "node --watch --env-file-if-exists=.env src/server.js",
+    "test": "node --test",
+    "check": "node scripts/validate-data.js",
+    "media:check": "node scripts/check-media.js",
+    "media:import": "node scripts/import-media.js",
+    "data:refresh": "node scripts/refresh-data.js"
+  },
+  "license": "MIT"
+}

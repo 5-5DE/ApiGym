@@ -1,0 +1,12 @@
+[
+  {
+    "exerciseId": "Barbell_Bench_Press_-_Medium_Grip",
+    "type": "video",
+    "url": "https://tu-cdn.example/ejercicios/press-banca.mp4",
+    "sourceUrl": "https://tu-sitio.example/creditos/press-banca",
+    "license": "REEMPLAZAR-POR-LICENCIA-REAL",
+    "licenseUrl": "https://tu-sitio.example/licencia",
+    "attribution": "REEMPLAZAR por autor, título y crédito exigido por tu licencia",
+    "changes": "none"
+  }
+]
