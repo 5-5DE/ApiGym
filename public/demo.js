@@ -1,5 +1,5 @@
 const $ = s => document.querySelector(s);
-let offset = 0, total = 0, controller, timer, playing = false;
+let total = 0, controller, timer, playing = false;
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
 const el = (tag, text, cls) => { const node = document.createElement(tag); if (text) node.textContent = text; if (cls) node.className = cls; return node; };
 async function api(path, signal) {
@@ -10,23 +10,30 @@ async function load() {
   controller?.abort(); controller = new AbortController(); const signal = controller.signal;
   const params = new URLSearchParams(new FormData($('#filters')));
   for (const [key, value] of [...params]) { if (!value) params.delete(key); else if (value === 'on') params.set(key, 'true'); }
-  params.set('offset', offset); params.set('limit', 12);
-  $('#status').textContent = 'Cargando ejercicios…';
+  params.set('offset', 0); params.set('limit', 100);
+  $('#status').textContent = 'Cargando todos los ejercicios…';
   try {
-    const {data, pagination} = await api('/api/v1/exercises?' + params, signal); total = pagination.total;
-    $('#results').replaceChildren();
-    for (const e of data) {
+    let page = await api('/api/v1/exercises?' + params, signal);
+    total = page.pagination.total;
+    const exercises = [...page.data];
+    while (page.pagination.nextOffset !== null) {
+      params.set('offset', page.pagination.nextOffset);
+      page = await api('/api/v1/exercises?' + params, signal);
+      exercises.push(...page.data);
+      $('#status').textContent = `Cargando ${exercises.length} de ${total} ejercicios…`;
+    }
+    const cards = document.createDocumentFragment();
+    for (const e of exercises) {
       const card = el('article', null, 'card'); const image = el('img'); image.alt = e.name; image.loading = 'lazy';
       if (e.media.thumbnailUrl) image.src = e.media.thumbnailUrl; else image.hidden = true;
       if (e.media.animation?.type === 'svg-sequence') image.classList.add('sketch');
       image.addEventListener('error', () => {image.hidden = true;}, {once:true});
       card.append(image, el('span', e.media.animation?.type === 'svg-sequence' ? 'ILUSTRACIÓN ANIMADA' : e.media.animation ? 'GIF / VIDEO' : 'SIN ANIMACIÓN', 'badge'), el('h2', e.name), el('p', e.primaryMuscles.join(' · ') + ' / ' + e.equipment));
-      const button = el('button', 'Ver ejercicio'); button.onclick = () => detail(e); card.append(button); $('#results').append(card);
+      const button = el('button', 'Ver ejercicio'); button.onclick = () => detail(e); card.append(button); cards.append(card);
     }
-    $('#status').textContent = total ? `${total} ejercicios encontrados` : 'Sin resultados. Prueba otro nombre o filtro.';
-    $('#page').textContent = total ? `${offset+1}–${Math.min(offset+12,total)} de ${total}` : '0 resultados';
-    $('#prev').disabled = offset === 0; $('#next').disabled = pagination.nextOffset === null;
-  } catch(e) { if (e.name !== 'AbortError') { $('#status').textContent = e.message; $('#results').replaceChildren(); $('#prev').disabled = true; $('#next').disabled = true; } }
+    $('#results').replaceChildren(cards);
+    $('#status').textContent = total ? `${exercises.length} ejercicios encontrados` : 'Sin resultados. Prueba otro nombre o filtro.';
+  } catch(e) { if (e.name !== 'AbortError') { $('#status').textContent = e.message; $('#results').replaceChildren(); } }
 }
 function detail(e) {
   stop(); const body = $('#detail-body'); body.replaceChildren(el('p', e.id, 'eyebrow'), el('h2',e.name));
@@ -68,8 +75,7 @@ function detail(e) {
   $('#detail').showModal();
 }
 function stop() { clearInterval(timer); playing=false; $('#detail').querySelector('video')?.pause(); }
-$('#filters').onsubmit = event => {event.preventDefault(); offset=0; load();};
-$('#prev').onclick = () => {offset=Math.max(0,offset-12);load();}; $('#next').onclick = () => {if(offset+12<total){offset+=12;load();}};
+$('#filters').onsubmit = event => {event.preventDefault(); load();};
 $('#close').onclick = () => $('#detail').close(); $('#detail').addEventListener('close',()=>{stop();$('#detail-body').replaceChildren();});
 document.addEventListener('visibilitychange',()=>{if(document.hidden && playing) $('#detail button:not(.close)')?.click();});
 async function init(){

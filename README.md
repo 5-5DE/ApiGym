@@ -40,7 +40,7 @@ No hace falta `npm install`. Abre:
 - OpenAPI 3.1: <http://localhost:3000/openapi.json>
 - Salud: <http://localhost:3000/health>
 
-El visor permite buscar, filtrar y abrir instrucciones. Reproduce las ilustraciones SVG animadas, respeta la preferencia de movimiento reducido al iniciar y detiene la reproducción al cerrar o esconder la pestaña. No muestra fotos de personas.
+El visor permite buscar y filtrar, y carga todas las paginas de resultados para mostrar juntos los ejercicios que coinciden. La API conserva paginacion para integraciones externas. Reproduce las ilustraciones SVG animadas, respeta movimiento reducido y no muestra fotos reales.
 
 ## API
 
