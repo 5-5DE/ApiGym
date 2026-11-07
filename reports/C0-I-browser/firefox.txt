@@ -2,7 +2,7 @@
 *** You are running in headless mode.
 1794076869921	Marionette	INFO	Listening on port 50279
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
-console.error: RSLoader: 
+console.error: RSLoader:
   Failed to retrieve recipes from Remote Settings
   Message: Error: Could not sync nimbus-desktop-experiments: get-exception
   Stack:

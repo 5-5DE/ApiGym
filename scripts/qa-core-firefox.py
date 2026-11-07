@@ -82,3 +82,5 @@ finally:
  try:app.wait(timeout=10)
  except subprocess.TimeoutExpired:os.killpg(app.pid,signal.SIGKILL);app.wait()
  appLog.close();ffLog.close()
+ # Normalize terminal-only trailing blanks in this phase's text log.
+ logfile=D/'firefox.txt';logfile.write_text('\n'.join(line.rstrip() for line in logfile.read_text().splitlines())+'\n')

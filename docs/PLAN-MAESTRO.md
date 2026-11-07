@@ -4,8 +4,8 @@ Copia íntegra del documento recibido, conservada como referencia. La instrucci�
 
 # ApiGym 2.0 — Plan maestro de calidad, medios y anatomía para Codex
 
-**Repositorio:** https://github.com/5-5DE/ApiGym  
-**Fecha de auditoría documental:** 2026-11-06  
+**Repositorio:** https://github.com/5-5DE/ApiGym
+**Fecha de auditoría documental:** 2026-11-06
 **Objetivo:** convertir ApiGym en un catálogo sólido de ejercicios para Gym Zong (Expo/React Native, SQLite y uso offline), preservando la API v1 y las referencias históricas por ID.
 
 > Este documento es una especificación para implementar, NO un certificado de que los errores ya se corrigieron. Antes de modificar nada, Codex debe inspeccionar el HEAD actual, comparar con estas observaciones y ejecutar los comandos de prueba.
