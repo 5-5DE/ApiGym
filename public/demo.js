@@ -4,6 +4,10 @@ let taxonomyLabels = {};
 const label = (facet, id, lang) => lang === 'es' ? taxonomyLabels[facet]?.find(entry => entry.id === id)?.name || id : id;
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
 const el = (tag, text, cls) => { const node = document.createElement(tag); if (text) node.textContent = text; if (cls) node.className = cls; return node; };
+function nameNotice(e) {
+  if(e.requestedLanguage === 'es' && e.nameLanguage === 'en') return 'Nombre original en inglés · traducción pendiente';
+  return e.nameLanguage === 'es' ? 'Nombre en español · borrador sin revisión acreditada' : 'Nombre original en inglés';
+}
 async function api(path, signal) {
   const r = await fetch(path, {headers: $('#key').value ? {'X-API-Key': $('#key').value} : {}, signal});
   const body = await r.json(); if (!r.ok) throw new Error(body.error?.message || `HTTP ${r.status}`); return body;
@@ -28,7 +32,7 @@ async function load() {
         if (e.media.animation?.type === 'svg-sequence') image.classList.add('sketch');
         image.addEventListener('error', () => {image.hidden = true;}, {once:true});
         const metadata = e.primaryMuscles.map(id => label('muscles', id, e.requestedLanguage)).join(' · ') + ' / ' + label('equipment', e.equipment, e.requestedLanguage);
-        card.append(image, el('span', e.media.animation?.type === 'svg-sequence' ? 'ILUSTRACIÓN ANIMADA' : e.media.animation ? 'GIF / VIDEO' : 'SIN ANIMACIÓN', 'badge'), el('h2', e.name), el('p', metadata));
+        card.append(image, el('span', e.media.animation?.type === 'svg-sequence' ? 'ILUSTRACIÓN ANIMADA' : e.media.animation ? 'GIF / VIDEO' : 'SIN ANIMACIÓN', 'badge'), el('h2', e.name), el('p', nameNotice(e), 'name-status'), el('p', metadata));
         const button = el('button', 'Ver ejercicio'); button.onclick = () => detail(e); card.append(button); cards.append(card);
       }
       $('#results').append(cards); count += exercises.length;
@@ -46,6 +50,8 @@ async function load() {
 }
 function detail(e) {
   stop(); const body = $('#detail-body'); body.replaceChildren(el('p', e.id, 'eyebrow'), el('h2',e.name));
+  body.append(el('p', nameNotice(e), 'name-status'));
+  if(e.name !== e.nameEn && e.nameEn) body.append(el('p', `Nombre original: ${e.nameEn}`, 'credit'));
   let media, frame = 0, active = false;
   const animation = e.media.animation; const sequence = e.media.imageSequence;
   if (animation?.type === 'video') { media = el('video'); media.src = animation.url; media.controls = true; media.loop = true; media.muted = true; media.playsInline = true; media.preload = 'none'; }
@@ -80,6 +86,7 @@ function detail(e) {
   for (const step of e.instructions) list.append(el('li',step));
   body.append(list);
   if(!e.instructionsAvailable) body.append(el('p','La fuente no incluye instrucciones para este ejercicio.'));
+  if(e.language === 'es') body.append(el('p','Instrucciones en español · traducción automática sin revisión acreditada.'));
   if (e.requestedLanguage !== e.language) body.append(el('p','Traducción pendiente: instrucciones originales en inglés.'));
   $('#detail').showModal();
 }
@@ -91,7 +98,10 @@ async function init(){
   try { const [{data:tax},{data:stats}] = await Promise.all([api('/api/v1/taxonomy'),api('/api/v1/stats')]);
     taxonomyLabels = tax;
     for (const [name, entries] of [['muscle',tax.muscles],['equipment',tax.equipment]]) {const select=$(`select[name="${name}"]`); while(select.options.length>1)select.remove(1); for(const entry of entries){if(entry.count){const option=el('option',entry.name);option.value=entry.id;select.append(option);}}}
-    $('#stats').textContent=`${stats.total} ejercicios · ${stats.spanish} en español · ${stats.withSvgAnimation} con ilustraciones animadas · ${stats.withoutAnimation} sin animación`;
+    const coverage = stats.translationCoverage;
+    $('#stats').textContent = coverage
+      ? `${stats.total} ejercicios · ${coverage.spanishNames} nombres en español · ${coverage.spanishInstructions} con instrucciones en español · ${coverage.namesPendingReview} nombres pendientes de revisión · ${coverage.reviewedTranslations} traducciones con revisión acreditada · ${coverage.englishNameFallbacks} nombres con fallback inglés · ${stats.withSvgAnimation} ilustraciones animadas`
+      : `${stats.total} ejercicios · ${stats.spanish} traducciones con instrucciones (contador histórico) · ${stats.withSvgAnimation} ilustraciones animadas`;
     await load();
   } catch(e){$('#status').textContent=e.message;}
 }

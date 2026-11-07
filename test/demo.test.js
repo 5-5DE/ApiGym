@@ -42,3 +42,10 @@ test('primera página visible sin esperar la segunda; etiquetas españolas y tar
   resolveSecond({data:[{...item,id:'no-media',media:{animation:null}}],pagination:{total:2,nextOffset:null}});await loading;
   assert.equal(b.$('#results').children.length,2);
 });
+
+test('C0-I: visor distingue cobertura de títulos/instrucciones y fallback en la tarjeta',async()=>{
+ const b=browser();await tick();b.setRequests(path=>({data:path.includes('taxonomy')?{muscles:[],equipment:[]}:path.includes('stats')?{total:2069,spanish:73,withSvgAnimation:1257,translationCoverage:{spanishNames:75,spanishInstructions:73,namesPendingReview:75,reviewedTranslations:0,englishNameFallbacks:1994}}:[{...item,nameLanguage:'en'}],pagination:{total:1,nextOffset:null}}));
+ await vm.runInContext('init()',b.context);
+ assert.match(b.$('#stats').textContent,/75 nombres en español/);assert.match(b.$('#stats').textContent,/73 con instrucciones en español/);assert.match(b.$('#stats').textContent,/0 traducciones con revisión acreditada/);assert.match(b.$('#stats').textContent,/1994 nombres con fallback inglés/);
+ assert.ok(b.$('#results').children[0].children.some(n=>n.textContent==='Nombre original en inglés · traducción pendiente'));
+});

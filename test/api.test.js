@@ -94,3 +94,11 @@ test('SDK usa el contrato real, codifica filtros y propaga errores',async()=>{
   const batch=await api.batch(['Pushups','nope']);assert.deepEqual(batch.missingIds,['nope']);
   await assert.rejects(()=>api.get('nope'),e=>e instanceof ApiGymError && e.status===404);
 });
+
+test('C0-I: estadísticas compatibles y búsqueda exacta por ID funcionan mediante HTTP y SDK',async()=>{
+ const api=createApiGymClient({baseUrl:base});const s=(await api.stats()).data;
+ assert.equal(s.spanish,73);assert.equal(s.translationCoverage.spanishNames,75);assert.equal(s.translationCoverage.reviewedTranslations,0);
+ for(const id of ['flow-0372','flow-0599','Barbell_Squat']){const result=await api.list({q:id});assert.equal(result.pagination.total,1);assert.equal(result.data[0].id,id);}
+ assert.equal((await api.list({q:'flow-0372',equipment:'barbell'})).pagination.total,0);
+ const spec=(await request('/openapi.json')).body;assert.ok(spec.components.schemas.Stats.properties.translationCoverage);assert.ok(spec.components.schemas.TranslationCoverage.properties.spanishNames);
+});

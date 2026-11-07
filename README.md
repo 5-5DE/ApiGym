@@ -12,7 +12,10 @@ Implementada con Node.js 24 y módulos estándar: **sin paquetes npm, base de da
 | Ilustraciones animadas SVG | 1,257 |
 | Fotos reales mostradas | 0 |
 | Ejercicios sin animación | 812 |
-| Traducciones completas al español | 73 |
+| Nombres españoles (borradores sin revisión acreditada) | 75 |
+| Registros con instrucciones españolas (sin revisión acreditada) | 73 |
+| Nombres con fallback al inglés | 1,994 |
+| Traducciones con revisión acreditada | 0 |
 
 Las ilustraciones SVG usan tres cuadros vectoriales por ejercicio, reproducidos en secuencia. ApiGym sirve los cuadros localmente desde /media/flow/:id/frame-0N.svg. El catálogo combina Flow Exercise Dataset con Free Exercise DB; si un nombre coincide, conserva el ID anterior y los demás reciben IDs flow-0001. El nivel queda como unknown cuando la fuente no lo especifica.
 
@@ -69,7 +72,7 @@ Filtros combinables:
 
 | Parámetro | Valores / comportamiento |
 | --- | --- |
-| `q` | Hasta 200 caracteres; busca todas las palabras sin distinguir acentos en nombres, alias, músculos y equipo en español/inglés |
+| `q` | Hasta 200 caracteres; prioriza el ID exacto (p. ej. flow-0372); si no coincide, busca palabras sin distinguir acentos en IDs, nombres, alias, músculos y equipo en español/inglés |
 | `muscle` | Músculo **principal** canónico, como `chest`, `biceps`, `quadriceps` |
 | `equipment` | Equipo canónico: `barbell`, `dumbbell`, `machine`, `cable`, `body only`, etc. |
 | `difficulty` | `beginner`, `intermediate`, `expert`, `unknown` |
@@ -184,3 +187,26 @@ Codigo de ApiGym: MIT. Metadatos de Flow: MIT con atribucion; arte SVG: CC0-1.0 
 La asignación automática verificada y la exportación offline de P2 están diseñadas, aún no implementadas. Los 131 enlaces históricos por nombre no constituyen correspondencias verificadas. Los nombres duplicados no se eliminan ni fusionan.
 
 Auditoría HTTP local reproducible, sin fuentes externas: `node scripts/audit-catalog.js` (requiere permiso para escuchar en loopback). Genera `reports/catalog-audit.json`; la evidencia original permanece en `reports/catalog-audit-baseline.json`.
+
+## Candidatura estable C0-I
+
+Esta rama nace del cierre P1 y no incluye implementaciones P2/P3, galería administrativa, atlas, personajes ni paquetes offline. Las ramas de experimentación se conservan por separado.
+
+`/api/v1/stats` conserva `spanish=73` como contador histórico de registros con instrucciones españolas. El campo aditivo opcional `translationCoverage` distingue `spanishNames=75`, `spanishInstructions=73`, `namesPendingReview=75`, `reviewedTranslations=0` y `englishNameFallbacks=1994`. Los 73 registros heredados y los dos nombres Flow siguen siendo borradores; no se ha hecho traducción masiva ni revisión humana.
+
+`nameLanguage` describe el título y `language` las instrucciones; un nombre español puede conservar instrucciones inglesas. `nameEn`, IDs, fuentes, instrucciones y animaciones permanecen intactos. Las tarjetas y fichas hacen explícitos los borradores y el fallback.
+
+Verificar sin instalar dependencias:
+
+```sh
+npm run check
+npm test
+npm run audit:compatibility
+npm start
+```
+
+Abrir http://localhost:3000/ y buscar `flow-0372`, `flow-0599`, `Barbell_Squat` o `3_4_Sit-Up`. El último muestra el nombre original inglés con traducción pendiente. Las instrucciones originales inglesas de los dos Flow no se anuncian como traducidas. Cambiar el idioma no genera traducciones. Reiniciar el proceso tras cambiar código/JSON; un proceso anterior o una imagen Docker antigua no se actualizan por cambiar de rama.
+
+El refresco de datos ahora dispone de preflight importable y comprueba IDs combinados, asignaciones históricas Flow, traducciones huérfanas, nombres/equipo, medios y selección editorial antes de escribir. C0-I solo lo prueba con fixtures; no ejecuta `npm run data:refresh` ni descarga datasets.
+
+La auditoría usa el main real fijado en `6ced90082e603ed6d9d8dd9a9bf8350e14ad75db`, no un baseline P2-A. Requiere ese objeto Git; CI obtiene historial completo. Compara ambos idiomas, originales y medios, y permite únicamente las diferencias P1/C0-I declaradas. Consulte reports/C0-I.md para evidencias, alcance de publicación y rollback.
