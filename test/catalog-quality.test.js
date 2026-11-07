@@ -16,7 +16,7 @@ test('todos los IDs históricos siguen resolviendo sin renombrar ni deduplicar',
 
 test('el módulo real acepta traducción Flow y rechaza huérfana al cargar', async () => {
   const root=await mkdtemp(join(tmpdir(),'apigym-catalog-'));
-  const files=['src/catalog.js','src/validation.js','data/upstream/free-exercise-db.json','data/flow-exercise-dataset/data/exercises.json','data/flow-exercise-dataset/data/checksums.json','data/translations.es.json','data/names.es.json','data/editorial-featured.json','data/media.json'];
+  const files=['src/catalog-identity.js','src/catalog.js','src/validation.js','data/upstream/free-exercise-db.json','data/flow-exercise-dataset/data/exercises.json','data/flow-exercise-dataset/data/checksums.json','data/translations.es.json','data/names.es.json','data/editorial-featured.json','data/media.json'];
   try {
     for(const file of files){await mkdir(join(root,file,'..'),{recursive:true});await copyFile(new URL('../'+file,import.meta.url),join(root,file));}
     await writeFile(join(root,'package.json'),'{"type":"module"}');

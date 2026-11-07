@@ -8,13 +8,13 @@ const get = (summary, schema, parameters = []) => ({summary, parameters, respons
 const item = name => ({type:'object', required:['data'], properties:{data:ref(name)}});
 const string = {type:'string'};
 export const openapi = {
-  openapi:'3.1.0', info:{title:'ApiGym', version:'1.0.0', description:'Catálogo independiente para trackers. 2,069 ejercicios deduplicados, 73 traducciones completas al español y 1,257 animaciones SVG locales. Consulta /api/v1/stats para la cobertura real. La fuente SVG documenta limitaciones de procedencia.'},
+  openapi:'3.1.0', info:{title:'ApiGym', version:'1.0.0', description:'Catálogo independiente para trackers. 2,069 ejercicios deduplicados, 75 títulos españoles en borrador, 73 con instrucciones españolas sin revisión acreditada y 1,257 animaciones SVG locales. Consulta /api/v1/stats para la cobertura real. La fuente SVG documenta limitaciones de procedencia.'},
   servers:[{url:'/'}],
   security:[{ApiKey:[]},{}],
   paths:{
     '/health':{get:{...get('Estado del servicio',{type:'object',properties:{status:{const:'ok'},catalogVersion:string}}),security:[]}},
     '/api/v1/exercises':{get:get('Buscar y filtrar ejercicios',ref('ExercisePage'),[
-      param('q',{type:'string',maxLength:200},'Busca todas las palabras sin distinguir acentos en nombres, alias, músculos y equipo en ambos idiomas.'),
+      param('q',{type:'string',maxLength:200},'ID exacto prioritario; si no coincide, busca palabras sin distinguir acentos en IDs, nombres, alias, músculos y equipo en ambos idiomas. Conserva todos los filtros.'),
       param('muscle',string,'Músculo principal, ID canónico de /taxonomy, p. ej. chest.'),
       param('equipment',string,'ID canónico de equipo, p. ej. dumbbell, barbell, body only.'),
       param('difficulty',{type:'string',enum:['beginner','intermediate','expert','unknown']},'Nivel de dificultad; unknown significa que la fuente no especifica uno.'),
@@ -46,7 +46,8 @@ export const openapi = {
       Exercise:{type:'object',required:['id','name','nameEn','language','requestedLanguage','availableLanguages','instructions','instructionsAvailable','primaryMuscles','secondaryMuscles','equipment','difficulty','category','popular','media','source'],properties:{id:string,name:string,nameEn:string,nameLanguage:{enum:['es','en']},nameStatus:{enum:['draft','missing']},editorialFeatured:{type:'boolean'},aliases:{type:'array',items:string},language:{enum:['es','en']},requestedLanguage:{enum:['es','en']},availableLanguages:{type:'array',items:string},translationStatus:string,instructions:{type:'array',items:string},instructionsAvailable:{type:'boolean'},primaryMuscles:{type:'array',items:string},secondaryMuscles:{type:'array',items:string},equipment:string,difficulty:{enum:['beginner','intermediate','expert','unknown']},category:string,mechanic:{type:['string','null']},force:{type:['string','null']},popular:{type:'boolean'},movementPattern:{type:['string','null']},mediaStatus:string,dataSources:{type:'array',items:ref('License')},media:ref('Media'),source:ref('License')}},
       ExercisePage:{type:'object',required:['data','pagination'],properties:{data:{type:'array',items:ref('Exercise')},pagination:{type:'object',required:['total','count','limit','offset','nextOffset'],properties:{total:{type:'integer'},count:{type:'integer'},limit:{type:'integer'},offset:{type:'integer'},nextOffset:{type:['integer','null']}}}}},
       Taxonomy:{type:'object',additionalProperties:{type:'array',items:{type:'object',required:['id','name','count'],properties:{id:string,name:string,count:{type:'integer'}}}}},
-      Stats:{type:'object',properties:{version:string,total:{type:'integer'},spanish:{type:'integer'},popular:{type:'integer'},withImages:{type:'integer'},withImageSequence:{type:'integer'},withAnimation:{type:'integer'},withSvgAnimation:{type:'integer'},withGifOrVideo:{type:'integer'},withoutAnimation:{type:'integer'},mediaHosting:string,languages:{type:'array',items:string}}},
+      TranslationCoverage:{type:'object',properties:{spanishNames:{type:'integer'},spanishInstructions:{type:'integer'},namesPendingReview:{type:'integer'},reviewedTranslations:{type:'integer',description:'Revisión acreditada; actualmente cero. No implica revisión técnica deportiva.'},englishNameFallbacks:{type:'integer'}}},
+      Stats:{type:'object',properties:{translationCoverage:ref('TranslationCoverage'),version:string,total:{type:'integer'},spanish:{type:'integer',description:'Contador histórico: registros españoles con instrucciones; no cuenta títulos traducidos sin instrucciones.'},popular:{type:'integer'},withImages:{type:'integer'},withImageSequence:{type:'integer'},withAnimation:{type:'integer'},withSvgAnimation:{type:'integer'},withGifOrVideo:{type:'integer'},withoutAnimation:{type:'integer'},mediaHosting:string,languages:{type:'array',items:string}}},
       SourceResearch:{type:'object',properties:{id:string,name:string,url:string,license:string,usage:string,included:{type:'boolean'}}}
     }
   }
