@@ -1,0 +1,6 @@
+
+> apigym@1.0.0 start
+> node --env-file-if-exists=.env src/server.js
+
+.env not found. Continuing without it.
+ApiGym lista: http://localhost:56055 · Docs: /docs · API: /api/v1/exercises

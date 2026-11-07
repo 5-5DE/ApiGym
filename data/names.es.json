@@ -1,0 +1,22 @@
+{
+  "flow-0372": {
+    "name": "Bíceps con mancuerna en banco predicador",
+    "aliases": [
+      "curl predicador con mancuerna",
+      "curl scott con mancuerna"
+    ],
+    "sourceName": "dumbbell preacher curl",
+    "sourceEquipment": "dumbbell",
+    "status": "draft"
+  },
+  "flow-0599": {
+    "name": "Curl femoral sentado en máquina",
+    "aliases": [
+      "curl de isquiotibiales sentado",
+      "femoral sentado"
+    ],
+    "sourceName": "lever seated leg curl",
+    "sourceEquipment": "leverage machine",
+    "status": "draft"
+  }
+}

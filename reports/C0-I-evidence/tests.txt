@@ -1,0 +1,40 @@
+
+> apigym@1.0.0 test
+> node --test
+
+✔ catálogo real y búsqueda en español sin acentos (37.733959ms)
+✔ filtros combinados solo consideran músculos principales (8.431884ms)
+✔ paginación estable, sin duplicados y fuera de rango (16.125728ms)
+✔ valida límites, enums, duplicados y nombres desconocidos (15.738935ms)
+✔ detalle localizado, idioma original explícito y ausencia de instrucciones (3.894955ms)
+✔ sirve ilustraciones SVG y distingue medios estaticos (22.424126ms)
+✔ batch resuelve IDs en orden y conserva faltantes para el tracker (5.151888ms)
+✔ ETag: 304 y HEAD no devuelven cuerpo; idiomas tienen representaciones diferentes (6.714484ms)
+✔ CORS permite consulta y lectura de versión; métodos de escritura se rechazan (2.987519ms)
+✔ clave opcional se valida antes de caché; preflight respeta orígenes (7.192044ms)
+✔ taxonomía y documentación coinciden con el catálogo (10.871913ms)
+✔ SDK usa el contrato real, codifica filtros y propaga errores (5.719391ms)
+✔ C0-I: estadísticas compatibles y búsqueda exacta por ID funcionan mediante HTTP y SDK (7.919433ms)
+✔ todos los IDs históricos siguen resolviendo sin renombrar ni deduplicar (13.428708ms)
+✔ el módulo real acepta traducción Flow y rechaza huérfana al cargar (125.52299ms)
+✔ nombres fundamentados no anuncian instrucciones españolas ni revisión profesional (0.257191ms)
+✔ búsqueda bilingüe normaliza acentos y guiones y conserva variantes distintas (12.544833ms)
+✔ validadores rechazan nombre huérfano, origen incorrecto y traducción incompleta (1.281816ms)
+✔ C0-I: coverage is additive, review is not fabricated and legacy spanish keeps its meaning (3.349183ms)
+✔ C0-I: all exact historical IDs resolve uniquely through search; filters still apply (438.341532ms)
+✔ C0-I: refresh preflight supports Flow translation and media without changing input identity (36.219441ms)
+✔ C0-I: refresh rejects orphan translations, removed IDs, stale names and reallocated Flow identities (143.24145ms)
+✔ IDs duplicados no pueden invalidar referencias del tracker (1.345797ms)
+✔ medios requieren ejercicio conocido, HTTPS y licencia (0.591331ms)
+✔ importación combina sin perder medios y un lote inválido no modifica el archivo (8.795173ms)
+✔ detalle conserva sketch y demonstration, y fallo conserva instrucciones (8.648964ms)
+✔ primera página visible sin esperar la segunda; etiquetas españolas y tarjeta sin medio accesible (3.123496ms)
+✔ C0-I: visor distingue cobertura de títulos/instrucciones y fallback en la tarjeta (4.629341ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1241.648457

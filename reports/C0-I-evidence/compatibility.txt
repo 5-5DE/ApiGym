@@ -1,0 +1,32 @@
+
+> apigym@1.0.0 audit:compatibility
+> node scripts/audit-core-compatibility.js
+
+{
+  "baseline": "6ced90082e603ed6d9d8dd9a9bf8350e14ad75db",
+  "exercisesCompared": 4138,
+  "locales": [
+    "es",
+    "en"
+  ],
+  "historicalIds": 2069,
+  "mediaEndpointsCompared": 2069,
+  "legacyAnimatedPreserved": 1257,
+  "expectedMediaStatusCorrections": 742,
+  "coverage": {
+    "spanishNames": 75,
+    "spanishInstructions": 73,
+    "namesPendingReview": 75,
+    "reviewedTranslations": 0,
+    "englishNameFallbacks": 1994
+  },
+  "sdk": "current and main clients exercised",
+  "allowedDifferences": [
+    "two P1 draft titles/aliases",
+    "nameLanguage/nameStatus/editorialFeatured additions",
+    "742 P1 incorrect mediaStatus corrections",
+    "stats.translationCoverage",
+    "catalogVersion/ETag hashes",
+    "q exact ID and existing draft alias search expansion"
+  ]
+}

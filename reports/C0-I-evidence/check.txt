@@ -1,0 +1,36 @@
+
+> apigym@1.0.0 check
+> node scripts/validate-data.js
+
+{
+  "translationCoverage": {
+    "spanishNames": 75,
+    "spanishInstructions": 73,
+    "namesPendingReview": 75,
+    "reviewedTranslations": 0,
+    "englishNameFallbacks": 1994
+  },
+  "version": "f01e9e94b0c697f5",
+  "total": 2069,
+  "spanish": 73,
+  "popular": 73,
+  "withImages": 0,
+  "withImageSequence": 0,
+  "withAnimation": 1257,
+  "withSvgAnimation": 1257,
+  "withGifOrVideo": 0,
+  "withoutAnimation": 812,
+  "mediaHosting": "local-svg",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "snapshotSha256": "2d65068a63f16d91b11e678dff84d95723abd73138e7f166daea08ad1510e26d",
+  "svgFilesVerified": 3771,
+  "missingInstructions": [
+    "Iron_Cross",
+    "One-Arm_Kettlebell_Swings",
+    "Push_Press",
+    "Side_Jackknife"
+  ]
+}

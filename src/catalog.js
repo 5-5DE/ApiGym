@@ -1,35 +1,27 @@
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
-import { validateDataset, validateTranslations, validateMedia, normalize, integer, choice, checkParams, InputError } from './validation.js';
+import { validateDataset, validateNames, validateTranslations, validateMedia, normalize, integer, choice, checkParams, InputError } from './validation.js';
+
+import { combineExercises } from './catalog-identity.js';
 
 const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'));
-export const rawExercises = read('../data/upstream/free-exercise-db.json');
+const baseExercises = read('../data/upstream/free-exercise-db.json');
 const flowExercises = read('../data/flow-exercise-dataset/data/exercises.json');
 const flowChecksums = read('../data/flow-exercise-dataset/data/checksums.json');
 const translations = read('../data/translations.es.json');
 const mediaRecords = read('../data/media.json');
-const legacyIds = validateDataset(rawExercises);
-validateTranslations(translations, legacyIds);
+validateDataset(baseExercises);
+const names = read('../data/names.es.json');
+const featuredIds = read('../data/editorial-featured.json');
 
 const flowSource = { id: 'flow-exercise-dataset', url: 'https://github.com/ozansozuozgit/flow-exercise-dataset', license: 'MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)', licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/', attribution: 'Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım', provenanceNote: 'Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md' };
-const flowById = new Map();
-const existingByName = new Map(rawExercises.map(e => [normalize(e.name), e.id]));
-const matchedLegacyIds = new Set();
-const targetMap = { abs:'abdominals', delts:'shoulders', pectorals:'chest', quads:'quadriceps', 'cardiovascular system':'cardiovascular system', 'levator scapulae':'traps', 'serratus anterior':'chest', spine:'lower back', 'upper back':'middle back' };
-const secondaryMap = { 'latissimus dorsi':'lats', deltoids:'shoulders', 'rear deltoids':'shoulders', trapezius:'traps', quadriceps:'quadriceps', 'upper chest':'chest' };
-const equipmentMap = { 'body weight':'body only', assisted:'machine', band:'bands', 'resistance band':'bands', 'bosu ball':'other', 'elliptical machine':'other', hammer:'other', 'leverage machine':'machine', 'olympic barbell':'barbell', roller:'foam roll', 'skierg machine':'machine', 'sled machine':'machine', 'smith machine':'machine', 'stationary bike':'machine', 'stepmill machine':'machine', tire:'other', 'trap bar':'barbell', 'upper body ergometer':'machine', weighted:'other', 'wheel roller':'other', 'ez barbell':'e-z curl bar' };
-for (const f of flowExercises) {
-  const candidateId = existingByName.get(normalize(f.name));
-  const oldId = candidateId && !matchedLegacyIds.has(candidateId) ? candidateId : null;
-  if (oldId) matchedLegacyIds.add(oldId);
-  const id = oldId || `flow-${f.id}`;
-  if (oldId) { flowById.set(oldId, f); continue; }
-  const primary = targetMap[f.target] || f.target;
-  const secondary = [...new Set(f.secondaryMuscles.map(m => secondaryMap[m] || m).filter(m => m !== primary))];
-  rawExercises.push({ id, name:f.name, primaryMuscles:[primary], secondaryMuscles:secondary, equipment:equipmentMap[f.equipment] || f.equipment, level:'unknown', category:f.movementPattern === 'cardio' ? 'cardio' : 'strength', mechanic:null, force:f.movementPattern.startsWith('pull_') ? 'pull' : f.movementPattern.startsWith('push_') ? 'push' : null, instructions:f.instructions, images:[], flowId:f.id, flowRecord:f });
-}
-for (const e of rawExercises) if (!e.flowRecord && flowById.has(e.id)) e.flowRecord = flowById.get(e.id);
+export const rawExercises = combineExercises(baseExercises, flowExercises);
 const ids = new Set(rawExercises.map(e => e.id));
+if (ids.size !== rawExercises.length) throw new Error('ID duplicado en catálogo combinado');
+validateTranslations(translations, ids);
+validateNames(names, rawExercises);
+if (!Array.isArray(featuredIds) || new Set(featuredIds).size !== featuredIds.length || featuredIds.some(id => !ids.has(id))) throw new Error('Selección editorial inválida');
+const featured = new Set(featuredIds);
 validateMedia(mediaRecords, ids);
 
 export const labels = {
@@ -52,29 +44,31 @@ export function mediaFor(e) {
 
 export function localize(e, lang = 'es') {
   const t = lang === 'es' ? translations[e.id] : null;
+  const n = lang === 'es' ? names[e.id] : null;
   return {
-    id: e.id, name: t?.name || e.name, nameEn: e.name,
-    aliases: translations[e.id]?.aliases || [], language: t ? 'es' : 'en', requestedLanguage: lang,
+    id: e.id, name: n?.name || t?.name || e.name, nameEn: e.name,
+    nameLanguage: n || t ? 'es' : 'en', nameStatus: n ? n.status : t ? 'draft' : 'missing',
+    aliases: [...new Set([...(translations[e.id]?.aliases || []), ...(names[e.id]?.aliases || [])])], language: t ? 'es' : 'en', requestedLanguage: lang,
     availableLanguages: translations[e.id] ? ['en', 'es'] : ['en'],
     instructions: (t?.instructions || e.instructions).filter(s => s.trim()),
     instructionsAvailable: Boolean(t?.instructions?.length || e.instructions.some(s => s.trim())),
     translationStatus: t ? 'ai-authored-unreviewed' : 'upstream',
     primaryMuscles: e.primaryMuscles, secondaryMuscles: e.secondaryMuscles,
     equipment: e.equipment || 'unknown', difficulty: e.level || 'unknown', category: e.category,
-    mechanic: e.mechanic, force: e.force, popular: Boolean(translations[e.id]),
+    mechanic: e.mechanic, force: e.force, popular: featured.has(e.id), editorialFeatured: featured.has(e.id),
     media: mediaFor(e), source: e.flowRecord ? flowSource : source,
     dataSources: e.flowRecord ? [flowSource, ...(e.id.startsWith('flow-') ? [] : [source])] : [source],
     movementPattern: e.flowRecord?.movementPattern || null,
-    mediaStatus: e.flowRecord?.mediaStatus || (e.images.length ? 'image-sequence' : 'none'),
+    mediaStatus: e.flowRecord?.mediaStatus || 'none',
   };
 }
 
 const byId = new Map(rawExercises.map(e => [e.id, e]));
-const index = new Map(rawExercises.map(e => [e.id, normalize([e.name, translations[e.id]?.name, ...(translations[e.id]?.aliases || []), ...e.primaryMuscles, ...e.secondaryMuscles, ...e.primaryMuscles.map(m => labels.muscles[m]), labels.equipment[e.equipment], e.equipment, e.flowRecord?.target, e.flowRecord?.bodyPart, e.flowRecord?.equipment].join(' '))]));
+const index = new Map(rawExercises.map(e => [e.id, normalize([e.id, e.name, translations[e.id]?.name, names[e.id]?.name, ...(names[e.id]?.aliases || []), ...(translations[e.id]?.aliases || []), ...e.primaryMuscles, ...e.secondaryMuscles, ...e.primaryMuscles.map(m => labels.muscles[m]), labels.equipment[e.equipment], e.equipment, e.flowRecord?.target, e.flowRecord?.bodyPart, e.flowRecord?.equipment].join(' '))]));
 const values = field => [...new Set(rawExercises.map(e => field === 'difficulty' ? e.level : (e[field] || 'unknown')))].sort();
 
 export function queryExercises(params) {
-  checkParams(params, ['q', 'muscle', 'equipment', 'difficulty', 'category', 'popular', 'hasAnimation', 'lang', 'limit', 'offset', 'sort']);
+  checkParams(params, ['q', 'muscle', 'equipment', 'difficulty', 'category', 'popular', 'editorialFeatured', 'hasAnimation', 'lang', 'limit', 'offset', 'sort']);
   const lang = choice(params.get('lang'), ['es', 'en'], 'lang', 'es');
   const limit = integer(params.get('limit'), 20, 1, 100, 'limit');
   const offset = integer(params.get('offset'), 0, 0, Number.MAX_SAFE_INTEGER, 'offset');
@@ -86,17 +80,21 @@ export function queryExercises(params) {
   const difficulty = choice(params.get('difficulty'), values('difficulty'), 'difficulty');
   const category = choice(params.get('category'), values('category'), 'category');
   const popular = choice(params.get('popular'), ['true', 'false'], 'popular');
+  const editorial = choice(params.get('editorialFeatured'), ['true', 'false'], 'editorialFeatured');
   const animation = choice(params.get('hasAnimation'), ['true', 'false'], 'hasAnimation');
   const sort = choice(params.get('sort'), ['name', 'id'], 'sort', 'name');
+  // Exact stable ID takes precedence over token search, while all filters still apply.
+  const exactId = byId.get(q.trim());
   const filtered = rawExercises.filter(e =>
-    tokens.every(t => index.get(e.id).includes(t)) &&
+    (exactId ? e.id === exactId.id : tokens.every(t => index.get(e.id).includes(t))) &&
     (!muscle || e.primaryMuscles.includes(muscle)) &&
     (!equipment || (e.equipment || 'unknown') === equipment) &&
     (!difficulty || (e.level || 'unknown') === difficulty) && (!category || e.category === category) &&
-    (!popular || Boolean(translations[e.id]) === (popular === 'true')) &&
+    (!popular || featured.has(e.id) === (popular === 'true')) &&
+    (!editorial || featured.has(e.id) === (editorial === 'true')) &&
     (!animation || Boolean(mediaFor(e).animation) === (animation === 'true'))
   );
-  filtered.sort((a,b) => sort === 'id' ? a.id.localeCompare(b.id, 'en') : ((lang === 'es' ? translations[a.id]?.name : null) || a.name).localeCompare((lang === 'es' ? translations[b.id]?.name : null) || b.name, lang) || a.id.localeCompare(b.id, 'en'));
+  filtered.sort((a,b) => sort === 'id' ? a.id.localeCompare(b.id, 'en') : ((lang === 'es' ? names[a.id]?.name || translations[a.id]?.name : null) || a.name).localeCompare((lang === 'es' ? names[b.id]?.name || translations[b.id]?.name : null) || b.name, lang) || a.id.localeCompare(b.id, 'en'));
   return { data: filtered.slice(offset, offset + limit).map(e => localize(e, lang)), pagination: { total: filtered.length, count: Math.max(0, Math.min(limit, filtered.length - offset)), limit, offset, nextOffset: offset + limit < filtered.length ? offset + limit : null } };
 }
 
@@ -104,8 +102,11 @@ export function getExercise(id, lang = 'es') { const e = byId.get(id); return e 
 export function taxonomy(lang = 'es') {
   return Object.fromEntries(Object.entries(labels).map(([facet, map]) => [facet, Object.keys(map).map(id => ({id, name: lang === 'es' ? map[id] : id, count: rawExercises.filter(e => facet === 'muscles' ? e.primaryMuscles.includes(id) : (facet === 'difficulty' ? e.level : e[facet] || 'unknown') === id).length}))]));
 }
-export const catalogVersion = createHash('sha256').update(JSON.stringify({rawExercises, translations, mediaRecords, flowChecksums})).digest('hex').slice(0, 16);
+export const catalogVersion = createHash('sha256').update(JSON.stringify({rawExercises, translations, names, featuredIds, mediaRecords, flowChecksums})).digest('hex').slice(0, 16);
 export function stats() {
   const animatedIds = new Set(rawExercises.filter(e => e.flowRecord?.animation || mediaRecords.some(m => m.exerciseId === e.id)).map(e => e.id));
-  return { version: catalogVersion, total: rawExercises.length, spanish: Object.keys(translations).length, popular: Object.keys(translations).length, withImages: 0, withImageSequence: 0, withAnimation: animatedIds.size, withSvgAnimation: rawExercises.filter(e => e.flowRecord?.animation).length, withGifOrVideo: rawExercises.filter(e => !e.flowRecord?.animation && mediaRecords.some(m => m.exerciseId === e.id)).length, withoutAnimation: rawExercises.length - animatedIds.size, mediaHosting: 'local-svg', languages: ['en', 'es'] };
+  const spanishNames = new Set([...Object.keys(translations), ...Object.keys(names)]).size;
+  const translationCoverage = {spanishNames, spanishInstructions:Object.keys(translations).length, namesPendingReview:spanishNames, reviewedTranslations:0, englishNameFallbacks:rawExercises.length-spanishNames};
+  // Current stable registries contain drafts only; no accredited review registry exists.
+  return { translationCoverage, version: catalogVersion, total: rawExercises.length, spanish: Object.keys(translations).length, popular: featured.size, withImages: 0, withImageSequence: 0, withAnimation: animatedIds.size, withSvgAnimation: rawExercises.filter(e => e.flowRecord?.animation).length, withGifOrVideo: rawExercises.filter(e => !e.flowRecord?.animation && mediaRecords.some(m => m.exerciseId === e.id)).length, withoutAnimation: rawExercises.length - animatedIds.size, mediaHosting: 'local-svg', languages: ['en', 'es'] };
 }

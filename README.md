@@ -8,11 +8,14 @@ Implementada con Node.js 24 y módulos estándar: **sin paquetes npm, base de da
 
 | Contenido | Cantidad |
 | --- | ---: |
-| Ejercicios deduplicados | 2,069 |
+| Ejercicios con ID estable | 2,069 |
 | Ilustraciones animadas SVG | 1,257 |
 | Fotos reales mostradas | 0 |
 | Ejercicios sin animación | 812 |
-| Traducciones completas al español | 73 |
+| Nombres españoles (borradores sin revisión acreditada) | 75 |
+| Registros con instrucciones españolas (sin revisión acreditada) | 73 |
+| Nombres con fallback al inglés | 1,994 |
+| Traducciones con revisión acreditada | 0 |
 
 Las ilustraciones SVG usan tres cuadros vectoriales por ejercicio, reproducidos en secuencia. ApiGym sirve los cuadros localmente desde /media/flow/:id/frame-0N.svg. El catálogo combina Flow Exercise Dataset con Free Exercise DB; si un nombre coincide, conserva el ID anterior y los demás reciben IDs flow-0001. El nivel queda como unknown cuando la fuente no lo especifica.
 
@@ -40,7 +43,7 @@ No hace falta `npm install`. Abre:
 - OpenAPI 3.1: <http://localhost:3000/openapi.json>
 - Salud: <http://localhost:3000/health>
 
-El visor permite buscar y filtrar, y carga todas las paginas de resultados para mostrar juntos los ejercicios que coinciden. La API conserva paginacion para integraciones externas. Reproduce las ilustraciones SVG animadas, respeta movimiento reducido y no muestra fotos reales.
+El visor permite buscar y filtrar, y muestra las páginas progresivamente mientras continúa cargando los ejercicios que coinciden. La API conserva paginacion para integraciones externas. Reproduce las ilustraciones SVG animadas, respeta movimiento reducido y no muestra fotos reales.
 
 ## API
 
@@ -69,12 +72,12 @@ Filtros combinables:
 
 | Parámetro | Valores / comportamiento |
 | --- | --- |
-| `q` | Hasta 200 caracteres; busca todas las palabras sin distinguir acentos en nombres, alias, músculos y equipo en español/inglés |
+| `q` | Hasta 200 caracteres; prioriza el ID exacto (p. ej. flow-0372); si no coincide, busca palabras sin distinguir acentos en IDs, nombres, alias, músculos y equipo en español/inglés |
 | `muscle` | Músculo **principal** canónico, como `chest`, `biceps`, `quadriceps` |
 | `equipment` | Equipo canónico: `barbell`, `dumbbell`, `machine`, `cable`, `body only`, etc. |
 | `difficulty` | `beginner`, `intermediate`, `expert`, `unknown` |
 | `category` | `strength`, `cardio`, `stretching`, etc. |
-| `popular` | `true` o `false`; selección editorial de movimientos comunes, no ranking de uso medido |
+| `popular` / `editorialFeatured` | `true` o `false`; selección histórica explícita, independiente de traducciones; no ranking de uso medido |
 | `hasAnimation` | `true` o `false`; incluye secuencias SVG, GIF y video |
 | `lang` | `es` (predeterminado) o `en` |
 | `limit` | Entero de 1 a 100, predeterminado 20 |
@@ -171,8 +174,39 @@ npm run check
 npm test
 ```
 
-15 pruebas HTTP y de integridad cubren búsqueda, filtros, paginación, idioma de reserva, medios, batch, validación, importación sin perder registros, ETag, HEAD, CORS, autenticación opcional y el SDK. El workflow de GitHub Actions ejecuta estos comandos en Node 24. No se requieren secretos.
+22 pruebas HTTP, de catálogo, visor e integridad cubren búsqueda, filtros, paginación, idioma de reserva, medios, batch, validación, importación sin perder registros, ETag, HEAD, CORS, autenticación opcional y el SDK. El workflow de GitHub Actions ejecuta estos comandos en Node 24. No se requieren secretos.
 
 ## Licencias
 
 Codigo de ApiGym: MIT. Metadatos de Flow: MIT con atribucion; arte SVG: CC0-1.0 hasta donde los autores tienen derechos. La fuente declara que no existe garantia de clearance completo. Consulta data/flow-exercise-dataset/NOTICE.md y THIRD_PARTY_NOTICES.md.
+
+## Calidad por fases
+
+[P0 ejecutada](reports/P0.md), [nombres y compatibilidad P1](docs/P1-NOMBRES.md), [plan maestro](docs/PLAN-MAESTRO.md) y [especificación P2](docs/P2-ASIGNACION-AUTOMATICA.md). Dos nombres Flow prioritarios tienen borrador español; las traducciones completas siguen siendo 73. `nameLanguage` distingue el título del idioma de instrucciones (`language`).
+
+La asignación automática verificada y la exportación offline de P2 están diseñadas, aún no implementadas. Los 131 enlaces históricos por nombre no constituyen correspondencias verificadas. Los nombres duplicados no se eliminan ni fusionan.
+
+Auditoría HTTP local reproducible, sin fuentes externas: `node scripts/audit-catalog.js` (requiere permiso para escuchar en loopback). Genera `reports/catalog-audit.json`; la evidencia original permanece en `reports/catalog-audit-baseline.json`.
+
+## Candidatura estable C0-I
+
+Esta rama nace del cierre P1 y no incluye implementaciones P2/P3, galería administrativa, atlas, personajes ni paquetes offline. Las ramas de experimentación se conservan por separado.
+
+`/api/v1/stats` conserva `spanish=73` como contador histórico de registros con instrucciones españolas. El campo aditivo opcional `translationCoverage` distingue `spanishNames=75`, `spanishInstructions=73`, `namesPendingReview=75`, `reviewedTranslations=0` y `englishNameFallbacks=1994`. Los 73 registros heredados y los dos nombres Flow siguen siendo borradores; no se ha hecho traducción masiva ni revisión humana.
+
+`nameLanguage` describe el título y `language` las instrucciones; un nombre español puede conservar instrucciones inglesas. `nameEn`, IDs, fuentes, instrucciones y animaciones permanecen intactos. Las tarjetas y fichas hacen explícitos los borradores y el fallback.
+
+Verificar sin instalar dependencias:
+
+```sh
+npm run check
+npm test
+npm run audit:compatibility
+npm start
+```
+
+Abrir http://localhost:3000/ y buscar `flow-0372`, `flow-0599`, `Barbell_Squat` o `3_4_Sit-Up`. El último muestra el nombre original inglés con traducción pendiente. Las instrucciones originales inglesas de los dos Flow no se anuncian como traducidas. Cambiar el idioma no genera traducciones. Reiniciar el proceso tras cambiar código/JSON; un proceso anterior o una imagen Docker antigua no se actualizan por cambiar de rama.
+
+El refresco de datos ahora dispone de preflight importable y comprueba IDs combinados, asignaciones históricas Flow, traducciones huérfanas, nombres/equipo, medios y selección editorial antes de escribir. C0-I solo lo prueba con fixtures; no ejecuta `npm run data:refresh` ni descarga datasets.
+
+La auditoría usa el main real fijado en `6ced90082e603ed6d9d8dd9a9bf8350e14ad75db`, no un baseline P2-A. Requiere ese objeto Git; CI obtiene historial completo. Compara ambos idiomas, originales y medios, y permite únicamente las diferencias P1/C0-I declaradas. Consulte reports/C0-I.md para evidencias, alcance de publicación y rollback.

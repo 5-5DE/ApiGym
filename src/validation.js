@@ -70,3 +70,15 @@ export function checkParams(params, allowed) {
     if (params.getAll(key).length > 1) throw new InputError(`Parámetro repetido: ${key}`);
   }
 }
+
+// Name-only drafts never imply that instructions or artwork were reviewed.
+export function validateNames(names, exercises) {
+  if (!names || typeof names !== 'object' || Array.isArray(names)) throw new Error('Nombres inválidos');
+  const byId = new Map(exercises.map(e => [e.id, e]));
+  for (const [id, n] of Object.entries(names)) {
+    const e = byId.get(id);
+    if (!e) throw new Error(`Nombre huérfano: ${id}`);
+    if (!n || typeof n.name !== 'string' || !n.name.trim() || n.status !== 'draft' || !Array.isArray(n.aliases) || n.aliases.some(a => typeof a !== 'string' || !a.trim())) throw new Error(`Nombre inválido: ${id}`);
+    if (n.sourceName !== e.name || n.sourceEquipment !== (e.flowRecord?.equipment ?? e.equipment)) throw new Error(`Origen del nombre difiere: ${id}`);
+  }
+}
