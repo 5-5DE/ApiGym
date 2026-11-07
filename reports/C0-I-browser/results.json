@@ -1,0 +1,103 @@
+{
+  "browser": "Firefox headless installed locally",
+  "branch": "consolidation/core-c0",
+  "serverCommand": "npm start (isolated loopback port)",
+  "checks": [
+    {
+      "name": "75 names / 73 instructions / 75 pending / 0 reviewed / 1994 fallback",
+      "passed": true
+    },
+    {
+      "name": "all catalog cards progressively loaded",
+      "passed": true
+    },
+    {
+      "name": "flow-0372: exact one card",
+      "passed": true
+    },
+    {
+      "name": "flow-0372: draft visible",
+      "passed": true
+    },
+    {
+      "name": "flow-0372: detail status",
+      "passed": true
+    },
+    {
+      "name": "flow-0372: English instructions explicit",
+      "passed": true
+    },
+    {
+      "name": "flow-0372: legacy SVG style retained",
+      "passed": true
+    },
+    {
+      "name": "flow-0599: exact one card",
+      "passed": true
+    },
+    {
+      "name": "flow-0599: draft visible",
+      "passed": true
+    },
+    {
+      "name": "flow-0599: detail status",
+      "passed": true
+    },
+    {
+      "name": "flow-0599: English instructions explicit",
+      "passed": true
+    },
+    {
+      "name": "flow-0599: legacy SVG style retained",
+      "passed": true
+    },
+    {
+      "name": "Barbell_Squat: exact one card",
+      "passed": true
+    },
+    {
+      "name": "Barbell_Squat: draft visible",
+      "passed": true
+    },
+    {
+      "name": "Barbell_Squat: detail status",
+      "passed": true
+    },
+    {
+      "name": "Spanish instructions not falsely reviewed",
+      "passed": true
+    },
+    {
+      "name": "English fallback title explicit",
+      "passed": true
+    },
+    {
+      "name": "Spanish aliases and normalization",
+      "passed": true
+    },
+    {
+      "name": "English name search",
+      "passed": true
+    },
+    {
+      "name": "explicit English locale is original, not fallback error",
+      "passed": true
+    },
+    {
+      "name": "no experimental navigation",
+      "passed": true
+    }
+  ],
+  "handshake": {
+    "applicationType": "gecko",
+    "marionetteProtocol": 3
+  },
+  "version": "157.0",
+  "viewport": {
+    "width": 1280,
+    "height": 914,
+    "clientWidth": 1268,
+    "scrollWidth": 1268
+  },
+  "status": "passed"
+}

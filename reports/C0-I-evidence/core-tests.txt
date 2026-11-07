@@ -1,0 +1,17 @@
+✔ todos los IDs históricos siguen resolviendo sin renombrar ni deduplicar (12.765842ms)
+✔ el módulo real acepta traducción Flow y rechaza huérfana al cargar (104.239179ms)
+✔ nombres fundamentados no anuncian instrucciones españolas ni revisión profesional (0.310176ms)
+✔ búsqueda bilingüe normaliza acentos y guiones y conserva variantes distintas (13.127985ms)
+✔ validadores rechazan nombre huérfano, origen incorrecto y traducción incompleta (1.398473ms)
+✔ C0-I: coverage is additive, review is not fabricated and legacy spanish keeps its meaning (2.082614ms)
+✔ C0-I: all exact historical IDs resolve uniquely through search; filters still apply (416.497054ms)
+✔ C0-I: refresh preflight supports Flow translation and media without changing input identity (35.976748ms)
+✔ C0-I: refresh rejects orphan translations, removed IDs, stale names and reallocated Flow identities (139.574489ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 726.276641
