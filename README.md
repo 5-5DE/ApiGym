@@ -8,7 +8,7 @@ Implementada con Node.js 24 y módulos estándar: **sin paquetes npm, base de da
 
 | Contenido | Cantidad |
 | --- | ---: |
-| Ejercicios deduplicados | 2,069 |
+| Ejercicios con ID estable | 2,069 |
 | Ilustraciones animadas SVG | 1,257 |
 | Fotos reales mostradas | 0 |
 | Ejercicios sin animación | 812 |
@@ -40,7 +40,7 @@ No hace falta `npm install`. Abre:
 - OpenAPI 3.1: <http://localhost:3000/openapi.json>
 - Salud: <http://localhost:3000/health>
 
-El visor permite buscar y filtrar, y carga todas las paginas de resultados para mostrar juntos los ejercicios que coinciden. La API conserva paginacion para integraciones externas. Reproduce las ilustraciones SVG animadas, respeta movimiento reducido y no muestra fotos reales.
+El visor permite buscar y filtrar, y muestra las páginas progresivamente mientras continúa cargando los ejercicios que coinciden. La API conserva paginacion para integraciones externas. Reproduce las ilustraciones SVG animadas, respeta movimiento reducido y no muestra fotos reales.
 
 ## API
 
@@ -74,7 +74,7 @@ Filtros combinables:
 | `equipment` | Equipo canónico: `barbell`, `dumbbell`, `machine`, `cable`, `body only`, etc. |
 | `difficulty` | `beginner`, `intermediate`, `expert`, `unknown` |
 | `category` | `strength`, `cardio`, `stretching`, etc. |
-| `popular` | `true` o `false`; selección editorial de movimientos comunes, no ranking de uso medido |
+| `popular` / `editorialFeatured` | `true` o `false`; selección histórica explícita, independiente de traducciones; no ranking de uso medido |
 | `hasAnimation` | `true` o `false`; incluye secuencias SVG, GIF y video |
 | `lang` | `es` (predeterminado) o `en` |
 | `limit` | Entero de 1 a 100, predeterminado 20 |
@@ -171,8 +171,16 @@ npm run check
 npm test
 ```
 
-15 pruebas HTTP y de integridad cubren búsqueda, filtros, paginación, idioma de reserva, medios, batch, validación, importación sin perder registros, ETag, HEAD, CORS, autenticación opcional y el SDK. El workflow de GitHub Actions ejecuta estos comandos en Node 24. No se requieren secretos.
+22 pruebas HTTP, de catálogo, visor e integridad cubren búsqueda, filtros, paginación, idioma de reserva, medios, batch, validación, importación sin perder registros, ETag, HEAD, CORS, autenticación opcional y el SDK. El workflow de GitHub Actions ejecuta estos comandos en Node 24. No se requieren secretos.
 
 ## Licencias
 
 Codigo de ApiGym: MIT. Metadatos de Flow: MIT con atribucion; arte SVG: CC0-1.0 hasta donde los autores tienen derechos. La fuente declara que no existe garantia de clearance completo. Consulta data/flow-exercise-dataset/NOTICE.md y THIRD_PARTY_NOTICES.md.
+
+## Calidad por fases
+
+[P0 ejecutada](reports/P0.md), [nombres y compatibilidad P1](docs/P1-NOMBRES.md), [plan maestro](docs/PLAN-MAESTRO.md) y [especificación P2](docs/P2-ASIGNACION-AUTOMATICA.md). Dos nombres Flow prioritarios tienen borrador español; las traducciones completas siguen siendo 73. `nameLanguage` distingue el título del idioma de instrucciones (`language`).
+
+La asignación automática verificada y la exportación offline de P2 están diseñadas, aún no implementadas. Los 131 enlaces históricos por nombre no constituyen correspondencias verificadas. Los nombres duplicados no se eliminan ni fusionan.
+
+Auditoría HTTP local reproducible, sin fuentes externas: `node scripts/audit-catalog.js` (requiere permiso para escuchar en loopback). Genera `reports/catalog-audit.json`; la evidencia original permanece en `reports/catalog-audit-baseline.json`.
