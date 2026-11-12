@@ -12,6 +12,7 @@ export const openapi = {
   servers:[{url:'/'}],
   security:[{ApiKey:[]},{}],
   paths:{
+    '/api/v1/selections/essential-50':{get:get('Snapshot P0: 50 IDs históricos; best=null usa fallback técnico; candidates nunca son medios aprobados.', {type:'object',required:['schemaVersion','selectionId','version','catalogVersion','catalogCount','coverage','data'],properties:{schemaVersion:{const:1},selectionId:{const:'essential-50-p0'},version:string,catalogVersion:string,catalogCount:{type:'integer'},policy:{type:'object'},coverage:{type:'object'},data:{type:'array',minItems:50,maxItems:50,items:{type:'object',required:['id','name','equipment','primaryMuscles','instructions','media']}}}})},
     '/health':{get:{...get('Estado del servicio',{type:'object',properties:{status:{const:'ok'},catalogVersion:string}}),security:[]}},
     '/api/v1/exercises':{get:get('Buscar y filtrar ejercicios',ref('ExercisePage'),[
       param('q',{type:'string',maxLength:200},'Busca todas las palabras sin distinguir acentos en nombres, alias, músculos y equipo en ambos idiomas.'),

@@ -9,6 +9,7 @@ import { choice, checkParams, InputError } from './validation.js';
 import { openapi } from './openapi.js';
 
 const sources = JSON.parse(readFileSync(new URL('../data/sources.json', import.meta.url), 'utf8'));
+const essential50 = JSON.parse(readFileSync(new URL('../data/essential-50.json', import.meta.url), 'utf8'));
 const files = new Map([
   ['/', ['../public/index.html', 'text/html; charset=utf-8']],
   ['/docs', ['../public/docs.html', 'text/html; charset=utf-8']],
@@ -74,6 +75,10 @@ export function createApp({ corsOrigins = process.env.CORS_ORIGINS || '*', apiKe
       if (path === '/health') return send(200, {status: 'ok', catalogVersion}, {cache: false});
       if (path === '/openapi.json') return send(200, {...openapi,security:apiKey ? [{ApiKey:[]}] : [{}]});
       if (path === '/api/v1/exercises') return send(200, queryExercises(url.searchParams));
+      if (path === '/api/v1/selections/essential-50') {
+        checkParams(url.searchParams, []);
+        return send(200, essential50);
+      }
       if (path === '/api/v1/stats') { checkParams(url.searchParams, []); return send(200, {data: stats()}); }
       if (path === '/api/v1/sources') { checkParams(url.searchParams, []); return send(200, {data: sources}); }
       const langOnly = () => { checkParams(url.searchParams, ['lang']); return choice(url.searchParams.get('lang'), ['es', 'en'], 'lang', 'es'); };

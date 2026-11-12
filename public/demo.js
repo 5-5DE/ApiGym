@@ -1,88 +1,102 @@
-const $ = s => document.querySelector(s);
-let total = 0, controller, timer, playing = false;
-const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+const $ = selector => document.querySelector(selector);
 const el = (tag, text, cls) => { const node = document.createElement(tag); if (text) node.textContent = text; if (cls) node.className = cls; return node; };
+const normalize = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+let collection = 'essential', controller, detailController, nextOffset = null, total = 0, lastButton;
+const labels = new Map();
+const label = value => labels.get(value) || value;
 async function api(path, signal) {
-  const r = await fetch(path, {headers: $('#key').value ? {'X-API-Key': $('#key').value} : {}, signal});
-  const body = await r.json(); if (!r.ok) throw new Error(body.error?.message || `HTTP ${r.status}`); return body;
+  const response = await fetch(path, { headers: $('#key').value ? { 'X-API-Key': $('#key').value } : {}, signal });
+  const body = await response.json();
+  if (!response.ok) throw Error(body.error?.message || `HTTP ${response.status}`);
+  return body;
 }
-async function load() {
+function validateSelection(snapshot) {
+  if (snapshot.schemaVersion !== 1 || snapshot.selectionId !== 'essential-50-p0' || !Array.isArray(snapshot.data) || snapshot.data.length !== 50 || new Set(snapshot.data.map(item => item.id)).size !== 50) throw Error('La selección oficial está incompleta. Puedes consultar el catálogo completo.');
+  return snapshot.data;
+}
+function technicalFallback(item) {
+  const panel = el('div', null, 'technical-fallback');
+  panel.append(el('span', 'GUÍA DEL EJERCICIO', 'eyebrow'), el('h3', item.media?.status === 'pending' || item.media?.animation ? 'Demostración en revisión' : 'Demostración no disponible'), el('p', 'Consulta los datos y las indicaciones. No hay un recurso aprobado disponible para reproducir.'));
+  return panel;
+}
+function card(item) {
+  const node = el('article', null, 'card');
+  node.append(el('span', 'FICHA TÉCNICA', 'badge'), el('h3', item.name), el('p', item.primaryMuscles.map(label).join(' · ') || 'Músculo no especificado', 'muscles'), el('p', label(item.equipment) || 'Equipo no especificado'), el('p', item.media?.best != null ? 'Demostración no compatible por ahora' : item.media?.status === 'pending' || item.media?.animation ? 'Demostración en revisión' : 'Sin demostración aprobada', 'media-status'));
+  const button = el('button', 'Consultar ejercicio');
+  button.setAttribute('aria-label', `Consultar ${item.name}`);
+  button.onclick = () => { lastButton = button; void detail(item); };
+  node.append(button); return node;
+}
+async function load(more = false) {
   controller?.abort(); controller = new AbortController(); const signal = controller.signal;
-  const params = new URLSearchParams(new FormData($('#filters')));
-  for (const [key, value] of [...params]) { if (!value) params.delete(key); else if (value === 'on') params.set(key, 'true'); }
-  params.set('offset', 0); params.set('limit', 100);
-  $('#status').textContent = 'Cargando todos los ejercicios…';
+  const form = new FormData($('#filters')), query = normalize(form.get('q') || '').trim();
+  $('#more').disabled = true; $('#status').textContent = 'Buscando ejercicios…'; $('#results').setAttribute('aria-busy', 'true');
+  if (!more) { $('#results').replaceChildren(); nextOffset = null; $('#more').hidden = true; }
   try {
-    let page = await api('/api/v1/exercises?' + params, signal);
-    total = page.pagination.total;
-    const exercises = [...page.data];
-    while (page.pagination.nextOffset !== null) {
-      params.set('offset', page.pagination.nextOffset);
-      page = await api('/api/v1/exercises?' + params, signal);
-      exercises.push(...page.data);
-      $('#status').textContent = `Cargando ${exercises.length} de ${total} ejercicios…`;
+    let items;
+    if (collection === 'essential') {
+      const snapshot = await api('/api/v1/selections/essential-50', signal);
+      items = validateSelection(snapshot).filter(item => (!form.get('muscle') || [...item.primaryMuscles, ...item.secondaryMuscles].includes(form.get('muscle'))) && (!form.get('equipment') || item.equipment === form.get('equipment')) && (!query || normalize([item.id, item.name, item.equipment, ...item.primaryMuscles].join(' ')).includes(query)));
+      total = items.length;
+    } else {
+      const params = new URLSearchParams({ lang: 'en', limit: '24', offset: String(more ? nextOffset : 0) });
+      for (const name of ['q', 'muscle', 'equipment']) if (form.get(name)) params.set(name, form.get(name));
+      const page = await api('/api/v1/exercises?' + params, signal);
+      items = page.data; total = page.pagination.total; nextOffset = page.pagination.nextOffset;
     }
-    const cards = document.createDocumentFragment();
-    for (const e of exercises) {
-      const card = el('article', null, 'card'); const image = el('img'); image.alt = e.name; image.loading = 'lazy';
-      if (e.media.thumbnailUrl) image.src = e.media.thumbnailUrl; else image.hidden = true;
-      if (e.media.animation?.type === 'svg-sequence') image.classList.add('sketch');
-      image.addEventListener('error', () => {image.hidden = true;}, {once:true});
-      card.append(image, el('span', e.media.animation?.type === 'svg-sequence' ? 'ILUSTRACIÓN ANIMADA' : e.media.animation ? 'GIF / VIDEO' : 'SIN ANIMACIÓN', 'badge'), el('h2', e.name), el('p', e.primaryMuscles.join(' · ') + ' / ' + e.equipment));
-      const button = el('button', 'Ver ejercicio'); button.onclick = () => detail(e); card.append(button); cards.append(card);
+    if (signal.aborted) return;
+    const nodes = document.createDocumentFragment(); items.forEach(item => nodes.append(card(item))); $('#results').append(nodes);
+    $('#status').textContent = total ? `${$('#results').children.length} de ${total} ejercicios` : 'Sin resultados. Prueba otro nombre o cambia los filtros.';
+    $('#more').hidden = nextOffset === null; $('#more').disabled = false;
+  } catch (error) {
+    if (signal.aborted) return;
+    $('#status').textContent = collection === 'essential' ? `No se pudo cargar la selección oficial: ${error.message}. El catálogo completo sigue disponible.` : `No se pudo cargar el catálogo: ${error.message}. Reintenta con Buscar.`;
+    $('#more').disabled = false;
+  } finally { if (!signal.aborted) $('#results').setAttribute('aria-busy', 'false'); }
+}
+async function detail(original) {
+  detailController?.abort(); detailController = new AbortController();
+  const signal = detailController.signal, body = $('#detail-body');
+  body.replaceChildren(el('h2', original.name)); body.firstChild.id = 'detail-title';
+  body.append(el('p', 'Cargando ficha…')); $('#detail').showModal();
+  try {
+    const item = collection === 'essential' ? original : (await api('/api/v1/exercises/' + encodeURIComponent(original.id) + '?lang=en', signal)).data;
+    if (signal.aborted) return;
+    if (item.id !== original.id) throw Error('La identidad del ejercicio no coincide.');
+    body.replaceChildren(el('p', 'APIGYM · EJERCICIO', 'eyebrow'), el('h2', item.name)); body.children[1].id = 'detail-title';
+    body.append(el('p', `Músculos: ${item.primaryMuscles.map(label).join(' · ') || 'No especificados'}`), el('p', `Equipo: ${label(item.equipment) || 'No especificado'}`), technicalFallback(item), el('h3', 'Instrucciones originales'));
+    const language = item.instructionsLanguage || item.language;
+    if (language !== 'es') body.append(el('p', 'Contenido original en inglés. No hay traducción aprobada disponible.', 'credit'));
+    const list = el('ol'); (item.instructions || []).forEach(step => list.append(el('li', step))); body.append(list);
+    if (!item.instructions?.length) body.append(el('p', 'La fuente no incluye instrucciones para este ejercicio.'));
+    if (item.source) {
+      body.append(el('p', `${item.source.attribution || item.source.id} · ${item.source.license || 'Licencia no especificada'}`, 'credit'));
+      try { const url = new URL(item.source.url); if (url.protocol === 'https:') { const link = el('a', 'Consultar fuente original'); link.href = url.href; link.target = '_blank'; link.rel = 'noopener noreferrer'; body.append(link); } } catch {}
     }
-    $('#results').replaceChildren(cards);
-    $('#status').textContent = total ? `${exercises.length} ejercicios encontrados` : 'Sin resultados. Prueba otro nombre o filtro.';
-  } catch(e) { if (e.name !== 'AbortError') { $('#status').textContent = e.message; $('#results').replaceChildren(); } }
+  } catch (error) { if (!signal.aborted) body.append(el('p', `No pudimos cargar la ficha: ${error.message}. Cierra y vuelve a intentarlo.`)); }
 }
-function detail(e) {
-  stop(); const body = $('#detail-body'); body.replaceChildren(el('p', e.id, 'eyebrow'), el('h2',e.name));
-  let media, frame = 0, active = false;
-  const animation = e.media.animation; const sequence = e.media.imageSequence;
-  if (animation?.type === 'video') { media = el('video'); media.src = animation.url; media.controls = true; media.loop = true; media.muted = true; media.playsInline = true; media.preload = 'none'; }
-  else if (animation?.type === 'svg-sequence') { media = el('img'); media.alt = e.name; media.src = animation.frames[animation.sequence[0]]; media.classList.add('sketch'); }
-  else { media = el('img'); media.alt = e.name; if (e.media.thumbnailUrl) media.src = e.media.thumbnailUrl; else media.hidden = true; }
-  media.className = 'demonstration';
-  const notice = el('p',animation?.type === 'svg-sequence' ? 'Ilustración animada en SVG. La secuencia es orientativa; revisa las instrucciones y la nota de procedencia.' : animation ? 'Demostración animada. Pulsa reproducir para cargarla.' : sequence ? 'Secuencia de posiciones de inicio y fin. No es movimiento continuo.' : 'Este ejercicio no tiene demostración disponible.');
-  body.append(media, notice);
-  media.addEventListener('error', () => {notice.textContent = 'No se pudo cargar el medio externo. Consulta las instrucciones o la fuente.';});
-  const play = el('button', 'Reproducir');
-  play.disabled = !animation && !sequence;
-  play.onclick = () => {
-    active = !active; playing = active; clearInterval(timer); play.textContent = active ? 'Pausar' : 'Reproducir';
-    if (animation?.type === 'video') { if(active) media.play().catch(() => {notice.textContent = 'No se pudo reproducir el video.';}); else media.pause(); }
-    else if (animation?.type === 'gif') media.src = active ? animation.url : e.media.thumbnailUrl;
-    else if (animation?.type === 'svg-sequence' && active) {
-      for(const url of animation.frames) { const preload = new Image(); preload.src = url; }
-      timer = setInterval(() => { if (!document.hidden) { frame = (frame + 1) % animation.sequence.length; media.src = animation.frames[animation.sequence[frame]]; } }, animation.frameDurationMs);
-    } else if (animation?.type === 'svg-sequence') media.src = animation.frames[animation.sequence[0]];
-    else if (sequence && active) {
-      for(const url of sequence.frames) { const preload = new Image(); preload.src = url; }
-      timer = setInterval(() => { if (!document.hidden) { frame = (frame + 1) % sequence.frames.length; media.src = sequence.frames[frame]; } }, sequence.intervalMs);
-    }
-  };
-  if (reduced.matches) body.append(el('p','Movimiento reducido activo: la demostración empieza en pausa.'));
-  body.append(play);
-  const credit = el('p', animation?.attribution || e.media.attribution, 'credit'); body.append(credit);
-  const link = (label,url) => {const a=el('a',label); a.href=url; a.target='_blank'; a.rel='noopener noreferrer'; return a;};
-  if (animation) { body.append(link('Fuente del medio', animation.sourceUrl), document.createTextNode(' · '),link(animation.license, animation.licenseUrl)); if(animation.authorUrl) body.append(document.createTextNode(' · '),link(animation.author,animation.authorUrl)); if(animation.provenanceNote) body.append(el('p', animation.provenanceNote, 'credit')); }
-  else body.append(link('Fuente de imágenes',e.source.url),document.createTextNode(' · '),link(e.source.license,e.source.licenseUrl));
-  body.append(el('h3','Instrucciones')); const list = el('ol');
-  for (const step of e.instructions) list.append(el('li',step));
-  body.append(list);
-  if(!e.instructionsAvailable) body.append(el('p','La fuente no incluye instrucciones para este ejercicio.'));
-  if (e.requestedLanguage !== e.language) body.append(el('p','Traducción pendiente: instrucciones originales en inglés.'));
-  $('#detail').showModal();
+function selectCollection(value) {
+  collection = value; nextOffset = null;
+  for (const name of ['essential', 'historical']) { $(`#${name}`).setAttribute('aria-pressed', String(name === value)); $(`#${name}`).classList.toggle('secondary', name !== value); }
+  $('#collection-title').textContent = value === 'essential' ? 'Los 50 esenciales' : 'Catálogo completo'; void load();
 }
-function stop() { clearInterval(timer); playing=false; $('#detail').querySelector('video')?.pause(); }
-$('#filters').onsubmit = event => {event.preventDefault(); load();};
-$('#close').onclick = () => $('#detail').close(); $('#detail').addEventListener('close',()=>{stop();$('#detail-body').replaceChildren();});
-document.addEventListener('visibilitychange',()=>{if(document.hidden && playing) $('#detail button:not(.close)')?.click();});
-async function init(){
-  try { const [{data:tax},{data:stats}] = await Promise.all([api('/api/v1/taxonomy'),api('/api/v1/stats')]);
-    for (const [name, entries] of [['muscle',tax.muscles],['equipment',tax.equipment]]) {const select=$(`select[name="${name}"]`); while(select.options.length>1)select.remove(1); for(const entry of entries){if(entry.count){const option=el('option',entry.name);option.value=entry.id;select.append(option);}}}
-    $('#stats').textContent=`${stats.total} ejercicios · ${stats.spanish} en español · ${stats.withSvgAnimation} con ilustraciones animadas · ${stats.withoutAnimation} sin animación`;
-    await load();
-  } catch(e){$('#status').textContent=e.message;}
+$('#essential').onclick = () => selectCollection('essential'); $('#historical').onclick = () => selectCollection('historical');
+$('#filters').onsubmit = event => { event.preventDefault(); void load(); };
+$('#filters').onreset = () => { queueMicrotask(() => void load()); };
+$('#more').onclick = () => void load(true);
+$('#close').onclick = () => $('#detail').close();
+$('#detail').addEventListener('close', () => { detailController?.abort(); lastButton?.focus(); });
+async function init() {
+  // Taxonomy/stat failures must not prevent the official snapshot from loading.
+  await Promise.allSettled([
+    api('/api/v1/taxonomy?lang=es').then(({ data }) => {
+      for (const [name, entries] of [['muscle', data.muscles], ['equipment', data.equipment]]) {
+        const select = $(`select[name="${name}"]`); while (select.options.length > 1) select.remove(1);
+        for (const entry of entries) { labels.set(entry.id, entry.name); const option = el('option', entry.name); option.value = entry.id; select.append(option); }
+      }
+    }),
+    api('/api/v1/stats').then(({ data }) => { $('#stats').textContent = `${data.total.toLocaleString('es-MX')} ejercicios en la biblioteca`; }),
+  ]);
+  await load();
 }
-$('#unlock').onclick=init;init();
+$('#unlock').onclick = () => void init(); void init();

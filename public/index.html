@@ -1,9 +1,15 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ApiGym · Catálogo</title><link rel="stylesheet" href="/style.css"><script type="module" src="/demo.js"></script></head>
-<body><header><a href="/" class="brand">ApiGym<span>CATÁLOGO DE MOVIMIENTOS</span></a><nav><a href="/docs">Documentación</a><a href="/openapi.json">OpenAPI</a></nav></header>
-<main><p class="eyebrow">UNA BASE PARA TU TRACKER</p><h1>Encuentra tu siguiente<br>movimiento.</h1><p class="intro">Explora ejercicios, músculos y demostraciones. Guarda el identificador del ejercicio para conectarlo a tus rutinas.</p><p id="stats" aria-live="polite"></p>
-<form id="filters"><label>Buscar<input name="q" placeholder="Press, sentadilla, jalón…" maxlength="200"></label><label>Músculo<select name="muscle"><option value="">Todos</option></select></label><label>Equipo<select name="equipment"><option value="">Todos</option></select></label><label>Idioma<select name="lang"><option value="es">Español</option><option value="en">English</option></select></label><label class="check"><input type="checkbox" name="popular"> Más comunes</label><label class="check"><input type="checkbox" name="hasAnimation"> Con animación</label><button>Buscar</button></form>
-<details><summary>Acceso con clave (si tu servidor lo exige)</summary><label>API key<input id="key" type="password" autocomplete="off" placeholder="Se usa solo en esta pestaña"></label><button type="button" id="unlock">Cargar catálogo</button></details>
-<p id="status" role="status"></p><section id="results" class="grid" aria-label="Ejercicios"></section>
-<dialog id="detail"><button id="close" class="close" aria-label="Cerrar">×</button><div id="detail-body"></div></dialog>
-</main><footer>Las ilustraciones animadas se distinguen de los ejercicios sin demostración. <a href="/api/v1/sources">Fuentes, licencias y procedencia</a>.</footer></body></html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ApiGym · Tu biblioteca de movimiento</title><link rel="stylesheet" href="/style.css"><script type="module" src="/demo.js"></script></head>
+<body>
+<header><a href="/" class="brand">ApiGym<span>BIBLIOTECA DE MOVIMIENTO</span></a><nav aria-label="Principal"><a href="#catalog">Explorar ejercicios</a><a href="/docs">API y documentación</a></nav></header>
+<main>
+<section class="hero"><div><p class="eyebrow">CONOCE EL MOVIMIENTO</p><h1>Una buena base.<br>Tu siguiente paso.</h1><p class="intro">Encuentra ejercicios por músculo y equipo. Consulta sus indicaciones y lleva sus referencias a tu entrenamiento.</p></div><div class="hero-note"><strong>50</strong><span>esenciales para explorar</span><p>Una selección editorial del catálogo. Cada ficha conserva sus datos y fuentes originales.</p></div></section>
+<section id="catalog" aria-label="Catálogo de ejercicios"><div class="collection-bar" role="group" aria-label="Colección"><button type="button" id="essential" aria-pressed="true">50 esenciales</button><button type="button" id="historical" class="secondary" aria-pressed="false">Catálogo completo</button><p id="stats" aria-live="polite"></p></div>
+<form id="filters"><label>Buscar ejercicio<input name="q" placeholder="Nombre, ID o músculo…" maxlength="200" type="search"></label><label>Músculo<select name="muscle"><option value="">Todos los músculos</option></select></label><label>Equipo<select name="equipment"><option value="">Todo el equipo</option></select></label><button>Buscar</button><button type="reset" class="secondary">Limpiar</button></form>
+<details><summary>Acceso con clave, si tu servidor lo requiere</summary><label>API key<input id="key" type="password" autocomplete="off" placeholder="Solo en esta pestaña"></label><button type="button" id="unlock">Cargar catálogo</button></details>
+<div class="results-heading"><h2 id="collection-title">Los 50 esenciales</h2><p id="status" role="status" aria-live="polite"></p></div><section id="results" class="grid" aria-label="Ejercicios"></section><button id="more" type="button" class="secondary" hidden>Ver más ejercicios</button>
+</section>
+<dialog id="detail" aria-labelledby="detail-title"><button id="close" class="close" aria-label="Cerrar ficha">×</button><div id="detail-body"></div></dialog>
+</main><footer>ApiGym · Datos originales y procedencia visible. Las demostraciones se publican después de su aprobación. <a href="/api/v1/sources">Fuentes y licencias</a>.</footer>
+</body></html>

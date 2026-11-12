@@ -1,5 +1,27 @@
 # ApiGym
 
+## P0 · selección oficial y visor · 12/11/2026
+
+El visor abre los **50 esenciales oficiales** mediante
+`GET /api/v1/selections/essential-50`, sin parámetros. Devuelve el snapshot v1
+directamente, con su array `data` de 50 IDs únicos. Contrato en
+[docs/P0-ESSENTIAL-50.md](docs/P0-ESSENTIAL-50.md). Conserva autenticación opcional,
+CORS, HEAD y ETag/304; no sustituye el catálogo histórico de 2,069 ejercicios.
+
+La selección usa nombres e instrucciones originales. Los nombres españoles
+del snapshot son borradores sin aprobación. Todos sus `media.best` son null:
+el frontend muestra fallback técnico y distingue medios en revisión de ausentes.
+No reproduce candidatos SVG ni vídeos experimentales. La disponibilidad de un
+medio legacy no acredita aprobación editorial, técnica o de derechos.
+
+El catálogo completo conserva búsqueda, filtros reales y paginación progresiva.
+Las fichas muestran músculos, equipo, indicaciones y fuente. La implementación
+local pasó 16/16 pruebas, incluidas las 50 fichas, y una matriz visual de Chrome.
+No hay dependencias nuevas ni cambios de IDs o de medios históricos.
+
+Las descripciones de reproducción legacy más abajo son documentación de
+compatibilidad del API, no una autorización para mostrar candidatos en el visor.
+
 API REST independiente para el catálogo de ejercicios de un tracker de gimnasio. El tracker guarda los IDs en sus rutinas y administra sus propias series, sesiones y rachas. ApiGym proporciona nombres, instrucciones, músculos, equipo y demostraciones.
 
 Implementada con Node.js 24 y módulos estándar: **sin paquetes npm, base de datos ni API keys de proveedores**. El catálogo se incluye en el repo y se carga en memoria; las consultas no llaman a servicios externos.
@@ -40,12 +62,16 @@ No hace falta `npm install`. Abre:
 - OpenAPI 3.1: <http://localhost:3000/openapi.json>
 - Salud: <http://localhost:3000/health>
 
-El visor permite buscar y filtrar, y carga todas las paginas de resultados para mostrar juntos los ejercicios que coinciden. La API conserva paginacion para integraciones externas. Reproduce las ilustraciones SVG animadas, respeta movimiento reducido y no muestra fotos reales.
+El visor permite buscar y filtrar los 50 esenciales o explorar todo el catálogo
+con «Ver más ejercicios». Las fichas usan fallback cuando no existe un medio
+aprobado; no muestran fotos ni animaciones candidatas. La API histórica conserva
+sus medios y paginación para compatibilidad con integraciones externas.
 
 ## API
 
 | Método | Ruta | Uso |
 | --- | --- | --- |
+| GET | `/api/v1/selections/essential-50` | Snapshot oficial P0 de 50 IDs; filtros locales en frontend |
 | GET | `/api/v1/exercises` | Búsqueda, filtros y paginación |
 | GET | `/api/v1/exercises/:id` | Detalle con instrucciones y medios |
 | GET | `/api/v1/exercises/:id/media` | URLs y atribuciones de medios |
@@ -171,7 +197,7 @@ npm run check
 npm test
 ```
 
-15 pruebas HTTP y de integridad cubren búsqueda, filtros, paginación, idioma de reserva, medios, batch, validación, importación sin perder registros, ETag, HEAD, CORS, autenticación opcional y el SDK. El workflow de GitHub Actions ejecuta estos comandos en Node 24. No se requieren secretos.
+16 pruebas HTTP y de integridad cubren búsqueda, filtros, paginación, idioma de reserva, medios, batch, validación, importación sin perder registros, ETag, HEAD, CORS, autenticación opcional, SDK y selección oficial P0. El workflow de GitHub Actions ejecuta estos comandos en Node 24. No se requieren secretos.
 
 ## Licencias
 
