@@ -1,12 +1,26 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { validateDataset, validateMedia } from '../src/validation.js';
-import { rawExercises } from '../src/catalog.js';
+import { rawExercises, catalogPruning, getExercise, mediaFor } from '../src/catalog.js';
 import { importMedia } from '../scripts/import-media.js';
 import { mkdtemp, mkdir, writeFile, readFile, unlink, rmdir } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
+
+test('retira los 812 sin medios y conserva cada ID, nombre y animacion original', () => {
+  assert.equal(catalogPruning.removedIds.length, 812);
+  assert.equal(new Set(catalogPruning.removedIds).size, 812);
+  assert.equal(rawExercises.length, 1257);
+  assert.equal(new Set(rawExercises.map(e => e.id)).size, 1257);
+  for (const id of catalogPruning.removedIds) assert.equal(getExercise(id), null, id);
+  const identities = rawExercises.map(e => ({ id:e.id, name:e.name, flowId:e.flowRecord?.id ?? null })).sort((a,b) => a.id.localeCompare(b.id, 'en'));
+  assert.deepEqual(identities, catalogPruning.retainedExercises);
+  for (const e of rawExercises) {
+    assert.ok(mediaFor(e).animation, e.id);
+    assert.ok(mediaFor(e).thumbnailUrl, e.id);
+  }
+});
 test('IDs duplicados no pueden invalidar referencias del tracker',()=>{
   assert.throws(()=>validateDataset([rawExercises[0],rawExercises[0]]),/duplicado/);
 });

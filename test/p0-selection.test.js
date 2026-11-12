@@ -13,12 +13,12 @@ test('P0 real HTTP: snapshot exacto, catálogo preservado, filtros, fichas, HEAD
     assert.equal((await fetch(base+path)).status,401);
     const response=await get(path,{headers:{Origin:'http://localhost:8081'}});
     assert.equal(response.status,200); assert.equal(response.headers.get('access-control-allow-origin'),'*');
-    const value=await response.json();assert.deepEqual(value,snapshot);assert.equal(new Set(value.data.map(item=>item.id)).size,50);
+    const value=await response.json();assert.deepEqual(value,snapshot);assert.equal(new Set(value.data.map(item=>item.id)).size,10);
     assert.ok(value.data.every(item=>item.media.best===null));
     assert.equal((await get(path,{method:'HEAD'})).status,200);
     assert.equal((await get(path,{headers:{'If-None-Match':response.headers.get('etag')}})).status,304);
     assert.equal((await get(path+'?limit=10')).status,400);
-    const history=await (await get('/api/v1/exercises?limit=100')).json();assert.equal(history.pagination.total,2069);
+    const history=await (await get('/api/v1/exercises?limit=100')).json();assert.equal(history.pagination.total,1257);
     for (const exercise of value.data) {
       const detail=await (await get('/api/v1/exercises/'+encodeURIComponent(exercise.id))).json();assert.equal(detail.data.id,exercise.id);
     }

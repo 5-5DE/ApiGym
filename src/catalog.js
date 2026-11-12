@@ -8,6 +8,7 @@ const flowExercises = read('../data/flow-exercise-dataset/data/exercises.json');
 const flowChecksums = read('../data/flow-exercise-dataset/data/checksums.json');
 const translations = read('../data/translations.es.json');
 const mediaRecords = read('../data/media.json');
+export const catalogPruning = read('../data/catalog-pruning.json');
 const legacyIds = validateDataset(rawExercises);
 validateTranslations(translations, legacyIds);
 
@@ -48,6 +49,13 @@ export function mediaFor(e) {
   const svgAnimation = flowFrames.length ? { type:'svg-sequence', frames:flowFrames, sequence:flow.animation.sequence, frameDurationMs:flow.animation.frameDurationMs, license:flow.animation.license, licenseUrl:'https://creativecommons.org/publicdomain/zero/1.0/', sourceUrl:`${flowSource.url}/blob/main/${flow.animation.provenance}`, attribution:flowSource.attribution, provenanceNote:flowSource.provenanceNote } : null;
   const animation = svgAnimation || variants.find(m => m.type === 'video') || variants.find(m => m.type === 'gif') || null;
   return { thumbnailUrl: flowFrames[0] || null, images, animation, imageSequence: null, variants, attribution: animation?.attribution || source.attribution };
+}
+
+// Resolve legacy/Flow identities before removing records: deletion must never
+// remap a retained exercise to a different ID, even after a source refresh.
+const removedIds = new Set(catalogPruning.removedIds);
+for (let i = rawExercises.length - 1; i >= 0; i--) {
+  if (removedIds.has(rawExercises[i].id) || !mediaFor(rawExercises[i]).animation) rawExercises.splice(i, 1);
 }
 
 export function localize(e, lang = 'es') {
@@ -107,5 +115,6 @@ export function taxonomy(lang = 'es') {
 export const catalogVersion = createHash('sha256').update(JSON.stringify({rawExercises, translations, mediaRecords, flowChecksums})).digest('hex').slice(0, 16);
 export function stats() {
   const animatedIds = new Set(rawExercises.filter(e => e.flowRecord?.animation || mediaRecords.some(m => m.exerciseId === e.id)).map(e => e.id));
-  return { version: catalogVersion, total: rawExercises.length, spanish: Object.keys(translations).length, popular: Object.keys(translations).length, withImages: 0, withImageSequence: 0, withAnimation: animatedIds.size, withSvgAnimation: rawExercises.filter(e => e.flowRecord?.animation).length, withGifOrVideo: rawExercises.filter(e => !e.flowRecord?.animation && mediaRecords.some(m => m.exerciseId === e.id)).length, withoutAnimation: rawExercises.length - animatedIds.size, mediaHosting: 'local-svg', languages: ['en', 'es'] };
+  const translated = rawExercises.filter(e => translations[e.id]).length;
+  return { version: catalogVersion, total: rawExercises.length, spanish: translated, popular: translated, withImages: 0, withImageSequence: 0, withAnimation: animatedIds.size, withSvgAnimation: rawExercises.filter(e => e.flowRecord?.animation).length, withGifOrVideo: rawExercises.filter(e => !e.flowRecord?.animation && mediaRecords.some(m => m.exerciseId === e.id)).length, withoutAnimation: rawExercises.length - animatedIds.size, mediaHosting: 'local-svg', languages: ['en', 'es'] };
 }

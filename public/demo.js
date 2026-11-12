@@ -11,7 +11,7 @@ async function api(path, signal) {
   return body;
 }
 function validateSelection(snapshot) {
-  if (snapshot.schemaVersion !== 1 || snapshot.selectionId !== 'essential-50-p0' || !Array.isArray(snapshot.data) || snapshot.data.length !== 50 || new Set(snapshot.data.map(item => item.id)).size !== 50) throw Error('La selección oficial está incompleta. Puedes consultar el catálogo completo.');
+  if (snapshot.schemaVersion !== 1 || snapshot.selectionId !== 'essential-50-p0' || !Array.isArray(snapshot.data) || snapshot.data.length !== 10 || new Set(snapshot.data.map(item => item.id)).size !== 10) throw Error('La selección oficial está incompleta. Puedes consultar el catálogo completo.');
   return snapshot.data;
 }
 function technicalFallback(item) {
@@ -78,7 +78,7 @@ async function detail(original) {
 function selectCollection(value) {
   collection = value; nextOffset = null;
   for (const name of ['essential', 'historical']) { $(`#${name}`).setAttribute('aria-pressed', String(name === value)); $(`#${name}`).classList.toggle('secondary', name !== value); }
-  $('#collection-title').textContent = value === 'essential' ? 'Los 50 esenciales' : 'Catálogo completo'; void load();
+  $('#collection-title').textContent = value === 'essential' ? 'Los 10 esenciales' : 'Catálogo completo'; void load();
 }
 $('#essential').onclick = () => selectCollection('essential'); $('#historical').onclick = () => selectCollection('historical');
 $('#filters').onsubmit = event => { event.preventDefault(); void load(); };

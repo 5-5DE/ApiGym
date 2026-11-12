@@ -1,5 +1,7 @@
 # ApiGym
 
+Actualizacion: se retiraron 812 ejercicios sin medios. La seleccion `essential-50` conserva su ruta e IDs originales y ahora devuelve solo los 10 ejercicios activos con animacion. El snapshot P0 de 50 descrito abajo es historico.
+
 ## P0 · selección oficial y visor · 12/11/2026
 
 El visor abre los **50 esenciales oficiales** mediante
@@ -30,15 +32,17 @@ Implementada con Node.js 24 y módulos estándar: **sin paquetes npm, base de da
 
 | Contenido | Cantidad |
 | --- | ---: |
-| Ejercicios deduplicados | 2,069 |
+| Ejercicios deduplicados | 1,257 |
 | Ilustraciones animadas SVG | 1,257 |
 | Fotos reales mostradas | 0 |
-| Ejercicios sin animación | 812 |
-| Traducciones completas al español | 73 |
+| Ejercicios sin animación | 0 |
+| Traducciones completas al español | 10 |
 
 Las ilustraciones SVG usan tres cuadros vectoriales por ejercicio, reproducidos en secuencia. ApiGym sirve los cuadros localmente desde /media/flow/:id/frame-0N.svg. El catálogo combina Flow Exercise Dataset con Free Exercise DB; si un nombre coincide, conserva el ID anterior y los demás reciben IDs flow-0001. El nivel queda como unknown cuando la fuente no lo especifica.
 
 La fuente Flow declara limitaciones de procedencia: solo conserva 13 de los prompts originales de las 1,257 animaciones y no promete verificación independiente de origen, forma física o derechos de terceros. El usuario aceptó integrar esta fuente con esa limitación. Se incluyen sus avisos, licencias y checksums en data/flow-exercise-dataset/; revisa NOTICE.md y ARTWORK-LICENSE. Los ejercicios sin SVG no reciben una ilustración inventada.
+
+Se retiraron de la API los 812 ejercicios sin imágenes ni animación. Los 1,257 ejercicios restantes conservan sus IDs originales. `data/catalog-pruning.json` registra los IDs retirados y la identidad original de los conservados. Los snapshots de las fuentes se mantienen intactos para conservar la procedencia y resolver los mismos IDs antes de aplicar la depuración. Los IDs retirados devuelven 404 y aparecen como faltantes en consultas batch; las referencias históricas no se reasignan a otros ejercicios.
 
 ## Arrancar
 
@@ -87,8 +91,8 @@ Se aceptan también HEAD y OPTIONS. Es una API de lectura; no contiene cuentas n
 curl "http://localhost:3000/api/v1/exercises?q=jalon&popular=true&lang=es"
 curl "http://localhost:3000/api/v1/exercises?muscle=chest&equipment=dumbbell&limit=10"
 curl "http://localhost:3000/api/v1/exercises?hasAnimation=true"
-curl "http://localhost:3000/api/v1/exercises/Barbell_Squat"
-curl "http://localhost:3000/api/v1/exercises/batch?ids=Barbell_Squat,Pushups,Leg_Press"
+curl "http://localhost:3000/api/v1/exercises/Barbell_Full_Squat"
+curl "http://localhost:3000/api/v1/exercises/batch?ids=Barbell_Full_Squat,Dumbbell_Bench_Press,Air_Bike"
 ```
 
 Filtros combinables:
@@ -122,11 +126,11 @@ import { createApiGymClient } from './apigym/client/index.js';
 
 const gym = createApiGymClient({baseUrl: 'http://localhost:3000'});
 const {data, pagination} = await gym.list({q:'sentadilla', popular:true, lang:'es'});
-const {data: exercise} = await gym.get('Barbell_Squat');
+const {data: exercise} = await gym.get('Barbell_Full_Squat');
 
 // En tu base de datos: guarda exercise.id, no el nombre traducido ni el índice.
 const routineItem = {exerciseId: exercise.id, sets: 3, reps: 10};
-const routineExercises = await gym.batch(['Barbell_Squat','Pushups']);
+const routineExercises = await gym.batch(['Barbell_Full_Squat','Dumbbell_Bench_Press']);
 ```
 
 Para mostrar medios:

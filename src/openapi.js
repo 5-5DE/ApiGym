@@ -8,7 +8,7 @@ const get = (summary, schema, parameters = []) => ({summary, parameters, respons
 const item = name => ({type:'object', required:['data'], properties:{data:ref(name)}});
 const string = {type:'string'};
 export const openapi = {
-  openapi:'3.1.0', info:{title:'ApiGym', version:'1.0.0', description:'Catálogo independiente para trackers. 2,069 ejercicios deduplicados, 73 traducciones completas al español y 1,257 animaciones SVG locales. Consulta /api/v1/stats para la cobertura real. La fuente SVG documenta limitaciones de procedencia.'},
+  openapi:'3.1.0', info:{title:'ApiGym', version:'1.0.0', description:'Catálogo independiente para trackers. 1,257 ejercicios deduplicados, 10 traducciones completas al español y 1,257 animaciones SVG locales. Consulta /api/v1/stats para la cobertura real. La fuente SVG documenta limitaciones de procedencia.'},
   servers:[{url:'/'}],
   security:[{ApiKey:[]},{}],
   paths:{
@@ -26,7 +26,7 @@ export const openapi = {
       param('limit',{type:'integer',minimum:1,maximum:100,default:20},'Tamaño de página.'),
       param('offset',{type:'integer',minimum:0,default:0},'Desplazamiento desde cero.')
     ])},
-    '/api/v1/exercises/batch':{get:get('Resolver hasta 50 IDs guardados en rutinas',{type:'object',required:['data','missingIds'],properties:{data:{type:'array',items:ref('Exercise')},missingIds:{type:'array',items:string}}},[param('ids',{type:'string',example:'Barbell_Squat,Pushups'},'IDs separados por coma. Conserva orden, elimina duplicados y devuelve missingIds.'),lang])},
+    '/api/v1/exercises/batch':{get:get('Resolver hasta 50 IDs guardados en rutinas',{type:'object',required:['data','missingIds'],properties:{data:{type:'array',items:ref('Exercise')},missingIds:{type:'array',items:string}}},[param('ids',{type:'string',example:'Barbell_Full_Squat,Dumbbell_Bench_Press'},'IDs separados por coma. Conserva orden, elimina duplicados y devuelve missingIds.'),lang])},
     '/api/v1/exercises/{id}':{get:get('Obtener un ejercicio',item('Exercise'),[{name:'id',in:'path',required:true,schema:string},lang])},
     '/api/v1/exercises/{id}/media':{get:get('Obtener medios y sus atribuciones',item('Media'),[{name:'id',in:'path',required:true,schema:string},lang])},
     '/media/flow/{id}/{frame}':{get:{summary:'Obtener un cuadro SVG de una demostración',parameters:[{name:'id',in:'path',required:true,schema:{type:'string',pattern:'^\\d{4}$'}},{name:'frame',in:'path',required:true,schema:{type:'string',pattern:'^frame-0[0-2]\\.svg$'}}],responses:{200:{description:'Imagen SVG local',content:{'image/svg+xml':{schema:{type:'string'}}}},404:{description:'Cuadro no encontrado'}}}},
