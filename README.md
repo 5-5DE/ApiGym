@@ -1,5 +1,7 @@
 # ApiGym
 
+El visor actual abre el catálogo completo de 1,257 ejercicios y carga todos los resultados automáticamente. Cada tarjeta muestra su imagen SVG; al abrir la ficha, reproduce la animación con controles para pausar y reanudar. Respeta la preferencia de movimiento reducido. La colección de 10 esenciales también resuelve sus imágenes desde el catálogo actual. Los IDs y las rutas de la API no cambian.
+
 Actualizacion: se retiraron 812 ejercicios sin medios. La seleccion `essential-50` conserva su ruta e IDs originales y ahora devuelve solo los 10 ejercicios activos con animacion. El snapshot P0 de 50 descrito abajo es historico.
 
 ## P0 · selección oficial y visor · 12/11/2026
