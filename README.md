@@ -4,6 +4,20 @@ El visor actual abre el catálogo completo de 1,257 ejercicios y carga todos los
 
 Actualizacion: se retiraron 812 ejercicios sin medios. La seleccion `essential-50` conserva su ruta e IDs originales y ahora devuelve solo los 10 ejercicios activos con animacion. El snapshot P0 de 50 descrito abajo es historico.
 
+## Localización en español de México
+
+La revisión de **títulos** cubre las 1,257 fichas, sus instrucciones originales y sus 3,771 cuadros SVG: 908 títulos confirmados, 535 corregidos y 349 pendientes por contradicciones o variantes sin identificar. No quedan fichas sin procesar. Se agregaron alias en 537 fichas y se conservaron los anteriores. El visor identifica los títulos pendientes; la API expone `localizationReview.titleReview` sin cambiar los IDs ni los textos originales. Consulta el [informe de títulos, fuentes y motivos por ID](reports/TITLE-REVIEW-ES-MX.md).
+
+Las decisiones individuales se guardan en `scripts/title-review-decisions.js` y la evidencia en `data/localization/es-MX.title-review.json`. Para reconstruir sin red: `npm run titles:compile` y `npm run localization:build`. El proceso rechaza cambios de textos o cuadros posteriores a la revisión. La aprobación de un título es independiente de la revisión de sus instrucciones.
+
+Los 1,257 ejercicios activos tienen textos en español persistidos. **La adaptación editorial integral está pendiente:** 12 fichas tienen reescritura y contraste textual con fuentes e inspección de los tres cuadros; 1,245 son borradores de traducción pendientes de revisión. La presencia de español no significa aprobación técnica. Cada respuesta identifica su estado en `localizationReview`; `instructionsEn` y `lang=en` conservan el original. Los alias permiten buscar, por ejemplo, “lagartijas”. Male/female se conserva como metadato y no como parte del nombre visible.
+
+El visor presenta las instrucciones como una lista numerada, identifica los borradores y omite los pasos cuando se detecta un posible conflicto de agarre o asistencia sin describir. Los ID, medios, licencias y selección popular se conservan.
+
+Informe y lista completa por ID y motivo: [revisión es-MX](reports/SPANISH-LOCALIZATION-REVIEW.md) y [registros de revisión](reports/spanish-localization-review.json). Las fuentes consultadas y sus alcances están documentados allí.
+
+Reconstrucción editorial sin red: `npm run localization:build`. Comprobación de cobertura y conservación de originales: `npm run localization:check`. La preparación opcional de borradores mediante Google Translate usa una herramienta separada, nunca se ejecuta al iniciar el servidor ni durante una consulta.
+
 ## P0 · selección oficial y visor · 12/11/2026
 
 El visor abre los **50 esenciales oficiales** mediante
@@ -38,7 +52,9 @@ Implementada con Node.js 24 y módulos estándar: **sin paquetes npm, base de da
 | Ilustraciones animadas SVG | 1,257 |
 | Fotos reales mostradas | 0 |
 | Ejercicios sin animación | 0 |
-| Traducciones completas al español | 10 |
+| Textos en español, incluidas adaptaciones y borradores | 1,257 |
+| Adaptaciones con contraste textual e inspección de ilustración | 12 |
+| Borradores pendientes de revisión | 1,245 |
 
 Las ilustraciones SVG usan tres cuadros vectoriales por ejercicio, reproducidos en secuencia. ApiGym sirve los cuadros localmente desde /media/flow/:id/frame-0N.svg. El catálogo combina Flow Exercise Dataset con Free Exercise DB; si un nombre coincide, conserva el ID anterior y los demás reciben IDs flow-0001. El nivel queda como unknown cuando la fuente no lo especifica.
 

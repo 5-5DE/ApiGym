@@ -29,7 +29,8 @@ export function validateDataset(data) {
 export function validateTranslations(translations, ids) {
   for (const [id, t] of Object.entries(translations)) {
     if (!ids.has(id)) throw new Error(`Traducción huérfana: ${id}`);
-    if (!t.name?.trim() || !Array.isArray(t.instructions) || t.instructions.length < 2 || t.instructions.some(x => typeof x !== 'string' || !x.trim())) throw new Error(`Traducción incompleta: ${id}`);
+    const minimumSteps = t.status === 'pending-review' ? 1 : 2;
+    if (!t.name?.trim() || !Array.isArray(t.instructions) || t.instructions.length < minimumSteps || t.instructions.some(x => typeof x !== 'string' || !x.trim())) throw new Error(`Traducción incompleta: ${id}`);
     if (!Array.isArray(t.aliases) || t.aliases.some(x => typeof x !== 'string')) throw new Error(`Alias inválidos: ${id}`);
   }
 }

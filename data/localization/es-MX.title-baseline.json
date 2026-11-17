@@ -1,0 +1,5181 @@
+{
+  "3_4_Sit-Up": {
+    "name": "Incorporaciones de tronco con recorrido de tres cuartos",
+    "aliases": []
+  },
+  "Air_Bike": {
+    "name": "Abdominales bicicleta",
+    "aliases": []
+  },
+  "Alternate_Heel_Touchers": {
+    "name": "Toques alternos de talones",
+    "aliases": []
+  },
+  "Ankle_Circles": {
+    "name": "Círculos de tobillos",
+    "aliases": []
+  },
+  "Balance_Board": {
+    "name": "Equilibrio sobre tabla inestable",
+    "aliases": []
+  },
+  "Band_Assisted_Pull-Up": {
+    "name": "Dominadas asistidas con banda",
+    "aliases": [
+      "dominadas con liga"
+    ]
+  },
+  "Barbell_Curl": {
+    "name": "Curl de bíceps con barra",
+    "aliases": [
+      "curl con barra recta"
+    ]
+  },
+  "Barbell_Deadlift": {
+    "name": "Peso muerto convencional",
+    "aliases": [
+      "peso muerto con barra",
+      "deadlift"
+    ]
+  },
+  "Barbell_Full_Squat": {
+    "name": "Sentadilla profunda con barra",
+    "aliases": [
+      "sentadilla completa"
+    ]
+  },
+  "Barbell_Glute_Bridge": {
+    "name": "Puente de glúteos con barra",
+    "aliases": []
+  },
+  "Barbell_Guillotine_Bench_Press": {
+    "name": "Press de banca guillotina con barra",
+    "aliases": []
+  },
+  "Barbell_Hack_Squat": {
+    "name": "Sentadilla hack con barra",
+    "aliases": []
+  },
+  "Barbell_Incline_Shoulder_Raise": {
+    "name": "Elevación escapular con barra en banco inclinado",
+    "aliases": []
+  },
+  "Barbell_Lunge": {
+    "name": "Desplante con barra",
+    "aliases": []
+  },
+  "Barbell_Rear_Delt_Row": {
+    "name": "Remo para deltoides posteriores con barra",
+    "aliases": []
+  },
+  "Barbell_Seated_Calf_Raise": {
+    "name": "Elevación de talones sentado con barra",
+    "aliases": []
+  },
+  "Barbell_Shrug": {
+    "name": "Encogimiento de hombros con barra",
+    "aliases": []
+  },
+  "Barbell_Side_Split_Squat": {
+    "name": "Desplante lateral con barra",
+    "aliases": []
+  },
+  "Battling_Ropes": {
+    "name": "Ondas con cuerdas de batalla",
+    "aliases": []
+  },
+  "Behind_Head_Chest_Stretch": {
+    "name": "Estiramiento de pecho con las manos detrás de la cabeza",
+    "aliases": []
+  },
+  "Body-Up": {
+    "name": "Extensión de tríceps con peso corporal desde antebrazos",
+    "aliases": []
+  },
+  "Bottoms_Up": {
+    "name": "Elevación de piernas y cadera",
+    "aliases": []
+  },
+  "Butt-Ups": {
+    "name": "Elevación de cadera desde plancha",
+    "aliases": []
+  },
+  "Cable_Hip_Adduction": {
+    "name": "Aducción de cadera en polea",
+    "aliases": []
+  },
+  "Cable_Incline_Pushdown": {
+    "name": "Jalón con brazos extendidos en banco inclinado y polea",
+    "aliases": []
+  },
+  "Cable_Incline_Triceps_Extension": {
+    "name": "Extensión de tríceps en banco inclinado en polea",
+    "aliases": []
+  },
+  "Cable_Judo_Flip": {
+    "name": "Giro de judo en polea",
+    "aliases": []
+  },
+  "Cable_Preacher_Curl": {
+    "name": "Curl predicador en polea",
+    "aliases": []
+  },
+  "Cable_Reverse_Crunch": {
+    "name": "Crunch inverso en polea",
+    "aliases": []
+  },
+  "Cable_Seated_Crunch": {
+    "name": "Crunch abdominal sentado en polea",
+    "aliases": []
+  },
+  "Cable_Shoulder_Press": {
+    "name": "Press de hombros en polea",
+    "aliases": []
+  },
+  "Cable_Wrist_Curl": {
+    "name": "Flexión de muñecas en polea",
+    "aliases": []
+  },
+  "Chair_Leg_Extended_Stretch": {
+    "name": "Estiramiento de pierna extendida con apoyo en silla",
+    "aliases": []
+  },
+  "Chest_And_Front_Of_Shoulder_Stretch": {
+    "name": "Estiramiento de pecho y parte anterior del hombro",
+    "aliases": []
+  },
+  "Chin-Up": {
+    "name": "Dominadas con agarre supino",
+    "aliases": [
+      "chin ups",
+      "dominadas supinas"
+    ]
+  },
+  "Clock_Push-Up": {
+    "name": "Flexiones de brazos con desplazamiento en reloj",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "Cocoons": {
+    "name": "Encogimiento abdominal con flexión de piernas y tronco",
+    "aliases": []
+  },
+  "Cross-Body_Crunch": {
+    "name": "Crunch cruzado",
+    "aliases": []
+  },
+  "Crunch_-_Hands_Overhead": {
+    "name": "Crunch abdominal con brazos por encima de la cabeza",
+    "aliases": []
+  },
+  "Dead_Bug": {
+    "name": "Extensión alterna de brazo y pierna contrarios (dead bug)",
+    "aliases": []
+  },
+  "Decline_Crunch": {
+    "name": "Crunch abdominal en banco declinado",
+    "aliases": []
+  },
+  "Decline_Push-Up": {
+    "name": "Flexiones de brazos con pies elevados",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "Dumbbell_Bench_Press": {
+    "name": "Press de banca con mancuernas",
+    "aliases": [
+      "press plano con mancuernas"
+    ]
+  },
+  "Dumbbell_Clean": {
+    "name": "Cargada con mancuernas",
+    "aliases": []
+  },
+  "Dumbbell_Incline_Row": {
+    "name": "Remo en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "Dumbbell_Incline_Shoulder_Raise": {
+    "name": "Elevación escapular con mancuernas en banco inclinado",
+    "aliases": []
+  },
+  "Dumbbell_Lying_One-Arm_Rear_Lateral_Raise": {
+    "name": "Elevaciones para deltoides posteriores a un brazo acostado con mancuernas",
+    "aliases": []
+  },
+  "Dumbbell_Lying_Pronation": {
+    "name": "Pronación de antebrazo acostado con mancuerna",
+    "aliases": []
+  },
+  "Dumbbell_Lying_Rear_Lateral_Raise": {
+    "name": "Elevaciones para deltoides posteriores acostado con mancuernas",
+    "aliases": []
+  },
+  "Dumbbell_Lying_Supination": {
+    "name": "Supinación de antebrazo acostado con mancuerna",
+    "aliases": []
+  },
+  "Dumbbell_One-Arm_Shoulder_Press": {
+    "name": "Press de hombros a un brazo con mancuernas",
+    "aliases": []
+  },
+  "Dumbbell_One-Arm_Upright_Row": {
+    "name": "Remo al mentón a un brazo con mancuernas",
+    "aliases": []
+  },
+  "Dumbbell_Prone_Incline_Curl": {
+    "name": "Curl de bíceps boca abajo en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "Dumbbell_Raise": {
+    "name": "Elevaciones con mancuernas",
+    "aliases": []
+  },
+  "Dumbbell_Rear_Lunge": {
+    "name": "Desplante posterior con mancuernas",
+    "aliases": []
+  },
+  "Dumbbell_Seated_One-Leg_Calf_Raise": {
+    "name": "Elevación de talones a una pierna sentado con mancuernas",
+    "aliases": []
+  },
+  "Dumbbell_Shrug": {
+    "name": "Encogimientos de hombros con mancuernas",
+    "aliases": [
+      "trapecio con mancuernas",
+      "shrugs"
+    ]
+  },
+  "Dumbbell_Side_Bend": {
+    "name": "Flexión lateral de tronco con mancuernas",
+    "aliases": []
+  },
+  "Dumbbell_Squat": {
+    "name": "Sentadilla con mancuernas",
+    "aliases": []
+  },
+  "Elbow_to_Knee": {
+    "name": "Crunch cruzado de codo a rodilla",
+    "aliases": []
+  },
+  "Finger_Curls": {
+    "name": "Flexión de dedos con barra",
+    "aliases": []
+  },
+  "Flutter_Kicks": {
+    "name": "Patadas alternas boca abajo en banco",
+    "aliases": []
+  },
+  "Frankenstein_Squat": {
+    "name": "Sentadilla frontal con brazos extendidos (Frankenstein)",
+    "aliases": []
+  },
+  "Glute_Ham_Raise": {
+    "name": "Elevación de glúteos e isquiotibiales en banco GHD",
+    "aliases": []
+  },
+  "Hamstring_Stretch": {
+    "name": "Estiramiento de isquiotibiales con correa",
+    "aliases": []
+  },
+  "Hanging_Leg_Raise": {
+    "name": "Elevación de piernas colgado en barra",
+    "aliases": [
+      "piernas en barra",
+      "hanging leg raise"
+    ]
+  },
+  "Hanging_Pike": {
+    "name": "Elevación de piernas hacia la barra",
+    "aliases": []
+  },
+  "Inchworm": {
+    "name": "Caminata de manos y pies (gusano)",
+    "aliases": []
+  },
+  "Incline_Push-Up": {
+    "name": "Flexiones de brazos con manos elevadas",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "Incline_Push-Up_Depth_Jump": {
+    "name": "Flexiones con salto entre apoyos y pies elevados",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "Intermediate_Hip_Flexor_and_Quad_Stretch": {
+    "name": "Estiramiento de flexores de cadera y cuádriceps con correa",
+    "aliases": []
+  },
+  "Inverted_Row": {
+    "name": "Remo invertido",
+    "aliases": []
+  },
+  "Inverted_Row_with_Straps": {
+    "name": "Remo invertido en suspensión",
+    "aliases": []
+  },
+  "Isometric_Wipers": {
+    "name": "Flexiones de brazos con desplazamiento lateral",
+    "aliases": []
+  },
+  "Jackknife_Sit-Up": {
+    "name": "Abdominales en V con brazos y piernas extendidos",
+    "aliases": []
+  },
+  "Janda_Sit-Up": {
+    "name": "Incorporaciones de tronco con contracción de glúteos (Janda)",
+    "aliases": []
+  },
+  "Kettlebell_Arnold_Press": {
+    "name": "Press Arnold con pesa rusa",
+    "aliases": []
+  },
+  "Kettlebell_Figure_8": {
+    "name": "Pase de pesa rusa en ocho entre las piernas",
+    "aliases": []
+  },
+  "Kettlebell_Hang_Clean": {
+    "name": "Cargada con pesa rusa desde suspensión",
+    "aliases": []
+  },
+  "Kettlebell_Pistol_Squat": {
+    "name": "Sentadilla a una pierna con pesa rusa (pistol)",
+    "aliases": []
+  },
+  "Kettlebell_Seated_Press": {
+    "name": "Press con pesa rusa sentado en el suelo",
+    "aliases": []
+  },
+  "Kettlebell_Seesaw_Press": {
+    "name": "Press alterno con pesas rusas",
+    "aliases": []
+  },
+  "Kettlebell_Sumo_High_Pull": {
+    "name": "Jalón alto en postura sumo con pesa rusa",
+    "aliases": []
+  },
+  "Kettlebell_Thruster": {
+    "name": "Sentadilla con press de pesas rusas (thruster)",
+    "aliases": []
+  },
+  "Kettlebell_Turkish_Get-Up_Squat_style": {
+    "name": "Levantamiento turco con pesa rusa, variante con sentadilla",
+    "aliases": []
+  },
+  "Kettlebell_Windmill": {
+    "name": "Molino con pesa rusa",
+    "aliases": []
+  },
+  "Leg-Up_Hamstring_Stretch": {
+    "name": "Estiramiento de isquiotibiales con pierna elevada",
+    "aliases": []
+  },
+  "Lower_Back_Curl": {
+    "name": "Flexión de espalda baja",
+    "aliases": []
+  },
+  "Medicine_Ball_Chest_Pass": {
+    "name": "Pase de pecho con balón medicinal",
+    "aliases": []
+  },
+  "Monster_Walk": {
+    "name": "Caminata lateral con banda elástica",
+    "aliases": []
+  },
+  "Muscle_Up": {
+    "name": "Dominada con transición a fondo (muscle-up)",
+    "aliases": []
+  },
+  "One_Arm_Against_Wall": {
+    "name": "Estiramiento de pecho con un brazo contra la pared",
+    "aliases": []
+  },
+  "One_Arm_Chin-Up": {
+    "name": "Dominada a un brazo con agarre supino",
+    "aliases": []
+  },
+  "Otis-Up": {
+    "name": "Incorporación de tronco con carga elevada (Otis-up)",
+    "aliases": []
+  },
+  "Pelvic_Tilt_Into_Bridge": {
+    "name": "Basculación pélvica con puente de glúteos",
+    "aliases": []
+  },
+  "Peroneals_Stretch": {
+    "name": "Estiramiento de peroneos",
+    "aliases": []
+  },
+  "Plyo_Push-up": {
+    "name": "Flexiones de brazos pliométricas",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "Posterior_Tibialis_Stretch": {
+    "name": "Estiramiento del tibial posterior",
+    "aliases": []
+  },
+  "Power_Clean": {
+    "name": "Cargada de potencia con barra",
+    "aliases": []
+  },
+  "Push_Up_to_Side_Plank": {
+    "name": "Flexión de brazos con transición a plancha lateral",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "Reverse_Crunch": {
+    "name": "Crunch inverso",
+    "aliases": [
+      "abdominal inverso"
+    ]
+  },
+  "Ring_Dips": {
+    "name": "Fondos en anillas",
+    "aliases": []
+  },
+  "Rope_Climb": {
+    "name": "Trepa de cuerda",
+    "aliases": []
+  },
+  "Russian_Twist": {
+    "name": "Giros rusos",
+    "aliases": [
+      "russian twist",
+      "rotaciones abdominales"
+    ]
+  },
+  "Scapular_Pull-Up": {
+    "name": "Dominadas escapulares",
+    "aliases": []
+  },
+  "Side-Lying_Floor_Stretch": {
+    "name": "Estiramiento de tronco acostado de lado",
+    "aliases": []
+  },
+  "Single-Arm_Push-Up": {
+    "name": "Flexiones de brazos a un brazo",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "Smith_Single-Leg_Split_Squat": {
+    "name": "Sentadilla con pies en posición dividida a una pierna en máquina Smith",
+    "aliases": []
+  },
+  "Snatch_Pull": {
+    "name": "Tirón de arranque con barra",
+    "aliases": []
+  },
+  "Spell_Caster": {
+    "name": "Giros diagonales de tronco con mancuernas",
+    "aliases": []
+  },
+  "Split_Squats": {
+    "name": "Desplantes estáticos",
+    "aliases": []
+  },
+  "Squat_Jerk": {
+    "name": "Envión con recepción en sentadilla",
+    "aliases": []
+  },
+  "Standing_Lateral_Stretch": {
+    "name": "Estiramiento lateral de pie",
+    "aliases": []
+  },
+  "Standing_Pelvic_Tilt": {
+    "name": "Basculación pélvica de pie",
+    "aliases": []
+  },
+  "Suspended_Push-Up": {
+    "name": "Flexiones de brazos en suspensión",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "Suspended_Reverse_Crunch": {
+    "name": "Crunch inverso en suspensión",
+    "aliases": []
+  },
+  "Suspended_Row": {
+    "name": "Remo en suspensión",
+    "aliases": []
+  },
+  "Suspended_Split_Squat": {
+    "name": "Desplante con pie trasero en suspensión",
+    "aliases": []
+  },
+  "Tire_Flip": {
+    "name": "Volteo de llanta",
+    "aliases": []
+  },
+  "Trap_Bar_Deadlift": {
+    "name": "Peso muerto con barra hexagonal",
+    "aliases": []
+  },
+  "Triceps_Stretch": {
+    "name": "Estiramiento de tríceps",
+    "aliases": []
+  },
+  "Tuck_Crunch": {
+    "name": "Crunch con rodillas flexionadas hacia el pecho",
+    "aliases": []
+  },
+  "flow-0002": {
+    "name": "Flexión lateral del tronco a 45°",
+    "aliases": []
+  },
+  "flow-1512": {
+    "name": "Estiramiento de cuádriceps en cuatro apoyos",
+    "aliases": []
+  },
+  "flow-0007": {
+    "name": "Jalón dorsal alterno",
+    "aliases": []
+  },
+  "flow-3293": {
+    "name": "Dominadas arquero",
+    "aliases": []
+  },
+  "flow-3294": {
+    "name": "Flexiones arquero",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-2355": {
+    "name": "Elevación de rodillas colgado con soportes para brazos",
+    "aliases": []
+  },
+  "flow-2333": {
+    "name": "Elevación de piernas extendidas colgado con soportes para brazos",
+    "aliases": []
+  },
+  "flow-3214": {
+    "name": "Toque de pie con giro y brazos abiertos",
+    "aliases": []
+  },
+  "flow-3204": {
+    "name": "Incorporaciones completas de tronco con brazos extendidos sobre la cabeza",
+    "aliases": []
+  },
+  "flow-0009": {
+    "name": "Fondos para pecho de rodillas asistido",
+    "aliases": []
+  },
+  "flow-0011": {
+    "name": "Elevación de rodillas colgado en barra con asistencia",
+    "aliases": []
+  },
+  "flow-0010": {
+    "name": "Elevación de rodillas colgado con impulso asistido hacia abajo",
+    "aliases": []
+  },
+  "flow-1708": {
+    "name": "Estiramiento de pantorrillas en tumbado asistido",
+    "aliases": []
+  },
+  "flow-1709": {
+    "name": "Estiramiento de glúteos asistido en tumbado.",
+    "aliases": []
+  },
+  "flow-1710": {
+    "name": "Estiramiento asistido de glúteos y piriformes en decúbito supino",
+    "aliases": []
+  },
+  "flow-0012": {
+    "name": "Elevación de piernas acostado con empuje lateral asistido",
+    "aliases": []
+  },
+  "flow-0013": {
+    "name": "Elevación de piernas acostado con empuje asistido hacia abajo",
+    "aliases": []
+  },
+  "flow-0014": {
+    "name": "Giros rusos con asistencia",
+    "aliases": []
+  },
+  "flow-0015": {
+    "name": "Dominadas con agarre cerrado asistido con agarres paralelos",
+    "aliases": []
+  },
+  "flow-0016": {
+    "name": "Estiramiento asistido de isquiotibiales boca abajo",
+    "aliases": []
+  },
+  "flow-1713": {
+    "name": "Estiramiento de cuádriceps en decúbito prono asistido",
+    "aliases": []
+  },
+  "flow-1714": {
+    "name": "Estiramiento asistido del recto femoral en decúbito prono",
+    "aliases": []
+  },
+  "flow-0017": {
+    "name": "Dominadas asistido",
+    "aliases": []
+  },
+  "flow-1716": {
+    "name": "Estiramiento asistido del pectoral mayor sentado con balón de estabilidad",
+    "aliases": []
+  },
+  "flow-1712": {
+    "name": "Estiramiento de aductores en decúbito lateral asistido",
+    "aliases": []
+  },
+  "flow-1758": {
+    "name": "Incorporaciones de tronco asistido",
+    "aliases": []
+  },
+  "flow-1431": {
+    "name": "Dominadas con agarre supino de pie asistido",
+    "aliases": []
+  },
+  "flow-1432": {
+    "name": "Dominadas de pie asistido",
+    "aliases": []
+  },
+  "flow-0018": {
+    "name": "Extensión de tríceps con toalla de pie asistido",
+    "aliases": []
+  },
+  "flow-0019": {
+    "name": "Fondos para tríceps de rodillas asistido",
+    "aliases": []
+  },
+  "flow-2364": {
+    "name": "Fondos para pecho con agarre amplio de rodillas asistido",
+    "aliases": []
+  },
+  "flow-3220": {
+    "name": "Saltos con apertura de piernas",
+    "aliases": []
+  },
+  "flow-3672": {
+    "name": "Paso hacia adelante y hacia atrás",
+    "aliases": []
+  },
+  "flow-1314": {
+    "name": "Extensión de espalda sobre pelota de estabilidad",
+    "aliases": []
+  },
+  "flow-3297": {
+    "name": "Plancha dorsal en suspensión (back lever)",
+    "aliases": []
+  },
+  "flow-1405": {
+    "name": "Estiramiento de pecho con brazos hacia atrás",
+    "aliases": []
+  },
+  "flow-1473": {
+    "name": "Salto hacia atrás",
+    "aliases": []
+  },
+  "flow-0968": {
+    "name": "Curl de bíceps alterno con banda elástica",
+    "aliases": []
+  },
+  "flow-0969": {
+    "name": "Abdominales en V alternos con banda elástica",
+    "aliases": []
+  },
+  "flow-0971": {
+    "name": "Extensión con rueda abdominal y asistencia de banda",
+    "aliases": []
+  },
+  "flow-1254": {
+    "name": "Press de banca con banda elástica",
+    "aliases": []
+  },
+  "flow-0980": {
+    "name": "Extensión de cadera con el tronco inclinado con banda elástica",
+    "aliases": []
+  },
+  "flow-0972": {
+    "name": "Crunch bicicleta con banda elástica",
+    "aliases": []
+  },
+  "flow-0974": {
+    "name": "Jalón dorsal con agarre cerrado con banda elástica",
+    "aliases": []
+  },
+  "flow-0975": {
+    "name": "Flexiones de brazos con agarre cerrado con banda elástica",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0976": {
+    "name": "Curl concentrado con banda elástica",
+    "aliases": []
+  },
+  "flow-3117": {
+    "name": "Jalón con banda, espalda fija y agarre cerrado",
+    "aliases": []
+  },
+  "flow-3116": {
+    "name": "Jalón con banda, espalda fija y agarre supino",
+    "aliases": []
+  },
+  "flow-0977": {
+    "name": "Elevaciones laterales frontal con banda elástica",
+    "aliases": []
+  },
+  "flow-0978": {
+    "name": "Elevaciones frontales con banda elástica",
+    "aliases": []
+  },
+  "flow-1408": {
+    "name": "Elevación de cadera con banda elástica",
+    "aliases": []
+  },
+  "flow-0979": {
+    "name": "Press Pallof horizontal con banda",
+    "aliases": []
+  },
+  "flow-0981": {
+    "name": "Abdominales en V con banda elástica",
+    "aliases": []
+  },
+  "flow-0983": {
+    "name": "Jalón dorsal a un brazo de rodillas con banda elástica",
+    "aliases": []
+  },
+  "flow-0985": {
+    "name": "Crunch abdominal de rodillas con rotación con banda elástica",
+    "aliases": []
+  },
+  "flow-0984": {
+    "name": "Rotación interna de cadera acostado con banda elástica",
+    "aliases": []
+  },
+  "flow-1002": {
+    "name": "Banda acostada elevación de pierna estirada",
+    "aliases": []
+  },
+  "flow-0986": {
+    "name": "Curl de bíceps a un brazo por encima de la cabeza con banda elástica",
+    "aliases": []
+  },
+  "flow-0987": {
+    "name": "Sentadilla con pies en posición dividida a un brazo a una pierna con banda elástica",
+    "aliases": []
+  },
+  "flow-0988": {
+    "name": "Remo bajo a un brazo de pie con banda elástica",
+    "aliases": []
+  },
+  "flow-0989": {
+    "name": "Press de pecho a un brazo con rotación con banda elástica",
+    "aliases": []
+  },
+  "flow-0990": {
+    "name": "Remo a un brazo sentado con rotación con banda elástica",
+    "aliases": []
+  },
+  "flow-0991": {
+    "name": "Extensión de cadera con banda entre las piernas (pull-through)",
+    "aliases": []
+  },
+  "flow-0992": {
+    "name": "Incorporaciones de tronco con empuje de banda",
+    "aliases": []
+  },
+  "flow-0993": {
+    "name": "Aperturas inversas con banda elástica",
+    "aliases": []
+  },
+  "flow-0994": {
+    "name": "Extensión de muñecas con banda elástica",
+    "aliases": []
+  },
+  "flow-0996": {
+    "name": "Rotación interna de cadera sentado con banda elástica",
+    "aliases": []
+  },
+  "flow-1011": {
+    "name": "Giros de tronco sentado con banda",
+    "aliases": []
+  },
+  "flow-0997": {
+    "name": "Press de hombros con banda elástica",
+    "aliases": []
+  },
+  "flow-1018": {
+    "name": "Encogimiento de hombros con banda elástica",
+    "aliases": []
+  },
+  "flow-0998": {
+    "name": "Extensión de tríceps lateral con banda",
+    "aliases": []
+  },
+  "flow-0999": {
+    "name": "Elevación de talones a una pierna con banda elástica",
+    "aliases": []
+  },
+  "flow-1000": {
+    "name": "Elevación de puntas a una pierna con banda elástica",
+    "aliases": []
+  },
+  "flow-1001": {
+    "name": "Sentadilla con pies en posición dividida a una pierna con banda elástica",
+    "aliases": []
+  },
+  "flow-1004": {
+    "name": "Sentadilla con banda elástica",
+    "aliases": []
+  },
+  "flow-1003": {
+    "name": "Sentadilla con remo y banda elástica",
+    "aliases": []
+  },
+  "flow-1005": {
+    "name": "Crunch abdominal de pie con banda elástica",
+    "aliases": []
+  },
+  "flow-1022": {
+    "name": "Remo para deltoides posteriores de pie con banda elástica",
+    "aliases": []
+  },
+  "flow-1007": {
+    "name": "Crunch abdominal de pie con rotación con banda elástica",
+    "aliases": []
+  },
+  "flow-1008": {
+    "name": "Subida al banco con banda elástica",
+    "aliases": []
+  },
+  "flow-1009": {
+    "name": "Peso muerto con piernas rígidas con banda elástica",
+    "aliases": []
+  },
+  "flow-1023": {
+    "name": "Peso muerto con banda y espalda recta y piernas rígidas",
+    "aliases": []
+  },
+  "flow-1010": {
+    "name": "Peso muerto con piernas extendidas con banda elástica",
+    "aliases": []
+  },
+  "flow-1012": {
+    "name": "Press por encima de la cabeza con rotación con banda elástica",
+    "aliases": []
+  },
+  "flow-1369": {
+    "name": "Elevación de pantorrilla con dos piernas con banda - (banda debajo de ambas piernas) v.2",
+    "aliases": []
+  },
+  "flow-1013": {
+    "name": "Jalón dorsal con agarre supino con banda elástica",
+    "aliases": []
+  },
+  "flow-1014": {
+    "name": "Abdominales en V con banda elástica",
+    "aliases": []
+  },
+  "flow-1015": {
+    "name": "Press Pallof vertical con banda",
+    "aliases": []
+  },
+  "flow-1016": {
+    "name": "Flexión de muñecas con banda elástica",
+    "aliases": []
+  },
+  "flow-1017": {
+    "name": "Elevaciones de brazos en Y con banda",
+    "aliases": []
+  },
+  "flow-0023": {
+    "name": "Curl de bíceps alterno con barra",
+    "aliases": []
+  },
+  "flow-0024": {
+    "name": "Sentadilla frontal en banco con barra",
+    "aliases": []
+  },
+  "flow-0025": {
+    "name": "Press de banca con barra",
+    "aliases": [
+      "press plano con barra",
+      "press de pecho con barra"
+    ]
+  },
+  "flow-0026": {
+    "name": "Sentadilla en banco con barra",
+    "aliases": []
+  },
+  "flow-1316": {
+    "name": "Pullover (extensión de hombros) con codos flexionados con barra",
+    "aliases": []
+  },
+  "flow-0027": {
+    "name": "Remo con el tronco inclinado con barra",
+    "aliases": []
+  },
+  "flow-2407": {
+    "name": "Curl de bíceps con soporte para brazos (arm blaster) con barra",
+    "aliases": []
+  },
+  "flow-0028": {
+    "name": "Cargada y press con barra",
+    "aliases": []
+  },
+  "flow-0029": {
+    "name": "Sentadilla frontal con agarre de cargada",
+    "aliases": []
+  },
+  "flow-0030": {
+    "name": "Press de banca con agarre cerrado con barra",
+    "aliases": []
+  },
+  "flow-0033": {
+    "name": "Press de banca en banco declinado con barra",
+    "aliases": []
+  },
+  "flow-0034": {
+    "name": "Pullover (extensión de hombros) en banco declinado con codos flexionados con barra",
+    "aliases": []
+  },
+  "flow-0035": {
+    "name": "Extensión de tríceps en banco declinado con barra y agarre cerrado",
+    "aliases": []
+  },
+  "flow-1255": {
+    "name": "Pullover (extensión de hombros) en banco declinado con barra",
+    "aliases": []
+  },
+  "flow-0036": {
+    "name": "Press declinado con barra y agarre amplio",
+    "aliases": []
+  },
+  "flow-0037": {
+    "name": "Pullover (extensión de hombros) con agarre amplio en banco declinado con barra",
+    "aliases": []
+  },
+  "flow-0038": {
+    "name": "Curl de arrastre con barra",
+    "aliases": []
+  },
+  "flow-1370": {
+    "name": "Elevación de talones en el suelo con barra",
+    "aliases": []
+  },
+  "flow-0039": {
+    "name": "Sentadilla frontal con barra apoyada en el pecho",
+    "aliases": []
+  },
+  "flow-0041": {
+    "name": "Elevaciones frontales con barra",
+    "aliases": []
+  },
+  "flow-0040": {
+    "name": "Elevación frontal y pullover con barra",
+    "aliases": []
+  },
+  "flow-0042": {
+    "name": "Sentadilla frontal con barra",
+    "aliases": []
+  },
+  "flow-1461": {
+    "name": "Sentadilla profunda con barra",
+    "aliases": []
+  },
+  "flow-1462": {
+    "name": "Sentadilla profunda con barra",
+    "aliases": []
+  },
+  "flow-1545": {
+    "name": "Sentadilla Zercher con recorrido completo con barra",
+    "aliases": []
+  },
+  "flow-3562": {
+    "name": "Puente de glúteos en banco con ambas piernas con barra",
+    "aliases": []
+  },
+  "flow-0044": {
+    "name": "Buenos días con barra",
+    "aliases": []
+  },
+  "flow-1436": {
+    "name": "Sentadilla con barra alta con barra",
+    "aliases": []
+  },
+  "flow-0047": {
+    "name": "Press de banca en banco inclinado con barra",
+    "aliases": []
+  },
+  "flow-1719": {
+    "name": "Press de banca con agarre cerrado en banco inclinado con barra",
+    "aliases": []
+  },
+  "flow-0048": {
+    "name": "Press inclinado con barra y agarre supino",
+    "aliases": []
+  },
+  "flow-0049": {
+    "name": "Remo en banco inclinado con barra",
+    "aliases": []
+  },
+  "flow-0051": {
+    "name": "Sentadilla Jefferson con barra",
+    "aliases": []
+  },
+  "flow-0052": {
+    "name": "Press JM con barra",
+    "aliases": []
+  },
+  "flow-0053": {
+    "name": "Sentadilla con salto y barra",
+    "aliases": []
+  },
+  "flow-1410": {
+    "name": "Desplante lateral con barra",
+    "aliases": []
+  },
+  "flow-1435": {
+    "name": "Sentadilla con barra baja con barra",
+    "aliases": []
+  },
+  "flow-1720": {
+    "name": "Barra recostada detrás de la cabeza extensión de tríceps",
+    "aliases": []
+  },
+  "flow-0055": {
+    "name": "Press acostado con barra y agarre cerrado",
+    "aliases": []
+  },
+  "flow-0056": {
+    "name": "Extensión de tríceps con agarre cerrado acostado con barra",
+    "aliases": []
+  },
+  "flow-0057": {
+    "name": "Extensión de tríceps acostado con barra",
+    "aliases": []
+  },
+  "flow-0058": {
+    "name": "Elevación de cadera acostado con barra",
+    "aliases": []
+  },
+  "flow-0059": {
+    "name": "Curl predicador acostado con barra",
+    "aliases": []
+  },
+  "flow-0061": {
+    "name": "Extensión de tríceps acostado con barra",
+    "aliases": []
+  },
+  "flow-0060": {
+    "name": "Press francés acostado con barra",
+    "aliases": []
+  },
+  "flow-0063": {
+    "name": "Sentadilla con postura cerrada con barra",
+    "aliases": []
+  },
+  "flow-0064": {
+    "name": "Remo a un brazo con el tronco inclinado con barra",
+    "aliases": []
+  },
+  "flow-0065": {
+    "name": "Press a un brazo con barra en el suelo",
+    "aliases": []
+  },
+  "flow-0066": {
+    "name": "Peso muerto lateral con barra a un brazo",
+    "aliases": []
+  },
+  "flow-0067": {
+    "name": "Arranque con barra a un brazo",
+    "aliases": []
+  },
+  "flow-0068": {
+    "name": "Sentadilla a una pierna con barra",
+    "aliases": []
+  },
+  "flow-0069": {
+    "name": "Sentadilla por encima de la cabeza con barra",
+    "aliases": []
+  },
+  "flow-1411": {
+    "name": "Flexión de muñecas con apoyo en banco con palmas hacia abajo con barra",
+    "aliases": []
+  },
+  "flow-1412": {
+    "name": "Flexión de muñecas con apoyo en banco con palmas hacia arriba con barra",
+    "aliases": []
+  },
+  "flow-3017": {
+    "name": "Remo Pendlay con barra",
+    "aliases": []
+  },
+  "flow-1751": {
+    "name": "Press con barra desde soportes de seguridad",
+    "aliases": []
+  },
+  "flow-0070": {
+    "name": "Curl predicador con barra",
+    "aliases": []
+  },
+  "flow-0071": {
+    "name": "Incorporación de tronco con press de barra",
+    "aliases": []
+  },
+  "flow-0072": {
+    "name": "Curl de bíceps boca abajo en banco inclinado con barra",
+    "aliases": []
+  },
+  "flow-0073": {
+    "name": "Pullover (extensión de hombros) con barra",
+    "aliases": []
+  },
+  "flow-0022": {
+    "name": "Pullover con transición a press con barra",
+    "aliases": []
+  },
+  "flow-0074": {
+    "name": "Peso muerto parcial con barra desde soportes (rack pull)",
+    "aliases": []
+  },
+  "flow-0075": {
+    "name": "Elevaciones para deltoides posteriores con barra",
+    "aliases": []
+  },
+  "flow-0078": {
+    "name": "Desplante posterior con barra",
+    "aliases": []
+  },
+  "flow-0077": {
+    "name": "Desplante posterior con barra (variante 2)",
+    "aliases": []
+  },
+  "flow-0079": {
+    "name": "Extensión de muñecas con barra (variante 2)",
+    "aliases": []
+  },
+  "flow-2187": {
+    "name": "Press de banca con agarre cerrado invertido con barra",
+    "aliases": []
+  },
+  "flow-0080": {
+    "name": "Curl de bíceps con agarre prono con barra",
+    "aliases": []
+  },
+  "flow-0118": {
+    "name": "Remo con agarre inverso con el tronco inclinado con barra",
+    "aliases": []
+  },
+  "flow-1256": {
+    "name": "Press de banca con agarre inverso en banco declinado con barra",
+    "aliases": []
+  },
+  "flow-1257": {
+    "name": "Press de banca con agarre inverso en banco inclinado con barra",
+    "aliases": []
+  },
+  "flow-1317": {
+    "name": "Remo en banco inclinado con agarre inverso con barra",
+    "aliases": []
+  },
+  "flow-1721": {
+    "name": "Press francés con barra y agarre supino",
+    "aliases": []
+  },
+  "flow-0081": {
+    "name": "Curl predicador con agarre prono con barra",
+    "aliases": []
+  },
+  "flow-0082": {
+    "name": "Extensión de muñecas con barra",
+    "aliases": []
+  },
+  "flow-0084": {
+    "name": "Extensión abdominal con barra rodante",
+    "aliases": []
+  },
+  "flow-0083": {
+    "name": "Extensión abdominal con barra rodante desde banco",
+    "aliases": []
+  },
+  "flow-0085": {
+    "name": "Peso muerto rumano con barra",
+    "aliases": []
+  },
+  "flow-0086": {
+    "name": "Press militar sentado detrás de la cabeza con barra",
+    "aliases": []
+  },
+  "flow-0087": {
+    "name": "Press Bradford sentado con barra",
+    "aliases": []
+  },
+  "flow-1371": {
+    "name": "Elevación de talones sentado con barra",
+    "aliases": []
+  },
+  "flow-1718": {
+    "name": "Extensión de tríceps con agarre cerrado sentado tras nuca con barra",
+    "aliases": []
+  },
+  "flow-0089": {
+    "name": "Curl concentrado con agarre cerrado sentado con barra",
+    "aliases": []
+  },
+  "flow-0090": {
+    "name": "Buenos días sentado con barra",
+    "aliases": []
+  },
+  "flow-0091": {
+    "name": "Press por encima de la cabeza sentado con barra",
+    "aliases": []
+  },
+  "flow-0092": {
+    "name": "Extensión de tríceps sentado por encima de la cabeza con barra",
+    "aliases": []
+  },
+  "flow-0094": {
+    "name": "Giros de tronco sentado con barra",
+    "aliases": []
+  },
+  "flow-0096": {
+    "name": "Flexión lateral de tronco con barra (variante 2)",
+    "aliases": []
+  },
+  "flow-0097": {
+    "name": "Sentadilla lateral dividida con barra v.2",
+    "aliases": []
+  },
+  "flow-1756": {
+    "name": "Peso muerto a una pierna con barra",
+    "aliases": []
+  },
+  "flow-0099": {
+    "name": "Sentadilla con pies en posición dividida a una pierna con barra",
+    "aliases": []
+  },
+  "flow-2799": {
+    "name": "Elevación de piernas alterno sentado con barra",
+    "aliases": []
+  },
+  "flow-2800": {
+    "name": "Elevación de piernas alterno sentado con barra",
+    "aliases": []
+  },
+  "flow-0100": {
+    "name": "Balanceo de barra tipo esquiador",
+    "aliases": []
+  },
+  "flow-0101": {
+    "name": "Sentadilla rápida con barra",
+    "aliases": []
+  },
+  "flow-2810": {
+    "name": "Sentadilla con pies en posición dividida con barra (variante 2)",
+    "aliases": []
+  },
+  "flow-0102": {
+    "name": "Sentadilla con apoyo de rodillas con barra",
+    "aliases": []
+  },
+  "flow-2798": {
+    "name": "Sentadilla con salto y desplante hacia atrás con barra",
+    "aliases": []
+  },
+  "flow-0103": {
+    "name": "Extensión abdominal de pie con barra rodante",
+    "aliases": []
+  },
+  "flow-0104": {
+    "name": "Curl de muñeca de pie con barra hacia atrás",
+    "aliases": []
+  },
+  "flow-0105": {
+    "name": "Press Bradford de pie con barra",
+    "aliases": []
+  },
+  "flow-1372": {
+    "name": "Elevación de talones de pie con barra",
+    "aliases": []
+  },
+  "flow-0106": {
+    "name": "Curl de bíceps con agarre cerrado de pie con barra",
+    "aliases": []
+  },
+  "flow-1456": {
+    "name": "Press militar con agarre cerrado de pie con barra",
+    "aliases": []
+  },
+  "flow-2414": {
+    "name": "Curl concentrado de pie con barra",
+    "aliases": []
+  },
+  "flow-0107": {
+    "name": "Elevación frontal con barra por encima de la cabeza",
+    "aliases": []
+  },
+  "flow-0108": {
+    "name": "Elevación de pantorrilla con barra de pie",
+    "aliases": []
+  },
+  "flow-0109": {
+    "name": "Extensión de tríceps de pie por encima de la cabeza con barra",
+    "aliases": []
+  },
+  "flow-0110": {
+    "name": "Curl de bíceps con agarre inverso de pie con barra",
+    "aliases": []
+  },
+  "flow-0111": {
+    "name": "Elevación de talones con balanceo y barra",
+    "aliases": []
+  },
+  "flow-0112": {
+    "name": "Giros de tronco de pie con barra",
+    "aliases": []
+  },
+  "flow-1629": {
+    "name": "Curl de bíceps con agarre amplio de pie con barra",
+    "aliases": []
+  },
+  "flow-1457": {
+    "name": "Press militar de pie con postura amplia con barra",
+    "aliases": []
+  },
+  "flow-0113": {
+    "name": "Curl de bíceps con agarre amplio de pie con barra",
+    "aliases": []
+  },
+  "flow-0114": {
+    "name": "Subida al banco con barra",
+    "aliases": []
+  },
+  "flow-0115": {
+    "name": "Pierna rígida con barra buenos días",
+    "aliases": []
+  },
+  "flow-0116": {
+    "name": "Peso muerto con piernas extendidas con barra",
+    "aliases": []
+  },
+  "flow-0117": {
+    "name": "Peso muerto sumo con barra",
+    "aliases": []
+  },
+  "flow-3305": {
+    "name": "Sentadilla con press de barra (thruster)",
+    "aliases": []
+  },
+  "flow-0120": {
+    "name": "Remo al mentón con barra",
+    "aliases": []
+  },
+  "flow-0119": {
+    "name": "Remo al mentón con barra (variante 2)",
+    "aliases": []
+  },
+  "flow-0121": {
+    "name": "Remo al mentón con barra (variante 3)",
+    "aliases": []
+  },
+  "flow-0122": {
+    "name": "Press de banca con postura amplia con barra",
+    "aliases": []
+  },
+  "flow-1258": {
+    "name": "Press de banca con agarre inverso con postura amplia con barra",
+    "aliases": []
+  },
+  "flow-0124": {
+    "name": "Sentadilla con postura amplia con barra",
+    "aliases": []
+  },
+  "flow-0123": {
+    "name": "Remo al mentón con agarre amplio con barra",
+    "aliases": []
+  },
+  "flow-0126": {
+    "name": "Flexión de muñecas con barra",
+    "aliases": []
+  },
+  "flow-0125": {
+    "name": "Flexión de muñecas con barra (variante 2)",
+    "aliases": []
+  },
+  "flow-0127": {
+    "name": "Sentadilla Zercher con barra",
+    "aliases": []
+  },
+  "flow-3212": {
+    "name": "Flexión de tronco para tocar los pies",
+    "aliases": []
+  },
+  "flow-3360": {
+    "name": "Caminata de oso",
+    "aliases": []
+  },
+  "flow-0129": {
+    "name": "Fondos en banco (rodillas dobladas)",
+    "aliases": []
+  },
+  "flow-1399": {
+    "name": "Fondos en banco en el suelo",
+    "aliases": []
+  },
+  "flow-0130": {
+    "name": "Extensión de cadera en banco",
+    "aliases": []
+  },
+  "flow-3019": {
+    "name": "Dominadas en banco",
+    "aliases": []
+  },
+  "flow-3639": {
+    "name": "Giros acostado con rodillas flexionadas",
+    "aliases": []
+  },
+  "flow-1770": {
+    "name": "Curl de concentración de piernas con bíceps",
+    "aliases": []
+  },
+  "flow-0139": {
+    "name": "Dominadas estrechas de bíceps",
+    "aliases": []
+  },
+  "flow-0140": {
+    "name": "Dominadas para bíceps",
+    "aliases": []
+  },
+  "flow-3543": {
+    "name": "Sentadilla con salto y caída con peso corporal",
+    "aliases": []
+  },
+  "flow-3544": {
+    "name": "Plancha lateral inclinada con peso corporal",
+    "aliases": []
+  },
+  "flow-1771": {
+    "name": "Extensión de tríceps de rodillas con peso corporal",
+    "aliases": []
+  },
+  "flow-1769": {
+    "name": "Curl de bíceps acostado de lado con peso corporal",
+    "aliases": []
+  },
+  "flow-3168": {
+    "name": "Remo en cuclillas con peso corporal",
+    "aliases": []
+  },
+  "flow-3167": {
+    "name": "Remo en cuclillas con peso corporal (con toalla)",
+    "aliases": []
+  },
+  "flow-1373": {
+    "name": "Elevación de talones de pie con peso corporal",
+    "aliases": []
+  },
+  "flow-3156": {
+    "name": "Remo con agarre cerrado a un brazo de pie con peso corporal",
+    "aliases": []
+  },
+  "flow-3158": {
+    "name": "Remo con agarre cerrado de pie con peso corporal",
+    "aliases": []
+  },
+  "flow-3162": {
+    "name": "Remo a un brazo de pie con peso corporal",
+    "aliases": []
+  },
+  "flow-3161": {
+    "name": "Remo con toalla a un brazo de pie con peso corporal",
+    "aliases": []
+  },
+  "flow-3166": {
+    "name": "Remo de pie con peso corporal",
+    "aliases": []
+  },
+  "flow-3165": {
+    "name": "Remo con toalla de pie con peso corporal",
+    "aliases": []
+  },
+  "flow-1374": {
+    "name": "Salto de caja hacia abajo con estabilización de una pierna",
+    "aliases": []
+  },
+  "flow-2466": {
+    "name": "Puente - alpinista (cuerpo cruzado)",
+    "aliases": []
+  },
+  "flow-1160": {
+    "name": "Burpee",
+    "aliases": []
+  },
+  "flow-1494": {
+    "name": "Postura de yoga de mariposa",
+    "aliases": []
+  },
+  "flow-0148": {
+    "name": "Press de hombros alterno en polea",
+    "aliases": []
+  },
+  "flow-0149": {
+    "name": "Extensión de tríceps alterno en polea",
+    "aliases": []
+  },
+  "flow-3235": {
+    "name": "Curl de piernas inverso asistido por cable",
+    "aliases": []
+  },
+  "flow-0150": {
+    "name": "Jalón lateral con barra de cable",
+    "aliases": []
+  },
+  "flow-0151": {
+    "name": "Press de banca en polea",
+    "aliases": []
+  },
+  "flow-1630": {
+    "name": "Curl de bíceps con agarre cerrado en polea",
+    "aliases": []
+  },
+  "flow-1631": {
+    "name": "Curl concentrado en polea",
+    "aliases": []
+  },
+  "flow-0152": {
+    "name": "Extensión de concentración de cable (en la rodilla)",
+    "aliases": []
+  },
+  "flow-0153": {
+    "name": "Jalón dorsal cruzado en poleas",
+    "aliases": []
+  },
+  "flow-0154": {
+    "name": "Cable cruzado invertido volar",
+    "aliases": []
+  },
+  "flow-0155": {
+    "name": "Variación de cruce de cable",
+    "aliases": []
+  },
+  "flow-0868": {
+    "name": "Curl de bíceps en polea",
+    "aliases": []
+  },
+  "flow-0157": {
+    "name": "Peso muerto en polea",
+    "aliases": []
+  },
+  "flow-0158": {
+    "name": "Aperturas en banco declinado en polea",
+    "aliases": []
+  },
+  "flow-1260": {
+    "name": "Press con cable declinado con un brazo",
+    "aliases": []
+  },
+  "flow-1261": {
+    "name": "Prensa de descenso de cable",
+    "aliases": []
+  },
+  "flow-0159": {
+    "name": "Remo con agarre amplio sentado en banco declinado en polea",
+    "aliases": []
+  },
+  "flow-1632": {
+    "name": "Curl de arrastre en polea",
+    "aliases": []
+  },
+  "flow-0160": {
+    "name": "Remo en el suelo con agarre amplio sentado en polea",
+    "aliases": []
+  },
+  "flow-0161": {
+    "name": "Elevaciones frontales en polea",
+    "aliases": []
+  },
+  "flow-0162": {
+    "name": "Elevaciones frontales en polea",
+    "aliases": []
+  },
+  "flow-0164": {
+    "name": "Elevaciones frontales en polea",
+    "aliases": []
+  },
+  "flow-0165": {
+    "name": "Curl martillo con cuerda en polea",
+    "aliases": []
+  },
+  "flow-1722": {
+    "name": "Extensión de tríceps aérea en polea alta con cable",
+    "aliases": []
+  },
+  "flow-0167": {
+    "name": "Remo alto de rodillas en polea",
+    "aliases": []
+  },
+  "flow-0169": {
+    "name": "Press de banca en banco inclinado en polea",
+    "aliases": []
+  },
+  "flow-1318": {
+    "name": "Remo en banco inclinado en polea",
+    "aliases": []
+  },
+  "flow-0171": {
+    "name": "Aperturas en banco inclinado en polea",
+    "aliases": []
+  },
+  "flow-0170": {
+    "name": "Aperturas sobre pelota de estabilidad en banco inclinado en polea",
+    "aliases": []
+  },
+  "flow-0860": {
+    "name": "Patada de tríceps en polea",
+    "aliases": []
+  },
+  "flow-0175": {
+    "name": "Crunch abdominal de rodillas en polea",
+    "aliases": []
+  },
+  "flow-3697": {
+    "name": "Remo para deltoides posteriores con cuerda de rodillas en polea",
+    "aliases": []
+  },
+  "flow-0176": {
+    "name": "Extensión de tríceps de rodillas en polea",
+    "aliases": []
+  },
+  "flow-2330": {
+    "name": "Jalón dorsal en polea con recorrido completo",
+    "aliases": []
+  },
+  "flow-0177": {
+    "name": "Jalón dorsal con cuerda en polea",
+    "aliases": []
+  },
+  "flow-2616": {
+    "name": "Jalón lateral con cable con barra en V.",
+    "aliases": []
+  },
+  "flow-0178": {
+    "name": "Elevaciones laterales en polea",
+    "aliases": []
+  },
+  "flow-0179": {
+    "name": "Cable de vuelo bajo",
+    "aliases": []
+  },
+  "flow-0180": {
+    "name": "Fila baja sentada con cable",
+    "aliases": []
+  },
+  "flow-1634": {
+    "name": "Curl de bíceps acostado en polea",
+    "aliases": []
+  },
+  "flow-0182": {
+    "name": "Curl de bíceps con agarre cerrado acostado en polea",
+    "aliases": []
+  },
+  "flow-0184": {
+    "name": "Pullover extensible con cable (con fijación de cuerda)",
+    "aliases": []
+  },
+  "flow-0185": {
+    "name": "Aperturas acostado en polea",
+    "aliases": []
+  },
+  "flow-0186": {
+    "name": "Extensión de tríceps acostado en polea (variante 2)",
+    "aliases": []
+  },
+  "flow-0188": {
+    "name": "Mosca media del cable",
+    "aliases": []
+  },
+  "flow-0189": {
+    "name": "Remo a un brazo con el tronco inclinado en polea",
+    "aliases": []
+  },
+  "flow-0190": {
+    "name": "Curl de bíceps a un brazo en polea",
+    "aliases": []
+  },
+  "flow-1262": {
+    "name": "Aperturas de pecho a un brazo en banco declinado en polea",
+    "aliases": []
+  },
+  "flow-1263": {
+    "name": "Aperturas sobre pelota de estabilidad a un brazo en polea",
+    "aliases": []
+  },
+  "flow-1264": {
+    "name": "Aperturas sobre pelota de estabilidad a un brazo en banco inclinado en polea",
+    "aliases": []
+  },
+  "flow-1265": {
+    "name": "Press inclinado con cable a un brazo",
+    "aliases": []
+  },
+  "flow-1266": {
+    "name": "Cable con un brazo inclinado press sobre pelota de ejercicio",
+    "aliases": []
+  },
+  "flow-0191": {
+    "name": "Cable un brazo lateral inclinado",
+    "aliases": []
+  },
+  "flow-0192": {
+    "name": "Elevaciones laterales a un brazo en polea",
+    "aliases": []
+  },
+  "flow-1633": {
+    "name": "Curl predicador a un brazo en polea",
+    "aliases": []
+  },
+  "flow-1267": {
+    "name": "Cable de prensa con un brazo sobre la pelota de ejercicio.",
+    "aliases": []
+  },
+  "flow-3563": {
+    "name": "Jalón dorsal a un brazo en polea",
+    "aliases": []
+  },
+  "flow-1635": {
+    "name": "Curl predicador con agarre prono a un brazo en polea",
+    "aliases": []
+  },
+  "flow-0193": {
+    "name": "Cable un brazo hacia atrás hacia atrás fila alta (de rodillas)",
+    "aliases": []
+  },
+  "flow-1723": {
+    "name": "Extensión de tríceps en polea alta a un brazo en polea",
+    "aliases": []
+  },
+  "flow-1636": {
+    "name": "Curl de bíceps por encima de la cabeza en polea",
+    "aliases": []
+  },
+  "flow-1637": {
+    "name": "Curl de bíceps sobre pelota de estabilidad por encima de la cabeza en polea",
+    "aliases": []
+  },
+  "flow-0194": {
+    "name": "Extensión de tríceps por encima de la cabeza con cable (fijación de cuerda)",
+    "aliases": []
+  },
+  "flow-1319": {
+    "name": "Fila rotacional de la palma del cable",
+    "aliases": []
+  },
+  "flow-1268": {
+    "name": "Prensa de cable en pelota de ejercicio",
+    "aliases": []
+  },
+  "flow-0196": {
+    "name": "Pasacables (con cuerda)",
+    "aliases": []
+  },
+  "flow-0198": {
+    "name": "Jalón dorsal en polea",
+    "aliases": []
+  },
+  "flow-0197": {
+    "name": "Jalón dorsal en polea con barra Pro Lat",
+    "aliases": []
+  },
+  "flow-1638": {
+    "name": "Curl de bíceps con polea",
+    "aliases": []
+  },
+  "flow-0201": {
+    "name": "Empuje del cable",
+    "aliases": []
+  },
+  "flow-0199": {
+    "name": "Empuje de cable (brazo recto) v. 2",
+    "aliases": []
+  },
+  "flow-0200": {
+    "name": "Empuje de cable (con accesorio de cuerda)",
+    "aliases": []
+  },
+  "flow-0202": {
+    "name": "Remo delt trasero con cable (estribos)",
+    "aliases": []
+  },
+  "flow-0203": {
+    "name": "Remo para deltoides posteriores con cuerda en polea",
+    "aliases": []
+  },
+  "flow-0204": {
+    "name": "Cable de tracción trasera",
+    "aliases": []
+  },
+  "flow-0205": {
+    "name": "Jalón dorsal posterior en polea",
+    "aliases": []
+  },
+  "flow-0206": {
+    "name": "Curl de bíceps con agarre prono en polea",
+    "aliases": []
+  },
+  "flow-2406": {
+    "name": "Empuje de tríceps con agarre inverso con cable (barra sz) (con brazo blaster)",
+    "aliases": []
+  },
+  "flow-1413": {
+    "name": "Curl con un brazo invertido con cable",
+    "aliases": []
+  },
+  "flow-0209": {
+    "name": "Curl predicador con agarre prono en polea",
+    "aliases": []
+  },
+  "flow-0210": {
+    "name": "Extensión de muñecas en polea",
+    "aliases": []
+  },
+  "flow-0207": {
+    "name": "Empuje con agarre inverso del cable",
+    "aliases": []
+  },
+  "flow-0208": {
+    "name": "Cable con agarre inverso respaldo recto sentado fila alta",
+    "aliases": []
+  },
+  "flow-1320": {
+    "name": "Cable cuerda cruzado fila sentada",
+    "aliases": []
+  },
+  "flow-1321": {
+    "name": "Cable cuerda elevado fila sentada",
+    "aliases": []
+  },
+  "flow-1322": {
+    "name": "Cable cuerda extensión banco inclinado fila",
+    "aliases": []
+  },
+  "flow-1639": {
+    "name": "Cable cuerda martillo predicador curl",
+    "aliases": []
+  },
+  "flow-1724": {
+    "name": "Cable cuerda polea alta extensión de tríceps aérea",
+    "aliases": []
+  },
+  "flow-1725": {
+    "name": "Cable cuerda inclinación extensión de tríceps",
+    "aliases": []
+  },
+  "flow-1726": {
+    "name": "Cable cuerda tirada en el suelo extensión de tríceps",
+    "aliases": []
+  },
+  "flow-1640": {
+    "name": "Cable cuerda un brazo martillo predicador curl",
+    "aliases": []
+  },
+  "flow-1323": {
+    "name": "Cable cuerda fila sentada",
+    "aliases": []
+  },
+  "flow-0211": {
+    "name": "Giros rusos del cable (en pelota de estabilidad)",
+    "aliases": []
+  },
+  "flow-2144": {
+    "name": "Press de pecho sentado en polea",
+    "aliases": []
+  },
+  "flow-1641": {
+    "name": "Curl de bíceps sentado en polea",
+    "aliases": []
+  },
+  "flow-0213": {
+    "name": "Fila alta con asiento de cable (barra en v)",
+    "aliases": []
+  },
+  "flow-0214": {
+    "name": "Remo a un brazo alterno sentado en polea",
+    "aliases": []
+  },
+  "flow-1642": {
+    "name": "Curl concentrado a un brazo sentado en polea",
+    "aliases": []
+  },
+  "flow-1643": {
+    "name": "Curl de bíceps sentado por encima de la cabeza en polea",
+    "aliases": []
+  },
+  "flow-0215": {
+    "name": "Elevaciones para deltoides posteriores sentado en polea",
+    "aliases": []
+  },
+  "flow-0861": {
+    "name": "Remo sentado en polea",
+    "aliases": []
+  },
+  "flow-0216": {
+    "name": "Rotación interna del hombro sentado con cable",
+    "aliases": []
+  },
+  "flow-2399": {
+    "name": "Giro asentado del cable",
+    "aliases": []
+  },
+  "flow-0218": {
+    "name": "Remo con agarre amplio sentado en polea",
+    "aliases": []
+  },
+  "flow-0220": {
+    "name": "Encogimiento de hombros en polea",
+    "aliases": []
+  },
+  "flow-0222": {
+    "name": "Flexión lateral de tronco en polea",
+    "aliases": []
+  },
+  "flow-0221": {
+    "name": "Crunch con flexión lateral del cable (bola bosu)",
+    "aliases": []
+  },
+  "flow-0223": {
+    "name": "Crunch lateral en polea",
+    "aliases": []
+  },
+  "flow-1717": {
+    "name": "Remo en cuclillas con cable (con accesorio de cuerda)",
+    "aliases": []
+  },
+  "flow-1644": {
+    "name": "Curl en cuclillas con cable",
+    "aliases": []
+  },
+  "flow-0224": {
+    "name": "Curl de muñeca con cable de pie hacia atrás",
+    "aliases": []
+  },
+  "flow-1375": {
+    "name": "Elevación de talones de pie en polea",
+    "aliases": []
+  },
+  "flow-0225": {
+    "name": "Cable de pie cruzado mosca alta inversa",
+    "aliases": []
+  },
+  "flow-0226": {
+    "name": "Crunch abdominal de pie en polea",
+    "aliases": []
+  },
+  "flow-0874": {
+    "name": "Crunch abdominal con cuerda de pie en polea",
+    "aliases": []
+  },
+  "flow-0227": {
+    "name": "Aperturas de pie en polea",
+    "aliases": []
+  },
+  "flow-0228": {
+    "name": "Extensión de cadera de pie en polea",
+    "aliases": []
+  },
+  "flow-0229": {
+    "name": "Curl de bíceps de pie con énfasis interno en polea",
+    "aliases": []
+  },
+  "flow-0230": {
+    "name": "Elevador de cable",
+    "aliases": []
+  },
+  "flow-0231": {
+    "name": "Extensión de tríceps a un brazo de pie en polea",
+    "aliases": []
+  },
+  "flow-1376": {
+    "name": "Elevación de talones a una pierna de pie en polea",
+    "aliases": []
+  },
+  "flow-0232": {
+    "name": "Jalón dorsal con cuerda de pie en polea",
+    "aliases": []
+  },
+  "flow-0233": {
+    "name": "Remo para deltoides posteriores con cuerda de pie en polea",
+    "aliases": []
+  },
+  "flow-1727": {
+    "name": "Extensión de tríceps con agarre inverso a un brazo de pie por encima de la cabeza en polea",
+    "aliases": []
+  },
+  "flow-0234": {
+    "name": "Fila de pie con cable (barra en v)",
+    "aliases": []
+  },
+  "flow-0235": {
+    "name": "Rotación externa de hombro de pie en polea",
+    "aliases": []
+  },
+  "flow-0236": {
+    "name": "Fila de torsión de pie de cable (barra en v)",
+    "aliases": []
+  },
+  "flow-1269": {
+    "name": "Cable de pie cruces rectos",
+    "aliases": []
+  },
+  "flow-0238": {
+    "name": "Jalón dorsal con brazos extendidos en polea",
+    "aliases": []
+  },
+  "flow-0237": {
+    "name": "Jalón dorsal con cuerda con brazos extendidos en polea",
+    "aliases": []
+  },
+  "flow-0239": {
+    "name": "Fila sentada con respaldo recto",
+    "aliases": []
+  },
+  "flow-0240": {
+    "name": "Aperturas inversas boca arriba en polea",
+    "aliases": []
+  },
+  "flow-2464": {
+    "name": "Cable thibaudeau kayak fila",
+    "aliases": []
+  },
+  "flow-0241": {
+    "name": "Flexión de tríceps con cable (barra en V)",
+    "aliases": []
+  },
+  "flow-2405": {
+    "name": "Flexión de tríceps con cable (barra en V) (con brazo blaster)",
+    "aliases": []
+  },
+  "flow-0242": {
+    "name": "Abdominales invertidos con cable",
+    "aliases": []
+  },
+  "flow-0243": {
+    "name": "Giro del cable",
+    "aliases": []
+  },
+  "flow-0862": {
+    "name": "Torsión del cable (arriba-abajo)",
+    "aliases": []
+  },
+  "flow-0244": {
+    "name": "Tirón de torsión del cable",
+    "aliases": []
+  },
+  "flow-1645": {
+    "name": "Curl con dos brazos con cable en banco inclinado",
+    "aliases": []
+  },
+  "flow-1728": {
+    "name": "Cable de retroceso de tríceps de dos brazos",
+    "aliases": []
+  },
+  "flow-0245": {
+    "name": "Jalón dorsal con agarre supino en polea",
+    "aliases": []
+  },
+  "flow-1270": {
+    "name": "Cruces de cable en la parte superior del pecho",
+    "aliases": []
+  },
+  "flow-1324": {
+    "name": "Fila superior de cables",
+    "aliases": []
+  },
+  "flow-0246": {
+    "name": "Remo al mentón en polea",
+    "aliases": []
+  },
+  "flow-1325": {
+    "name": "Jalón dorsal con agarre amplio tras nuca posterior en polea",
+    "aliases": []
+  },
+  "flow-1407": {
+    "name": "Estiramiento de empuje de pantorrilla con las manos contra la pared.",
+    "aliases": []
+  },
+  "flow-1377": {
+    "name": "Estiramiento de pantorrillas con las manos contra la pared.",
+    "aliases": []
+  },
+  "flow-1378": {
+    "name": "Estiramiento de pantorrilla con cuerda",
+    "aliases": []
+  },
+  "flow-0248": {
+    "name": "Fila acostada con barra curvada",
+    "aliases": []
+  },
+  "flow-2963": {
+    "name": "Silla de capitán elevación de pierna recta",
+    "aliases": []
+  },
+  "flow-0251": {
+    "name": "Fondos para pecho",
+    "aliases": []
+  },
+  "flow-1430": {
+    "name": "Inmersión en el pecho (en jaula de inmersión y dominadas)",
+    "aliases": []
+  },
+  "flow-2462": {
+    "name": "Fondos de pecho en barra recta",
+    "aliases": []
+  },
+  "flow-1272": {
+    "name": "Estiramiento de pecho con pelota de ejercicios",
+    "aliases": []
+  },
+  "flow-3216": {
+    "name": "Flexión de pecho",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0253": {
+    "name": "Dominadas (agarre paralelo estrecho)",
+    "aliases": []
+  },
+  "flow-0257": {
+    "name": "Estiramiento de rodillas en círculos",
+    "aliases": []
+  },
+  "flow-1273": {
+    "name": "Aplaudir, empujar hacia arriba",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-1327": {
+    "name": "Dominadas con agarre supino con agarre cerrado",
+    "aliases": []
+  },
+  "flow-0259": {
+    "name": "Flexiones de brazos con agarre cerrado",
+    "aliases": [
+      "lagartijas cerradas",
+      "lagartijas"
+    ]
+  },
+  "flow-2398": {
+    "name": "Flexiones de brazos con agarre cerrado con apoyo de rodillas",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-1468": {
+    "name": "Toque del dedo del pie con giro de cangrejo",
+    "aliases": []
+  },
+  "flow-0271": {
+    "name": "Crunch abdominal sobre pelota de estabilidad",
+    "aliases": []
+  },
+  "flow-0272": {
+    "name": "Abdominales (sobre una pelota de estabilidad, brazos estirados)",
+    "aliases": []
+  },
+  "flow-0274": {
+    "name": "Crunch abdominal en el suelo",
+    "aliases": []
+  },
+  "flow-3016": {
+    "name": "Acurrucarse",
+    "aliases": []
+  },
+  "flow-3769": {
+    "name": "Sentadilla de reverencia",
+    "aliases": []
+  },
+  "flow-2331": {
+    "name": "Bicicleta elíptica",
+    "aliases": []
+  },
+  "flow-0282": {
+    "name": "Incorporaciones de tronco en banco declinado",
+    "aliases": []
+  },
+  "flow-1274": {
+    "name": "Flexión profunda",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0283": {
+    "name": "Flexiones diamante",
+    "aliases": [
+      "lagartijas diamante",
+      "lagartijas"
+    ]
+  },
+  "flow-0284": {
+    "name": "Cría de cría de burro",
+    "aliases": []
+  },
+  "flow-1275": {
+    "name": "Soltar empujar hacia arriba",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0285": {
+    "name": "Curl de bíceps alterno con mancuernas",
+    "aliases": []
+  },
+  "flow-2403": {
+    "name": "Curl de bíceps con soporte para brazos (arm blaster) alterno con mancuernas",
+    "aliases": []
+  },
+  "flow-1646": {
+    "name": "Curl predicador con agarre martillo alterno con mancuernas",
+    "aliases": []
+  },
+  "flow-1647": {
+    "name": "Curl predicador alterno con mancuernas",
+    "aliases": []
+  },
+  "flow-1648": {
+    "name": "Curl martillo alterno sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-0286": {
+    "name": "Press lateral alterno con mancuernas",
+    "aliases": []
+  },
+  "flow-1649": {
+    "name": "Curl de bíceps alterno con mancuernas y pierna levantada sobre una pelota de ejercicio",
+    "aliases": []
+  },
+  "flow-1650": {
+    "name": "Curl de bíceps sobre pelota de estabilidad alterno sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-2137": {
+    "name": "Prensa Arnold con mancuernas",
+    "aliases": []
+  },
+  "flow-0287": {
+    "name": "Press Arnold con mancuernas v.2",
+    "aliases": []
+  },
+  "flow-0288": {
+    "name": "Mancuerna alrededor del pullover",
+    "aliases": []
+  },
+  "flow-0290": {
+    "name": "Press de banca sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-0291": {
+    "name": "Sentadilla en banco con mancuernas",
+    "aliases": []
+  },
+  "flow-0293": {
+    "name": "Remo con el tronco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-1651": {
+    "name": "Desplante con curl de bíceps y mancuernas con movimiento de bolos",
+    "aliases": []
+  },
+  "flow-1652": {
+    "name": "Curl de bíceps con mancuernas sobre una pelota de ejercicio con la pierna levantada",
+    "aliases": []
+  },
+  "flow-1653": {
+    "name": "Curl de bíceps con mancuernas y postura de cigüeña",
+    "aliases": []
+  },
+  "flow-0294": {
+    "name": "Curl de bíceps con mancuernas",
+    "aliases": [
+      "flexión de bíceps con mancuernas"
+    ]
+  },
+  "flow-2401": {
+    "name": "Curl de bíceps con soporte para brazos (arm blaster) con mancuernas",
+    "aliases": []
+  },
+  "flow-1654": {
+    "name": "Curl de bíceps con mancuernas hacia atrás",
+    "aliases": []
+  },
+  "flow-1655": {
+    "name": "Sentadilla con curl de bíceps y mancuernas",
+    "aliases": []
+  },
+  "flow-1656": {
+    "name": "Curl de bíceps con mancuernas v sentarse en una pelota bosu",
+    "aliases": []
+  },
+  "flow-1201": {
+    "name": "Burpee con mancuernas",
+    "aliases": []
+  },
+  "flow-1731": {
+    "name": "Press con agarre cerrado con mancuernas",
+    "aliases": []
+  },
+  "flow-0296": {
+    "name": "Press con agarre cerrado con mancuernas",
+    "aliases": []
+  },
+  "flow-0297": {
+    "name": "Curl concentrado con mancuernas",
+    "aliases": []
+  },
+  "flow-3635": {
+    "name": "Desplante hacia adelante contralateral con mancuernas",
+    "aliases": []
+  },
+  "flow-0298": {
+    "name": "Curl de martillo con cuerpo cruzado y mancuernas",
+    "aliases": []
+  },
+  "flow-1657": {
+    "name": "Curl martillo con cuerpo cruzado y mancuernas v.2",
+    "aliases": []
+  },
+  "flow-0299": {
+    "name": "Press cubano con mancuernas",
+    "aliases": []
+  },
+  "flow-2136": {
+    "name": "Press cubano con mancuernas v.2",
+    "aliases": []
+  },
+  "flow-0300": {
+    "name": "Peso muerto con mancuernas",
+    "aliases": []
+  },
+  "flow-0301": {
+    "name": "Press de banca en banco declinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0302": {
+    "name": "Aperturas en banco declinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0303": {
+    "name": "Press de pecho con agarre neutro en banco declinado con mancuernas",
+    "aliases": []
+  },
+  "flow-1276": {
+    "name": "Aperturas a un brazo en banco declinado con mancuernas",
+    "aliases": []
+  },
+  "flow-1617": {
+    "name": "Press de pecho con agarre neutro a un brazo en banco declinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0305": {
+    "name": "Encogimiento de hombros en banco declinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0304": {
+    "name": "Encogimiento de hombros en banco declinado con mancuernas (variante 2)",
+    "aliases": []
+  },
+  "flow-0306": {
+    "name": "Extensión de tríceps en banco declinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0307": {
+    "name": "Aperturas con giro en banco declinado con mancuernas",
+    "aliases": []
+  },
+  "flow-1437": {
+    "name": "Flexiones de dedos con mancuernas",
+    "aliases": []
+  },
+  "flow-0308": {
+    "name": "Aperturas con mancuernas",
+    "aliases": []
+  },
+  "flow-1277": {
+    "name": "Aperturas sobre pelota de estabilidad con mancuernas",
+    "aliases": []
+  },
+  "flow-1732": {
+    "name": "Extensión de tríceps con desplante hacia adelante con mancuernas",
+    "aliases": []
+  },
+  "flow-0310": {
+    "name": "Elevaciones frontales con mancuernas",
+    "aliases": []
+  },
+  "flow-0309": {
+    "name": "Elevaciones frontales con mancuernas (variante 2)",
+    "aliases": []
+  },
+  "flow-0311": {
+    "name": "Elevación lateral con lata completa con mancuernas",
+    "aliases": []
+  },
+  "flow-1760": {
+    "name": "Sentadilla goblet con mancuernas",
+    "aliases": []
+  },
+  "flow-0313": {
+    "name": "Curl martillo con mancuernas",
+    "aliases": []
+  },
+  "flow-1659": {
+    "name": "Curl martillo sobre pelota de estabilidad con mancuernas",
+    "aliases": []
+  },
+  "flow-0312": {
+    "name": "Curl martillo con mancuernas (variante 2)",
+    "aliases": []
+  },
+  "flow-2402": {
+    "name": "Curl martillo con soporte para brazos (arm blaster) con mancuernas",
+    "aliases": []
+  },
+  "flow-1664": {
+    "name": "Curl alto con mancuernas",
+    "aliases": []
+  },
+  "flow-3545": {
+    "name": "Press alternativo inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0314": {
+    "name": "Press de banca en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0315": {
+    "name": "Curl de bíceps con mancuernas en banco inclinado",
+    "aliases": [
+      "curl inclinado con mancuernas"
+    ]
+  },
+  "flow-0316": {
+    "name": "Cría inclinada con mancuernas",
+    "aliases": []
+  },
+  "flow-0318": {
+    "name": "Curl de bíceps en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0317": {
+    "name": "Curl de bíceps en banco inclinado con mancuernas (variante 2)",
+    "aliases": []
+  },
+  "flow-0319": {
+    "name": "Aperturas en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-1278": {
+    "name": "Aperturas sobre pelota de estabilidad en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0320": {
+    "name": "Curl martillo en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0321": {
+    "name": "Press de pecho con agarre neutro en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-1618": {
+    "name": "Press de pecho con agarre neutro sobre pelota de estabilidad en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0322": {
+    "name": "Curl de bíceps en banco inclinado con énfasis interno con mancuernas",
+    "aliases": []
+  },
+  "flow-1279": {
+    "name": "Aperturas a un brazo en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-1280": {
+    "name": "Aperturas sobre pelota de estabilidad a un brazo en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-1619": {
+    "name": "Press de pecho con agarre neutro a un brazo en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-1620": {
+    "name": "Press de pecho con agarre neutro sobre pelota de estabilidad a un brazo en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0323": {
+    "name": "Elevaciones laterales a un brazo en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-1281": {
+    "name": "Press inclinado con un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-1282": {
+    "name": "Mancuerna inclinada con un brazo presiona sobre una pelota de ejercicio",
+    "aliases": []
+  },
+  "flow-0324": {
+    "name": "Press con agarre neutro en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-1283": {
+    "name": "Press inclinado con mancuernas sobre pelota de ejercicio.",
+    "aliases": []
+  },
+  "flow-0325": {
+    "name": "Elevación inclinada con mancuernas",
+    "aliases": []
+  },
+  "flow-0326": {
+    "name": "Elevaciones para deltoides posteriores en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0329": {
+    "name": "Encogimiento de hombros en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-3542": {
+    "name": "Elevación en T inclinada con mancuernas",
+    "aliases": []
+  },
+  "flow-0330": {
+    "name": "Extensión de tríceps en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0331": {
+    "name": "Aperturas con giro en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-1733": {
+    "name": "Extensión de dos brazos inclinada con mancuernas",
+    "aliases": []
+  },
+  "flow-3541": {
+    "name": "Inclinación con mancuernas y elevación",
+    "aliases": []
+  },
+  "flow-0332": {
+    "name": "Cruz de hierro con mancuernas",
+    "aliases": []
+  },
+  "flow-0333": {
+    "name": "Patada de tríceps con mancuernas",
+    "aliases": []
+  },
+  "flow-1734": {
+    "name": "Patada de tríceps sobre pelota de estabilidad con mancuernas",
+    "aliases": []
+  },
+  "flow-1660": {
+    "name": "Curl de bíceps sobre pelota de estabilidad de rodillas con mancuernas",
+    "aliases": []
+  },
+  "flow-0334": {
+    "name": "Elevaciones laterales con mancuernas",
+    "aliases": [
+      "vuelos laterales con mancuernas"
+    ]
+  },
+  "flow-0335": {
+    "name": "Elevación lateral con mancuernas hacia adelante",
+    "aliases": []
+  },
+  "flow-0336": {
+    "name": "Desplante con mancuernas",
+    "aliases": []
+  },
+  "flow-1658": {
+    "name": "Desplante con mancuernas y curl de bíceps",
+    "aliases": []
+  },
+  "flow-0337": {
+    "name": "Extensión acostada con mancuernas (a través de la cara)",
+    "aliases": []
+  },
+  "flow-1729": {
+    "name": "Extensión alterna acostada con mancuernas",
+    "aliases": []
+  },
+  "flow-0338": {
+    "name": "Press de codo tumbado con mancuernas",
+    "aliases": []
+  },
+  "flow-0863": {
+    "name": "Rotación externa de hombro acostado con mancuernas",
+    "aliases": []
+  },
+  "flow-0339": {
+    "name": "Mancuerna acostada femoral",
+    "aliases": []
+  },
+  "flow-0340": {
+    "name": "Press de pecho con agarre neutro acostado con mancuernas",
+    "aliases": []
+  },
+  "flow-2470": {
+    "name": "Elevaciones para deltoides posteriores en el suelo acostado con mancuernas",
+    "aliases": []
+  },
+  "flow-0341": {
+    "name": "Mancuerna tumbada en un brazo deltoides trasero",
+    "aliases": []
+  },
+  "flow-0343": {
+    "name": "Press con mancuernas acostado con un brazo",
+    "aliases": []
+  },
+  "flow-0342": {
+    "name": "Press con mancuernas acostado con un brazo v.2",
+    "aliases": []
+  },
+  "flow-0344": {
+    "name": "Mancuerna acostada con un brazo en pronación de extensión de tríceps",
+    "aliases": []
+  },
+  "flow-0346": {
+    "name": "Mancuerna acostada con un brazo en extensión de tríceps supinado",
+    "aliases": []
+  },
+  "flow-2705": {
+    "name": "Pronación acostada con mancuernas en el suelo",
+    "aliases": []
+  },
+  "flow-1284": {
+    "name": "Pullover (extensión de hombros) sobre pelota de estabilidad acostado con mancuernas",
+    "aliases": []
+  },
+  "flow-1328": {
+    "name": "Remo para deltoides posteriores acostado con mancuernas",
+    "aliases": []
+  },
+  "flow-1735": {
+    "name": "Extensión simple con mancuernas",
+    "aliases": []
+  },
+  "flow-2706": {
+    "name": "Supinación acostada con mancuernas en el suelo",
+    "aliases": []
+  },
+  "flow-1661": {
+    "name": "Curl de bíceps acostado boca arriba con mancuernas",
+    "aliases": []
+  },
+  "flow-0350": {
+    "name": "Curl de bíceps acostado boca arriba con mancuernas",
+    "aliases": []
+  },
+  "flow-0351": {
+    "name": "Extensión de tríceps acostado con mancuernas",
+    "aliases": []
+  },
+  "flow-1662": {
+    "name": "Curl de bíceps acostado con postura amplia con mancuernas",
+    "aliases": []
+  },
+  "flow-0352": {
+    "name": "Press de banca con agarre neutro con mancuernas",
+    "aliases": []
+  },
+  "flow-1285": {
+    "name": "Aperturas a un brazo en banco con mancuernas",
+    "aliases": []
+  },
+  "flow-0292": {
+    "name": "Remo a un brazo con el tronco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-1286": {
+    "name": "Aperturas de pecho sobre pelota de estabilidad a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-0353": {
+    "name": "Curl concentrado sobre pelota de estabilidad a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-1287": {
+    "name": "Press de pecho a un brazo en banco declinado con mancuernas",
+    "aliases": []
+  },
+  "flow-1288": {
+    "name": "Aperturas sobre pelota de estabilidad a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-1736": {
+    "name": "Mancuerna con un brazo, prensa francesa sobre pelota de ejercicio.",
+    "aliases": []
+  },
+  "flow-1663": {
+    "name": "Curl predicador con agarre martillo a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-1621": {
+    "name": "Press de pecho con agarre neutro sobre pelota de estabilidad a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-1289": {
+    "name": "Press de pecho a un brazo en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0354": {
+    "name": "Patada de tríceps a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-0355": {
+    "name": "Elevaciones laterales a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-0356": {
+    "name": "Elevaciones laterales con apoyo a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-1290": {
+    "name": "Press con mancuernas con un brazo sobre una pelota de ejercicio.",
+    "aliases": []
+  },
+  "flow-1665": {
+    "name": "Curl de bíceps a un brazo boca abajo con mancuernas",
+    "aliases": []
+  },
+  "flow-1666": {
+    "name": "Curl martillo a un brazo boca abajo con mancuernas",
+    "aliases": []
+  },
+  "flow-1291": {
+    "name": "Pullover (extensión de hombros) sobre pelota de estabilidad a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-0358": {
+    "name": "Extensión de muñecas a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-0359": {
+    "name": "Aperturas inversas con apoyo a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-1622": {
+    "name": "Press con agarre inverso con un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-1414": {
+    "name": "Curl predicador con agarre prono a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-1667": {
+    "name": "Curl de araña invertido con un brazo y mancuernas",
+    "aliases": []
+  },
+  "flow-1668": {
+    "name": "Curl de bíceps sobre pelota de estabilidad a un brazo sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-1669": {
+    "name": "Curl martillo a un brazo sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-1415": {
+    "name": "Flexión de muñecas con agarre neutro a un brazo sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-0360": {
+    "name": "Press de hombros a un brazo con mancuernas (variante 2)",
+    "aliases": []
+  },
+  "flow-3888": {
+    "name": "Arranque con mancuernas a un brazo",
+    "aliases": []
+  },
+  "flow-1670": {
+    "name": "Curl de bíceps a un brazo de pie con mancuernas",
+    "aliases": []
+  },
+  "flow-1671": {
+    "name": "Curl martillo a un brazo de pie con mancuernas",
+    "aliases": []
+  },
+  "flow-0362": {
+    "name": "Extensión de tríceps en banco a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-0364": {
+    "name": "Flexión de muñecas a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-1672": {
+    "name": "Curl predicador Zottman a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-1292": {
+    "name": "Aperturas sobre pelota de estabilidad a una pierna con mancuernas",
+    "aliases": []
+  },
+  "flow-0365": {
+    "name": "Flexión de muñecas con agarre neutro con apoyo en banco con mancuernas",
+    "aliases": []
+  },
+  "flow-0366": {
+    "name": "Flexión de muñecas con agarre neutro con apoyo en banco a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-1441": {
+    "name": "Extensión de muñecas con apoyo en banco a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-0367": {
+    "name": "Flexión de muñecas con apoyo en banco a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-0368": {
+    "name": "Extensión de muñecas con apoyo en banco con mancuernas",
+    "aliases": []
+  },
+  "flow-0369": {
+    "name": "Flexión de muñecas con apoyo en banco con mancuernas",
+    "aliases": []
+  },
+  "flow-1329": {
+    "name": "Palma con mancuernas rotacional inclinada sobre fila",
+    "aliases": []
+  },
+  "flow-1623": {
+    "name": "Press de banca con agarre neutro en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0370": {
+    "name": "Curl predicador con agarre martillo con mancuernas",
+    "aliases": []
+  },
+  "flow-0371": {
+    "name": "Sentadilla plyo con mancuernas",
+    "aliases": []
+  },
+  "flow-0372": {
+    "name": "Curl predicador con mancuernas",
+    "aliases": []
+  },
+  "flow-1673": {
+    "name": "Predicador con mancuernas curl sobre pelota de ejercicio",
+    "aliases": []
+  },
+  "flow-1293": {
+    "name": "Press con mancuernas sobre una pelota de ejercicio.",
+    "aliases": []
+  },
+  "flow-0373": {
+    "name": "Extensión de tríceps con agarre pronado y mancuernas",
+    "aliases": []
+  },
+  "flow-1674": {
+    "name": "Curl martillo boca abajo en banco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0375": {
+    "name": "Pullover (extensión de hombros) con mancuernas",
+    "aliases": []
+  },
+  "flow-1294": {
+    "name": "Extensión de cadera con mancuernas en pelota de ejercicio",
+    "aliases": []
+  },
+  "flow-1295": {
+    "name": "Pullover (extensión de hombros) sobre pelota de estabilidad con mancuernas",
+    "aliases": []
+  },
+  "flow-1700": {
+    "name": "Prensa de empuje con mancuernas",
+    "aliases": []
+  },
+  "flow-2292": {
+    "name": "Elevaciones para deltoides posteriores con mancuernas",
+    "aliases": []
+  },
+  "flow-0377": {
+    "name": "Remo delt trasero con mancuernas hombro",
+    "aliases": []
+  },
+  "flow-0378": {
+    "name": "Aperturas inversas con mancuernas",
+    "aliases": []
+  },
+  "flow-0380": {
+    "name": "Elevaciones para deltoides posteriores con mancuernas",
+    "aliases": []
+  },
+  "flow-0379": {
+    "name": "Elevaciones para deltoides posteriores con apoyo de la cabeza con mancuernas",
+    "aliases": []
+  },
+  "flow-0382": {
+    "name": "Curl de bíceps con agarre inverso con mancuernas",
+    "aliases": []
+  },
+  "flow-1624": {
+    "name": "Press de banca inverso con mancuernas",
+    "aliases": []
+  },
+  "flow-0383": {
+    "name": "Aperturas inversas con mancuernas",
+    "aliases": []
+  },
+  "flow-1330": {
+    "name": "Remo en banco inclinado con agarre inverso a un brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-1331": {
+    "name": "Remo en banco inclinado con agarre inverso a dos brazos con mancuernas",
+    "aliases": []
+  },
+  "flow-2327": {
+    "name": "Remo con agarre inverso con mancuernas",
+    "aliases": []
+  },
+  "flow-0384": {
+    "name": "Curl predicador con agarre prono con mancuernas",
+    "aliases": []
+  },
+  "flow-1675": {
+    "name": "Curl de araña invertido con mancuernas",
+    "aliases": []
+  },
+  "flow-0385": {
+    "name": "Extensión de muñecas con mancuernas",
+    "aliases": []
+  },
+  "flow-1459": {
+    "name": "Peso muerto rumano con mancuernas",
+    "aliases": [
+      "peso muerto rumano"
+    ]
+  },
+  "flow-0386": {
+    "name": "Rotación con mancuernas mosca inversa",
+    "aliases": []
+  },
+  "flow-2397": {
+    "name": "Prensa scott con mancuernas",
+    "aliases": []
+  },
+  "flow-0387": {
+    "name": "Elevaciones frontales alterno sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-1676": {
+    "name": "Curl martillo sobre pelota de estabilidad alterno sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-0388": {
+    "name": "Press alternativo sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-3546": {
+    "name": "Hombro alterno sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-0389": {
+    "name": "Extensión de banco sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-2317": {
+    "name": "Elevaciones laterales sentado con codos flexionados con mancuernas",
+    "aliases": []
+  },
+  "flow-1730": {
+    "name": "Patada de tríceps alterno sentado con el tronco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-1737": {
+    "name": "Extensión de tríceps sentado con el tronco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-1677": {
+    "name": "Curl de bíceps sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-0390": {
+    "name": "Curl de bíceps sobre pelota de estabilidad sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-3547": {
+    "name": "Curl de bíceps sentado con mancuernas hasta press de hombros",
+    "aliases": []
+  },
+  "flow-1379": {
+    "name": "Elevación de talones sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-0391": {
+    "name": "Curl de bíceps sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-0392": {
+    "name": "Elevaciones frontales sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-1678": {
+    "name": "Curl martillo sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-0393": {
+    "name": "Curl de bíceps sentado con énfasis interno con mancuernas",
+    "aliases": []
+  },
+  "flow-0394": {
+    "name": "Patada de tríceps sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-0396": {
+    "name": "Elevaciones laterales con mancuernas sentado",
+    "aliases": [
+      "vuelos laterales sentado"
+    ]
+  },
+  "flow-0395": {
+    "name": "Elevaciones laterales sentado con mancuernas (variante 2)",
+    "aliases": []
+  },
+  "flow-0397": {
+    "name": "Flexión de muñecas con agarre neutro sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-1679": {
+    "name": "Curl de bíceps con un brazo sentado con mancuernas sobre una pelota de ejercicio con la pierna levantada",
+    "aliases": []
+  },
+  "flow-0398": {
+    "name": "Patada de tríceps a un brazo sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-0399": {
+    "name": "Mancuerna sentado con un brazo rotar",
+    "aliases": []
+  },
+  "flow-1380": {
+    "name": "Elevación de talones con agarre neutro a una pierna sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-1381": {
+    "name": "Levantamiento de pantorrilla con una pierna sentado con mancuerna - palma hacia arriba",
+    "aliases": []
+  },
+  "flow-0401": {
+    "name": "Flexión de muñecas con palmas hacia arriba sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-0402": {
+    "name": "Curl predicador sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-0403": {
+    "name": "Curl concentrado con agarre inverso sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-1738": {
+    "name": "Extensión de tríceps con agarre inverso a un brazo sentado por encima de la cabeza con mancuernas",
+    "aliases": []
+  },
+  "flow-0405": {
+    "name": "Press de hombros sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-0404": {
+    "name": "Press de hombros con agarre neutro sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-2188": {
+    "name": "Extensión de tríceps sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-0408": {
+    "name": "Lado con mancuernas acostado con una mano levantada",
+    "aliases": []
+  },
+  "flow-3664": {
+    "name": "Plancha lateral con mancuernas y apertura trasera.",
+    "aliases": []
+  },
+  "flow-3548": {
+    "name": "Transporte por encima de la cabeza con un solo brazo con mancuernas",
+    "aliases": []
+  },
+  "flow-0409": {
+    "name": "Elevación de talones a una pierna con mancuernas",
+    "aliases": []
+  },
+  "flow-1757": {
+    "name": "Peso muerto a una pierna con mancuernas",
+    "aliases": []
+  },
+  "flow-2805": {
+    "name": "Peso muerto con una sola pierna con mancuernas y soporte stepbox",
+    "aliases": []
+  },
+  "flow-0410": {
+    "name": "Sentadilla con pies en posición dividida a una pierna con mancuernas",
+    "aliases": []
+  },
+  "flow-0411": {
+    "name": "Sentadilla a una pierna con mancuernas",
+    "aliases": []
+  },
+  "flow-3560": {
+    "name": "De pie con mancuernas, curl martillo alternativo y press",
+    "aliases": []
+  },
+  "flow-0414": {
+    "name": "Press por encima de la cabeza alterno de pie con mancuernas",
+    "aliases": []
+  },
+  "flow-0415": {
+    "name": "Elevación alternativa de pie con mancuernas",
+    "aliases": []
+  },
+  "flow-1739": {
+    "name": "Mancuerna de pie contragolpe de tríceps alterno",
+    "aliases": []
+  },
+  "flow-2143": {
+    "name": "Mancuerna de pie alrededor del mundo",
+    "aliases": []
+  },
+  "flow-1740": {
+    "name": "Extensión de tríceps a un brazo de pie con el tronco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-1741": {
+    "name": "Extensión de tríceps a dos brazos de pie con el tronco inclinado con mancuernas",
+    "aliases": []
+  },
+  "flow-0416": {
+    "name": "Curl de bíceps de pie con mancuernas",
+    "aliases": []
+  },
+  "flow-0417": {
+    "name": "Elevación de talones de pie con mancuernas",
+    "aliases": []
+  },
+  "flow-0418": {
+    "name": "Curl concentrado de pie con mancuernas",
+    "aliases": []
+  },
+  "flow-0419": {
+    "name": "Elevación frontal de pie con mancuernas por encima de la cabeza",
+    "aliases": []
+  },
+  "flow-2321": {
+    "name": "Curl de bíceps de pie con énfasis interno con mancuernas (variante 2)",
+    "aliases": []
+  },
+  "flow-0420": {
+    "name": "Patada de tríceps de pie con mancuernas",
+    "aliases": []
+  },
+  "flow-0421": {
+    "name": "Curl concentrado a un brazo de pie con mancuernas",
+    "aliases": []
+  },
+  "flow-0422": {
+    "name": "Curl con un brazo de pie con mancuernas (sobre banco inclinado)",
+    "aliases": []
+  },
+  "flow-1680": {
+    "name": "Mancuerna de pie con un brazo doblado sobre un banco inclinado",
+    "aliases": []
+  },
+  "flow-0423": {
+    "name": "Mancuerna de pie con extensión de un brazo",
+    "aliases": []
+  },
+  "flow-0424": {
+    "name": "Mancuerna de pie con un brazo y palma en prensa",
+    "aliases": []
+  },
+  "flow-0425": {
+    "name": "Curl de bíceps con agarre prono a un brazo de pie con mancuernas",
+    "aliases": []
+  },
+  "flow-0426": {
+    "name": "Press por encima de la cabeza de pie con mancuernas",
+    "aliases": []
+  },
+  "flow-0427": {
+    "name": "Press con agarre neutro de pie con mancuernas",
+    "aliases": []
+  },
+  "flow-0428": {
+    "name": "Curl predicador de pie con mancuernas",
+    "aliases": []
+  },
+  "flow-0429": {
+    "name": "Curl de bíceps con agarre prono de pie con mancuernas",
+    "aliases": []
+  },
+  "flow-0430": {
+    "name": "Extensión de tríceps de pie con mancuernas",
+    "aliases": []
+  },
+  "flow-2293": {
+    "name": "Curl predicador Zottman de pie con mancuernas",
+    "aliases": []
+  },
+  "flow-1684": {
+    "name": "Mancuerna aumenta el equilibrio de una sola pierna con curl de bíceps",
+    "aliases": []
+  },
+  "flow-0431": {
+    "name": "Subida al banco con mancuernas",
+    "aliases": []
+  },
+  "flow-2796": {
+    "name": "Desplante con mancuernas",
+    "aliases": []
+  },
+  "flow-2812": {
+    "name": "Sentadilla dividida con mancuernas",
+    "aliases": []
+  },
+  "flow-0432": {
+    "name": "Peso muerto con piernas rígidas con mancuernas",
+    "aliases": []
+  },
+  "flow-0433": {
+    "name": "Pullover (extensión de hombros) con brazos extendidos con mancuernas",
+    "aliases": []
+  },
+  "flow-0434": {
+    "name": "Peso muerto con piernas extendidas con mancuernas",
+    "aliases": []
+  },
+  "flow-2808": {
+    "name": "Sumo con mancuernas",
+    "aliases": []
+  },
+  "flow-2803": {
+    "name": "Sentadilla apoyada con mancuernas",
+    "aliases": []
+  },
+  "flow-0436": {
+    "name": "Press de banca con mancuernas",
+    "aliases": []
+  },
+  "flow-1742": {
+    "name": "Contragolpe de tríceps con mancuernas con postura de cigüeña",
+    "aliases": []
+  },
+  "flow-1743": {
+    "name": "Press de banca con rotación con mancuernas",
+    "aliases": []
+  },
+  "flow-0437": {
+    "name": "Remo al mentón con mancuernas",
+    "aliases": []
+  },
+  "flow-1765": {
+    "name": "Remo al mentón con mancuernas",
+    "aliases": []
+  },
+  "flow-0864": {
+    "name": "Rotación externa del hombro vertical con mancuernas",
+    "aliases": []
+  },
+  "flow-5201": {
+    "name": "Curl de bíceps camarero con mancuernas",
+    "aliases": []
+  },
+  "flow-0438": {
+    "name": "Press con mancuernas",
+    "aliases": []
+  },
+  "flow-0439": {
+    "name": "Curl Zottman con mancuernas",
+    "aliases": []
+  },
+  "flow-2294": {
+    "name": "Curl predicador Zottman con mancuernas",
+    "aliases": []
+  },
+  "flow-2189": {
+    "name": "Extensión de tríceps sentado con mancuernas",
+    "aliases": []
+  },
+  "flow-1167": {
+    "name": "Estiramiento dinámico del pecho",
+    "aliases": []
+  },
+  "flow-3287": {
+    "name": "Fondos de codo",
+    "aliases": []
+  },
+  "flow-1772": {
+    "name": "Elevación de codo - flexión inversa",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-3292": {
+    "name": "Ascensor",
+    "aliases": []
+  },
+  "flow-1332": {
+    "name": "Pelota de ejercicios alternando brazos hacia arriba",
+    "aliases": []
+  },
+  "flow-1333": {
+    "name": "Extensión de espalda con pelota de ejercicios con brazos extendidos",
+    "aliases": []
+  },
+  "flow-1334": {
+    "name": "Extensión de espalda con pelota de ejercicio con las manos detrás de la cabeza",
+    "aliases": []
+  },
+  "flow-1335": {
+    "name": "Extensión de espalda con pelota de ejercicio con las rodillas separadas del suelo.",
+    "aliases": []
+  },
+  "flow-1336": {
+    "name": "Extensión de espalda con pelota de ejercicios con rotación",
+    "aliases": []
+  },
+  "flow-1744": {
+    "name": "Fondos sobre pelota de estabilidad",
+    "aliases": []
+  },
+  "flow-1559": {
+    "name": "Pelota de ejercicio estiramiento del flexor de la cadera",
+    "aliases": []
+  },
+  "flow-1338": {
+    "name": "Abrazo de pelota de ejercicio",
+    "aliases": []
+  },
+  "flow-1339": {
+    "name": "Estiramiento lateral con pelota de ejercicio",
+    "aliases": []
+  },
+  "flow-1341": {
+    "name": "Estiramiento de la espalda baja con pelota de ejercicios (pirámide)",
+    "aliases": []
+  },
+  "flow-1342": {
+    "name": "Pelota de ejercicio acostada de lado estiramiento lateral",
+    "aliases": []
+  },
+  "flow-1382": {
+    "name": "Pelota de ejercicios en la pared elevación de pantorrillas",
+    "aliases": []
+  },
+  "flow-3241": {
+    "name": "Pelota de ejercicio en la pared elevación de pantorrilla (pelota de tenis entre los tobillos)",
+    "aliases": []
+  },
+  "flow-3240": {
+    "name": "Pelota de ejercicio en la pared elevación de pantorrilla (pelota de tenis entre las rodillas)",
+    "aliases": []
+  },
+  "flow-1416": {
+    "name": "Pelota de ejercicio con una pierna propensa a la rotación de la parte inferior del cuerpo",
+    "aliases": []
+  },
+  "flow-1417": {
+    "name": "Pelota de ejercicio patada diagonal con una pierna curl de isquiotibiales",
+    "aliases": []
+  },
+  "flow-1296": {
+    "name": "Ejercicio de pica de pelota push up",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-1343": {
+    "name": "Elevación de piernas sobre pelota de estabilidad boca abajo",
+    "aliases": []
+  },
+  "flow-1560": {
+    "name": "Estiramiento de isquiotibiales sentado con pelota de ejercicio",
+    "aliases": []
+  },
+  "flow-1745": {
+    "name": "Ejercicio de estiramiento de tríceps sentado con pelota.",
+    "aliases": []
+  },
+  "flow-1746": {
+    "name": "Extensión de tríceps sobre pelota de estabilidad boca arriba",
+    "aliases": []
+  },
+  "flow-1747": {
+    "name": "Press francés con barra ez sobre pelota de ejercicio.",
+    "aliases": []
+  },
+  "flow-3010": {
+    "name": "Sudadera con capucha ez bar acostado con los brazos doblados",
+    "aliases": []
+  },
+  "flow-1748": {
+    "name": "Extensión de tríceps con agarre cerrado acostado detrás de la cabeza con barra Z",
+    "aliases": []
+  },
+  "flow-1344": {
+    "name": "Remo con agarre inverso con el tronco inclinado con barra Z",
+    "aliases": []
+  },
+  "flow-1682": {
+    "name": "Curl concentrado con agarre cerrado sentado con barra Z",
+    "aliases": []
+  },
+  "flow-1749": {
+    "name": "Prensa francesa de pie con barra ez",
+    "aliases": []
+  },
+  "flow-0445": {
+    "name": "Press antigravedad con barra ez",
+    "aliases": []
+  },
+  "flow-1627": {
+    "name": "Curl predicador con agarre cerrado con barra Z",
+    "aliases": []
+  },
+  "flow-0446": {
+    "name": "Curl de bíceps con agarre cerrado con barra Z",
+    "aliases": []
+  },
+  "flow-0447": {
+    "name": "Curl de bíceps con barra Z",
+    "aliases": []
+  },
+  "flow-0448": {
+    "name": "Press facial con agarre cerrado y descenso con barra ez",
+    "aliases": []
+  },
+  "flow-2186": {
+    "name": "Extensión de tríceps en banco declinado con barra Z",
+    "aliases": []
+  },
+  "flow-0449": {
+    "name": "Extensión de tríceps en banco inclinado con barra Z",
+    "aliases": []
+  },
+  "flow-0450": {
+    "name": "Press de banca con barra ez jm",
+    "aliases": []
+  },
+  "flow-0451": {
+    "name": "Curl de bíceps con agarre inverso con barra Z",
+    "aliases": []
+  },
+  "flow-0452": {
+    "name": "Curl predicador con agarre inverso con barra Z",
+    "aliases": []
+  },
+  "flow-1458": {
+    "name": "Rizos sentados con barra ez",
+    "aliases": []
+  },
+  "flow-0453": {
+    "name": "Extensión de tríceps sentado con barra Z",
+    "aliases": []
+  },
+  "flow-0454": {
+    "name": "Curl araña con barra Z",
+    "aliases": []
+  },
+  "flow-1628": {
+    "name": "Curl araña con barra Z",
+    "aliases": []
+  },
+  "flow-2404": {
+    "name": "Curl de bíceps con soporte para brazos (arm blaster) con barra Z",
+    "aliases": []
+  },
+  "flow-2432": {
+    "name": "Press de banca con agarre cerrado con barra Z",
+    "aliases": []
+  },
+  "flow-2741": {
+    "name": "Curl de bíceps con agarre amplio de pie con barra Z",
+    "aliases": []
+  },
+  "flow-2133": {
+    "name": "Los agricultores caminan",
+    "aliases": []
+  },
+  "flow-3303": {
+    "name": "Bandera",
+    "aliases": []
+  },
+  "flow-0456": {
+    "name": "Flexión de piernas sentadas (rodilla doblada)",
+    "aliases": []
+  },
+  "flow-0457": {
+    "name": "Flexión de piernas sentadas (brazo estirado)",
+    "aliases": []
+  },
+  "flow-0458": {
+    "name": "Mosca de piso (con barra)",
+    "aliases": []
+  },
+  "flow-1472": {
+    "name": "Salto hacia adelante",
+    "aliases": []
+  },
+  "flow-3470": {
+    "name": "Desplante hacia adelante",
+    "aliases": []
+  },
+  "flow-2429": {
+    "name": "Crunch de rana",
+    "aliases": []
+  },
+  "flow-3301": {
+    "name": "Plancha de rana",
+    "aliases": []
+  },
+  "flow-3296": {
+    "name": "Palanca delantera",
+    "aliases": []
+  },
+  "flow-3295": {
+    "name": "Repeticiones de palanca frontal",
+    "aliases": []
+  },
+  "flow-0464": {
+    "name": "Plancha frontal con giro",
+    "aliases": []
+  },
+  "flow-3315": {
+    "name": "Maltés completo",
+    "aliases": []
+  },
+  "flow-3299": {
+    "name": "Plancha completa",
+    "aliases": []
+  },
+  "flow-3327": {
+    "name": "Flexiones de plancha completas",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0466": {
+    "name": "Barbilla esternón gironda",
+    "aliases": []
+  },
+  "flow-3561": {
+    "name": "Marcha del puente de glúteos",
+    "aliases": []
+  },
+  "flow-3523": {
+    "name": "Puente de glúteos en banco con ambas piernas",
+    "aliases": []
+  },
+  "flow-0467": {
+    "name": "Barbilla de gorila",
+    "aliases": []
+  },
+  "flow-0469": {
+    "name": "Contracción de la ingle",
+    "aliases": []
+  },
+  "flow-3221": {
+    "name": "Dobla media rodilla",
+    "aliases": []
+  },
+  "flow-3202": {
+    "name": "Medio sentado",
+    "aliases": []
+  },
+  "flow-2139": {
+    "name": "Manos bicicleta",
+    "aliases": []
+  },
+  "flow-3218": {
+    "name": "Manos entrelazadas toque circular del dedo del pie",
+    "aliases": []
+  },
+  "flow-3215": {
+    "name": "Manos invertidas entrelazadas toque circular del dedo del pie",
+    "aliases": []
+  },
+  "flow-3302": {
+    "name": "Parada de manos",
+    "aliases": []
+  },
+  "flow-0471": {
+    "name": "Flexión de manos",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-1764": {
+    "name": "Elevación de cadera con pierna colgando",
+    "aliases": []
+  },
+  "flow-1761": {
+    "name": "Elevación de rodilla oblicua colgando",
+    "aliases": []
+  },
+  "flow-0474": {
+    "name": "Elevación de cadera colgado en barra con piernas extendidas",
+    "aliases": []
+  },
+  "flow-0475": {
+    "name": "Elevación de pierna estirada colgando",
+    "aliases": []
+  },
+  "flow-0476": {
+    "name": "Colgando recto torciendo la pierna elevación de cadera",
+    "aliases": []
+  },
+  "flow-3636": {
+    "name": "Rodilla alta contra la pared",
+    "aliases": []
+  },
+  "flow-0484": {
+    "name": "Elevación de cadera con rodillas flexionadas",
+    "aliases": []
+  },
+  "flow-1418": {
+    "name": "Abrazo fuerte al pecho",
+    "aliases": []
+  },
+  "flow-3234": {
+    "name": "Vuelo alto con mancuernas",
+    "aliases": []
+  },
+  "flow-0489": {
+    "name": "Hiperextensiones",
+    "aliases": []
+  },
+  "flow-0488": {
+    "name": "Hiperextensiones en banco",
+    "aliases": []
+  },
+  "flow-3289": {
+    "name": "Caídas imposibles",
+    "aliases": []
+  },
+  "flow-3698": {
+    "name": "Gusano pulgada v.2",
+    "aliases": []
+  },
+  "flow-0490": {
+    "name": "Flexiones de brazos con agarre cerrado en banco inclinado",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0491": {
+    "name": "Inclinar pierna elevar cadera (pierna estirada)",
+    "aliases": []
+  },
+  "flow-3785": {
+    "name": "Flexión inclinada (en caja)",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0494": {
+    "name": "Flexiones de brazos con agarre inverso en banco inclinado",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-3011": {
+    "name": "Inclinar la escápula hacia arriba",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0495": {
+    "name": "Incorporaciones de tronco en banco inclinado con rotación",
+    "aliases": []
+  },
+  "flow-0496": {
+    "name": "Curl de piernas inverso (apoyo en banco)",
+    "aliases": []
+  },
+  "flow-2400": {
+    "name": "Curl de piernas inverso (en máquina de dominadas con cable)",
+    "aliases": []
+  },
+  "flow-2300": {
+    "name": "Rodillas dobladas fila invertida",
+    "aliases": []
+  },
+  "flow-2298": {
+    "name": "Fila invertida en banco",
+    "aliases": []
+  },
+  "flow-0497": {
+    "name": "Fila invertida v.2",
+    "aliases": []
+  },
+  "flow-1419": {
+    "name": "Estiramiento de la cruz de hierro",
+    "aliases": []
+  },
+  "flow-1297": {
+    "name": "Compresión isométrica del pecho",
+    "aliases": []
+  },
+  "flow-0501": {
+    "name": "Jack-burpee",
+    "aliases": []
+  },
+  "flow-3224": {
+    "name": "Salto de gato",
+    "aliases": []
+  },
+  "flow-2612": {
+    "name": "Saltar la cuerda",
+    "aliases": []
+  },
+  "flow-0514": {
+    "name": "Saltar en cuclillas",
+    "aliases": []
+  },
+  "flow-0513": {
+    "name": "Sentadilla con salto v.2",
+    "aliases": []
+  },
+  "flow-0517": {
+    "name": "Molino de viento avanzado con pesas rusas",
+    "aliases": []
+  },
+  "flow-0518": {
+    "name": "Pesas rusas alternando colgar limpio",
+    "aliases": []
+  },
+  "flow-0520": {
+    "name": "Prensa alterna con pesas rusas",
+    "aliases": []
+  },
+  "flow-0519": {
+    "name": "Press alternativo con pesas rusas en el suelo",
+    "aliases": []
+  },
+  "flow-0521": {
+    "name": "Remo renegado alterno con pesas rusas",
+    "aliases": []
+  },
+  "flow-0522": {
+    "name": "Remo alterno con pesa rusa",
+    "aliases": []
+  },
+  "flow-0524": {
+    "name": "Press inclinado con pesas rusas",
+    "aliases": []
+  },
+  "flow-0525": {
+    "name": "Pesas rusas con la parte inferior hacia arriba limpia desde la posición colgante",
+    "aliases": []
+  },
+  "flow-0526": {
+    "name": "Pesa rusa doble alternante colgar limpio",
+    "aliases": []
+  },
+  "flow-0527": {
+    "name": "Doble tirón con pesas rusas",
+    "aliases": []
+  },
+  "flow-0528": {
+    "name": "Press de doble empuje con pesas rusas",
+    "aliases": []
+  },
+  "flow-0529": {
+    "name": "Arranque doble con pesas rusas",
+    "aliases": []
+  },
+  "flow-0530": {
+    "name": "Molino de viento doble con pesas rusas",
+    "aliases": []
+  },
+  "flow-0531": {
+    "name": "Press con un brazo de rango extendido con pesas rusas en el suelo",
+    "aliases": []
+  },
+  "flow-0533": {
+    "name": "Sentadilla frontal con pesa rusa",
+    "aliases": []
+  },
+  "flow-0534": {
+    "name": "Sentadilla goblet con pesa rusa",
+    "aliases": []
+  },
+  "flow-0536": {
+    "name": "Pase de desplante con pesas rusas",
+    "aliases": []
+  },
+  "flow-0537": {
+    "name": "Pesas rusas con un brazo en envión",
+    "aliases": []
+  },
+  "flow-1298": {
+    "name": "Press de suelo con un brazo y pesas rusas",
+    "aliases": []
+  },
+  "flow-0538": {
+    "name": "Tirón con un brazo con pesa rusa",
+    "aliases": []
+  },
+  "flow-0539": {
+    "name": "Press militar con un brazo y pesa rusa hacia un lado",
+    "aliases": []
+  },
+  "flow-0540": {
+    "name": "Press de empuje con un brazo con pesas rusas",
+    "aliases": []
+  },
+  "flow-0541": {
+    "name": "Remo a un brazo con pesa rusa",
+    "aliases": []
+  },
+  "flow-0542": {
+    "name": "Arranque de un brazo con pesas rusas",
+    "aliases": []
+  },
+  "flow-0543": {
+    "name": "Piernas de cena pirata con pesas rusas",
+    "aliases": []
+  },
+  "flow-0545": {
+    "name": "Flexiones plyo con pesas rusas",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-1438": {
+    "name": "Press militar a dos brazos sentado con pesa rusa",
+    "aliases": []
+  },
+  "flow-0549": {
+    "name": "Columpio con pesas rusas",
+    "aliases": []
+  },
+  "flow-0552": {
+    "name": "Pesa rusa dos brazos limpios",
+    "aliases": []
+  },
+  "flow-0553": {
+    "name": "Press militar a dos brazos con pesa rusa",
+    "aliases": []
+  },
+  "flow-1345": {
+    "name": "Remo a dos brazos con pesa rusa",
+    "aliases": []
+  },
+  "flow-0555": {
+    "name": "Echarse sentarse",
+    "aliases": []
+  },
+  "flow-3640": {
+    "name": "Crunch de toque de rodilla",
+    "aliases": []
+  },
+  "flow-1346": {
+    "name": "Estiramiento lateral de rodillas",
+    "aliases": []
+  },
+  "flow-3239": {
+    "name": "Arrodillarse tabla tocar el hombro",
+    "aliases": []
+  },
+  "flow-3211": {
+    "name": "Flexiones de brazos de rodillas",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-3288": {
+    "name": "Salsas coreanas",
+    "aliases": []
+  },
+  "flow-3418": {
+    "name": "Pull-up",
+    "aliases": []
+  },
+  "flow-3419": {
+    "name": "Me siento en el suelo",
+    "aliases": []
+  },
+  "flow-0562": {
+    "name": "Mina terrestre 180",
+    "aliases": []
+  },
+  "flow-3237": {
+    "name": "Elevación lateral de minas terrestres",
+    "aliases": []
+  },
+  "flow-3300": {
+    "name": "Plancha magra",
+    "aliases": []
+  },
+  "flow-2271": {
+    "name": "Gancho de izquierda. boxeo",
+    "aliases": []
+  },
+  "flow-0570": {
+    "name": "Tirón de piernas en banco plano",
+    "aliases": []
+  },
+  "flow-2287": {
+    "name": "Prensa de piernas alterno en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0571": {
+    "name": "Remo con agarre cerrado alterno sentado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0572": {
+    "name": "Dominadas con agarre supino asistido en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0573": {
+    "name": "Extensión de espalda en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0574": {
+    "name": "Remo con el tronco inclinado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-3200": {
+    "name": "Fila inclinada con palanca con barra en V",
+    "aliases": []
+  },
+  "flow-0575": {
+    "name": "Curl de bíceps en máquina de palanca",
+    "aliases": []
+  },
+  "flow-2289": {
+    "name": "Extensión de tobillos en prensa en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0577": {
+    "name": "Press de pecho en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0576": {
+    "name": "Press de pecho en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0578": {
+    "name": "Peso muerto en máquina de palanca",
+    "aliases": []
+  },
+  "flow-1300": {
+    "name": "Press de pecho en banco declinado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-1253": {
+    "name": "Elevación de pantorrilla en burro con palanca",
+    "aliases": []
+  },
+  "flow-0579": {
+    "name": "Jalón dorsal frontal en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0580": {
+    "name": "Encogimiento de hombros sin agarre de palanca",
+    "aliases": []
+  },
+  "flow-1439": {
+    "name": "Encogimiento de hombros sin agarre con palanca v.2",
+    "aliases": []
+  },
+  "flow-2288": {
+    "name": "Manos de agarre de palanca",
+    "aliases": []
+  },
+  "flow-1615": {
+    "name": "Curl predicador con agarre neutro en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0581": {
+    "name": "Remo alto en máquina de palanca",
+    "aliases": []
+  },
+  "flow-2286": {
+    "name": "Extensión de cadera en máquina de palanca (variante 2)",
+    "aliases": []
+  },
+  "flow-2611": {
+    "name": "Prensa horizontal de palanca con una pierna",
+    "aliases": []
+  },
+  "flow-1299": {
+    "name": "Press de pecho en banco inclinado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-1479": {
+    "name": "Press de pecho en banco inclinado en máquina de palanca (variante 2)",
+    "aliases": []
+  },
+  "flow-0582": {
+    "name": "Curl femoral de rodillas en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0583": {
+    "name": "Giro de palanca de rodillas",
+    "aliases": []
+  },
+  "flow-0584": {
+    "name": "Elevaciones laterales en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0585": {
+    "name": "Extensión de rodillas en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0586": {
+    "name": "Curl femoral acostado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-3195": {
+    "name": "Curl femoral con subida bilateral y bajada unilateral acostado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0587": {
+    "name": "Press militar en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0588": {
+    "name": "Remo con agarre cerrado sentado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0589": {
+    "name": "Remo a un brazo con el tronco inclinado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-1356": {
+    "name": "Remo alto a un brazo lateral en máquina de palanca",
+    "aliases": []
+  },
+  "flow-1347": {
+    "name": "Jalón dorsal a un brazo lateral con postura amplia en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0590": {
+    "name": "Press de hombros a un brazo en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0591": {
+    "name": "Fondos para tríceps con agarre prono en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0592": {
+    "name": "Curl predicador en máquina de palanca",
+    "aliases": []
+  },
+  "flow-1614": {
+    "name": "Curl predicador en máquina de palanca (variante 2)",
+    "aliases": []
+  },
+  "flow-2285": {
+    "name": "Pullover (extensión de hombros) en máquina de palanca",
+    "aliases": []
+  },
+  "flow-2736": {
+    "name": "Jalón dorsal con agarre inverso en máquina de palanca",
+    "aliases": []
+  },
+  "flow-1616": {
+    "name": "Curl predicador con agarre inverso en máquina de palanca",
+    "aliases": []
+  },
+  "flow-1348": {
+    "name": "Remo con agarre inverso vertical en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0593": {
+    "name": "Hiperextensiones inversas en máquina de palanca",
+    "aliases": []
+  },
+  "flow-1349": {
+    "name": "Fila de barra en T inversa de palanca",
+    "aliases": []
+  },
+  "flow-2315": {
+    "name": "Pantorrilla rotatoria de palanca",
+    "aliases": []
+  },
+  "flow-2335": {
+    "name": "Extensión de tobillos en prensa sentado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0594": {
+    "name": "Elevación de talones sentado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-1452": {
+    "name": "Crunch abdominal sentado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0595": {
+    "name": "Abdominales sentado con palanca (almohadilla para el pecho)",
+    "aliases": []
+  },
+  "flow-3760": {
+    "name": "Crunch abdominal sentado en máquina de palanca (variante 2)",
+    "aliases": []
+  },
+  "flow-1451": {
+    "name": "Fondos sentado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0596": {
+    "name": "Aperturas sentado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-3759": {
+    "name": "Buenos días sentado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0597": {
+    "name": "Abducción de cadera sentado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0598": {
+    "name": "Aducción de cadera sentado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0599": {
+    "name": "Curl femoral sentado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0600": {
+    "name": "Crunch con elevación de piernas sentado con palanca",
+    "aliases": []
+  },
+  "flow-0602": {
+    "name": "Aperturas inversas sentado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0601": {
+    "name": "Aperturas inversas con agarre neutro sentado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-1350": {
+    "name": "Remo sentado en máquina de palanca",
+    "aliases": []
+  },
+  "flow-1385": {
+    "name": "Levantamiento de pantorrillas en cuclillas sentado con palanca en una máquina de prensa de piernas",
+    "aliases": []
+  },
+  "flow-0603": {
+    "name": "Press de hombros en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0869": {
+    "name": "Press de hombros en máquina de palanca (variante 2)",
+    "aliases": []
+  },
+  "flow-2318": {
+    "name": "Press de hombros en máquina de palanca (variante 3)",
+    "aliases": []
+  },
+  "flow-0604": {
+    "name": "Encogimiento de hombros en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0605": {
+    "name": "Elevación de talones de pie en máquina de palanca",
+    "aliases": []
+  },
+  "flow-3758": {
+    "name": "Press de pecho de pie en máquina de palanca",
+    "aliases": []
+  },
+  "flow-0606": {
+    "name": "Remo en barra T en máquina de palanca",
+    "aliases": []
+  },
+  "flow-1351": {
+    "name": "Palanca barra en t fila de agarre inverso",
+    "aliases": []
+  },
+  "flow-0607": {
+    "name": "Extensión de tríceps en máquina de palanca",
+    "aliases": []
+  },
+  "flow-1313": {
+    "name": "Palanca unilateral fila",
+    "aliases": []
+  },
+  "flow-0609": {
+    "name": "Puente de londres",
+    "aliases": []
+  },
+  "flow-3013": {
+    "name": "Puente bajo de glúteos en el suelo.",
+    "aliases": []
+  },
+  "flow-3582": {
+    "name": "Desplante con salto",
+    "aliases": []
+  },
+  "flow-1688": {
+    "name": "Desplante con giro",
+    "aliases": []
+  },
+  "flow-0613": {
+    "name": "Estiramiento de cuádriceps acostado (de lado)",
+    "aliases": []
+  },
+  "flow-2312": {
+    "name": "Recostado codo a rodilla",
+    "aliases": []
+  },
+  "flow-0620": {
+    "name": "Elevación de piernas en banco plano acostado",
+    "aliases": []
+  },
+  "flow-0865": {
+    "name": "Elevación de pierna y cadera acostada",
+    "aliases": []
+  },
+  "flow-1301": {
+    "name": "Prensa de pecho interior de la máquina",
+    "aliases": []
+  },
+  "flow-0624": {
+    "name": "Marchar sentado (pared)",
+    "aliases": []
+  },
+  "flow-1353": {
+    "name": "Recepción de balón medicinal y lanzamiento por encima de la cabeza.",
+    "aliases": []
+  },
+  "flow-1303": {
+    "name": "Empuje de pecho con balón medicinal desde una posición de 3 puntos",
+    "aliases": []
+  },
+  "flow-1304": {
+    "name": "Balón medicinal empuje en el pecho respuesta múltiple",
+    "aliases": []
+  },
+  "flow-1305": {
+    "name": "Empuje de pecho con balón medicinal de respuesta única.",
+    "aliases": []
+  },
+  "flow-1312": {
+    "name": "Empuje de pecho con balón medicinal con liberación de carrera",
+    "aliases": []
+  },
+  "flow-1701": {
+    "name": "Empuje hacia arriba con agarre cercano del balón medicinal",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-1354": {
+    "name": "Golpe por encima de la cabeza con balón medicinal",
+    "aliases": []
+  },
+  "flow-1750": {
+    "name": "Lanzamiento con balón medicinal en posición supina sobre el pecho.",
+    "aliases": []
+  },
+  "flow-0627": {
+    "name": "Dominadas con agarre mixto",
+    "aliases": []
+  },
+  "flow-3217": {
+    "name": "Flexión hindú modificada",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-1421": {
+    "name": "Empuje modificado hacia arriba para bajar los brazos.",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0630": {
+    "name": "Alpinista",
+    "aliases": []
+  },
+  "flow-1401": {
+    "name": "Muscle-up (en barra vertical)",
+    "aliases": []
+  },
+  "flow-2328": {
+    "name": "Flexión estrecha sobre una pelota de ejercicios",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-1403": {
+    "name": "Estiramiento lateral del cuello",
+    "aliases": []
+  },
+  "flow-0634": {
+    "name": "Crisis negativa",
+    "aliases": []
+  },
+  "flow-1495": {
+    "name": "Crunch oblicuo (variante 2)",
+    "aliases": []
+  },
+  "flow-0635": {
+    "name": "Abdominales oblicuos en el suelo",
+    "aliases": []
+  },
+  "flow-0636": {
+    "name": "Curl martillo con barra olímpica",
+    "aliases": []
+  },
+  "flow-0637": {
+    "name": "Extensión de tríceps con barra olímpica",
+    "aliases": []
+  },
+  "flow-0639": {
+    "name": "Fondos a un brazo",
+    "aliases": []
+  },
+  "flow-0640": {
+    "name": "Golpe con un brazo (con balón medicinal)",
+    "aliases": []
+  },
+  "flow-1773": {
+    "name": "Fila de toalla de un brazo",
+    "aliases": []
+  },
+  "flow-1386": {
+    "name": "Elevación de pantorrilla en burro con una pierna",
+    "aliases": []
+  },
+  "flow-1387": {
+    "name": "Elevación de talones en el suelo a una pierna",
+    "aliases": []
+  },
+  "flow-1476": {
+    "name": "Sentadilla a una pierna",
+    "aliases": []
+  },
+  "flow-0642": {
+    "name": "Flexión de patada exterior con pierna",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0643": {
+    "name": "Estiramiento de tríceps por encima de la cabeza",
+    "aliases": []
+  },
+  "flow-3147": {
+    "name": "Inclinación pélvica",
+    "aliases": []
+  },
+  "flow-3662": {
+    "name": "Flexiones de pica a cobra",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-1687": {
+    "name": "Paso posterior al alcance por encima de la cabeza",
+    "aliases": []
+  },
+  "flow-3119": {
+    "name": "Sentadillas para ir al baño",
+    "aliases": []
+  },
+  "flow-3132": {
+    "name": "Sentadillas para ir al baño con apoyo",
+    "aliases": []
+  },
+  "flow-3665": {
+    "name": "Tablón de power point",
+    "aliases": []
+  },
+  "flow-3203": {
+    "name": "Prisionero medio abdominal",
+    "aliases": []
+  },
+  "flow-1707": {
+    "name": "Giro boca abajo en la pelota de estabilidad",
+    "aliases": []
+  },
+  "flow-0651": {
+    "name": "Dominadas con agarre neutro",
+    "aliases": [
+      "dominadas con palmas enfrentadas"
+    ]
+  },
+  "flow-0650": {
+    "name": "Pull-in (sobre pelota de estabilidad)",
+    "aliases": []
+  },
+  "flow-0652": {
+    "name": "Dominadas con agarre prono",
+    "aliases": [
+      "dominadas",
+      "dominadas en barra fija"
+    ]
+  },
+  "flow-1689": {
+    "name": "Empujar y tirar del peso corporal",
+    "aliases": []
+  },
+  "flow-3638": {
+    "name": "Empujar para correr",
+    "aliases": []
+  },
+  "flow-1307": {
+    "name": "Flexiones de brazos sobre BOSU",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0662": {
+    "name": "Flexiones de brazos",
+    "aliases": [
+      "lagartijas",
+      "flexiones de pecho"
+    ]
+  },
+  "flow-0653": {
+    "name": "Flexiones de brazos sobre BOSU",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0655": {
+    "name": "Flexiones de brazos sobre pelota de estabilidad",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0656": {
+    "name": "Flexiones de brazos sobre pelota de estabilidad",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0659": {
+    "name": "Flexiones (pared)",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0658": {
+    "name": "Flexión (pared) v.2",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0660": {
+    "name": "Flexiones con agarre cerrado con mancuernas",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0661": {
+    "name": "Flexión de brazos patada interior de la pierna",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0663": {
+    "name": "Balón medicinal de flexiones",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-1467": {
+    "name": "Flexiones en los antebrazos",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-3145": {
+    "name": "Flexiones más",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-3533": {
+    "name": "Cuádriceps",
+    "aliases": []
+  },
+  "flow-3201": {
+    "name": "Cuarto de abdominales",
+    "aliases": []
+  },
+  "flow-3552": {
+    "name": "Pies rápidos v.2",
+    "aliases": []
+  },
+  "flow-0666": {
+    "name": "Levantar flexión de un solo brazo",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0668": {
+    "name": "Puente de descenso trasero",
+    "aliases": []
+  },
+  "flow-0669": {
+    "name": "Estiramiento deltoides posterior",
+    "aliases": []
+  },
+  "flow-0670": {
+    "name": "Dominadas posterior",
+    "aliases": []
+  },
+  "flow-1582": {
+    "name": "Postura del dedo gordo reclinado con cuerda",
+    "aliases": []
+  },
+  "flow-3236": {
+    "name": "Empuje de cadera (hip thrust) con apoyo de rodillas con banda de resistencia",
+    "aliases": []
+  },
+  "flow-3007": {
+    "name": "Extensión de rodillas con banda de resistencia",
+    "aliases": []
+  },
+  "flow-3123": {
+    "name": "Curl de bíceps sentado con banda de resistencia",
+    "aliases": []
+  },
+  "flow-3124": {
+    "name": "Press de pecho sentado con banda de resistencia",
+    "aliases": []
+  },
+  "flow-3006": {
+    "name": "Abducción de cadera sentado con banda de resistencia",
+    "aliases": []
+  },
+  "flow-3122": {
+    "name": "Press de hombros sentado con banda de resistencia",
+    "aliases": []
+  },
+  "flow-3144": {
+    "name": "Banda de resistencia sentada en la última fila",
+    "aliases": []
+  },
+  "flow-0672": {
+    "name": "Inmersión inversa",
+    "aliases": []
+  },
+  "flow-0673": {
+    "name": "Jalón lateral con máquina de agarre inverso",
+    "aliases": []
+  },
+  "flow-0674": {
+    "name": "Dominadas con agarre supino",
+    "aliases": [
+      "dominadas supinas",
+      "dominadas para bíceps"
+    ]
+  },
+  "flow-1423": {
+    "name": "Hiper inversa en banco plano",
+    "aliases": []
+  },
+  "flow-3663": {
+    "name": "Plancha invertida con elevación de piernas",
+    "aliases": []
+  },
+  "flow-2571": {
+    "name": "Estiramiento de rana mecedora",
+    "aliases": []
+  },
+  "flow-2204": {
+    "name": "Sierra de rodillos",
+    "aliases": []
+  },
+  "flow-2205": {
+    "name": "Estiramiento lateral de cadera con rodillo",
+    "aliases": []
+  },
+  "flow-2202": {
+    "name": "Estiramiento de cadera con rodillo",
+    "aliases": []
+  },
+  "flow-2206": {
+    "name": "Crunch inverso con rodillo",
+    "aliases": []
+  },
+  "flow-2203": {
+    "name": "Retractor depresor flexor de hombro sentado con rodillo",
+    "aliases": []
+  },
+  "flow-2207": {
+    "name": "Estiramiento lateral del lado del rodillo",
+    "aliases": []
+  },
+  "flow-0685": {
+    "name": "Correr",
+    "aliases": []
+  },
+  "flow-0684": {
+    "name": "Correr (equipo)",
+    "aliases": []
+  },
+  "flow-1585": {
+    "name": "Los corredores se estiran",
+    "aliases": []
+  },
+  "flow-3012": {
+    "name": "Inmersiones de la escápula",
+    "aliases": []
+  },
+  "flow-3021": {
+    "name": "Flexión de escápula",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-3219": {
+    "name": "Saltos de tijera",
+    "aliases": []
+  },
+  "flow-1390": {
+    "name": "Estiramiento de pantorrilla sentado",
+    "aliases": []
+  },
+  "flow-1424": {
+    "name": "Estiramiento de glúteos sentado",
+    "aliases": []
+  },
+  "flow-0689": {
+    "name": "Elevación de piernas sentado",
+    "aliases": []
+  },
+  "flow-0690": {
+    "name": "Estiramiento de la espalda baja sentado",
+    "aliases": []
+  },
+  "flow-2567": {
+    "name": "Estiramiento del piriforme sentado",
+    "aliases": []
+  },
+  "flow-0691": {
+    "name": "Abdominales laterales sentado (pared)",
+    "aliases": []
+  },
+  "flow-1587": {
+    "name": "Secuencia de pose de gran angular sentado",
+    "aliases": []
+  },
+  "flow-0697": {
+    "name": "Curl de piernas inverso autoasistido",
+    "aliases": []
+  },
+  "flow-1766": {
+    "name": "Curl de piernas inverso autoasistido",
+    "aliases": []
+  },
+  "flow-0696": {
+    "name": "Curl de piernas inverso autoasistido (en el suelo)",
+    "aliases": []
+  },
+  "flow-3222": {
+    "name": "Salto en semi sentadilla",
+    "aliases": []
+  },
+  "flow-3656": {
+    "name": "Carrera de zancada corta",
+    "aliases": []
+  },
+  "flow-1763": {
+    "name": "Dominadas con agarre en el hombro",
+    "aliases": []
+  },
+  "flow-3699": {
+    "name": "Golpecito en el hombro",
+    "aliases": []
+  },
+  "flow-0699": {
+    "name": "Flexión de hombros",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-1774": {
+    "name": "Abducción de cadera con puente lateral",
+    "aliases": []
+  },
+  "flow-0705": {
+    "name": "Puente lateral v.2",
+    "aliases": []
+  },
+  "flow-0709": {
+    "name": "Cadera lateral (en barras paralelas)",
+    "aliases": []
+  },
+  "flow-0710": {
+    "name": "Abducción lateral de cadera",
+    "aliases": []
+  },
+  "flow-3667": {
+    "name": "Aducción de cadera en decúbito lateral",
+    "aliases": []
+  },
+  "flow-1775": {
+    "name": "Aducción de cadera en plancha lateral",
+    "aliases": []
+  },
+  "flow-0716": {
+    "name": "Estiramiento del cuello con empuje lateral",
+    "aliases": []
+  },
+  "flow-0717": {
+    "name": "Flexiones laterales",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0721": {
+    "name": "Estiramiento lateral de la muñeca",
+    "aliases": []
+  },
+  "flow-0720": {
+    "name": "Barbilla de lado a lado",
+    "aliases": []
+  },
+  "flow-3213": {
+    "name": "Toque de lado a lado del dedo del pie",
+    "aliases": []
+  },
+  "flow-3645": {
+    "name": "Puente de una sola pierna con la pierna extendida",
+    "aliases": []
+  },
+  "flow-0727": {
+    "name": "Elevación de pantorrilla con una sola pierna (con mancuerna)",
+    "aliases": []
+  },
+  "flow-0730": {
+    "name": "Diapositiva de plataforma de una sola pierna",
+    "aliases": []
+  },
+  "flow-1759": {
+    "name": "Sentadilla con una sola pierna (pistola)",
+    "aliases": []
+  },
+  "flow-1489": {
+    "name": "Sentadilla mariquita",
+    "aliases": []
+  },
+  "flow-0735": {
+    "name": "Incorporaciones de tronco (variante 2)",
+    "aliases": []
+  },
+  "flow-3679": {
+    "name": "Sentarse con los brazos en el pecho",
+    "aliases": []
+  },
+  "flow-3361": {
+    "name": "Saltos patinadores",
+    "aliases": []
+  },
+  "flow-2142": {
+    "name": "Esquí ergómetro",
+    "aliases": []
+  },
+  "flow-3671": {
+    "name": "Paso de esquí",
+    "aliases": []
+  },
+  "flow-3304": {
+    "name": "Despellejar al gato",
+    "aliases": []
+  },
+  "flow-1425": {
+    "name": "Trineo 45 grados prensa de una pierna",
+    "aliases": []
+  },
+  "flow-0738": {
+    "name": "Trineo 45 ° prensa de pantorrillas",
+    "aliases": []
+  },
+  "flow-0739": {
+    "name": "Trineo 45 ° prensa de piernas",
+    "aliases": []
+  },
+  "flow-1464": {
+    "name": "Trineo 45 ° prensa de piernas (punto de vista posterior)",
+    "aliases": []
+  },
+  "flow-1463": {
+    "name": "Press de piernas en trineo a 45° (punto de vista lateral)",
+    "aliases": []
+  },
+  "flow-0740": {
+    "name": "Trineo 45 ° prensa de pierna ancha",
+    "aliases": []
+  },
+  "flow-1391": {
+    "name": "Prensa de pantorrillas en trineo en prensa de piernas",
+    "aliases": []
+  },
+  "flow-0741": {
+    "name": "Sentadilla hack más cerca del trineo",
+    "aliases": []
+  },
+  "flow-0742": {
+    "name": "Elevación de pantorrilla en ángulo hacia adelante en trineo",
+    "aliases": []
+  },
+  "flow-0743": {
+    "name": "Sentadilla hack en máquina de trineo",
+    "aliases": []
+  },
+  "flow-2334": {
+    "name": "Extensión de tobillos en prensa acostado en máquina de trineo",
+    "aliases": []
+  },
+  "flow-0744": {
+    "name": "Sentadilla acostado en máquina de trineo",
+    "aliases": []
+  },
+  "flow-1392": {
+    "name": "Trineo con una pierna, prensa de pantorrillas, prensa de piernas",
+    "aliases": []
+  },
+  "flow-1496": {
+    "name": "Martillo",
+    "aliases": []
+  },
+  "flow-0746": {
+    "name": "Smith se encoge de hombros",
+    "aliases": []
+  },
+  "flow-0747": {
+    "name": "Smith detrás de la prensa del cuello",
+    "aliases": []
+  },
+  "flow-0748": {
+    "name": "Press de banca en máquina Smith",
+    "aliases": []
+  },
+  "flow-0749": {
+    "name": "Buenos días con rodillas flexionadas en máquina Smith",
+    "aliases": []
+  },
+  "flow-1359": {
+    "name": "Remo con el tronco inclinado en máquina Smith",
+    "aliases": []
+  },
+  "flow-0750": {
+    "name": "Sentadilla en silla smith",
+    "aliases": []
+  },
+  "flow-0751": {
+    "name": "Press de banca con agarre cerrado en máquina Smith",
+    "aliases": []
+  },
+  "flow-0752": {
+    "name": "Peso muerto en máquina Smith",
+    "aliases": []
+  },
+  "flow-0753": {
+    "name": "Press de banca en banco declinado en máquina Smith",
+    "aliases": []
+  },
+  "flow-0754": {
+    "name": "Prensa Smith Declive con agarre inverso",
+    "aliases": []
+  },
+  "flow-1433": {
+    "name": "Sentadilla frontal Smith (agarre limpio)",
+    "aliases": []
+  },
+  "flow-3281": {
+    "name": "Sentadilla profunda en máquina Smith",
+    "aliases": []
+  },
+  "flow-0755": {
+    "name": "Sentadilla hack en máquina Smith",
+    "aliases": []
+  },
+  "flow-0756": {
+    "name": "Elevación de cadera en máquina Smith",
+    "aliases": []
+  },
+  "flow-0757": {
+    "name": "Press de banca en banco inclinado en máquina Smith",
+    "aliases": []
+  },
+  "flow-0758": {
+    "name": "Prensa inclinada Smith con agarre inverso",
+    "aliases": []
+  },
+  "flow-0759": {
+    "name": "Elevaciones de hombros inclinadas de Smith.",
+    "aliases": []
+  },
+  "flow-0760": {
+    "name": "Prensa de piernas en máquina Smith",
+    "aliases": []
+  },
+  "flow-1434": {
+    "name": "Sentadilla con barra baja en máquina Smith",
+    "aliases": []
+  },
+  "flow-1683": {
+    "name": "Curl de bíceps en máquina Smith",
+    "aliases": []
+  },
+  "flow-1625": {
+    "name": "Press de banca con agarre cerrado en banco declinado en máquina Smith",
+    "aliases": []
+  },
+  "flow-1752": {
+    "name": "Extensión de tríceps en banco inclinado en máquina Smith",
+    "aliases": []
+  },
+  "flow-1626": {
+    "name": "Press de banca con agarre cerrado y descenso inverso con máquina Smith",
+    "aliases": []
+  },
+  "flow-0761": {
+    "name": "Fila estrecha smith",
+    "aliases": []
+  },
+  "flow-1360": {
+    "name": "Remo a un brazo en máquina Smith",
+    "aliases": []
+  },
+  "flow-1393": {
+    "name": "Elevación de talones en el suelo a una pierna en máquina Smith",
+    "aliases": []
+  },
+  "flow-0762": {
+    "name": "Remo para deltoides posteriores en máquina Smith",
+    "aliases": []
+  },
+  "flow-0763": {
+    "name": "Elevación de puntas en máquina Smith",
+    "aliases": []
+  },
+  "flow-1394": {
+    "name": "Elevación de puntas en máquina Smith",
+    "aliases": []
+  },
+  "flow-1361": {
+    "name": "Remo con agarre inverso con el tronco inclinado en máquina Smith",
+    "aliases": []
+  },
+  "flow-0764": {
+    "name": "Prensa smith de agarre inverso",
+    "aliases": []
+  },
+  "flow-1395": {
+    "name": "Elevación de talones a una pierna sentado en máquina Smith",
+    "aliases": []
+  },
+  "flow-0765": {
+    "name": "Press de hombros sentado en máquina Smith",
+    "aliases": []
+  },
+  "flow-1426": {
+    "name": "Flexión de muñecas sentado en máquina Smith",
+    "aliases": []
+  },
+  "flow-0766": {
+    "name": "Press de hombros en máquina Smith",
+    "aliases": []
+  },
+  "flow-0767": {
+    "name": "Encogimiento de hombros en máquina Smith",
+    "aliases": []
+  },
+  "flow-0769": {
+    "name": "Desplante de sprint de smith",
+    "aliases": []
+  },
+  "flow-0770": {
+    "name": "Sentadilla en máquina Smith",
+    "aliases": []
+  },
+  "flow-0771": {
+    "name": "Smith de pie hacia atrás curl de muñeca",
+    "aliases": []
+  },
+  "flow-0772": {
+    "name": "Press militar de pie detrás de la cabeza en máquina Smith",
+    "aliases": []
+  },
+  "flow-0773": {
+    "name": "Elevación de pantorrilla con pierna de pie de smith",
+    "aliases": []
+  },
+  "flow-0774": {
+    "name": "Press militar de pie en máquina Smith",
+    "aliases": []
+  },
+  "flow-3142": {
+    "name": "Sentadilla de sumo smith",
+    "aliases": []
+  },
+  "flow-1396": {
+    "name": "Elevación del dedo del pie smith",
+    "aliases": []
+  },
+  "flow-0775": {
+    "name": "Remo al mentón en máquina Smith",
+    "aliases": []
+  },
+  "flow-1308": {
+    "name": "Press de banca con agarre amplio en máquina Smith",
+    "aliases": []
+  },
+  "flow-1309": {
+    "name": "Press de banca con agarre amplio en banco declinado en máquina Smith",
+    "aliases": []
+  },
+  "flow-1362": {
+    "name": "Esfinge",
+    "aliases": []
+  },
+  "flow-0778": {
+    "name": "Flexión de araña arrastrada hacia arriba",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-1363": {
+    "name": "Estiramiento de la columna",
+    "aliases": []
+  },
+  "flow-2329": {
+    "name": "Giro de la columna",
+    "aliases": []
+  },
+  "flow-1705": {
+    "name": "Sentadilla sobre BOSU",
+    "aliases": []
+  },
+  "flow-1685": {
+    "name": "Sentadillas hasta alcanzar la altura de la cabeza",
+    "aliases": []
+  },
+  "flow-1686": {
+    "name": "Sentadilla hasta alcanzar la altura de la cabeza con giro",
+    "aliases": []
+  },
+  "flow-2297": {
+    "name": "Crunch con balón de estabilidad (manos detrás de la cabeza en todo el rango)",
+    "aliases": []
+  },
+  "flow-3291": {
+    "name": "Prensa stalder",
+    "aliases": []
+  },
+  "flow-3669": {
+    "name": "Arquero de pie",
+    "aliases": []
+  },
+  "flow-0788": {
+    "name": "Prensa de pie detrás del cuello",
+    "aliases": []
+  },
+  "flow-1490": {
+    "name": "Elevación de pantorrillas de pie (en una escalera)",
+    "aliases": []
+  },
+  "flow-1397": {
+    "name": "Pantorrillas de pie",
+    "aliases": []
+  },
+  "flow-1398": {
+    "name": "Pantorrillas de pie estiramiento de pantorrillas",
+    "aliases": []
+  },
+  "flow-1599": {
+    "name": "Estiramiento de isquiotibiales y pantorrillas de pie con correa",
+    "aliases": []
+  },
+  "flow-0795": {
+    "name": "Curl con una sola pierna de pie",
+    "aliases": []
+  },
+  "flow-0796": {
+    "name": "Despliegue de rueda de pie",
+    "aliases": []
+  },
+  "flow-3223": {
+    "name": "Salto de estrella",
+    "aliases": []
+  },
+  "flow-2138": {
+    "name": "Carrera en bicicleta estática v.3",
+    "aliases": []
+  },
+  "flow-0798": {
+    "name": "Paseo en bicicleta estacionaria",
+    "aliases": []
+  },
+  "flow-3314": {
+    "name": "Maltés a horcajadas",
+    "aliases": []
+  },
+  "flow-3298": {
+    "name": "Plancha a horcajadas",
+    "aliases": []
+  },
+  "flow-1427": {
+    "name": "Abductor externo de cadera con pierna recta",
+    "aliases": []
+  },
+  "flow-0803": {
+    "name": "Flexiones de superman",
+    "aliases": [
+      "lagartijas"
+    ]
+  },
+  "flow-0805": {
+    "name": "Lluvia abdominal suspendida",
+    "aliases": []
+  },
+  "flow-3433": {
+    "name": "Patadas de nadador v.2",
+    "aliases": []
+  },
+  "flow-3318": {
+    "name": "Columpio 360",
+    "aliases": []
+  },
+  "flow-1753": {
+    "name": "Tres fondos de banco",
+    "aliases": []
+  },
+  "flow-0814": {
+    "name": "Fondos para tríceps",
+    "aliases": []
+  },
+  "flow-0812": {
+    "name": "Fondos de tríceps (pierna de banco)",
+    "aliases": []
+  },
+  "flow-0813": {
+    "name": "Fondos de tríceps (entre bancos)",
+    "aliases": []
+  },
+  "flow-0815": {
+    "name": "Fondos para tríceps en el suelo",
+    "aliases": []
+  },
+  "flow-0816": {
+    "name": "Prensa de tríceps",
+    "aliases": []
+  }
+}

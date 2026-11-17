@@ -22,6 +22,7 @@ function card(item) {
   const source = thumbnail(item); if (source) image.src = source; else image.hidden = true;
   image.addEventListener('error', () => { image.hidden = true; node.prepend(el('p', 'No se pudo cargar la imagen. Abre la ficha para reintentar.', 'media-status')); }, { once: true });
   node.append(image, el('span', 'ILUSTRACIÓN ANIMADA', 'badge'), el('h3', item.name), el('p', item.primaryMuscles.map(label).join(' · '), 'muscles'), el('p', label(item.equipment)));
+  if (item.localizationReview?.titleReview?.status === 'pending-review') node.append(el('p', 'Título pendiente de revisión', 'credit'));
   const button = el('button', 'Ver ejercicio y animación'); button.setAttribute('aria-label', `Ver ${item.name}`);
   button.onclick = () => { lastButton = button; void detail(item); }; node.append(button); return node;
 }
@@ -100,9 +101,14 @@ async function detail(original) {
     const item = (await api('/api/v1/exercises/' + encodeURIComponent(original.id) + '?lang=es', signal)).data;
     if (signal.aborted) return; if (item.id !== original.id) throw Error('La identidad del ejercicio no coincide.');
     body.replaceChildren(el('p', item.id, 'eyebrow'), el('h2', item.name)); body.children[1].id = 'detail-title';
+    if (item.localizationReview?.titleReview?.status === 'pending-review') body.append(el('p', 'Título pendiente de revisión: falta confirmar esta variante.', 'credit'));
     body.append(el('p', `Músculos: ${item.primaryMuscles.map(label).join(' · ')}`), el('p', `Equipo: ${label(item.equipment)}`), demonstration(item), el('h3', 'Instrucciones'));
-    if (item.language !== 'es') body.append(el('p', 'Instrucciones originales en inglés.', 'credit'));
-    const list = el('ol'); item.instructions.forEach(step => list.append(el('li', step))); body.append(list);
+    const pending = item.localizationReview?.status === 'pending-review';
+    if (pending) body.append(el('p', 'Texto en español pendiente de revisión. La técnica de esta variante aún no está validada.', 'credit'));
+    else if (item.language !== 'es') body.append(el('p', 'Instrucciones originales en inglés.', 'credit'));
+    const conflict = item.localizationReview?.reasons?.some(reason => ['grip-conflict', 'assistance-unspecified'].includes(reason.code));
+    if (conflict) body.append(el('p', 'Las instrucciones de esta variante están en revisión.', 'credit'));
+    else { const list = el('ol'); item.instructions.forEach(step => list.append(el('li', step))); body.append(list); }
     if (item.source) {
       body.append(el('p', `${item.source.attribution || item.source.id} · ${item.source.license || ''}`, 'credit'));
       const link = el('a', 'Consultar fuente original'); link.href = item.source.url; link.target = '_blank'; link.rel = 'noopener noreferrer'; body.append(link);

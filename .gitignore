@@ -4,3 +4,4 @@ coverage/
 data/*.tmp
 media-report.json
 *.log
+dist/

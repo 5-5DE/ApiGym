@@ -11,7 +11,7 @@ const request = async path => {const r=await fetch(base+path);return {r,body:awa
 test('catálogo real y búsqueda en español sin acentos',async()=>{
   const {body}=await request('/api/v1/exercises?q=sentadilla%20profunda&popular=true');
   assert.ok(body.data.some(e=>e.id==='Barbell_Full_Squat'));
-  assert.equal(stats().total,1257);assert.equal(stats().spanish,10);assert.equal(stats().withSvgAnimation,1257);assert.equal(stats().withGifOrVideo,0);assert.equal(stats().withoutAnimation,0);
+  assert.equal(stats().total,1257);assert.equal(stats().spanish,1257);assert.equal(stats().withSvgAnimation,1257);assert.equal(stats().withGifOrVideo,0);assert.equal(stats().withoutAnimation,0);
   for(const e of body.data){assert.equal(e.language,'es');assert.ok(e.instructions.length>=2);}
 });
 test('filtros combinados solo consideran músculos principales',async()=>{
@@ -37,7 +37,7 @@ test('detalle localizado, idioma original explícito y ausencia de instrucciones
   const en=(await request('/api/v1/exercises/Barbell_Full_Squat?lang=en')).body.data;
   assert.equal(en.language,'en');assert.equal(en.name,en.nameEn);
   const fallback=(await request('/api/v1/exercises/Air_Bike')).body.data;
-  assert.equal(fallback.requestedLanguage,'es');assert.equal(fallback.language,'en');
+  assert.equal(fallback.requestedLanguage,'es');assert.equal(fallback.language,'es');assert.equal(fallback.localizationReview.status,'pending-review');
   assert.equal(getExercise('Iron_Cross'),null);
   const missing=await request('/api/v1/exercises/nope');assert.equal(missing.r.status,404);
 });

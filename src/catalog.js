@@ -10,7 +10,6 @@ const translations = read('../data/translations.es.json');
 const mediaRecords = read('../data/media.json');
 export const catalogPruning = read('../data/catalog-pruning.json');
 const legacyIds = validateDataset(rawExercises);
-validateTranslations(translations, legacyIds);
 
 const flowSource = { id: 'flow-exercise-dataset', url: 'https://github.com/ozansozuozgit/flow-exercise-dataset', license: 'MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)', licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/', attribution: 'Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım', provenanceNote: 'Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md' };
 const flowById = new Map();
@@ -31,6 +30,7 @@ for (const f of flowExercises) {
 }
 for (const e of rawExercises) if (!e.flowRecord && flowById.has(e.id)) e.flowRecord = flowById.get(e.id);
 const ids = new Set(rawExercises.map(e => e.id));
+validateTranslations(translations, ids);
 validateMedia(mediaRecords, ids);
 
 export const labels = {
@@ -66,10 +66,13 @@ export function localize(e, lang = 'es') {
     availableLanguages: translations[e.id] ? ['en', 'es'] : ['en'],
     instructions: (t?.instructions || e.instructions).filter(s => s.trim()),
     instructionsAvailable: Boolean(t?.instructions?.length || e.instructions.some(s => s.trim())),
-    translationStatus: t ? 'ai-authored-unreviewed' : 'upstream',
+    translationStatus: t ? (t.status === 'adapted' ? 'source-checked-editorial' : t.status === 'pending-review' ? 'pending-review' : 'ai-authored-unreviewed') : 'upstream',
+    instructionsEn: e.instructions.filter(s => s.trim()),
+    localizationReview: t ? { locale:t.locale || 'es-MX', status:t.status || 'pending-review', method:t.method || 'previous-unreviewed-translation', reasons:t.reviewReasons || [], sourceRefs:t.sourceRefs || [], visualReview:t.visualReview || 'not-performed', titleReview:t.titleReview || null } : null,
+    illustrationMetadata: translations[e.id]?.illustrationMetadata || {personDepicted:null},
     primaryMuscles: e.primaryMuscles, secondaryMuscles: e.secondaryMuscles,
     equipment: e.equipment || 'unknown', difficulty: e.level || 'unknown', category: e.category,
-    mechanic: e.mechanic, force: e.force, popular: Boolean(translations[e.id]),
+    mechanic: e.mechanic, force: e.force, popular: Boolean(translations[e.id] && translations[e.id].popular !== false),
     media: mediaFor(e), source: e.flowRecord ? flowSource : source,
     dataSources: e.flowRecord ? [flowSource, ...(e.id.startsWith('flow-') ? [] : [source])] : [source],
     movementPattern: e.flowRecord?.movementPattern || null,
@@ -101,7 +104,7 @@ export function queryExercises(params) {
     (!muscle || e.primaryMuscles.includes(muscle)) &&
     (!equipment || (e.equipment || 'unknown') === equipment) &&
     (!difficulty || (e.level || 'unknown') === difficulty) && (!category || e.category === category) &&
-    (!popular || Boolean(translations[e.id]) === (popular === 'true')) &&
+    (!popular || Boolean(translations[e.id] && translations[e.id].popular !== false) === (popular === 'true')) &&
     (!animation || Boolean(mediaFor(e).animation) === (animation === 'true'))
   );
   filtered.sort((a,b) => sort === 'id' ? a.id.localeCompare(b.id, 'en') : ((lang === 'es' ? translations[a.id]?.name : null) || a.name).localeCompare((lang === 'es' ? translations[b.id]?.name : null) || b.name, lang) || a.id.localeCompare(b.id, 'en'));
@@ -116,5 +119,7 @@ export const catalogVersion = createHash('sha256').update(JSON.stringify({rawExe
 export function stats() {
   const animatedIds = new Set(rawExercises.filter(e => e.flowRecord?.animation || mediaRecords.some(m => m.exerciseId === e.id)).map(e => e.id));
   const translated = rawExercises.filter(e => translations[e.id]).length;
-  return { version: catalogVersion, total: rawExercises.length, spanish: translated, popular: translated, withImages: 0, withImageSequence: 0, withAnimation: animatedIds.size, withSvgAnimation: rawExercises.filter(e => e.flowRecord?.animation).length, withGifOrVideo: rawExercises.filter(e => !e.flowRecord?.animation && mediaRecords.some(m => m.exerciseId === e.id)).length, withoutAnimation: rawExercises.length - animatedIds.size, mediaHosting: 'local-svg', languages: ['en', 'es'] };
+  const spanishAdapted = rawExercises.filter(e => translations[e.id]?.status === 'adapted').length;
+  const popular = rawExercises.filter(e => translations[e.id] && translations[e.id].popular !== false).length;
+  return { version: catalogVersion, total: rawExercises.length, spanish: translated, spanishAdapted, spanishPendingReview:translated-spanishAdapted, popular, withImages: 0, withImageSequence: 0, withAnimation: animatedIds.size, withSvgAnimation: rawExercises.filter(e => e.flowRecord?.animation).length, withGifOrVideo: rawExercises.filter(e => !e.flowRecord?.animation && mediaRecords.some(m => m.exerciseId === e.id)).length, withoutAnimation: rawExercises.length - animatedIds.size, mediaHosting: 'local-svg', languages: ['en', 'es'] };
 }

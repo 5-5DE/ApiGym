@@ -1,0 +1,222 @@
+{
+  "flow-0662": {
+    "name": "Flexiones de brazos",
+    "aliases": [
+      "lagartijas",
+      "flexiones de pecho"
+    ],
+    "sources": [
+      "smartfit-mx-flexiones"
+    ],
+    "instructions": [
+      "Colócate en plancha alta, con las manos un poco más separadas que los hombros y los pies juntos.",
+      "Mantén firme el abdomen y flexiona los codos para bajar el cuerpo en línea recta.",
+      "Cuando el pecho quede justo por encima del suelo, haz una pausa breve. Empuja con las manos y extiende los brazos para regresar.",
+      "Repite el movimiento según tu rutina."
+    ],
+    "visualReview": "inspected-three-frames"
+  },
+  "flow-0259": {
+    "name": "Flexiones de brazos con agarre cerrado",
+    "aliases": [
+      "lagartijas cerradas"
+    ],
+    "sources": [
+      "smartfit-mx-flexiones",
+      "smartfit-mx-agarres"
+    ],
+    "instructions": [
+      "Colócate en plancha alta, con las manos cercanas entre sí y debajo de los hombros.",
+      "Mantén firme el abdomen y baja el cuerpo hacia el suelo, con los codos cerca de los costados.",
+      "Empuja con las palmas y extiende los brazos para volver a la posición inicial.",
+      "Repite el movimiento según tu rutina."
+    ],
+    "visualReview": "inspected-three-frames"
+  },
+  "flow-0283": {
+    "name": "Flexiones diamante",
+    "aliases": [
+      "lagartijas diamante"
+    ],
+    "sources": [
+      "smartfit-mx-flexiones"
+    ],
+    "instructions": [
+      "Colócate en plancha alta y acerca las manos hasta formar un diamante con los pulgares y los índices.",
+      "Mantén el cuerpo alineado de la cabeza a los pies y contrae el abdomen y los glúteos.",
+      "Baja el pecho hacia las manos con los codos cerca del cuerpo.",
+      "Haz una pausa breve abajo y empuja para regresar a la posición inicial.",
+      "Repite el movimiento según tu rutina."
+    ],
+    "visualReview": "inspected-three-frames"
+  },
+  "flow-0652": {
+    "name": "Dominadas con agarre prono",
+    "aliases": [
+      "dominadas",
+      "dominadas en barra fija"
+    ],
+    "sources": [
+      "smartfit-mx-dominadas",
+      "smartfit-mx-agarres"
+    ],
+    "instructions": [
+      "Cuélgate de una barra con las palmas hacia el frente y los brazos extendidos.",
+      "Mantén firme el abdomen y acerca las escápulas.",
+      "Flexiona los codos para elevar el cuerpo y acercar el pecho a la barra.",
+      "Haz una pausa arriba y baja de forma lenta y controlada hasta la posición inicial.",
+      "Repite el movimiento según tu rutina."
+    ],
+    "visualReview": "inspected-three-frames"
+  },
+  "flow-0651": {
+    "name": "Dominadas con agarre neutro",
+    "aliases": [
+      "dominadas con palmas enfrentadas"
+    ],
+    "sources": [
+      "smartfit-mx-dominadas",
+      "smartfit-mx-agarres"
+    ],
+    "instructions": [
+      "Cuélgate de los agarres con las palmas enfrentadas y los brazos extendidos.",
+      "Mantén firme el abdomen y acerca las escápulas.",
+      "Flexiona los codos y llévalos hacia las caderas para elevar el cuerpo.",
+      "Continúa hasta que la barbilla supere la altura de los agarres.",
+      "Haz una pausa breve arriba y baja de forma lenta y controlada hasta la posición inicial.",
+      "Repite el movimiento según tu rutina."
+    ],
+    "visualReview": "inspected-three-frames"
+  },
+  "flow-0674": {
+    "name": "Dominadas con agarre supino",
+    "aliases": [
+      "dominadas supinas",
+      "dominadas para bíceps"
+    ],
+    "sources": [
+      "smartfit-mx-dominadas",
+      "smartfit-mx-agarres"
+    ],
+    "instructions": [
+      "Sujeta la barra con las palmas hacia ti y las manos al ancho de los hombros.",
+      "Cuélgate con los brazos extendidos y el cuerpo alineado.",
+      "Activa los músculos de la espalda y eleva el cuerpo acercando el pecho a la barra.",
+      "Continúa hasta que la barbilla pase por encima de la barra.",
+      "Haz una pausa breve arriba y baja lentamente hasta la posición inicial.",
+      "Repite el movimiento según tu rutina."
+    ],
+    "visualReview": "inspected-three-frames"
+  },
+  "flow-0294": {
+    "name": "Curl de bíceps con mancuernas",
+    "aliases": [
+      "flexión de bíceps con mancuernas"
+    ],
+    "sources": [
+      "smartfit-mx-peso-libre",
+      "smartfit-mx-agarres",
+      "vivagym-mancuernas"
+    ],
+    "instructions": [
+      "Colócate de pie con una mancuerna en cada mano, los brazos extendidos y las palmas hacia el frente.",
+      "Sin mover los brazos desde el hombro, exhala y flexiona los codos para subir las mancuernas.",
+      "Continúa hasta que las mancuernas queden a la altura de los hombros y los bíceps estén contraídos.",
+      "Mantén la contracción durante una pausa breve.",
+      "Inhala y baja las mancuernas de forma lenta y controlada hasta la posición inicial.",
+      "Repite el movimiento según tu rutina."
+    ],
+    "visualReview": "inspected-three-frames"
+  },
+  "flow-0315": {
+    "name": "Curl de bíceps con mancuernas en banco inclinado",
+    "aliases": [
+      "curl inclinado con mancuernas"
+    ],
+    "sources": [
+      "smartfit-mx-peso-libre",
+      "vivagym-mancuernas"
+    ],
+    "instructions": [
+      "Siéntate en un banco inclinado con una mancuerna en cada mano, las palmas hacia el frente y los brazos extendidos.",
+      "Mantén fija la parte superior de los brazos. Exhala y flexiona los codos para subir las mancuernas.",
+      "Continúa hasta que las mancuernas queden a la altura de los hombros y los bíceps estén contraídos.",
+      "Mantén la contracción durante una pausa breve.",
+      "Inhala y baja las mancuernas lentamente hasta la posición inicial.",
+      "Repite el movimiento según tu rutina."
+    ],
+    "visualReview": "inspected-three-frames"
+  },
+  "flow-0334": {
+    "name": "Elevaciones laterales con mancuernas",
+    "aliases": [
+      "vuelos laterales con mancuernas"
+    ],
+    "sources": [
+      "smartfit-mx-peso-libre"
+    ],
+    "instructions": [
+      "Colócate de pie con los pies al ancho de los hombros y una mancuerna en cada mano, con las palmas hacia el cuerpo.",
+      "Mantén la espalda recta y el abdomen firme.",
+      "Eleva los brazos hacia los lados hasta que queden paralelos al suelo, con los codos ligeramente flexionados.",
+      "Haz una pausa breve arriba y baja los brazos de forma lenta y controlada hasta la posición inicial.",
+      "Repite el movimiento según tu rutina."
+    ],
+    "visualReview": "inspected-three-frames"
+  },
+  "flow-0396": {
+    "name": "Elevaciones laterales con mancuernas sentado",
+    "aliases": [
+      "vuelos laterales sentado"
+    ],
+    "sources": [
+      "smartfit-mx-peso-libre"
+    ],
+    "instructions": [
+      "Siéntate en un banco con los pies apoyados en el suelo y una mancuerna en cada mano, apoyada sobre los muslos.",
+      "Mantén la espalda recta y el abdomen firme.",
+      "Eleva las mancuernas hacia los lados, con los codos ligeramente flexionados, hasta que los brazos queden paralelos al suelo.",
+      "Haz una pausa breve arriba y baja las mancuernas lentamente hasta la posición inicial.",
+      "Repite el movimiento según tu rutina."
+    ],
+    "visualReview": "inspected-three-frames"
+  },
+  "flow-0025": {
+    "name": "Press de banca con barra",
+    "aliases": [
+      "press plano con barra",
+      "press de pecho con barra"
+    ],
+    "sources": [
+      "smartfit-mx-peso-libre",
+      "smartfit-mx-agarres"
+    ],
+    "instructions": [
+      "Acuéstate en un banco plano con los pies apoyados en el suelo y la espalda apoyada en el banco.",
+      "Sujeta la barra con las palmas hacia el frente y las manos un poco más separadas que los hombros.",
+      "Saca la barra del soporte y sostenla sobre el pecho con los brazos extendidos.",
+      "Baja la barra lentamente hacia el pecho, manteniendo los codos cerca del cuerpo.",
+      "Haz una pausa breve cuando la barra toque el pecho.",
+      "Extiende los brazos para regresar la barra a la posición inicial.",
+      "Repite el movimiento según tu rutina."
+    ],
+    "visualReview": "inspected-three-frames"
+  },
+  "flow-1459": {
+    "name": "Peso muerto rumano con mancuernas",
+    "aliases": [
+      "peso muerto rumano"
+    ],
+    "sources": [
+      "vivagym-mancuernas",
+      "smartfit-mx-peso-libre"
+    ],
+    "instructions": [
+      "Colócate de pie con los pies al ancho de los hombros y una mancuerna en cada mano, con agarre prono.",
+      "Mantén la espalda recta y el abdomen firme. Lleva la cadera hacia atrás para bajar las mancuernas, dejando que las rodillas se flexionen ligeramente.",
+      "Baja hasta sentir el estiramiento en la parte posterior de los muslos. Después, empuja con los talones y contrae los glúteos para volver a la posición inicial.",
+      "Repite el movimiento según tu rutina."
+    ],
+    "visualReview": "inspected-three-frames"
+  }
+}
