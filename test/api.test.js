@@ -89,6 +89,25 @@ test('taxonomía y documentación coinciden con el catálogo',async()=>{
   const spec=(await request('/openapi.json')).body;assert.equal(spec.openapi,'3.1.0');
   for(const path of ['/','/docs','/demo.js','/docs.js','/style.css']){const r=await fetch(base+path);assert.equal(r.status,200,path);assert.ok(r.headers.get('content-security-policy'));await r.text();}
 });
+test('sirve los recursos locales del kit de marca',async()=>{
+  const assets=[
+    ['/brand/gymzong.css',/text\/css/],
+    ['/brand/fonts/Inter_400Regular.ttf',/font\/ttf/],
+    ['/brand/fonts/Inter_600SemiBold.ttf',/font\/ttf/],
+    ['/brand/fonts/Inter_700Bold.ttf',/font\/ttf/],
+    ['/brand/fonts/Manrope_700Bold.ttf',/font\/ttf/],
+    ['/brand/logo/logo-b-claro.svg',/image\/svg\+xml/],
+    ['/brand/logo/favicon.svg',/image\/svg\+xml/],
+    ['/brand/logo/favicon-32.png',/image\/png/],
+    ['/brand/logo/favicon-180.png',/image\/png/],
+  ];
+  for(const [path,type] of assets){
+    const r=await fetch(base+path);
+    assert.equal(r.status,200,path);
+    assert.match(r.headers.get('content-type'),type,path);
+    assert.ok((await r.arrayBuffer()).byteLength>0,path);
+  }
+});
 test('SDK usa el contrato real, codifica filtros y propaga errores',async()=>{
   const api=createApiGymClient({baseUrl:base});
   const r=await api.list({q:'bíceps',equipment:'dumbbell',limit:3});assert.equal(r.data.length,3);

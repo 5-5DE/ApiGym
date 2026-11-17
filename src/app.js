@@ -16,6 +16,15 @@ const files = new Map([
   ['/demo.js', ['../public/demo.js', 'text/javascript; charset=utf-8']],
   ['/docs.js', ['../public/docs.js', 'text/javascript; charset=utf-8']],
   ['/style.css', ['../public/style.css', 'text/css; charset=utf-8']],
+  ['/brand/gymzong.css', ['../public/brand/gymzong.css', 'text/css; charset=utf-8']],
+  ['/brand/fonts/Inter_400Regular.ttf', ['../public/brand/fonts/Inter_400Regular.ttf', 'font/ttf']],
+  ['/brand/fonts/Inter_600SemiBold.ttf', ['../public/brand/fonts/Inter_600SemiBold.ttf', 'font/ttf']],
+  ['/brand/fonts/Inter_700Bold.ttf', ['../public/brand/fonts/Inter_700Bold.ttf', 'font/ttf']],
+  ['/brand/fonts/Manrope_700Bold.ttf', ['../public/brand/fonts/Manrope_700Bold.ttf', 'font/ttf']],
+  ['/brand/logo/logo-b-claro.svg', ['../public/brand/logo/logo-b-claro.svg', 'image/svg+xml; charset=utf-8']],
+  ['/brand/logo/favicon.svg', ['../public/brand/logo/favicon.svg', 'image/svg+xml; charset=utf-8']],
+  ['/brand/logo/favicon-32.png', ['../public/brand/logo/favicon-32.png', 'image/png']],
+  ['/brand/logo/favicon-180.png', ['../public/brand/logo/favicon-180.png', 'image/png']],
 ]);
 const staticFiles = new Map([...files].map(([path, [file, type]]) => [path, {body: readFileSync(new URL(file, import.meta.url)), type}]));
 
