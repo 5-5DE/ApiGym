@@ -1,0 +1,25 @@
+{
+  "catalogVersion": "47778a9dcb80da73",
+  "before": {
+    "unknownDifficulty": 1135,
+    "missingMechanic": 1142,
+    "missingForce": 724,
+    "unknownEquipment": 13,
+    "popular": 10,
+    "duplicateNames": 34
+  },
+  "after": {
+    "unknownDifficulty": 0,
+    "missingMechanic": 0,
+    "missingForce": 0,
+    "unknownEquipment": 0,
+    "popular": 150,
+    "duplicateNames": 0
+  },
+  "grammaticallyChanged": 1214,
+  "formalAddress": {
+    "before": 1200,
+    "after": 0,
+    "heuristic": true
+  }
+}

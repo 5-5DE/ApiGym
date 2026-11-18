@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
-import {rawExercises,getExercise,queryExercises} from '../src/catalog.js';
+import {rawExercises,getExercise,queryExercises,catalogQuality} from '../src/catalog.js';
 import {batches} from '../scripts/title-review-decisions.js';
 
 const root=new URL('../',import.meta.url);
@@ -26,7 +26,7 @@ test('todos los títulos tienen una decisión individual y evidencia original vi
     assert.equal(row.evidence.frames.length,3,e.id);
     assert.deepEqual(row.evidence.frames.map(f=>f.path),e.flowRecord.animation.frames,e.id);
     for(const f of row.evidence.frames)assert.equal(f.sha256,hash(readFileSync(new URL('data/flow-exercise-dataset/'+f.path,root))),e.id);
-    assert.equal(es.name,row.name,e.id);
+    assert.equal(es.name,catalogQuality.entries[e.id]?.displayName || row.name,e.id);
     assert.equal(es.localizationReview.titleReview.status,row.status,e.id);
     assert.equal(es.localizationReview.titleReview.visualReview,'inspected-three-frames',e.id);
     if(row.status==='pending-review'){

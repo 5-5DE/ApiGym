@@ -1,0 +1,29 @@
+{
+  "catalogVersion": "47778a9dcb80da73",
+  "exercises": 1257,
+  "families": 60,
+  "counts": {
+    "difficulty": {
+      "missingBefore": 1081,
+      "missingAfter": 0,
+      "inheritedOrPreviouslyReviewed": 176,
+      "editorialEstimate": 783,
+      "provisionalIdentity": 298
+    },
+    "mechanic": {
+      "missingBefore": 989,
+      "missingAfter": 0,
+      "inheritedOrPreviouslyReviewed": 268,
+      "editorialEstimate": 686,
+      "provisionalIdentity": 303
+    },
+    "force": {
+      "missingBefore": 636,
+      "missingAfter": 0,
+      "inheritedOrPreviouslyReviewed": 621,
+      "editorialEstimate": 451,
+      "provisionalIdentity": 185
+    }
+  },
+  "identityConflicts": 346
+}

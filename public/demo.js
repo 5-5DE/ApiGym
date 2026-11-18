@@ -4,6 +4,7 @@ const normalize = value => String(value).normalize('NFD').replace(/[\u0300-\u036
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 let collection = 'historical', controller, detailController, lastButton, stopAnimation = () => {};
 const labels = new Map();
+const familyNames = new Map();
 const label = value => labels.get(value) || value;
 async function api(path, signal) {
   const response = await fetch(path, { headers: $('#key').value ? { 'X-API-Key': $('#key').value } : {}, signal });
@@ -23,6 +24,8 @@ function card(item) {
   image.addEventListener('error', () => { image.hidden = true; node.prepend(el('p', 'No se pudo cargar la imagen. Abre la ficha para reintentar.', 'media-status')); }, { once: true });
   node.append(image, el('span', 'ILUSTRACIÓN ANIMADA', 'badge'), el('h3', item.name), el('p', item.primaryMuscles.map(label).join(' · '), 'muscles'), el('p', label(item.equipment)));
   if (item.localizationReview?.titleReview?.status === 'pending-review') node.append(el('p', 'Título pendiente de revisión', 'credit'));
+  if (item.isDefaultVariant) node.append(el('span', 'VARIANTE BÁSICA', 'badge'));
+  if (item.popular) node.append(el('span', 'BÁSICO DEL GIMNASIO', 'badge'));
   const button = el('button', 'Ver ejercicio y animación'); button.setAttribute('aria-label', `Ver ${item.name}`);
   button.onclick = () => { lastButton = button; void detail(item); }; node.append(button); return node;
 }
@@ -34,25 +37,29 @@ async function load() {
   const form = new FormData($('#filters')), query = normalize(form.get('q') || '').trim();
   $('#status').textContent = 'Cargando ejercicios con imágenes…'; $('#results').setAttribute('aria-busy', 'true'); $('#results').replaceChildren();
   try {
-    let total = 0;
+    let total = 0, unavailable = [];
     if (collection === 'essential') {
       const snapshot = await api('/api/v1/selections/essential-50', signal);
       const ids = snapshot.data.map(item => item.id);
       // Use current catalog media instead of the historical editorial snapshot.
       const batch = await api('/api/v1/exercises/batch?' + new URLSearchParams({ ids: ids.join(','), lang: 'es' }), signal);
-      const items = batch.data.filter(item => (!form.get('muscle') || item.primaryMuscles.includes(form.get('muscle'))) && (!form.get('equipment') || item.equipment === form.get('equipment')) && (!query || normalize([item.id, item.name, item.nameEn, ...item.aliases, ...item.primaryMuscles.map(label)].join(' ')).includes(query)));
+      const items = batch.data.filter(item => (!form.get('muscle') || item.primaryMuscles.includes(form.get('muscle'))) && (!form.get('equipment') || item.equipment === form.get('equipment')) && (!form.get('familyId') || item.familyId === form.get('familyId')) && (!query || normalize([item.id, item.name, item.nameEn, ...item.aliases, ...item.primaryMuscles.map(label)].join(' ')).includes(query)));
       if (signal.aborted) return; appendCards(items); total = items.length;
     } else {
       const params = new URLSearchParams({ lang: 'es', limit: '100', offset: '0' });
-      for (const name of ['q', 'muscle', 'equipment']) if (form.get(name)) params.set(name, form.get(name));
+      if (collection === 'basics') params.set('popular', 'true');
+      if (query) { params.set('sort', 'relevance'); params.set('match', 'any'); }
+      for (const name of ['q', 'muscle', 'equipment', 'familyId']) if (form.get(name)) params.set(name, form.get(name));
       let offset = 0;
       do {
         params.set('offset', String(offset)); const page = await api('/api/v1/exercises?' + params, signal);
+        unavailable = page.unavailable || [];
         if (signal.aborted) return; appendCards(page.data); total = page.pagination.total;
         $('#status').textContent = `Cargando ${$('#results').children.length} de ${total} ejercicios…`; offset = page.pagination.nextOffset;
       } while (offset !== null);
     }
     $('#status').textContent = total ? `${total.toLocaleString('es-MX')} ejercicios con imágenes` : 'Sin resultados. Prueba otro nombre o cambia los filtros.';
+    if (unavailable.length) $('#status').textContent = `${unavailable.map(item => item.name).join(', ')}: pendiente de animación verificada. ${total ? 'Las fichas siguientes son otras coincidencias de palabras.' : 'Todavía no está disponible en el catálogo.'}`;
   } catch (error) { if (!signal.aborted) $('#status').textContent = `No se pudo completar la carga: ${error.message}. Pulsa Buscar para reintentar.`; }
   finally { if (!signal.aborted) $('#results').setAttribute('aria-busy', 'false'); }
 }
@@ -103,9 +110,23 @@ async function detail(original) {
     body.replaceChildren(el('p', item.id, 'eyebrow'), el('h2', item.name)); body.children[1].id = 'detail-title';
     if (item.localizationReview?.titleReview?.status === 'pending-review') body.append(el('p', 'Título pendiente de revisión: falta confirmar esta variante.', 'credit'));
     body.append(el('p', `Músculos: ${item.primaryMuscles.map(label).join(' · ')}`), el('p', `Equipo: ${label(item.equipment)}`), demonstration(item), el('h3', 'Instrucciones'));
+    if (item.familyId) body.insertBefore(el('p', `Familia: ${familyNames.get(item.familyId) || item.familyId}${item.isDefaultVariant ? ' · Variante básica' : ''}`), body.querySelector('.exercise-media'));
+    const estimates = Object.entries(item.metadataReview || {}).filter(([,review]) => review.basis === 'research-family-estimate');
+    body.insertBefore(el('p', `Dificultad${estimates.some(([field]) => field === 'difficulty') ? ' orientativa' : ''}: ${label(item.difficulty)} · Tipo: ${{compound:'Compuesto',isolation:'Aislamiento',isometric:'Isométrico','not-applicable':'No aplica'}[item.mechanic] || 'Sin clasificar'} · Acción: ${{push:'Empuje',pull:'Tracción',static:'Estática',mixed:'Mixta','not-applicable':'No aplica'}[item.force] || 'Sin clasificar'}`), body.querySelector('.exercise-media'));
+    if (estimates.length) {
+      body.insertBefore(el('p', `Clasificación orientativa por familia de movimiento (${estimates.map(([field]) => ({difficulty:'dificultad',mechanic:'tipo',force:'acción'}[field])).join(', ')}).${estimates.some(([,r]) => r.status === 'provisional-identity') ? ' Provisional: la identidad de esta variante sigue en revisión.' : ''}`, 'credit'), body.querySelector('.exercise-media'));
+      const references = el('details');
+      references.append(el('summary', 'Fuentes de la clasificación'));
+      for (const url of new Set(estimates.flatMap(([,review]) => review.sources))) {
+        const link = el('a', new URL(url).hostname); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer';
+        const paragraph = el('p'); paragraph.append(link); references.append(paragraph);
+      }
+      body.insertBefore(references, body.querySelector('.exercise-media'));
+    }
     const pending = item.localizationReview?.status === 'pending-review';
     if (pending) body.append(el('p', 'Texto en español pendiente de revisión. La técnica de esta variante aún no está validada.', 'credit'));
     else if (item.language !== 'es') body.append(el('p', 'Instrucciones originales en inglés.', 'credit'));
+    for (const reason of item.localizationReview?.reasons || []) if (reason.code === 'original-orientation-corrected') body.append(el('p', reason.detail, 'credit'));
     const conflict = item.localizationReview?.reasons?.some(reason => ['grip-conflict', 'assistance-unspecified'].includes(reason.code));
     if (conflict) body.append(el('p', 'Las instrucciones de esta variante están en revisión.', 'credit'));
     else { const list = el('ol'); item.instructions.forEach(step => list.append(el('li', step))); body.append(list); }
@@ -117,17 +138,23 @@ async function detail(original) {
 }
 function selectCollection(value) {
   collection = value;
-  for (const name of ['essential', 'historical']) { $(`#${name}`).setAttribute('aria-pressed', String(name === value)); $(`#${name}`).classList.toggle('secondary', name !== value); }
-  $('#collection-title').textContent = value === 'essential' ? 'Los 10 esenciales' : 'Catálogo completo'; void load();
+  for (const name of ['essential', 'historical', 'basics']) { const button=$(`#${name}`); if(button) {button.setAttribute('aria-pressed', String(name === value)); button.classList.toggle('secondary', name !== value);} }
+  $('#collection-title').textContent = value === 'essential' ? 'Los 10 esenciales' : value === 'basics' ? '150 básicos del gimnasio' : 'Catálogo completo'; void load();
 }
 $('#essential').onclick = () => selectCollection('essential'); $('#historical').onclick = () => selectCollection('historical');
+if ($('#basics')) $('#basics').onclick = () => selectCollection('basics');
 $('#filters').onsubmit = event => { event.preventDefault(); void load(); };
 $('#filters').onreset = () => { setTimeout(() => void load(), 0); };
 $('#close').onclick = () => $('#detail').close();
 $('#detail').addEventListener('close', () => { detailController?.abort(); stopAnimation(); $('#detail-body').replaceChildren(); lastButton?.focus(); });
 async function init() {
   await Promise.allSettled([
+    api('/api/v1/families?lang=es').then(({data}) => {
+      const select = $('select[name="familyId"]'); while (select.options.length > 1) select.remove(1);
+      for (const family of data) { familyNames.set(family.id, family.name); const option = el('option', family.name); option.value = family.id; select.append(option); }
+    }),
     api('/api/v1/taxonomy?lang=es').then(({ data }) => {
+      for (const entry of data.difficulty) labels.set(entry.id,entry.name);
       for (const [name, entries] of [['muscle', data.muscles], ['equipment', data.equipment]]) {
         const select = $(`select[name="${name}"]`); while (select.options.length > 1) select.remove(1);
         for (const entry of entries) { labels.set(entry.id, entry.name); if (!entry.count) continue; const option = el('option', entry.name); option.value = entry.id; select.append(option); }

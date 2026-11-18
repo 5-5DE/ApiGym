@@ -1,0 +1,28 @@
+﻿dia,grupo_dia,ejercicio_nota,indicaciones_originales,repdb_candidato_id,estado_coincidencia,pendientes
+Lunes,Pierna y glúteo,Sentadilla profunda en aparato Jack invertido,al fallo; 35 de cada lado,hack-squat,"Candidato, variante por confirmar",El catálogo incluye hack squat estándar; no asumir que es Jack invertido.
+Lunes,Pierna y glúteo,Extensión con banco poco inclinado,peso 10; al fallo,,Sin correspondencia validada,Nombre del aparato/movimiento ambiguo.
+Lunes,Pierna y glúteo,Abductor,"peso 120; abro lento, cierro rápido; al fallo",hip-abduction,"Candidato, equipo por confirmar",Validar que sea abducción en máquina.
+Lunes,Pierna y glúteo,Prensa,40 por lado,leg-press,"Candidato, equipo por confirmar",Confirmar variante de prensa y unidad de carga.
+Lunes,Pierna y glúteo,Patada de glúteo,,cable-kickback,"Candidato, equipo por confirmar",Catálogo cubre patada en cable; comprobar si usa máquina distinta.
+Lunes,Pierna y glúteo,Pantorrilla,,standing-calf-raise,"Candidato, variante por confirmar","No sabemos si es de pie, sentado o máquina específica."
+Martes,Espalda y hombro,Jalón al pecho,6 plaquitas; al fallo,lat-pulldown,"Candidato, agarre por confirmar",Validar tipo de jalón y agarre.
+Martes,Espalda y hombro,Remo con barrita negra,5 plaquitas,,Sin correspondencia validada,"Identificar cable, agarre y máquina exacta."
+Martes,Espalda y hombro,Pull over con cuerda a la cadera,,,Sin correspondencia validada,Identificar variante de pullover / jalón brazos rectos.
+Martes,Espalda y hombro,Levantamiento de disco con ambas manos,,,Sin correspondencia validada,Identificar dirección/recorrido del levantamiento.
+Martes,Espalda y hombro,Jalón de cuerda a la cabeza,,face-pull,"Candidato, ejecución por confirmar","Podría parecerse al face pull, pero no asumir identidad."
+Martes,Espalda y hombro,Laterales,,,Sin correspondencia validada,Confirmar elevaciones laterales y equipo.
+Miércoles,Pierna y glúteo,Peso muerto,disco de 15 por lado,romanian-deadlift,"Candidato, tipo por confirmar","El catálogo contiene peso muerto rumano, pero aquí no indica variante."
+Miércoles,Pierna y glúteo,Femoral sentado,8 lib,seated-leg-curl,"Candidato, unidad por confirmar",Confirmar que es curl femoral sentado y qué significa 8 lib.
+Miércoles,Pierna y glúteo,Abductor,,hip-abduction,"Candidato, equipo por confirmar",La misma referencia que lunes solo si es la misma máquina.
+Miércoles,Pierna y glúteo,Pantorrilla,,standing-calf-raise,"Candidato, variante por confirmar",No asumir equipo de pie.
+Miércoles,Pierna y glúteo,Hip thrust,,,Sin correspondencia validada,Hay variantes en catálogo; conocer máquina/barra/mancuernas.
+Jueves,Pecho y brazos,Pec tec,6 plaquitas,pec-deck,"Candidato, equipo por confirmar",Comprobar aparato exacto.
+Jueves,Pecho y brazos,Chest press,6 plaquitas,chest-press-machine,"Candidato, equipo por confirmar",Confirmar aparato exacto.
+Jueves,Pecho y brazos,Chest press inclinado,planta baja,,Sin correspondencia validada,Planta baja parece ubicación; identificar variante real.
+Jueves,Pecho y brazos,Bíceps con mancuerna predicador,,preacher-curl,"Candidato, implemento por confirmar",El registro hallado emplea barra EZ; buscar versión mancuerna.
+Jueves,Pecho y brazos,Extensión de tríceps,,,Sin correspondencia validada,No sabemos si es cable/mancuerna/máquina.
+Viernes,Glúteo,Hip thrust,,,Sin correspondencia validada,No sabemos si coincide con miércoles en equipo.
+Viernes,Glúteo,Patada de glúteo,,cable-kickback,"Candidato, equipo por confirmar",Posible variante distinta.
+Viernes,Glúteo,Abductor,,hip-abduction,"Candidato, equipo por confirmar",Validar aparato.
+Viernes,Glúteo,Peso muerto unilateral,,single-leg-romanian-deadlift,"Candidato, tipo por confirmar",El catálogo tiene peso muerto rumano unilateral; no equivalencia garantizada.
+Viernes,Glúteo,Femoral sentado,,seated-leg-curl,"Candidato, equipo por confirmar",Comprobar máquina.

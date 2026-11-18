@@ -1,0 +1,6287 @@
+{
+  "3_4_Sit-Up": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Air_Bike": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Alternate_Heel_Touchers": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Ankle_Circles": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Balance_Board": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": null
+  },
+  "Band_Assisted_Pull-Up": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Barbell_Curl": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Barbell_Deadlift": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Barbell_Full_Squat": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Barbell_Glute_Bridge": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Barbell_Guillotine_Bench_Press": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Barbell_Hack_Squat": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Barbell_Incline_Shoulder_Raise": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Barbell_Lunge": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Barbell_Rear_Delt_Row": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Barbell_Seated_Calf_Raise": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "Barbell_Shrug": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Barbell_Side_Split_Squat": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Battling_Ropes": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Behind_Head_Chest_Stretch": {
+    "difficulty": "expert",
+    "mechanic": "isolation",
+    "force": "static"
+  },
+  "Body-Up": {
+    "difficulty": "intermediate",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "Bottoms_Up": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Butt-Ups": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Cable_Hip_Adduction": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Cable_Incline_Pushdown": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Cable_Incline_Triceps_Extension": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "Cable_Judo_Flip": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Cable_Preacher_Curl": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Cable_Reverse_Crunch": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Cable_Seated_Crunch": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Cable_Shoulder_Press": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Cable_Wrist_Curl": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Chair_Leg_Extended_Stretch": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "static"
+  },
+  "Chest_And_Front_Of_Shoulder_Stretch": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "static"
+  },
+  "Chin-Up": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Clock_Push-Up": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Cocoons": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Cross-Body_Crunch": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Crunch_-_Hands_Overhead": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Dead_Bug": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Decline_Crunch": {
+    "difficulty": "intermediate",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Decline_Push-Up": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Dumbbell_Bench_Press": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Dumbbell_Clean": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Dumbbell_Incline_Row": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Dumbbell_Incline_Shoulder_Raise": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "Dumbbell_Lying_One-Arm_Rear_Lateral_Raise": {
+    "difficulty": "intermediate",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Dumbbell_Lying_Pronation": {
+    "difficulty": "intermediate",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Dumbbell_Lying_Rear_Lateral_Raise": {
+    "difficulty": "intermediate",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Dumbbell_Lying_Supination": {
+    "difficulty": "intermediate",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Dumbbell_One-Arm_Shoulder_Press": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Dumbbell_One-Arm_Upright_Row": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Dumbbell_Prone_Incline_Curl": {
+    "difficulty": "intermediate",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Dumbbell_Raise": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Dumbbell_Rear_Lunge": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Dumbbell_Seated_One-Leg_Calf_Raise": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "Dumbbell_Shrug": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Dumbbell_Side_Bend": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Dumbbell_Squat": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Elbow_to_Knee": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Finger_Curls": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Flutter_Kicks": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Frankenstein_Squat": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Glute_Ham_Raise": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Hamstring_Stretch": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "static"
+  },
+  "Hanging_Leg_Raise": {
+    "difficulty": "expert",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Hanging_Pike": {
+    "difficulty": "expert",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Inchworm": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": null
+  },
+  "Incline_Push-Up": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Incline_Push-Up_Depth_Jump": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Intermediate_Hip_Flexor_and_Quad_Stretch": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "static"
+  },
+  "Inverted_Row": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Inverted_Row_with_Straps": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Isometric_Wipers": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Jackknife_Sit-Up": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Janda_Sit-Up": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Kettlebell_Arnold_Press": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Kettlebell_Figure_8": {
+    "difficulty": "intermediate",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "Kettlebell_Hang_Clean": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Kettlebell_Pistol_Squat": {
+    "difficulty": "expert",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Kettlebell_Seated_Press": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Kettlebell_Seesaw_Press": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Kettlebell_Sumo_High_Pull": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Kettlebell_Thruster": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Kettlebell_Turkish_Get-Up_Squat_style": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Kettlebell_Windmill": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Leg-Up_Hamstring_Stretch": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "Lower_Back_Curl": {
+    "difficulty": "beginner",
+    "mechanic": null,
+    "force": "static"
+  },
+  "Medicine_Ball_Chest_Pass": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Monster_Walk": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Muscle_Up": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "One_Arm_Against_Wall": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "static"
+  },
+  "One_Arm_Chin-Up": {
+    "difficulty": "expert",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Otis-Up": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Pelvic_Tilt_Into_Bridge": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "static"
+  },
+  "Peroneals_Stretch": {
+    "difficulty": "intermediate",
+    "mechanic": null,
+    "force": "static"
+  },
+  "Plyo_Push-up": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Posterior_Tibialis_Stretch": {
+    "difficulty": "intermediate",
+    "mechanic": null,
+    "force": "static"
+  },
+  "Power_Clean": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Push_Up_to_Side_Plank": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Reverse_Crunch": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Ring_Dips": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Rope_Climb": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Russian_Twist": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Scapular_Pull-Up": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Side-Lying_Floor_Stretch": {
+    "difficulty": "beginner",
+    "mechanic": null,
+    "force": "static"
+  },
+  "Single-Arm_Push-Up": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Smith_Single-Leg_Split_Squat": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Snatch_Pull": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Spell_Caster": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Split_Squats": {
+    "difficulty": "intermediate",
+    "mechanic": null,
+    "force": "push"
+  },
+  "Squat_Jerk": {
+    "difficulty": "expert",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Standing_Lateral_Stretch": {
+    "difficulty": "beginner",
+    "mechanic": null,
+    "force": "static"
+  },
+  "Standing_Pelvic_Tilt": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "static"
+  },
+  "Suspended_Push-Up": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Suspended_Reverse_Crunch": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "Suspended_Row": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Suspended_Split_Squat": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "Tire_Flip": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Trap_Bar_Deadlift": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "Triceps_Stretch": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "static"
+  },
+  "Tuck_Crunch": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0002": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1512": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0007": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-3293": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-3294": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-2355": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2333": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3214": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3204": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0009": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0011": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0010": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1708": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1709": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1710": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0012": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0013": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0014": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0015": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0016": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1713": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1714": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0017": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-1716": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1712": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1758": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1431": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1432": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0018": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0019": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-2364": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-3220": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3672": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1314": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3297": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1405": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1473": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0968": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0969": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0971": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1254": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0980": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0972": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0974": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0975": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0976": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3117": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-3116": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0977": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0978": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1408": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0979": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0981": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0983": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0985": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0984": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1002": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0986": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0987": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0988": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0989": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0990": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0991": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0992": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0993": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0994": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0996": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1011": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0997": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1018": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0998": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0999": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1000": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1001": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1004": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1003": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1005": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1022": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1007": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1008": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1009": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1023": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1010": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1012": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1369": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1013": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1014": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1015": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1016": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1017": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0023": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0024": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0025": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0026": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1316": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0027": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-2407": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0028": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0029": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0030": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0033": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0034": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0035": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1255": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0036": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0037": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0038": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1370": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0039": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0041": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0040": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0042": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-1461": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1462": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1545": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3562": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0044": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1436": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0047": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-1719": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0048": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0049": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0051": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0052": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0053": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1410": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1435": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1720": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0055": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0056": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0057": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0058": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0059": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0061": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0060": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0063": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0064": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0065": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0066": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0067": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0068": {
+    "difficulty": "expert",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0069": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1411": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1412": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-3017": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-1751": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0070": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0071": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0072": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0073": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0022": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0074": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0075": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0078": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0077": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0079": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2187": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0080": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0118": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1256": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1257": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1317": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1721": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0081": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0082": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0084": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0083": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0085": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0086": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0087": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1371": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-1718": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0089": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0090": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0091": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0092": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0094": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0096": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0097": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1756": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0099": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2799": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2800": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0100": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0101": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2810": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0102": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2798": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0103": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0104": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0105": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1372": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0106": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-1456": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-2414": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0107": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0108": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0109": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0110": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0111": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0112": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1629": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1457": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0113": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0114": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0115": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0116": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0117": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-3305": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0120": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0119": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0121": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0122": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-1258": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0124": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0123": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0126": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0125": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0127": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3212": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3360": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0129": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1399": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0130": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3019": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-3639": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1770": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0139": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0140": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-3543": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3544": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1771": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1769": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3168": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3167": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1373": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3156": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-3158": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-3162": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-3161": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-3166": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-3165": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1374": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2466": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1160": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1494": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0148": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0149": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3235": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0150": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0151": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1630": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1631": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0152": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0153": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0154": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0155": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0868": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0157": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0158": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1260": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1261": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0159": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1632": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0160": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0161": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0162": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0164": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0165": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-1722": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0167": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0169": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1318": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0171": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0170": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0860": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0175": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3697": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0176": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2330": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0177": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-2616": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0178": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0179": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0180": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1634": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0182": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0184": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0185": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0186": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0188": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0189": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0190": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-1262": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1263": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1264": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1265": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1266": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0191": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0192": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-1633": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1267": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-3563": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1635": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0193": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1723": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1636": {
+    "difficulty": "intermediate",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-1637": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0194": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-1319": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1268": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0196": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0198": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0197": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1638": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0201": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0199": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0200": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0202": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0203": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0204": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0205": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0206": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2406": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1413": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0209": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0210": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0207": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0208": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1320": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1321": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1322": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1639": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1724": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1725": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1726": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1640": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1323": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0211": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2144": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1641": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0213": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0214": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1642": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1643": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0215": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0861": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0216": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2399": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0218": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0220": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0222": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0221": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0223": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1717": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1644": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0224": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1375": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0225": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0226": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0874": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0227": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0228": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": null
+  },
+  "flow-0229": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0230": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0231": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1376": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0232": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0233": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1727": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0234": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0235": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0236": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1269": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0238": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0237": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0239": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0240": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-2464": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0241": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-2405": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0242": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0243": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0862": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0244": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1645": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1728": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0245": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-1270": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1324": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0246": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1325": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1407": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1377": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1378": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0248": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-2963": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0251": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-1430": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-2462": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1272": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3216": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0253": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0257": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1273": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1327": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0259": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-2398": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1468": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0271": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0272": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0274": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3016": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3769": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2331": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0282": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1274": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0283": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0284": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1275": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0285": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-2403": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1646": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1647": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1648": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0286": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1649": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1650": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2137": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0287": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0288": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0290": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0291": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0293": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-1651": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1652": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1653": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0294": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-2401": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1654": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1655": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1656": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1201": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1731": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0296": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0297": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-3635": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0298": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-1657": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0299": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-2136": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0300": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0301": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0302": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0303": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1276": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1617": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0305": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0304": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0306": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0307": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1437": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0308": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1277": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1732": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0310": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0309": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0311": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1760": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0313": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1659": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0312": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2402": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1664": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3545": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0314": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0315": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0316": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0318": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0317": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0319": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1278": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0320": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0321": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1618": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0322": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1279": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1280": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1619": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1620": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0323": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1281": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1282": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0324": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1283": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0325": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0326": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0329": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-3542": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0330": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0331": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1733": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3541": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0332": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0333": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1734": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1660": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0334": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0335": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0336": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-1658": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0337": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1729": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0338": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0863": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0339": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0340": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-2470": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0341": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0343": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0342": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0344": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0346": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2705": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1284": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1328": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1735": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2706": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1661": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0350": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0351": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-1662": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0352": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1285": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0292": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-1286": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0353": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1287": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1288": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1736": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1663": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1621": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1289": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0354": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0355": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0356": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1290": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1665": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1666": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1291": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0358": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0359": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1622": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1414": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1667": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1668": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1669": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1415": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0360": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-3888": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1670": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1671": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0362": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0364": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1672": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1292": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0365": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0366": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1441": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0367": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0368": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0369": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1329": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1623": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0370": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0371": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0372": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-1673": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1293": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0373": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1674": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0375": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-1294": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1295": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1700": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-2292": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0377": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0378": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0380": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0379": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0382": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-1624": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0383": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1330": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1331": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-2327": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0384": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1675": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0385": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1459": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0386": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-2397": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0387": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1676": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0388": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-3546": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0389": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-2317": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1730": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1737": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1677": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0390": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3547": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1379": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0391": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0392": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1678": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0393": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0394": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0396": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0395": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0397": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1679": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0398": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0399": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1380": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1381": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0401": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0402": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0403": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1738": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0405": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0404": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-2188": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0408": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3664": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-3548": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0409": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1757": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-2805": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0410": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0411": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3560": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0414": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0415": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1739": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2143": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1740": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-1741": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0416": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0417": {
+    "difficulty": "intermediate",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0418": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0419": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2321": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0420": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0421": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0422": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-1680": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0423": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0424": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0425": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0426": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0427": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0428": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0429": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0430": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-2293": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1684": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0431": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2796": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2812": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0432": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0433": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0434": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2808": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2803": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0436": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1742": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1743": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0437": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1765": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0864": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-5201": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0438": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0439": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-2294": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2189": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1167": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3287": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1772": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-3292": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1332": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1333": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1334": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1335": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1336": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1744": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1559": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1338": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1339": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1341": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1342": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1382": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3241": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3240": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1416": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1417": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1296": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1343": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1560": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1745": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1746": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1747": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-3010": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1748": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1344": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1682": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1749": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0445": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1627": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0446": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0447": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0448": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-2186": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0449": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0450": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0451": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0452": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1458": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0453": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0454": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1628": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2404": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2432": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-2741": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2133": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3303": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0456": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0457": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0458": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1472": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3470": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-2429": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3301": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3296": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3295": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0464": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3315": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3299": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3327": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0466": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-3561": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3523": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0467": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0469": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3221": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3202": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2139": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3218": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3215": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3302": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0471": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1764": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1761": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0474": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0475": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0476": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3636": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0484": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-1418": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3234": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0489": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0488": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3289": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-3698": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0490": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0491": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3785": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0494": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-3011": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0495": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0496": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2400": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-2300": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-2298": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0497": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1419": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1297": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0501": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3224": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2612": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0514": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0513": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0517": {
+    "difficulty": "intermediate",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0518": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0520": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0519": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0521": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0522": {
+    "difficulty": "intermediate",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0524": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0525": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0526": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0527": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0528": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0529": {
+    "difficulty": "expert",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0530": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0531": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0533": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0534": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0536": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0537": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-1298": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0538": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0539": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0540": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0541": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0542": {
+    "difficulty": "expert",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0543": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0545": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1438": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0549": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0552": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0553": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-1345": {
+    "difficulty": "intermediate",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0555": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3640": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1346": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3239": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3211": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-3288": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-3418": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-3419": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0562": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3237": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3300": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2271": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0570": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-2287": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0571": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0572": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0573": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0574": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-3200": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0575": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-2289": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0577": {
+    "difficulty": "beginner",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0576": {
+    "difficulty": "beginner",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0578": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1300": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1253": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0579": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0580": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1439": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-2288": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1615": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0581": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-2286": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2611": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1299": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1479": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0582": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0583": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0584": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0585": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0586": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-3195": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0587": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0588": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0589": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1356": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1347": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0590": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0591": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0592": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-1614": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2285": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-2736": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1616": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1348": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0593": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1349": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-2315": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2335": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0594": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-1452": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0595": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3760": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1451": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0596": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-3759": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0597": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": null
+  },
+  "flow-0598": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": null
+  },
+  "flow-0599": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0600": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0602": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0601": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1350": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-1385": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0603": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0869": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-2318": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0604": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0605": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-3758": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0606": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-1351": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0607": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-1313": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0609": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3013": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3582": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1688": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0613": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2312": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0620": {
+    "difficulty": "beginner",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0865": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1301": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0624": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1353": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1303": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1304": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1305": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1312": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1701": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1354": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1750": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0627": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-3217": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1421": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0630": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1401": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2328": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1403": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0634": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1495": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0635": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0636": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0637": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0639": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0640": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1773": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1386": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1387": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1476": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0642": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0643": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3147": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3662": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1687": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3119": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3132": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3665": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3203": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1707": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0651": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0650": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0652": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-1689": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3638": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1307": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0662": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0653": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0655": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0656": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0659": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0658": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0660": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0661": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0663": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1467": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-3145": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-3533": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3201": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3552": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0666": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0668": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0669": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0670": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1582": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3236": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3007": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3123": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3124": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-3006": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3122": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-3144": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0672": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0673": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0674": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1423": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3663": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2571": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2204": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2205": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2202": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2206": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2203": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2207": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0685": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0684": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1585": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3012": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-3021": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-3219": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1390": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1424": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0689": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0690": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2567": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0691": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1587": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0697": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1766": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0696": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3222": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3656": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1763": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-3699": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0699": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1774": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0705": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0709": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0710": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3667": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1775": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0716": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0717": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0721": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0720": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-3213": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3645": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0727": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0730": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1759": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1489": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0735": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3679": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3361": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2142": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3671": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3304": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1425": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0738": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0739": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-1464": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1463": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0740": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-1391": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0741": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0742": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0743": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-2334": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0744": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-1392": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1496": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0746": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0747": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0748": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0749": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1359": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0750": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0751": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0752": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "pull"
+  },
+  "flow-0753": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0754": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1433": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3281": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0755": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0756": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0757": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0758": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0759": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0760": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1434": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1683": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1625": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1752": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1626": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0761": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1360": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1393": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0762": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0763": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1394": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1361": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-0764": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1395": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0765": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-1426": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0766": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0767": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "pull"
+  },
+  "flow-0769": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0770": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-0771": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0772": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0773": {
+    "difficulty": "unknown",
+    "mechanic": "isolation",
+    "force": "push"
+  },
+  "flow-0774": {
+    "difficulty": "unknown",
+    "mechanic": "compound",
+    "force": "push"
+  },
+  "flow-3142": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1396": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0775": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "pull"
+  },
+  "flow-1308": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1309": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1362": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0778": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1363": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2329": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1705": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1685": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1686": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2297": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3291": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-3669": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0788": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-1490": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1397": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1398": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1599": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0795": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0796": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3223": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-2138": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0798": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3314": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3298": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1427": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-0803": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0805": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3433": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-3318": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": null
+  },
+  "flow-1753": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0814": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0812": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0813": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0815": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  },
+  "flow-0816": {
+    "difficulty": "unknown",
+    "mechanic": null,
+    "force": "push"
+  }
+}

@@ -1,0 +1,1502 @@
+{
+  "baseCommit": "6ced90082e603ed6d9d8dd9a9bf8350e14ad75db",
+  "catalogVersion": "d1498cd5949cc541",
+  "stats": {
+    "version": "d1498cd5949cc541",
+    "total": 2069,
+    "spanish": 73,
+    "popular": 73,
+    "withImages": 0,
+    "withImageSequence": 0,
+    "withAnimation": 1257,
+    "withSvgAnimation": 1257,
+    "withGifOrVideo": 0,
+    "withoutAnimation": 812,
+    "mediaHosting": "local-svg",
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "knownStateDiscrepancy": {
+    "reportedSpanishDrafts": 303,
+    "observedSpanishDrafts": 73,
+    "observedEnglishFallback": 1996
+  },
+  "routinePositions": 27,
+  "confirmed": 0,
+  "pending": 27,
+  "atlas": {
+    "status": "not-present-in-base-snapshot",
+    "includedInOfflinePackage": false
+  },
+  "media": {
+    "svgSequences": 1257,
+    "svgFrames": 3771,
+    "retainedPrompts": 13,
+    "missingPrompts": 1244,
+    "techniqueReview": "pending-human-review",
+    "provenance": "declared-CC0-with-limited-evidence",
+    "productionApproved": false
+  },
+  "candidates": [
+    {
+      "id": "Barbell_Deadlift",
+      "name": "Peso muerto convencional",
+      "nameEn": "Barbell Deadlift",
+      "equipment": "barbell",
+      "aliases": [
+        "peso muerto con barra",
+        "deadlift"
+      ],
+      "nameReview": "ai-authored-unreviewed",
+      "instructionsLanguage": "es",
+      "instructionsReview": "ai-authored-unreviewed",
+      "instructionCount": 3,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Barra frente al cuerpo; posiciones de pie y flexión de cadera/rodillas.",
+        "concern": "La secuencia estática no confirma ejecución convencional frente a otras variantes."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        },
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Barbell_Hip_Thrust",
+      "name": "Hip thrust con barra",
+      "nameEn": "Barbell Hip Thrust",
+      "equipment": "barbell",
+      "aliases": [
+        "empuje de cadera",
+        "elevación de cadera con barra"
+      ],
+      "nameReview": "ai-authored-unreviewed",
+      "instructionsLanguage": "es",
+      "instructionsReview": "ai-authored-unreviewed",
+      "instructionCount": 3,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Butterfly",
+      "name": "Aperturas en máquina",
+      "nameEn": "Butterfly",
+      "equipment": "machine",
+      "aliases": [
+        "pec deck",
+        "mariposa",
+        "contractor de pecho"
+      ],
+      "nameReview": "ai-authored-unreviewed",
+      "instructionsLanguage": "es",
+      "instructionsReview": "ai-authored-unreviewed",
+      "instructionCount": 3,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Dumbbell_One-Arm_Triceps_Extension",
+      "name": "Dumbbell One-Arm Triceps Extension",
+      "nameEn": "Dumbbell One-Arm Triceps Extension",
+      "equipment": "dumbbell",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 6,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Face_Pull",
+      "name": "Jalón a la cara con cuerda",
+      "nameEn": "Face Pull",
+      "equipment": "cable",
+      "aliases": [
+        "face pull",
+        "jalón para deltoide posterior"
+      ],
+      "nameReview": "ai-authored-unreviewed",
+      "instructionsLanguage": "es",
+      "instructionsReview": "ai-authored-unreviewed",
+      "instructionCount": 3,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Front_Plate_Raise",
+      "name": "Front Plate Raise",
+      "nameEn": "Front Plate Raise",
+      "equipment": "other",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 4,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Hack_Squat",
+      "name": "Sentadilla hack en máquina",
+      "nameEn": "Hack Squat",
+      "equipment": "machine",
+      "aliases": [
+        "hack squat"
+      ],
+      "nameReview": "ai-authored-unreviewed",
+      "instructionsLanguage": "es",
+      "instructionsReview": "ai-authored-unreviewed",
+      "instructionCount": 3,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Leg_Press",
+      "name": "Prensa de piernas",
+      "nameEn": "Leg Press",
+      "equipment": "machine",
+      "aliases": [
+        "leg press",
+        "prensa inclinada"
+      ],
+      "nameReview": "ai-authored-unreviewed",
+      "instructionsLanguage": "es",
+      "instructionsReview": "ai-authored-unreviewed",
+      "instructionCount": 3,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": "Alias prensa inclinada narrows generic name; confirm apparatus before using as synonym."
+    },
+    {
+      "id": "Leverage_Chest_Press",
+      "name": "Leverage Chest Press",
+      "nameEn": "Leverage Chest Press",
+      "equipment": "machine",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 4,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Leverage_Incline_Chest_Press",
+      "name": "Leverage Incline Chest Press",
+      "nameEn": "Leverage Incline Chest Press",
+      "equipment": "machine",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 3,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "One-Legged_Cable_Kickback",
+      "name": "One-Legged Cable Kickback",
+      "nameEn": "One-Legged Cable Kickback",
+      "equipment": "cable",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 6,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "One_Arm_Dumbbell_Preacher_Curl",
+      "name": "One Arm Dumbbell Preacher Curl",
+      "nameEn": "One Arm Dumbbell Preacher Curl",
+      "equipment": "dumbbell",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 5,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Romanian_Deadlift",
+      "name": "Peso muerto rumano",
+      "nameEn": "Romanian Deadlift",
+      "equipment": "barbell",
+      "aliases": [
+        "rumano",
+        "rdl"
+      ],
+      "nameReview": "ai-authored-unreviewed",
+      "instructionsLanguage": "es",
+      "instructionsReview": "ai-authored-unreviewed",
+      "instructionCount": 3,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Rope_Straight-Arm_Pulldown",
+      "name": "Rope Straight-Arm Pulldown",
+      "nameEn": "Rope Straight-Arm Pulldown",
+      "equipment": "cable",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 4,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Seated_Cable_Rows",
+      "name": "Remo sentado en polea",
+      "nameEn": "Seated Cable Rows",
+      "equipment": "cable",
+      "aliases": [
+        "remo bajo",
+        "remo con triangulo",
+        "remo gironda"
+      ],
+      "nameReview": "ai-authored-unreviewed",
+      "instructionsLanguage": "es",
+      "instructionsReview": "ai-authored-unreviewed",
+      "instructionCount": 3,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Seated_Calf_Raise",
+      "name": "Elevación de pantorrillas sentado",
+      "nameEn": "Seated Calf Raise",
+      "equipment": "machine",
+      "aliases": [
+        "gemelos sentado",
+        "sóleo sentado"
+      ],
+      "nameReview": "ai-authored-unreviewed",
+      "instructionsLanguage": "es",
+      "instructionsReview": "ai-authored-unreviewed",
+      "instructionCount": 3,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Seated_Leg_Curl",
+      "name": "Curl femoral sentado",
+      "nameEn": "Seated Leg Curl",
+      "equipment": "machine",
+      "aliases": [
+        "curl de pierna sentado",
+        "leg curl"
+      ],
+      "nameReview": "ai-authored-unreviewed",
+      "instructionsLanguage": "es",
+      "instructionsReview": "ai-authored-unreviewed",
+      "instructionCount": 3,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Side_Lateral_Raise",
+      "name": "Elevaciones laterales con mancuernas",
+      "nameEn": "Side Lateral Raise",
+      "equipment": "dumbbell",
+      "aliases": [
+        "laterales de hombro",
+        "lateral raise"
+      ],
+      "nameReview": "ai-authored-unreviewed",
+      "instructionsLanguage": "es",
+      "instructionsReview": "ai-authored-unreviewed",
+      "instructionCount": 3,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Standing_Calf_Raises",
+      "name": "Elevación de pantorrillas de pie",
+      "nameEn": "Standing Calf Raises",
+      "equipment": "machine",
+      "aliases": [
+        "gemelos de pie",
+        "calf raise"
+      ],
+      "nameReview": "ai-authored-unreviewed",
+      "instructionsLanguage": "es",
+      "instructionsReview": "ai-authored-unreviewed",
+      "instructionCount": 3,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Thigh_Abductor",
+      "name": "Thigh Abductor",
+      "nameEn": "Thigh Abductor",
+      "equipment": "machine",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 4,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Triceps_Pushdown",
+      "name": "Extensión de tríceps en polea con barra",
+      "nameEn": "Triceps Pushdown",
+      "equipment": "cable",
+      "aliases": [
+        "jalón de tríceps",
+        "pushdown"
+      ],
+      "nameReview": "ai-authored-unreviewed",
+      "instructionsLanguage": "es",
+      "instructionsReview": "ai-authored-unreviewed",
+      "instructionCount": 3,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Two-Arm_Dumbbell_Preacher_Curl",
+      "name": "Two-Arm Dumbbell Preacher Curl",
+      "nameEn": "Two-Arm Dumbbell Preacher Curl",
+      "equipment": "dumbbell",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 4,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "Wide-Grip_Lat_Pulldown",
+      "name": "Jalón al pecho con agarre amplio",
+      "nameEn": "Wide-Grip Lat Pulldown",
+      "equipment": "cable",
+      "aliases": [
+        "jalon al pecho",
+        "lat pulldown",
+        "jalón dorsal"
+      ],
+      "nameReview": "ai-authored-unreviewed",
+      "instructionsLanguage": "es",
+      "instructionsReview": "ai-authored-unreviewed",
+      "instructionCount": 3,
+      "hasSvg": false,
+      "promptEvidence": null,
+      "techniqueReview": "pending-human-review",
+      "visualScreening": null,
+      "source": {
+        "id": "free-exercise-db",
+        "url": "https://github.com/yuhonas/free-exercise-db",
+        "license": "Unlicense",
+        "licenseUrl": "https://unlicense.org/",
+        "attribution": "Free Exercise DB — yuhonas y colaboradores"
+      },
+      "dataSources": [
+        {
+          "id": "free-exercise-db",
+          "url": "https://github.com/yuhonas/free-exercise-db",
+          "license": "Unlicense",
+          "licenseUrl": "https://unlicense.org/",
+          "attribution": "Free Exercise DB — yuhonas y colaboradores"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-0198",
+      "name": "cable pulldown",
+      "nameEn": "cable pulldown",
+      "equipment": "cable",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 7,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Jalón sentado desde polea alta, barra ancha, manos sobre la cabeza y después frente al tronco.",
+        "concern": "No identifica el agarre real de la rutina; revisar detalle del recorrido."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-0237",
+      "name": "cable straight arm pulldown (with rope)",
+      "nameEn": "cable straight arm pulldown (with rope)",
+      "equipment": "cable",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 7,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "De pie frente a polea alta; accesorio desciende con brazos largos hacia cadera.",
+        "concern": "Confirmar accesorio de cuerda y articulaciones con el entrenador."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-0334",
+      "name": "dumbbell lateral raise",
+      "nameEn": "dumbbell lateral raise",
+      "equipment": "dumbbell",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 5,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Elevación bilateral de mancuernas hacia los lados hasta altura de hombros.",
+        "concern": "La rutina no especifica implemento ni postura."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-0372",
+      "name": "dumbbell preacher curl",
+      "nameEn": "dumbbell preacher curl",
+      "equipment": "dumbbell",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 7,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Flexión de codos sentado con mancuernas; no se distingue apoyo inclinado de predicador bajo los brazos.",
+        "concern": "Posible desacuerdo con preacher curl; exigir revisión del apoyo y posición del brazo."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-0576",
+      "name": "lever chest press",
+      "nameEn": "lever chest press",
+      "equipment": "machine",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 5,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Otra vista de press sentado con máquina y respaldo.",
+        "concern": "No fusionar con flow-0577 por nombre repetido; identidades históricas separadas."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-0577",
+      "name": "lever chest press",
+      "nameEn": "lever chest press",
+      "equipment": "machine",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 5,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Press sentado con respaldo casi vertical y brazos de máquina al frente.",
+        "concern": "No identifica modelo, trayectoria ni agarre de Chest press original."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-0596",
+      "name": "lever seated fly",
+      "nameEn": "lever seated fly",
+      "equipment": "machine",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 6,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Apertura/cierre de brazos sentado en máquina de fly.",
+        "concern": "Confirmar apoyos y agarre frente a Pec tec real."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-0597",
+      "name": "lever seated hip abduction",
+      "nameEn": "lever seated hip abduction",
+      "equipment": "machine",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 6,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Máquina sentada; rodillas pasan de próximas a separadas.",
+        "concern": "Compatible visualmente con abducción, pero equipo de la rutina sin verificar."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-0599",
+      "name": "lever seated leg curl",
+      "nameEn": "lever seated leg curl",
+      "equipment": "machine",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 7,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Rodillas parten flexionadas y piernas se elevan hacia extensión con rodillo anterior aparente.",
+        "concern": "El recorrido parece extensión de rodilla en vez de flexión de curl femoral sentado. Conflicto aparente; requiere revisión profesional."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-0607",
+      "name": "lever triceps extension",
+      "nameEn": "lever triceps extension",
+      "equipment": "machine",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 5,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Máquina sentada; manos pasan del frente hacia la cabeza flexionando codos.",
+        "concern": "No determina qué extensión de tríceps practica la rutina ni valida la técnica."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-0739",
+      "name": "sled 45в° leg press",
+      "nameEn": "sled 45в° leg press",
+      "equipment": "machine",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 7,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Prensa reclinada con plataforma sobre rieles diagonales.",
+        "concern": "Confirmar inclinación, profundidad y postura; nombre upstream contiene mojibake."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-0743",
+      "name": "sled hack squat",
+      "nameEn": "sled hack squat",
+      "equipment": "machine",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 7,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Sentadilla en trineo con espalda hacia respaldo y apoyos de hombros.",
+        "concern": "No demuestra Jack invertido de la rutina; no asignar automáticamente."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-0861",
+      "name": "cable seated row",
+      "nameEn": "cable seated row",
+      "equipment": "cable",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 5,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Remo sentado en polea baja con agarre próximo al tronco.",
+        "concern": "El dibujo no identifica la barrita negra de la rutina."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-1299",
+      "name": "lever incline chest press",
+      "nameEn": "lever incline chest press",
+      "equipment": "machine",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 6,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Press sentado con respaldo inclinado y empuje al frente/arriba.",
+        "concern": "El aparato y ángulo de la rutina no están documentados."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-1463",
+      "name": "sled 45° leg press (side pov)",
+      "nameEn": "sled 45° leg press (side pov)",
+      "equipment": "machine",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 6,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Vista lateral de prensa reclinada en rieles diagonales.",
+        "concern": "No identifica prensa original ni autoriza deduplicación con flow-0739."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-1479",
+      "name": "lever incline chest press v. 2",
+      "nameEn": "lever incline chest press v. 2",
+      "equipment": "machine",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 6,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Otra representación de press inclinado en máquina.",
+        "concern": "No asumir identidad con flow-1299 ni con máquina de planta baja."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-1756",
+      "name": "barbell single leg deadlift",
+      "nameEn": "barbell single leg deadlift",
+      "equipment": "barbell",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 6,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Bisagra unilateral con pierna libre atrás; se aprecian cargas separadas en las manos.",
+        "concern": "El nombre/equipo declara barbell, pero el dibujo parece representar mancuernas. Revisar antes de uso."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    },
+    {
+      "id": "flow-1757",
+      "name": "dumbbell single leg deadlift",
+      "nameEn": "dumbbell single leg deadlift",
+      "equipment": "dumbbell",
+      "aliases": [],
+      "nameReview": "english-upstream",
+      "instructionsLanguage": "en",
+      "instructionsReview": "upstream-unreviewed",
+      "instructionCount": 7,
+      "hasSvg": true,
+      "promptEvidence": "not-retained",
+      "techniqueReview": "pending-human-review",
+      "visualScreening": {
+        "observed": "Bisagra unilateral con carga manual y pierna libre hacia atrás.",
+        "concern": "Confirmar implemento, apoyo y rango reales; no demuestra variante rumana."
+      },
+      "source": {
+        "id": "flow-exercise-dataset",
+        "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+        "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+        "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+      },
+      "dataSources": [
+        {
+          "id": "flow-exercise-dataset",
+          "url": "https://github.com/ozansozuozgit/flow-exercise-dataset",
+          "license": "MIT (datos); CC0-1.0 (arte, hasta donde el autor tiene derechos)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Flow Exercise Dataset contributors; datos originales de Hasan Emir Yıldırım",
+          "provenanceNote": "Preview con limitaciones de procedencia: ver data/flow-exercise-dataset/NOTICE.md"
+        }
+      ],
+      "issue": null
+    }
+  ]
+}

@@ -1,0 +1,635 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "d8e26ba0f938d2e2dd24aca8ec3d8b86849029743924f06fd30753733917fbc4",
+  "sourcePath": "Gym-Zong/docs/references/f4-04/Gym_Personal_F4-04_Inventario_27_ejercicios_v0.2.csv",
+  "sourceCommit": "6cf8a638e5386a0a8173e469a25719d8e7151729",
+  "positions": [
+    {
+      "position": 1,
+      "day": "Lunes",
+      "group": "Pierna y glúteo",
+      "originalName": "Sentadilla profunda en aparato Jack invertido",
+      "originalNotes": "al fallo; 35 de cada lado",
+      "legacyCandidate": "hack-squat",
+      "legacyStatus": "Candidato, variante por confirmar",
+      "legacyPending": "El catálogo incluye hack squat estándar; no asumir que es Jack invertido.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Hack_Squat",
+        "flow-0743"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 2,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar orientación del cuerpo en Jack/hack invertido; estándar no demuestra equivalencia.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 2,
+      "day": "Lunes",
+      "group": "Pierna y glúteo",
+      "originalName": "Extensión con banco poco inclinado",
+      "originalNotes": "peso 10; al fallo",
+      "legacyCandidate": null,
+      "legacyStatus": "Sin correspondencia validada",
+      "legacyPending": "Nombre del aparato/movimiento ambiguo.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 3,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Identificar movimiento y aparato; banco poco inclinado no identifica una extensión.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 3,
+      "day": "Lunes",
+      "group": "Pierna y glúteo",
+      "originalName": "Abductor",
+      "originalNotes": "peso 120; abro lento, cierro rápido; al fallo",
+      "legacyCandidate": "hip-abduction",
+      "legacyStatus": "Candidato, equipo por confirmar",
+      "legacyPending": "Validar que sea abducción en máquina.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Thigh_Abductor",
+        "flow-0597"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 4,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar máquina sentada y movimiento de abducción.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 4,
+      "day": "Lunes",
+      "group": "Pierna y glúteo",
+      "originalName": "Prensa",
+      "originalNotes": "40 por lado",
+      "legacyCandidate": "leg-press",
+      "legacyStatus": "Candidato, equipo por confirmar",
+      "legacyPending": "Confirmar variante de prensa y unidad de carga.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Leg_Press",
+        "flow-0739",
+        "flow-1463"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 5,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar ángulo, aparato y postura; no inferir unidad de carga.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 5,
+      "day": "Lunes",
+      "group": "Pierna y glúteo",
+      "originalName": "Patada de glúteo",
+      "originalNotes": "",
+      "legacyCandidate": "cable-kickback",
+      "legacyStatus": "Candidato, equipo por confirmar",
+      "legacyPending": "Catálogo cubre patada en cable; comprobar si usa máquina distinta.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "One-Legged_Cable_Kickback"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 6,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar polea con tobillera o máquina; no confundir kickback de tríceps.",
+      "rejectedCandidates": [
+        {
+          "id": "flow-0860",
+          "reason": "Upstream target triceps and hand-held cable instructions; not evidence of glute kickback."
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "day": "Lunes",
+      "group": "Pierna y glúteo",
+      "originalName": "Pantorrilla",
+      "originalNotes": "",
+      "legacyCandidate": "standing-calf-raise",
+      "legacyStatus": "Candidato, variante por confirmar",
+      "legacyPending": "No sabemos si es de pie, sentado o máquina específica.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Standing_Calf_Raises",
+        "Seated_Calf_Raise"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 7,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar sentado/de pie, aparato y recorrido.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 7,
+      "day": "Martes",
+      "group": "Espalda y hombro",
+      "originalName": "Jalón al pecho",
+      "originalNotes": "6 plaquitas; al fallo",
+      "legacyCandidate": "lat-pulldown",
+      "legacyStatus": "Candidato, agarre por confirmar",
+      "legacyPending": "Validar tipo de jalón y agarre.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Wide-Grip_Lat_Pulldown",
+        "flow-0198"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 8,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar agarre, accesorio y dirección del jalón.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 8,
+      "day": "Martes",
+      "group": "Espalda y hombro",
+      "originalName": "Remo con barrita negra",
+      "originalNotes": "5 plaquitas",
+      "legacyCandidate": null,
+      "legacyStatus": "Sin correspondencia validada",
+      "legacyPending": "Identificar cable, agarre y máquina exacta.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Seated_Cable_Rows",
+        "flow-0861"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 9,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Identificar máquina, altura de polea y agarre de la barrita negra.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 9,
+      "day": "Martes",
+      "group": "Espalda y hombro",
+      "originalName": "Pull over con cuerda a la cadera",
+      "originalNotes": "",
+      "legacyCandidate": null,
+      "legacyStatus": "Sin correspondencia validada",
+      "legacyPending": "Identificar variante de pullover / jalón brazos rectos.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Rope_Straight-Arm_Pulldown",
+        "flow-0237"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 10,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar brazos rectos, polea y recorrido hacia cadera.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 10,
+      "day": "Martes",
+      "group": "Espalda y hombro",
+      "originalName": "Levantamiento de disco con ambas manos",
+      "originalNotes": "",
+      "legacyCandidate": null,
+      "legacyStatus": "Sin correspondencia validada",
+      "legacyPending": "Identificar dirección/recorrido del levantamiento.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Front_Plate_Raise"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 11,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar elevación frontal, altura y recorrido del disco.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 11,
+      "day": "Martes",
+      "group": "Espalda y hombro",
+      "originalName": "Jalón de cuerda a la cabeza",
+      "originalNotes": "",
+      "legacyCandidate": "face-pull",
+      "legacyStatus": "Candidato, ejecución por confirmar",
+      "legacyPending": "Podría parecerse al face pull, pero no asumir identidad.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Face_Pull"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 12,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar tirón hacia cara, agarre y recorrido; cabeza no prueba face pull.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 12,
+      "day": "Martes",
+      "group": "Espalda y hombro",
+      "originalName": "Laterales",
+      "originalNotes": "",
+      "legacyCandidate": null,
+      "legacyStatus": "Sin correspondencia validada",
+      "legacyPending": "Confirmar elevaciones laterales y equipo.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Side_Lateral_Raise",
+        "flow-0334"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 13,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar elevación lateral, postura e implemento.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 13,
+      "day": "Miércoles",
+      "group": "Pierna y glúteo",
+      "originalName": "Peso muerto",
+      "originalNotes": "disco de 15 por lado",
+      "legacyCandidate": "romanian-deadlift",
+      "legacyStatus": "Candidato, tipo por confirmar",
+      "legacyPending": "El catálogo contiene peso muerto rumano, pero aquí no indica variante.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Barbell_Deadlift",
+        "Romanian_Deadlift"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 14,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar convencional/rumano/otro; disco 15 no identifica variante ni unidad.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 14,
+      "day": "Miércoles",
+      "group": "Pierna y glúteo",
+      "originalName": "Femoral sentado",
+      "originalNotes": "8 lib",
+      "legacyCandidate": "seated-leg-curl",
+      "legacyStatus": "Candidato, unidad por confirmar",
+      "legacyPending": "Confirmar que es curl femoral sentado y qué significa 8 lib.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Seated_Leg_Curl",
+        "flow-0599"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 15,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar máquina de flexión de rodilla sentada; aclarar 8 lib.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 15,
+      "day": "Miércoles",
+      "group": "Pierna y glúteo",
+      "originalName": "Abductor",
+      "originalNotes": "",
+      "legacyCandidate": "hip-abduction",
+      "legacyStatus": "Candidato, equipo por confirmar",
+      "legacyPending": "La misma referencia que lunes solo si es la misma máquina.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Thigh_Abductor",
+        "flow-0597"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 16,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar máquina y si coincide con lunes.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 16,
+      "day": "Miércoles",
+      "group": "Pierna y glúteo",
+      "originalName": "Pantorrilla",
+      "originalNotes": "",
+      "legacyCandidate": "standing-calf-raise",
+      "legacyStatus": "Candidato, variante por confirmar",
+      "legacyPending": "No asumir equipo de pie.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Standing_Calf_Raises",
+        "Seated_Calf_Raise"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 17,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar sentado/de pie y si coincide con lunes.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 17,
+      "day": "Miércoles",
+      "group": "Pierna y glúteo",
+      "originalName": "Hip thrust",
+      "originalNotes": "",
+      "legacyCandidate": null,
+      "legacyStatus": "Sin correspondencia validada",
+      "legacyPending": "Hay variantes en catálogo; conocer máquina/barra/mancuernas.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Barbell_Hip_Thrust"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 18,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar barra/máquina/otro y apoyo; no sustituir por puente de glúteos.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 18,
+      "day": "Jueves",
+      "group": "Pecho y brazos",
+      "originalName": "Pec tec",
+      "originalNotes": "6 plaquitas",
+      "legacyCandidate": "pec-deck",
+      "legacyStatus": "Candidato, equipo por confirmar",
+      "legacyPending": "Comprobar aparato exacto.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Butterfly",
+        "flow-0596"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 19,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar que Pec tec es pec deck/fly y qué apoyos y agarre usa.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 19,
+      "day": "Jueves",
+      "group": "Pecho y brazos",
+      "originalName": "Chest press",
+      "originalNotes": "6 plaquitas",
+      "legacyCandidate": "chest-press-machine",
+      "legacyStatus": "Candidato, equipo por confirmar",
+      "legacyPending": "Confirmar aparato exacto.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Leverage_Chest_Press",
+        "flow-0577",
+        "flow-0576"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 20,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar máquina, respaldo, agarre y trayectoria.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 20,
+      "day": "Jueves",
+      "group": "Pecho y brazos",
+      "originalName": "Chest press inclinado",
+      "originalNotes": "planta baja",
+      "legacyCandidate": null,
+      "legacyStatus": "Sin correspondencia validada",
+      "legacyPending": "Planta baja parece ubicación; identificar variante real.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Leverage_Incline_Chest_Press",
+        "flow-1299",
+        "flow-1479"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 21,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar inclinación y máquina; planta baja es ubicación, no técnica.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 21,
+      "day": "Jueves",
+      "group": "Pecho y brazos",
+      "originalName": "Bíceps con mancuerna predicador",
+      "originalNotes": "",
+      "legacyCandidate": "preacher-curl",
+      "legacyStatus": "Candidato, implemento por confirmar",
+      "legacyPending": "El registro hallado emplea barra EZ; buscar versión mancuerna.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "One_Arm_Dumbbell_Preacher_Curl",
+        "Two-Arm_Dumbbell_Preacher_Curl",
+        "flow-0372"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 22,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar unilateral/bilateral y agarre; mancuerna excluye sustitución automática por barra EZ.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 22,
+      "day": "Jueves",
+      "group": "Pecho y brazos",
+      "originalName": "Extensión de tríceps",
+      "originalNotes": "",
+      "legacyCandidate": null,
+      "legacyStatus": "Sin correspondencia validada",
+      "legacyPending": "No sabemos si es cable/mancuerna/máquina.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Triceps_Pushdown",
+        "Dumbbell_One-Arm_Triceps_Extension",
+        "flow-0607"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 23,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar cable/mancuerna/máquina, postura y recorrido.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 23,
+      "day": "Viernes",
+      "group": "Glúteo",
+      "originalName": "Hip thrust",
+      "originalNotes": "",
+      "legacyCandidate": null,
+      "legacyStatus": "Sin correspondencia validada",
+      "legacyPending": "No sabemos si coincide con miércoles en equipo.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Barbell_Hip_Thrust"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 24,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar implemento y si coincide con miércoles.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 24,
+      "day": "Viernes",
+      "group": "Glúteo",
+      "originalName": "Patada de glúteo",
+      "originalNotes": "",
+      "legacyCandidate": "cable-kickback",
+      "legacyStatus": "Candidato, equipo por confirmar",
+      "legacyPending": "Posible variante distinta.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "One-Legged_Cable_Kickback"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 25,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar polea con tobillera o máquina y si coincide con lunes.",
+      "rejectedCandidates": [
+        {
+          "id": "flow-0860",
+          "reason": "Upstream target triceps and hand-held cable instructions; not evidence of glute kickback."
+        }
+      ]
+    },
+    {
+      "position": 25,
+      "day": "Viernes",
+      "group": "Glúteo",
+      "originalName": "Abductor",
+      "originalNotes": "",
+      "legacyCandidate": "hip-abduction",
+      "legacyStatus": "Candidato, equipo por confirmar",
+      "legacyPending": "Validar aparato.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Thigh_Abductor",
+        "flow-0597"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 26,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar aparato y si coincide con lunes/miércoles.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 26,
+      "day": "Viernes",
+      "group": "Glúteo",
+      "originalName": "Peso muerto unilateral",
+      "originalNotes": "",
+      "legacyCandidate": "single-leg-romanian-deadlift",
+      "legacyStatus": "Candidato, tipo por confirmar",
+      "legacyPending": "El catálogo tiene peso muerto rumano unilateral; no equivalencia garantizada.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "flow-1756",
+        "flow-1757"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 27,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar implemento, apoyo y variante unilateral; no asumir rumano.",
+      "rejectedCandidates": []
+    },
+    {
+      "position": 27,
+      "day": "Viernes",
+      "group": "Glúteo",
+      "originalName": "Femoral sentado",
+      "originalNotes": "",
+      "legacyCandidate": "seated-leg-curl",
+      "legacyStatus": "Candidato, equipo por confirmar",
+      "legacyPending": "Comprobar máquina.",
+      "status": "pending",
+      "confirmedApiGymId": null,
+      "candidateIds": [
+        "Seated_Leg_Curl",
+        "flow-0599"
+      ],
+      "evidence": {
+        "source": "routine-original.csv",
+        "csvLine": 28,
+        "basis": "Lexical candidate search plus catalog name, equipment and instructions; not observed execution."
+      },
+      "humanReview": "Confirmar máquina y si coincide con miércoles.",
+      "rejectedCandidates": []
+    }
+  ]
+}

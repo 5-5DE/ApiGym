@@ -1,5 +1,83 @@
 # ApiGym
 
+## Español y metadatos (fase 5)
+
+Las instrucciones usan tratamiento de tú mediante normalización gramatical;
+esto no aprueba los 1,244 borradores pendientes de revisión integral.
+Los nombres españoles repetidos se distinguen por vista o ilustración, sin
+fusionar IDs ni inventar diferencias biomecánicas. Los nombres señalados como
+traducciones literales se redactan de forma legible conservando sus conflictos.
+Los cuatro `nameEn` con `45в°` se reparan a `45°` y conservan `nameEnOriginal`.
+
+`popular=true` devuelve 150 básicos editoriales y el visor tiene su colección.
+Pesa rusa usa `kettlebell`; el filtro sigue aceptando `kettlebells` como alias.
+Se completan campos con evidencia y se publica su procedencia en `metadataReview`.
+Los 1,257 ejercicios tienen dificultad, tipo y acción. Se completaron 1,081
+dificultades, 989 mecánicas y 636 fuerzas mediante estimaciones editoriales por
+familia, con fuentes y criterios en `metadataReview`. Las 346 fichas con conflictos
+de identidad conservan sus avisos; sus nuevos campos son provisionales.
+No es una validación técnica individual. Equipo desconocido: cero.
+
+Método y registro por ID: [investigación de metadatos](reports/GYMZONG-METADATA-RESEARCH.md).
+El visor distingue «Isométrico», acción «Mixta» y dificultad orientativa, con fuentes.
+
+Decisiones y límites: [informe de calidad](reports/GYMZONG-QUALITY.md).
+Reconstrucción: `npm run localization:build`, `npm run quality:compile` y
+`npm run quality:report`. Los medios y los 1,257 IDs se conservan.
+
+## Cobertura y nombres corregidos (fase 4)
+
+Ya se encuentran `patada de glúteo en polea` (flow-0228), `remo sentado con
+triángulo` (flow-0213) y `pullover con cuerda` (flow-0237). Se aclara el press
+de pecho sentado en máquina y se corrige flow-1301 de aperturas a press.
+El catálogo conserva 1,257 IDs activos y sus animaciones.
+
+Por decisión del usuario, **face pull, elevación frontal con disco, patada de
+glúteo en máquina y sentadilla hack inversa esperan animaciones verificadas**.
+No se crean fichas sin medios. Al buscar sus nombres completos, la API añade
+`unavailable` y el visor muestra el motivo; el resolver no asigna sustitutos.
+Actualmente hay 17 familias y 137 fichas clasificadas. Consulta el
+[informe de cobertura](reports/GYMZONG-COVERAGE.md) y `npm run coverage:report`.
+
+Las cifras de las secciones de fases anteriores describen esas entregas.
+
+## Alias mexicanos y familias (fase 3)
+
+El buscador reconoce los alias solicitados por Gym Zong, como `pec tec`,
+`chest press`, `gemelos`, `jack` y `zancadas`. Cada ficha expone `familyId`
+y `isDefaultVariant`; hay 16 familias editoriales con 133 fichas clasificadas.
+Las demás conservan `familyId:null`.
+
+`GET /api/v1/families` lista las familias, sus variantes y su representante.
+`GET /api/v1/exercises?familyId=jalon-al-pecho` filtra una familia.
+El resolver elige la variante básica para nombres generales registrados,
+como `sentadilla`, y devuelve `resolutionMethod:family-default`.
+Los nombres específicos y los títulos pendientes mantienen las comprobaciones
+de ambigüedad. El visor permite filtrar por familia y marca la variante básica.
+
+Se añadieron 99 alias respecto a las traducciones persistidas: las fichas sin
+alias bajaron de 672 a 648. Evidencia, decisiones y pendientes en el
+[informe de curación](reports/GYMZONG-CURATION.md). `npm run curation:compile`
+reconstruye sin red y `npm run curation:report` actualiza el informe.
+Estos alias complementan las traducciones y se conservan al reconstruirlas.
+
+## Resolver nombres de rutinas (fase 2)
+
+`GET /api/v1/exercises/match?name=jalón%20dorsal%20en%20polea&lang=es` devuelve
+`{best, alternatives, reason, catalogVersion, resolverVersion}`. Cada candidato
+incluye `{id, name, confidence}`. `best` es `null` cuando hay variantes ambiguas,
+evidencia insuficiente o ninguna coincidencia. La confianza es heurística,
+no una probabilidad calibrada. El SDK ofrece `client.match(name, lang)`.
+Contrato, umbrales y ejemplos en [el seguimiento de Gym Zong](docs/GYMZONG-PHASES.md).
+
+## Búsqueda por relevancia (fase 1)
+
+`GET /api/v1/exercises?q=sentadilas&sort=relevance&match=any` activa coincidencias
+por palabras, plurales y errores de una letra. Devuelve `score` y `matchedTokens`.
+El visor del catálogo completo ya usa este modo al buscar. La consulta anterior
+sin estos parámetros conserva su comportamiento. Ejemplos, límites y fases
+pendientes en [el seguimiento de Gym Zong](docs/GYMZONG-PHASES.md).
+
 El visor actual abre el catálogo completo de 1,257 ejercicios y carga todos los resultados automáticamente. Cada tarjeta muestra su imagen SVG; al abrir la ficha, reproduce la animación con controles para pausar y reanudar. Respeta la preferencia de movimiento reducido. La colección de 10 esenciales también resuelve sus imágenes desde el catálogo actual. Los IDs y las rutas de la API no cambian.
 
 Actualizacion: se retiraron 812 ejercicios sin medios. La seleccion `essential-50` conserva su ruta e IDs originales y ahora devuelve solo los 10 ejercicios activos con animacion. El snapshot P0 de 50 descrito abajo es historico.
@@ -224,3 +302,34 @@ npm test
 ## Licencias
 
 Codigo de ApiGym: MIT. Metadatos de Flow: MIT con atribucion; arte SVG: CC0-1.0 hasta donde los autores tienen derechos. La fuente declara que no existe garantia de clearance completo. Consulta data/flow-exercise-dataset/NOTICE.md y THIRD_PARTY_NOTICES.md.
+## Paquete offline para Gym Zong (P4-00)
+
+`npm run gymzong:audit` regenera `reports/P4-00-audit.json` con la revisión
+de las 27 posiciones originales y los candidatos ApiGym. Ningún candidato está
+confirmado. Los borradores españoles y las instrucciones heredadas conservan
+su estado sin revisión humana.
+
+`npm run gymzong:export` genera `dist/gymzong-offline/` con los 1,257 IDs activos,
+catálogo, taxonomía, matriz, procedencia, licencias y manifiesto SHA-256.
+No necesita Internet ni descarga recursos. Rechaza un directorio de salida
+existente. Para otra generación, indica una ruta nueva:
+
+```sh
+npm run gymzong:export -- dist/gymzong-offline-review2
+npm run gymzong:verify -- dist/gymzong-offline-review2
+```
+
+La exportación predeterminada omite medios sin revisión técnica y de procedencia.
+Para inspección interna se pueden incluir únicamente los SVG de los candidatos,
+con sus hashes y registros de procedencia:
+
+```sh
+npm run gymzong:export -- dist/gymzong-preview --include-preview-media
+npm run gymzong:verify -- dist/gymzong-preview
+```
+
+La opción preview no aprueba técnica, traducción ni derechos de terceros.
+Los enlaces de fuente/licencia son documentación, no dependencias de ejecución.
+Consulta `reports/P4-00-GYMZONG-READINESS.md` antes de integrar. El adaptador HTTP
+actual de Gym Zong requiere una implementación local para consumir este JSON;
+este trabajo no cambia Gym Zong ni los endpoints públicos de ApiGym.

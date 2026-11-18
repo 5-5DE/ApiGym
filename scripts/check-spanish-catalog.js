@@ -19,7 +19,7 @@ for(const e of rawExercises){
   assert.equal(createHash('sha256').update(JSON.stringify(row.original)).digest('hex'),row.originalSha256,e.id);
   assert.deepEqual(en.instructions,e.instructions.filter(step=>step.trim()),e.id);
   assert.deepEqual(es.instructionsEn,en.instructions,e.id);
-  assert.equal(en.name,e.name,e.id);
+  assert.equal(en.nameEnOriginal || en.name,e.name,e.id);
   assert.deepEqual(es.media,en.media,e.id);
   assert.deepEqual(row.original.instructions,e.instructions,e.id);
 }

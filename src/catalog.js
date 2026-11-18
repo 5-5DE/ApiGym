@@ -1,5 +1,9 @@
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import { searchDocument, searchQuery, searchMatch, resolutionConfidence } from './search.js';
+import { resolveCandidates, resolverVersion } from './resolver.js';
+import { createCuration } from './curation.js';
+import { validateQuality } from './quality.js';
 import { validateDataset, validateTranslations, validateMedia, normalize, integer, choice, checkParams, InputError } from './validation.js';
 
 const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'));
@@ -8,6 +12,9 @@ const flowExercises = read('../data/flow-exercise-dataset/data/exercises.json');
 const flowChecksums = read('../data/flow-exercise-dataset/data/checksums.json');
 const translations = read('../data/translations.es.json');
 const mediaRecords = read('../data/media.json');
+export const gymCuration = read('../data/gymzong-curation.es-MX.json');
+export const coverageReview = read('../data/gymzong-coverage-review.json');
+export const catalogQuality = read('../data/catalog-quality.es-MX.json');
 export const catalogPruning = read('../data/catalog-pruning.json');
 const legacyIds = validateDataset(rawExercises);
 
@@ -58,21 +65,35 @@ for (let i = rawExercises.length - 1; i >= 0; i--) {
   if (removedIds.has(rawExercises[i].id) || !mediaFor(rawExercises[i]).animation) rawExercises.splice(i, 1);
 }
 
+const curation = createCuration(gymCuration, rawExercises, translations);
+validateQuality(catalogQuality,rawExercises,translations);
+const basics = new Set(catalogQuality.popularIds);
+const popularFor = id => basics.has(id);
+const namesFor = e => ({es:catalogQuality.entries[e.id]?.displayName || translations[e.id]?.name || e.name,en:catalogQuality.entries[e.id]?.nameEn || e.name});
+const metadata = new Map(rawExercises.map(e=>[e.id,{
+  equipment:e.equipment||'unknown',difficulty:e.level||'unknown',mechanic:e.mechanic,force:e.force,
+  ...Object.fromEntries(Object.entries(catalogQuality.entries[e.id]?.metadata||{}).map(([field,patch])=>[field,patch.value])),
+}]));
+delete labels.equipment.kettlebells;
+const aliasesFor = id => [...new Set([...(translations[id]?.aliases || []), ...(curation.aliases.get(id) || []), ...(catalogQuality.entries[id]?.aliases || [])])];
+const familyFor = id => curation.membership.get(id) || {familyId:null, isDefaultVariant:false};
+
 export function localize(e, lang = 'es') {
   const t = lang === 'es' ? translations[e.id] : null;
   return {
-    id: e.id, name: t?.name || e.name, nameEn: e.name,
-    aliases: translations[e.id]?.aliases || [], language: t ? 'es' : 'en', requestedLanguage: lang,
+    id: e.id, name: lang==='es'?namesFor(e).es:namesFor(e).en, nameEn: namesFor(e).en,
+    ...(catalogQuality.entries[e.id]?.nameEn?{nameEnOriginal:e.name}:{}),
+    aliases: aliasesFor(e.id), ...familyFor(e.id), language: t ? 'es' : 'en', requestedLanguage: lang,
     availableLanguages: translations[e.id] ? ['en', 'es'] : ['en'],
     instructions: (t?.instructions || e.instructions).filter(s => s.trim()),
     instructionsAvailable: Boolean(t?.instructions?.length || e.instructions.some(s => s.trim())),
     translationStatus: t ? (t.status === 'adapted' ? 'source-checked-editorial' : t.status === 'pending-review' ? 'pending-review' : 'ai-authored-unreviewed') : 'upstream',
     instructionsEn: e.instructions.filter(s => s.trim()),
-    localizationReview: t ? { locale:t.locale || 'es-MX', status:t.status || 'pending-review', method:t.method || 'previous-unreviewed-translation', reasons:t.reviewReasons || [], sourceRefs:t.sourceRefs || [], visualReview:t.visualReview || 'not-performed', titleReview:t.titleReview || null } : null,
+    localizationReview: t ? { locale:t.locale || 'es-MX', status:t.status || 'pending-review', method:t.method || 'previous-unreviewed-translation', reasons:t.reviewReasons || [], sourceRefs:t.sourceRefs || [], visualReview:t.visualReview || 'not-performed', titleReview:t.titleReview || null, languageReview:t.languageReview || null, nameReview:catalogQuality.entries[e.id]?.displayName?{method:catalogQuality.entries[e.id].nameCorrection,previousName:catalogQuality.entries[e.id].previousName}:null } : null,
     illustrationMetadata: translations[e.id]?.illustrationMetadata || {personDepicted:null},
     primaryMuscles: e.primaryMuscles, secondaryMuscles: e.secondaryMuscles,
-    equipment: e.equipment || 'unknown', difficulty: e.level || 'unknown', category: e.category,
-    mechanic: e.mechanic, force: e.force, popular: Boolean(translations[e.id] && translations[e.id].popular !== false),
+    ...metadata.get(e.id), category: e.category,
+    metadataReview:catalogQuality.entries[e.id]?.metadata || {}, popular: popularFor(e.id),
     media: mediaFor(e), source: e.flowRecord ? flowSource : source,
     dataSources: e.flowRecord ? [flowSource, ...(e.id.startsWith('flow-') ? [] : [source])] : [source],
     movementPattern: e.flowRecord?.movementPattern || null,
@@ -81,45 +102,81 @@ export function localize(e, lang = 'es') {
 }
 
 const byId = new Map(rawExercises.map(e => [e.id, e]));
-const index = new Map(rawExercises.map(e => [e.id, normalize([e.name, translations[e.id]?.name, ...(translations[e.id]?.aliases || []), ...e.primaryMuscles, ...e.secondaryMuscles, ...e.primaryMuscles.map(m => labels.muscles[m]), labels.equipment[e.equipment], e.equipment, e.flowRecord?.target, e.flowRecord?.bodyPart, e.flowRecord?.equipment].join(' '))]));
-const values = field => [...new Set(rawExercises.map(e => field === 'difficulty' ? e.level : (e[field] || 'unknown')))].sort();
+const index = new Map(rawExercises.map(e => [e.id, normalize([namesFor(e).en, namesFor(e).es, ...aliasesFor(e.id), ...e.primaryMuscles, ...e.secondaryMuscles, ...e.primaryMuscles.map(m => labels.muscles[m]), labels.equipment[metadata.get(e.id).equipment], metadata.get(e.id).equipment, e.flowRecord?.target, e.flowRecord?.bodyPart, e.flowRecord?.equipment].join(' '))]));
+const searchIndex = new Map(rawExercises.map(e => [e.id, searchDocument({
+  names: [namesFor(e).es, namesFor(e).en], aliases: aliasesFor(e.id), isDefaultVariant:familyFor(e.id).isDefaultVariant,
+  metadata: [...e.primaryMuscles, ...e.secondaryMuscles, ...e.primaryMuscles.map(m => labels.muscles[m] || ''), labels.equipment[metadata.get(e.id).equipment] || '', metadata.get(e.id).equipment, e.flowRecord?.target || '', e.flowRecord?.bodyPart || '', e.flowRecord?.equipment || ''],
+  popular: popularFor(e.id),
+})]));
+const values = field => [...new Set(rawExercises.map(e => metadata.get(e.id)[field] || e[field] || 'unknown'))].sort();
+const pendingRequests = coverageReview.requests.filter(request => request.status === 'awaiting-verified-animation').map(request => ({...request,document:searchDocument({names:[request.name,request.nameEn],aliases:request.aliases,metadata:[],popular:false})}));
+function unavailableRequests(name) {
+  const query = searchQuery(name);
+  if (!query.tokens.length) return [];
+  return pendingRequests.filter(request => resolutionConfidence(request.document, query) >= 0.93).map(({requestId,name,status,reason}) => ({requestId,name,status,reason}));
+}
 
 export function queryExercises(params) {
-  checkParams(params, ['q', 'muscle', 'equipment', 'difficulty', 'category', 'popular', 'hasAnimation', 'lang', 'limit', 'offset', 'sort']);
+  checkParams(params, ['q', 'muscle', 'equipment', 'difficulty', 'category', 'popular', 'hasAnimation', 'lang', 'limit', 'offset', 'sort', 'match', 'familyId']);
   const lang = choice(params.get('lang'), ['es', 'en'], 'lang', 'es');
   const limit = integer(params.get('limit'), 20, 1, 100, 'limit');
   const offset = integer(params.get('offset'), 0, 0, Number.MAX_SAFE_INTEGER, 'offset');
   const q = params.get('q') || '';
   if (q.length > 200) throw new InputError('q admite hasta 200 caracteres');
+  const unavailable = unavailableRequests(q);
   const tokens = normalize(q).split(' ').filter(Boolean);
   const muscle = choice(params.get('muscle'), Object.keys(labels.muscles), 'muscle');
-  const equipment = choice(params.get('equipment'), values('equipment'), 'equipment');
+  const equipment = choice(params.get('equipment') === 'kettlebells' ? 'kettlebell' : params.get('equipment'), values('equipment'), 'equipment');
   const difficulty = choice(params.get('difficulty'), values('difficulty'), 'difficulty');
   const category = choice(params.get('category'), values('category'), 'category');
+  const familyId = choice(params.get('familyId'), [...curation.families.keys()], 'familyId');
   const popular = choice(params.get('popular'), ['true', 'false'], 'popular');
   const animation = choice(params.get('hasAnimation'), ['true', 'false'], 'hasAnimation');
-  const sort = choice(params.get('sort'), ['name', 'id'], 'sort', 'name');
+  const sort = choice(params.get('sort'), ['name', 'id', 'relevance'], 'sort', 'name');
+  const match = choice(params.get('match'), ['all', 'any'], 'match', 'all');
+  const advanced = sort === 'relevance' || params.has('match');
+  const query = searchQuery(q);
+  const scores = new Map();
+  if (advanced) for (const e of rawExercises) scores.set(e.id, searchMatch(searchIndex.get(e.id), query, match));
   const filtered = rawExercises.filter(e =>
-    tokens.every(t => index.get(e.id).includes(t)) &&
+    (advanced ? scores.get(e.id).matches : tokens.every(t => index.get(e.id).includes(t))) &&
     (!muscle || e.primaryMuscles.includes(muscle)) &&
-    (!equipment || (e.equipment || 'unknown') === equipment) &&
-    (!difficulty || (e.level || 'unknown') === difficulty) && (!category || e.category === category) &&
-    (!popular || Boolean(translations[e.id] && translations[e.id].popular !== false) === (popular === 'true')) &&
+    (!equipment || metadata.get(e.id).equipment === equipment) &&
+    (!familyId || familyFor(e.id).familyId === familyId) &&
+    (!difficulty || metadata.get(e.id).difficulty === difficulty) && (!category || e.category === category) &&
+    (!popular || popularFor(e.id) === (popular === 'true')) &&
     (!animation || Boolean(mediaFor(e).animation) === (animation === 'true'))
   );
-  filtered.sort((a,b) => sort === 'id' ? a.id.localeCompare(b.id, 'en') : ((lang === 'es' ? translations[a.id]?.name : null) || a.name).localeCompare((lang === 'es' ? translations[b.id]?.name : null) || b.name, lang) || a.id.localeCompare(b.id, 'en'));
-  return { data: filtered.slice(offset, offset + limit).map(e => localize(e, lang)), pagination: { total: filtered.length, count: Math.max(0, Math.min(limit, filtered.length - offset)), limit, offset, nextOffset: offset + limit < filtered.length ? offset + limit : null } };
+  filtered.sort((a,b) => (sort === 'relevance' ? scores.get(b.id).score - scores.get(a.id).score : 0) || (sort === 'id' ? a.id.localeCompare(b.id, 'en') : namesFor(a)[lang].localeCompare(namesFor(b)[lang], lang) || a.id.localeCompare(b.id, 'en')));
+  return { data: filtered.slice(offset, offset + limit).map(e => ({...localize(e, lang), ...(advanced ? { score: scores.get(e.id).score, matchedTokens: scores.get(e.id).matchedTokens } : {})})), ...(unavailable.length ? {unavailable} : {}), pagination: { total: filtered.length, count: Math.max(0, Math.min(limit, filtered.length - offset)), limit, offset, nextOffset: offset + limit < filtered.length ? offset + limit : null } };
 }
 
 export function getExercise(id, lang = 'es') { const e = byId.get(id); return e ? localize(e, lang) : null; }
-export function taxonomy(lang = 'es') {
-  return Object.fromEntries(Object.entries(labels).map(([facet, map]) => [facet, Object.keys(map).map(id => ({id, name: lang === 'es' ? map[id] : id, count: rawExercises.filter(e => facet === 'muscles' ? e.primaryMuscles.includes(id) : (facet === 'difficulty' ? e.level : e[facet] || 'unknown') === id).length}))]));
+export function matchExercise(params) {
+  checkParams(params, ['name', 'lang']);
+  const name = params.get('name');
+  if (!name?.trim() || name.length > 200) throw new InputError('name requiere entre 1 y 200 caracteres');
+  const lang = choice(params.get('lang'), ['es', 'en'], 'lang', 'es');
+  const entries = rawExercises.map(e => ({
+    id: e.id, name: namesFor(e)[lang],
+    document: searchIndex.get(e.id), titlePending: translations[e.id]?.titleReview?.status === 'pending-review',
+    ...familyFor(e.id),
+  }));
+  const unavailable = unavailableRequests(name);
+  const result = resolveCandidates(entries, name, [...curation.families.values()]);
+  return { ...result, ...(unavailable.length ? {best:null,alternatives:[],resolutionMethod:'none',reason:'no-candidates',unavailable} : {}), catalogVersion, resolverVersion };
 }
-export const catalogVersion = createHash('sha256').update(JSON.stringify({rawExercises, translations, mediaRecords, flowChecksums})).digest('hex').slice(0, 16);
+export function exerciseFamilies(lang = 'es') {
+  return [...curation.families.values()].map(({id,name,nameEn,aliases,defaultExerciseId,exerciseIds}) => ({id,name:lang === 'es' ? name : nameEn,nameEn,aliases,defaultExerciseId,exerciseIds}));
+}
+export function taxonomy(lang = 'es') {
+  return Object.fromEntries(Object.entries(labels).map(([facet, map]) => [facet, Object.keys(map).map(id => ({id, name: lang === 'es' ? map[id] : id, count: rawExercises.filter(e => facet === 'muscles' ? e.primaryMuscles.includes(id) : (metadata.get(e.id)[facet] || e[facet] || 'unknown') === id).length}))]));
+}
+export const catalogVersion = createHash('sha256').update(JSON.stringify({rawExercises, translations, mediaRecords, flowChecksums, gymCuration, coverageReview, catalogQuality})).digest('hex').slice(0, 16);
 export function stats() {
   const animatedIds = new Set(rawExercises.filter(e => e.flowRecord?.animation || mediaRecords.some(m => m.exerciseId === e.id)).map(e => e.id));
   const translated = rawExercises.filter(e => translations[e.id]).length;
   const spanishAdapted = rawExercises.filter(e => translations[e.id]?.status === 'adapted').length;
-  const popular = rawExercises.filter(e => translations[e.id] && translations[e.id].popular !== false).length;
+  const popular = rawExercises.filter(e => popularFor(e.id)).length;
   return { version: catalogVersion, total: rawExercises.length, spanish: translated, spanishAdapted, spanishPendingReview:translated-spanishAdapted, popular, withImages: 0, withImageSequence: 0, withAnimation: animatedIds.size, withSvgAnimation: rawExercises.filter(e => e.flowRecord?.animation).length, withGifOrVideo: rawExercises.filter(e => !e.flowRecord?.animation && mediaRecords.some(m => m.exerciseId === e.id)).length, withoutAnimation: rawExercises.length - animatedIds.size, mediaHosting: 'local-svg', languages: ['en', 'es'] };
 }

@@ -178,7 +178,7 @@ export const batches = [
   }},
   {sheet:116,confirmed:['flow-0620','flow-0865','flow-1353'],edits:{
     'flow-2312':['Abdominal bicicleta con codo a rodilla contraria',['crunch bicicleta']],
-    'flow-1301':['Aperturas de pecho sentado en máquina',['aperturas en máquina de palanca']],
+    'flow-1301':['Press de pecho sentado en máquina',['press de pecho en máquina']],
     'flow-0624':['Marcha en sentadilla isométrica contra la pared',['sentadilla en pared con elevación alterna de rodillas']],
     'flow-1304':['Empuje de pecho de pie con balón medicinal (variante múltiple)',['empuje frontal con balón medicinal']],
     'flow-1305':['Empuje de pecho de pie con balón medicinal (variante simple)',['extensión de brazos al frente con balón medicinal']],
@@ -245,7 +245,9 @@ export const batches = [
     'flow-2287':['Prensa de piernas alterna en máquina de palanca',['prensa unilateral alternada']],
     'flow-0571':['Remo alterno sentado en máquina con agarre cerrado',['remo alternado en máquina de palanca']],
   },pending:{'flow-0572':'El título especifica dominada supina asistida, pero las instrucciones indican agarre prono y el dibujo no permite resolver la orientación de las manos.'}},
-  {sheet:108,confirmed:['flow-0575','flow-0577','flow-0576','flow-0578','flow-1300'],edits:{
+  {sheet:108,confirmed:['flow-0575','flow-0578','flow-1300'],edits:{
+    'flow-0576':['Press de pecho sentado en máquina',['chest press']],
+    'flow-0577':['Press de pecho sentado en máquina',['chest press']],
     'flow-3200':['Remo inclinado en máquina de palanca con agarre en V',['remo con barra en V en máquina']],
     'flow-2289':['Elevación de talones sentado en máquina de palanca',['pantorrilla sentado en máquina']],
   },pending:{
@@ -1012,6 +1014,7 @@ export const batches = [
     'flow-0223':'El original especifica polea baja; los cuadros muestran polea alta y mano junto a la cabeza. La altura modifica la trayectoria.',
   }},
   {sheet:14,confirmed:['flow-1375','flow-0226'],edits:{
+    'flow-0228':['Patada de glúteo de pie en polea',['patada de glúteo en polea','glute kickback en polea','cable glute kickback']],
     'flow-1717':['Sentadilla con remo en polea y cuerda',['remo con sentadilla y cuerda en polea']],
     'flow-1644':['Curl de bíceps en sentadilla en polea baja',['curl en cuclillas en polea']],
     'flow-0225':['Aperturas inversas cruzadas de pie en polea alta',['vuelos posteriores cruzados de pie en polea']],
@@ -1019,7 +1022,6 @@ export const batches = [
     'flow-0227':['Aperturas de pecho de pie en poleas',['cruces de pecho de pie en poleas']],
   },pending:{
     'flow-0224':'El título indica muñecas detrás del cuerpo, pero texto e ilustración sitúan la barra al frente. Falta resolver posición y flexión/extensión.',
-    'flow-0228':'El texto indica ponerse de espaldas a la máquina; los cuadros muestran la persona de frente con la pierna extendiéndose hacia atrás.',
   }},
   {sheet:15,confirmed:['flow-1376'],edits:{
     'flow-0230':['Elevación diagonal de abajo hacia arriba en polea',['levantamiento diagonal ascendente en polea']],
@@ -1033,6 +1035,7 @@ export const batches = [
     'flow-0235':'El original pide brazo extendido al frente; los cuadros muestran codo flexionado junto al costado. No se confirma el ángulo de rotación externa.',
   }},
   {sheet:16,confirmed:[],edits:{
+    'flow-0237':['Pullover con cuerda en polea alta',['pullover con cuerda','jalón con brazos extendidos y cuerda']],
     'flow-0236':['Remo de pie con giro de tronco y agarre en V en polea',['remo con rotación y triángulo en polea']],
     'flow-1269':['Cruces de pecho de pie en poleas con el tronco erguido',['aperturas cruzadas de pie en poleas']],
     'flow-0238':['Jalón con brazos extendidos en polea alta',['pullover de pie en polea con barra']],
@@ -1040,7 +1043,6 @@ export const batches = [
     'flow-0241':['Extensión de tríceps con agarre en V en polea alta',['jalón de tríceps con triángulo']],
     'flow-2405':['Extensión de tríceps en polea alta con agarre en V y soporte para brazos',['extensión de tríceps con arm blaster y agarre en V']],
   },pending:{
-    'flow-0237':'El título y animación indican brazos extendidos; el texto ordena flexionar codos a 90 grados. No se confirma el recorrido de la variante.',
     'flow-0240':'El título dice supino y la animación muestra boca arriba; las instrucciones dicen boca abajo. Debe resolverse la postura.',
     'flow-2464':'La ficha y los cuadros muestran remo unilateral sentado desde polea baja. La demostración primaria de Thibaudeau/John Meadows usa tirón diagonal desde arriba de pie; no se puede confirmar que esta animación sea remo kayak. Propuesta sin aprobar: Remo tipo kayak en polea.',
   }},
@@ -1092,11 +1094,11 @@ export const batches = [
     'flow-1726':['Extensión de tríceps acostado en el suelo con cuerda en polea baja',['press francés en el suelo con cuerda']],
   },pending:{'flow-1725':'El texto habla de cuerda y postura de pie; los cuadros muestran apoyo en banco inclinado y un agarre que no confirma la cuerda.'}},
   {sheet:12,confirmed:['flow-2144','flow-1641','flow-1642'],edits:{
+    'flow-0213':['Remo sentado en polea con agarre en V',['remo sentado con triángulo','remo en polea con triángulo','remo sentado en polea con agarre en triángulo']],
     'flow-1323':['Remo sentado con cuerda en polea baja',['remo bajo con cuerda']],
     'flow-0211':['Giros rusos en polea sentado sobre pelota de estabilidad',['rotaciones de tronco en polea sobre pelota']],
   },pending:{
     'flow-1640':'El título exige agarre martillo, pero el original especifica palmas hacia arriba. Confirmar el agarre con cuerda antes de aprobarlo.',
-    'flow-0213':'El título especifica remo alto y la ilustración presenta una tracción prácticamente horizontal a la cintura. No se confirma la altura de la variante.',
     'flow-0214':'El texto pide alternar brazos, pero los cuadros muestran un único agarre y rotación del tronco. No se confirma cómo alterna la variante.',
     'flow-1643':'El título indica curl sobre la cabeza; las instrucciones y los cuadros muestran curl sentado desde polea baja con los codos junto al cuerpo.',
   }},

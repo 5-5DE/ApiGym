@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 import { rawExercises } from '../src/catalog.js';
 import { editorialName, sources } from './spanish-editorial.js';
 import { applyReviewedTitles } from './apply-reviewed-titles.js';
+import { normalizeTu } from './spanish-tu.js';
 const root = new URL('../', import.meta.url);
 const read = path => JSON.parse(readFileSync(new URL(path, root), 'utf8'));
 const write = (path, value) => writeFileSync(new URL(path, root), JSON.stringify(value, null, 2) + '\n');
@@ -37,6 +38,7 @@ for (const e of rawExercises) {
   let name = specific?.name || names[e.id] || legacy[e.id]?.name || proposedName || editDraft(draftName);
   name = name[0].toLocaleUpperCase('es-MX') + name.slice(1);
   const reasons = [];
+  if (e.id === 'flow-0228') reasons.push({code:'original-orientation-corrected',detail:'El original inglés indica situarse de espaldas a la polea. La adaptación española corrige a frente a la máquina tras contrastar fuente y tres cuadros; instructionsEn conserva el texto de origen.'});
   if (!specific) reasons.push({code:'editorial-review-required',detail:'Borrador: falta reescritura editorial y contraste individual de la variante; no se declara investigado ni técnicamente validado.'});
   // These are leads for a reviewer, not automatic diagnoses or corrections.
   const text = e.instructions.join(' ').toLowerCase();
@@ -57,6 +59,13 @@ for (const e of rawExercises) {
 }
 for(const id of Object.keys(adaptations))if(!records.some(record=>record.id===id))throw new Error(`Adaptación huérfana: ${id}`);
 applyReviewedTitles(translations,records);
+for (const row of records) {
+  const t=translations[row.id];
+  const before=t.instructions;
+  t.instructions=before.map(normalizeTu);
+  t.languageReview={address:'tu',method:'grammatical-register-normalization',techniqueApprovalUnchanged:true,changed:JSON.stringify(before)!==JSON.stringify(t.instructions)};
+  row.languageReview=t.languageReview;
+}
 write('data/translations.es.json', translations);
 const adapted = records.filter(record => record.status === 'adapted').length;
 const visuallyInspected = records.filter(record=>record.visualReview==='inspected-three-frames').length;
@@ -68,7 +77,7 @@ writeFileSync(new URL('reports/SPANISH-LOCALIZATION-REVIEW.md',root),[
  '**La adaptación editorial integral de las instrucciones no está terminada.** Los borradores no son instrucciones técnicamente validadas. La revisión posterior de títulos sí cubre las 1,257 fichas y sus tres cuadros; sus resultados y conflictos están en [TITLE-REVIEW-ES-MX.md](TITLE-REVIEW-ES-MX.md). Esa revisión no aprueba automáticamente las instrucciones. La inspección visual comprueba el patrón representado y no certifica la técnica.', '',
  '## Arquitectura y trazabilidad', '',
  '`data/upstream/free-exercise-db.json` y `data/flow-exercise-dataset/data/exercises.json` permanecen intactos. `src/catalog.js` resuelve identidades antes de localizar. Los 812 registros retirados no vuelven a la API. Los textos anteriores se conservan en `data/localization/es-MX.previous-translations.json`. Las modificaciones editoriales reproducibles están en `es-MX.adaptations.json`; los borradores de Google Translate están separados en `es-MX.machine-drafts.json`. `npm run localization:build` trabaja sin red. El servidor solo lee los resultados persistidos.', '',
- 'La respuesta conserva los campos existentes, agrega `instructionsEn` y `localizationReview`, y permite `lang=en`. `popular` conserva la selección previa, independiente de la nueva cobertura de traducción. Male/female se retira del título y se conserva como metadato de la persona representada.', '',
+ 'La respuesta conserva los campos existentes, agrega `instructionsEn` y `localizationReview`, y permite `lang=en`. `popular` en las traducciones conserva la selección previa, independiente de la nueva cobertura de traducción. Male/female se retira del título y se conserva como metadato de la persona representada.', '',
  '## Fuentes realmente consultadas', '',
  ...sources.map(source=>`- [${source.id}](${source.url}): ${source.scope}`), '',
  'Estas fuentes fundamentan terminología por familias; no se asignan como prueba de investigación individual a un borrador. Cada adaptación concreta declara sus referencias. No se copiaron instrucciones de sitios externos.', '',

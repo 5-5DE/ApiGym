@@ -1,6 +1,6 @@
 # Revisión de localización es-MX
 
-Catálogo activo: 1257. Registros procesados: 1257. Adaptaciones con reescritura y contraste textual: 12. Borradores pendientes: 1245. Sin procesar en el inventario: 0. Ilustraciones inspeccionadas (tres cuadros): 12.
+Catálogo activo: 1257. Registros procesados: 1257. Adaptaciones con reescritura y contraste textual: 13. Borradores pendientes: 1244. Sin procesar en el inventario: 0. Ilustraciones inspeccionadas (tres cuadros): 13.
 
 **La adaptación editorial integral de las instrucciones no está terminada.** Los borradores no son instrucciones técnicamente validadas. La revisión posterior de títulos sí cubre las 1,257 fichas y sus tres cuadros; sus resultados y conflictos están en [TITLE-REVIEW-ES-MX.md](TITLE-REVIEW-ES-MX.md). Esa revisión no aprueba automáticamente las instrucciones. La inspección visual comprueba el patrón representado y no certifica la técnica.
 
@@ -8,10 +8,11 @@ Catálogo activo: 1257. Registros procesados: 1257. Adaptaciones con reescritura
 
 `data/upstream/free-exercise-db.json` y `data/flow-exercise-dataset/data/exercises.json` permanecen intactos. `src/catalog.js` resuelve identidades antes de localizar. Los 812 registros retirados no vuelven a la API. Los textos anteriores se conservan en `data/localization/es-MX.previous-translations.json`. Las modificaciones editoriales reproducibles están en `es-MX.adaptations.json`; los borradores de Google Translate están separados en `es-MX.machine-drafts.json`. `npm run localization:build` trabaja sin red. El servidor solo lee los resultados persistidos.
 
-La respuesta conserva los campos existentes, agrega `instructionsEn` y `localizationReview`, y permite `lang=en`. `popular` conserva la selección previa, independiente de la nueva cobertura de traducción. Male/female se retira del título y se conserva como metadato de la persona representada.
+La respuesta conserva los campos existentes, agrega `instructionsEn` y `localizationReview`, y permite `lang=en`. `popular` en las traducciones conserva la selección previa, independiente de la nueva cobertura de traducción. Male/female se retira del título y se conserva como metadato de la persona representada.
 
 ## Fuentes realmente consultadas
 
+- [puregym-cable-kickbacks](https://www.puregym.com/exercises/glutes/glute-kickbacks/cable-kickbacks/): Contraste específico de patada de glúteo en polea: tobillera, polea baja y orientación frente a la máquina. Reescritura propia contrastada con los tres cuadros de flow-0228; el original inglés conserva una orientación contradictoria.
 - [smartfit-mx-peso-libre](https://smartfit.com.mx/news/comunidad-smart-fit/que-hay-en-un-gimnasio-smart-fit-conoce-el-area-de-peso-libre/): Uso mexicano: press, curl, desplantes, aperturas y equipo; no verifica todas las variantes.
 - [smartfit-mx-dominadas](https://smartfit.com.mx/news/tips/tipos-de-dominadas-y-como-hacerlas-en-el-gimnasio/): Familia de dominadas y diferencias entre agarre prono, supino y neutro.
 - [smartfit-mx-agarres](https://smartfit.com.mx/news/tips/diferentes-tipos-de-agarre-en-el-gym/): Nombres y orientación de los agarres; neutro o martillo no equivale a supino.
@@ -52,6 +53,7 @@ La lista completa, con ID, motivo, original y rutas de ilustración, está en `s
 - `flow-3235` (cable assisted inverse leg curl): El título indica asistencia; las instrucciones no identifican cómo se proporciona.
 - `flow-0186` (cable lying triceps extension v. 2): La fuente usa un número de variante. Confirmar su diferencia con las demás fichas antes de retirar el número.
 - `flow-0199` (cable pushdown (straight arm) v. 2): La fuente usa un número de variante. Confirmar su diferencia con las demás fichas antes de retirar el número.
+- `flow-0228` (cable standing hip extension): El original inglés indica situarse de espaldas a la polea. La adaptación española corrige a frente a la máquina tras contrastar fuente y tres cuadros; instructionsEn conserva el texto de origen.
 - `flow-0287` (dumbbell arnold press v. 2): La fuente usa un número de variante. Confirmar su diferencia con las demás fichas antes de retirar el número.
 - `flow-1657` (dumbbell cross body hammer curl v. 2): La fuente usa un número de variante. Confirmar su diferencia con las demás fichas antes de retirar el número.
 - `flow-2136` (dumbbell cuban press v. 2): La fuente usa un número de variante. Confirmar su diferencia con las demás fichas antes de retirar el número.

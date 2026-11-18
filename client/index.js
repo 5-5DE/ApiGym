@@ -17,10 +17,12 @@ export function createApiGymClient({baseUrl,apiKey,fetch:fetcher=globalThis.fetc
   }
   return {
     list:(params,signal)=>request('exercises',params,signal),
+    match:(name,lang='es',signal)=>request('exercises/match',{name,lang},signal),
     get:(id,lang='es',signal)=>request('exercises/'+encodeURIComponent(id),{lang},signal),
     media:(id,signal)=>request('exercises/'+encodeURIComponent(id)+'/media',{},signal),
     batch:(ids,lang='es',signal)=>request('exercises/batch',{ids:ids.join(','),lang},signal),
     taxonomy:(lang='es',signal)=>request('taxonomy',{lang},signal),
+    families:(lang='es',signal)=>request('families',{lang},signal),
     stats:signal=>request('stats',{},signal),
   };
 }

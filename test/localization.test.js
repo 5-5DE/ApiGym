@@ -18,9 +18,9 @@ test('localización cubre cada ID activo y conserva originales, medios y selecci
     if(es.localizationReview.status==='pending-review')assert.ok(es.localizationReview.reasons.length,e.id);
   }
   assert.equal(stats().spanish,1257);
-  assert.equal(stats().popular,10);
-  assert.equal(queryExercises(new URLSearchParams('popular=true')).pagination.total,10);
-  assert.equal(queryExercises(new URLSearchParams('popular=false')).pagination.total,1247);
+  assert.equal(stats().popular,150);
+  assert.equal(queryExercises(new URLSearchParams('popular=true')).pagination.total,150);
+  assert.equal(queryExercises(new URLSearchParams('popular=false')).pagination.total,1107);
 });
 
 test('variantes conservan rodillas/piernas, incorporación/crunch y agarres; conflictos siguen pendientes',()=>{

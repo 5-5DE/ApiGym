@@ -1,4 +1,16 @@
 {
+  "flow-0228": {
+    "name": "Patada de glúteo de pie en polea",
+    "aliases": ["patada de glúteo en polea", "glute kickback en polea", "cable glute kickback"],
+    "sources": ["puregym-cable-kickbacks"],
+    "instructions": [
+      "Conecta una tobillera a la polea baja y ajústala a la pierna que vas a mover.",
+      "Colócate frente a la máquina y usa su soporte para mantener el equilibrio.",
+      "Lleva esa pierna hacia atrás con el abdomen firme y la pelvis estable, sin arquear la espalda ni tomar impulso.",
+      "Regresa lentamente y realiza el movimiento con la otra pierna."
+    ],
+    "visualReview": "inspected-three-frames"
+  },
   "flow-0662": {
     "name": "Flexiones de brazos",
     "aliases": [

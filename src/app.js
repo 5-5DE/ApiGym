@@ -1,7 +1,7 @@
 import { createServer } from 'node:http';
 import { timingSafeEqual, createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
-import { getExercise, queryExercises, taxonomy, stats, catalogVersion } from './catalog.js';
+import { getExercise, matchExercise, queryExercises, exerciseFamilies, taxonomy, stats, catalogVersion } from './catalog.js';
 import { readFileSync as readSync } from 'node:fs';
 const flowDataset = JSON.parse(readSync(new URL('../data/flow-exercise-dataset/data/exercises.json', import.meta.url), 'utf8'));
 const flowMediaPaths = new Set(flowDataset.filter(e => e.animation).flatMap(e => e.animation.frames.map(path => path.replace(/^assets\//, '/media/flow/'))));
@@ -84,6 +84,7 @@ export function createApp({ corsOrigins = process.env.CORS_ORIGINS || '*', apiKe
       if (path === '/health') return send(200, {status: 'ok', catalogVersion}, {cache: false});
       if (path === '/openapi.json') return send(200, {...openapi,security:apiKey ? [{ApiKey:[]}] : [{}]});
       if (path === '/api/v1/exercises') return send(200, queryExercises(url.searchParams));
+      if (path === '/api/v1/exercises/match') return send(200, matchExercise(url.searchParams));
       if (path === '/api/v1/selections/essential-50') {
         checkParams(url.searchParams, []);
         return send(200, essential50);
@@ -92,6 +93,7 @@ export function createApp({ corsOrigins = process.env.CORS_ORIGINS || '*', apiKe
       if (path === '/api/v1/sources') { checkParams(url.searchParams, []); return send(200, {data: sources}); }
       const langOnly = () => { checkParams(url.searchParams, ['lang']); return choice(url.searchParams.get('lang'), ['es', 'en'], 'lang', 'es'); };
       if (path === '/api/v1/taxonomy') return send(200, {data: taxonomy(langOnly())});
+      if (path === '/api/v1/families') return send(200, {data: exerciseFamilies(langOnly())});
       if (path === '/api/v1/exercises/batch') {
         checkParams(url.searchParams, ['ids', 'lang']);
         const lang = choice(url.searchParams.get('lang'), ['es', 'en'], 'lang', 'es');

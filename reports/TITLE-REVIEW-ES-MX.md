@@ -1,12 +1,12 @@
 # Revisión de títulos del catálogo: español de México
 
-Revisadas: **1257/1257**. Títulos confirmados: **908**; modificados: **535**; pendientes: **349**; sin procesar: **0**. 537 fichas incorporan alias editoriales.
+Revisadas: **1257/1257**. Títulos confirmados: **911**; modificados: **540**; pendientes: **346**; sin procesar: **0**. 542 fichas incorporan alias editoriales.
 
 ## Alcance y evidencia
 
 Se leyó cada título junto con sus instrucciones originales y equipo, y se inspeccionaron los tres cuadros SVG locales de cada ficha (3,771 cuadros, 140 láminas). Las decisiones son individuales por ID. Las huellas SHA-256 permiten detectar cambios posteriores en los textos originales o las imágenes. El índice de láminas se conserva en `data/localization/es-MX.title-review-sheets.json`; las láminas se pueden reproducir con `python scripts/render-title-review.py` (PyMuPDF).
 
-Las fuentes externas respaldan la terminología de familias; no se afirma haber encontrado una demostración externa independiente de cada variante. Un título confirmado significa que su nombre describe la evidencia del repositorio. No constituye validación clínica ni aprobación de las instrucciones traducidas: se conserva su revisión editorial independiente (12 adaptadas y 1,245 pendientes).
+Las fuentes externas respaldan la terminología de familias; no se afirma haber encontrado una demostración externa independiente de cada variante. Un título confirmado significa que su nombre describe la evidencia del repositorio. No constituye validación clínica ni aprobación de las instrucciones traducidas: se conserva su revisión editorial independiente (13 adaptadas y 1,244 pendientes).
 
 Los nombres dudosos conservan el título anterior y se marcan como pendientes. No se renombran con una suposición. Las animaciones SVG y sus atribuciones no se modifican. Los nombres originales en inglés siguen disponibles con `lang=en` y `nameEn`; los alias anteriores se conservan y se agregan alternativas útiles, sin agregar las malas traducciones como alias nuevos.
 
@@ -18,6 +18,7 @@ Los nombres dudosos conservan el título anterior y se marcan como pendientes. N
 
 ## Fuentes consultadas
 
+- [puregym-cable-kickbacks](https://www.puregym.com/exercises/glutes/glute-kickbacks/cable-kickbacks/): Contraste específico de patada de glúteo en polea: tobillera, polea baja y orientación frente a la máquina. Reescritura propia contrastada con los tres cuadros de flow-0228; el original inglés conserva una orientación contradictoria.
 - [smartfit-mx-peso-libre](https://smartfit.com.mx/news/comunidad-smart-fit/que-hay-en-un-gimnasio-smart-fit-conoce-el-area-de-peso-libre/): Uso mexicano: press, curl, desplantes, aperturas y equipo; no verifica todas las variantes.
 - [smartfit-mx-dominadas](https://smartfit.com.mx/news/tips/tipos-de-dominadas-y-como-hacerlas-en-el-gimnasio/): Familia de dominadas y diferencias entre agarre prono, supino y neutro.
 - [smartfit-mx-agarres](https://smartfit.com.mx/news/tips/diferentes-tipos-de-agarre-en-el-gym/): Nombres y orientación de los agarres; neutro o martillo no equivale a supino.
@@ -161,6 +162,7 @@ Los nombres dudosos conservan el título anterior y se marcan como pendientes. N
 | flow-1726 | Cable cuerda tirada en el suelo extensión de tríceps | Extensión de tríceps acostado en el suelo con cuerda en polea baja | press francés en el suelo con cuerda |
 | flow-1323 | Cable cuerda fila sentada | Remo sentado con cuerda en polea baja | remo bajo con cuerda |
 | flow-0211 | Giros rusos del cable (en pelota de estabilidad) | Giros rusos en polea sentado sobre pelota de estabilidad | rotaciones de tronco en polea sobre pelota |
+| flow-0213 | Fila alta con asiento de cable (barra en v) | Remo sentado en polea con agarre en V | remo sentado con triángulo; remo en polea con triángulo; remo sentado en polea con agarre en triángulo |
 | flow-0215 | Elevaciones para deltoides posteriores sentado en polea | Aperturas inversas sentado en poleas | vuelos posteriores sentado en poleas |
 | flow-2399 | Giro asentado del cable | Rotación de tronco sentado en polea | giros de tronco sentado en polea |
 | flow-0218 | Remo con agarre amplio sentado en polea | Remo sentado en polea con agarre amplio | remo bajo con agarre abierto |
@@ -169,6 +171,7 @@ Los nombres dudosos conservan el título anterior y se marcan como pendientes. N
 | flow-0225 | Cable de pie cruzado mosca alta inversa | Aperturas inversas cruzadas de pie en polea alta | vuelos posteriores cruzados de pie en polea |
 | flow-0874 | Crunch abdominal con cuerda de pie en polea | Crunch abdominal de pie con cuerda en polea alta | abdominales de pie con cuerda en polea |
 | flow-0227 | Aperturas de pie en polea | Aperturas de pecho de pie en poleas | cruces de pecho de pie en poleas |
+| flow-0228 | Extensión de cadera de pie en polea | Patada de glúteo de pie en polea | patada de glúteo en polea; glute kickback en polea; cable glute kickback |
 | flow-0230 | Elevador de cable | Elevación diagonal de abajo hacia arriba en polea | levantamiento diagonal ascendente en polea |
 | flow-0233 | Remo para deltoides posteriores con cuerda de pie en polea | Remo para deltoides posteriores de pie con cuerda en polea | remo posterior de pie con cuerda |
 | flow-1727 | Extensión de tríceps con agarre inverso a un brazo de pie por encima de la cabeza en polea | Extensión de tríceps a un brazo sobre la cabeza en polea con agarre supino | extensión unilateral sobre la cabeza con agarre invertido en polea |
@@ -176,6 +179,7 @@ Los nombres dudosos conservan el título anterior y se marcan como pendientes. N
 | flow-0236 | Fila de torsión de pie de cable (barra en v) | Remo de pie con giro de tronco y agarre en V en polea | remo con rotación y triángulo en polea |
 | flow-1269 | Cable de pie cruces rectos | Cruces de pecho de pie en poleas con el tronco erguido | aperturas cruzadas de pie en poleas |
 | flow-0238 | Jalón dorsal con brazos extendidos en polea | Jalón con brazos extendidos en polea alta | pullover de pie en polea con barra |
+| flow-0237 | Jalón dorsal con cuerda con brazos extendidos en polea | Pullover con cuerda en polea alta | pullover con cuerda; jalón con brazos extendidos y cuerda |
 | flow-0239 | Fila sentada con respaldo recto | Remo sentado en polea con el tronco erguido | remo sentado con espalda recta en polea |
 | flow-0241 | Flexión de tríceps con cable (barra en V) | Extensión de tríceps con agarre en V en polea alta | jalón de tríceps con triángulo |
 | flow-2405 | Flexión de tríceps con cable (barra en V) (con brazo blaster) | Extensión de tríceps en polea alta con agarre en V y soporte para brazos | extensión de tríceps con arm blaster y agarre en V |
@@ -438,6 +442,8 @@ Los nombres dudosos conservan el título anterior y se marcan como pendientes. N
 | flow-0571 | Remo con agarre cerrado alterno sentado en máquina de palanca | Remo alterno sentado en máquina con agarre cerrado | remo alternado en máquina de palanca |
 | flow-3200 | Fila inclinada con palanca con barra en V | Remo inclinado en máquina de palanca con agarre en V | remo con barra en V en máquina |
 | flow-2289 | Extensión de tobillos en prensa en máquina de palanca | Elevación de talones sentado en máquina de palanca | pantorrilla sentado en máquina |
+| flow-0577 | Press de pecho en máquina de palanca | Press de pecho sentado en máquina | chest press |
+| flow-0576 | Press de pecho en máquina de palanca | Press de pecho sentado en máquina | chest press |
 | flow-2288 | Manos de agarre de palanca | Cierre de manos en máquina de agarre | apretón en máquina para antebrazo |
 | flow-2611 | Prensa horizontal de palanca con una pierna | Prensa horizontal unilateral en máquina | prensa de piernas a una pierna |
 | flow-0583 | Giro de palanca de rodillas | Rotación de tronco de rodillas en máquina | giros de torso de rodillas en máquina |
@@ -455,7 +461,7 @@ Los nombres dudosos conservan el título anterior y se marcan como pendientes. N
 | flow-2312 | Recostado codo a rodilla | Abdominal bicicleta con codo a rodilla contraria | crunch bicicleta |
 | flow-0620 | Elevación de piernas en banco plano acostado | Elevación de piernas acostado en banco plano | elevación de piernas en banca |
 | flow-0865 | Elevación de pierna y cadera acostada | Elevación de piernas y cadera acostado en el suelo | elevación de cadera con piernas arriba |
-| flow-1301 | Prensa de pecho interior de la máquina | Aperturas de pecho sentado en máquina | aperturas en máquina de palanca |
+| flow-1301 | Prensa de pecho interior de la máquina | Press de pecho sentado en máquina | press de pecho en máquina |
 | flow-0624 | Marchar sentado (pared) | Marcha en sentadilla isométrica contra la pared | sentadilla en pared con elevación alterna de rodillas |
 | flow-1353 | Recepción de balón medicinal y lanzamiento por encima de la cabeza. | Lanzamiento de balón medicinal sobre la cabeza con recepción | lanzamiento vertical y recepción de balón |
 | flow-1304 | Balón medicinal empuje en el pecho respuesta múltiple | Empuje de pecho de pie con balón medicinal (variante múltiple) | empuje frontal con balón medicinal |
@@ -745,7 +751,6 @@ Todos estos ejercicios sí fueron inspeccionados. Requieren resolver el conflict
 | flow-2406 | cable reverse grip triceps pushdown (sz-bar) (with arm blaster) | El texto especifica barra recta y la variante nombra barra SZ con soporte para brazos. Los accesorios no quedan confirmados de manera coherente. |
 | flow-1725 | cable rope incline tricep extension | El texto habla de cuerda y postura de pie; los cuadros muestran apoyo en banco inclinado y un agarre que no confirma la cuerda. |
 | flow-1640 | cable rope one arm hammer preacher curl | El título exige agarre martillo, pero el original especifica palmas hacia arriba. Confirmar el agarre con cuerda antes de aprobarlo. |
-| flow-0213 | cable seated high row (v-bar) | El título especifica remo alto y la ilustración presenta una tracción prácticamente horizontal a la cintura. No se confirma la altura de la variante. |
 | flow-0214 | cable seated one arm alternate row | El texto pide alternar brazos, pero los cuadros muestran un único agarre y rotación del tronco. No se confirma cómo alterna la variante. |
 | flow-1643 | cable seated overhead curl | El título indica curl sobre la cabeza; las instrucciones y los cuadros muestran curl sentado desde polea baja con los codos junto al cuerpo. |
 | flow-0216 | cable seated shoulder internal rotation | El texto coloca el brazo extendido al frente; la ilustración muestra rotación con el codo flexionado junto al costado. |
@@ -753,12 +758,10 @@ Todos estos ejercicios sí fueron inspeccionados. Requieren resolver el conflict
 | flow-0221 | cable side bend crunch (bosu ball) | El texto describe flexión lateral de pie sin BOSU; la ilustración muestra posición sentada sobre BOSU. |
 | flow-0223 | cable side crunch | El original especifica polea baja; los cuadros muestran polea alta y mano junto a la cabeza. La altura modifica la trayectoria. |
 | flow-0224 | cable standing back wrist curl | El título indica muñecas detrás del cuerpo, pero texto e ilustración sitúan la barra al frente. Falta resolver posición y flexión/extensión. |
-| flow-0228 | cable standing hip extension | El texto indica ponerse de espaldas a la máquina; los cuadros muestran la persona de frente con la pierna extendiéndose hacia atrás. |
 | flow-0229 | cable standing inner curl | El título especifica variante interna, pero texto y cuadros solo describen curl unilateral convencional; falta identificar la diferencia. |
 | flow-0231 | cable standing one arm triceps extension | El original sitúa el brazo paralelo al suelo y los cuadros lo elevan sobre la cabeza. No se confirma la posición del hombro. |
 | flow-0232 | cable standing pulldown (with rope) | El texto mezcla brazos extendidos con contracción de bíceps y llegada a los muslos; la imagen flexiona los codos hacia arriba. Movimiento sin resolver. |
 | flow-0235 | cable standing shoulder external rotation | El original pide brazo extendido al frente; los cuadros muestran codo flexionado junto al costado. No se confirma el ángulo de rotación externa. |
-| flow-0237 | cable straight arm pulldown (with rope) | El título y animación indican brazos extendidos; el texto ordena flexionar codos a 90 grados. No se confirma el recorrido de la variante. |
 | flow-0240 | cable supine reverse fly | El título dice supino y la animación muestra boca arriba; las instrucciones dicen boca abajo. Debe resolverse la postura. |
 | flow-2464 | cable thibaudeau kayak row | La ficha y los cuadros muestran remo unilateral sentado desde polea baja. La demostración primaria de Thibaudeau/John Meadows usa tirón diagonal desde arriba de pie; no se puede confirmar que esta animación sea remo kayak. Propuesta sin aprobar: Remo tipo kayak en polea. |
 | flow-0242 | cable tuck reverse crunch | El texto sujeta el cable con las manos por encima del pecho; la animación lo conecta a los tobillos. No se confirma la disposición de la carga. |

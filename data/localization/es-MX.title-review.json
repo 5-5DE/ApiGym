@@ -4,13 +4,18 @@
   "summary": {
     "total": 1257,
     "inspected": 1257,
-    "verified": 908,
-    "pending": 349,
+    "verified": 911,
+    "pending": 346,
     "notReviewed": 0,
-    "changed": 535,
-    "withNewAliases": 537
+    "changed": 540,
+    "withNewAliases": 542
   },
   "sources": [
+    {
+      "id": "puregym-cable-kickbacks",
+      "url": "https://www.puregym.com/exercises/glutes/glute-kickbacks/cable-kickbacks/",
+      "scope": "Contraste específico de patada de glúteo en polea: tobillera, polea baja y orientación frente a la máquina. Reescritura propia contrastada con los tres cuadros de flow-0228; el original inglés conserva una orientación contradictoria."
+    },
     {
       "id": "smartfit-mx-peso-libre",
       "url": "https://smartfit.com.mx/news/comunidad-smart-fit/que-hay-en-un-gimnasio-smart-fit-conoce-el-area-de-peso-libre/",
@@ -12368,10 +12373,14 @@
     {
       "id": "flow-0213",
       "before": "Fila alta con asiento de cable (barra en v)",
-      "name": "Fila alta con asiento de cable (barra en v)",
-      "aliases": [],
-      "status": "pending-review",
-      "reason": "El título especifica remo alto y la ilustración presenta una tracción prácticamente horizontal a la cintura. No se confirma la altura de la variante.",
+      "name": "Remo sentado en polea con agarre en V",
+      "aliases": [
+        "remo sentado con triángulo",
+        "remo en polea con triángulo",
+        "remo sentado en polea con agarre en triángulo"
+      ],
+      "status": "verified",
+      "reason": null,
       "sheet": 12,
       "evidence": {
         "originalSha256": "b7fa4c1f42dad266e4fee1dacea736c41cc788093af50c7dea16ae554d037883",
@@ -12930,10 +12939,14 @@
     {
       "id": "flow-0228",
       "before": "Extensión de cadera de pie en polea",
-      "name": "Extensión de cadera de pie en polea",
-      "aliases": [],
-      "status": "pending-review",
-      "reason": "El texto indica ponerse de espaldas a la máquina; los cuadros muestran la persona de frente con la pierna extendiéndose hacia atrás.",
+      "name": "Patada de glúteo de pie en polea",
+      "aliases": [
+        "patada de glúteo en polea",
+        "glute kickback en polea",
+        "cable glute kickback"
+      ],
+      "status": "verified",
+      "reason": null,
       "sheet": 14,
       "evidence": {
         "originalSha256": "7476bd144b265fe724dba7ac6fe876507e5ad3decb87d730e9e210559ecbed25",
@@ -13282,10 +13295,13 @@
     {
       "id": "flow-0237",
       "before": "Jalón dorsal con cuerda con brazos extendidos en polea",
-      "name": "Jalón dorsal con cuerda con brazos extendidos en polea",
-      "aliases": [],
-      "status": "pending-review",
-      "reason": "El título y animación indican brazos extendidos; el texto ordena flexionar codos a 90 grados. No se confirma el recorrido de la variante.",
+      "name": "Pullover con cuerda en polea alta",
+      "aliases": [
+        "pullover con cuerda",
+        "jalón con brazos extendidos y cuerda"
+      ],
+      "status": "verified",
+      "reason": null,
       "sheet": 16,
       "evidence": {
         "originalSha256": "80f55550a6b6a8734265f9e5e8abe2a7ff692d7d9dfe4e8e79f35cc98cf10cfd",
@@ -26034,8 +26050,10 @@
     {
       "id": "flow-0577",
       "before": "Press de pecho en máquina de palanca",
-      "name": "Press de pecho en máquina de palanca",
-      "aliases": [],
+      "name": "Press de pecho sentado en máquina",
+      "aliases": [
+        "chest press"
+      ],
       "status": "verified",
       "reason": null,
       "sheet": 108,
@@ -26060,8 +26078,10 @@
     {
       "id": "flow-0576",
       "before": "Press de pecho en máquina de palanca",
-      "name": "Press de pecho en máquina de palanca",
-      "aliases": [],
+      "name": "Press de pecho sentado en máquina",
+      "aliases": [
+        "chest press"
+      ],
       "status": "verified",
       "reason": null,
       "sheet": 108,
@@ -27914,9 +27934,9 @@
     {
       "id": "flow-1301",
       "before": "Prensa de pecho interior de la máquina",
-      "name": "Aperturas de pecho sentado en máquina",
+      "name": "Press de pecho sentado en máquina",
       "aliases": [
-        "aperturas en máquina de palanca"
+        "press de pecho en máquina"
       ],
       "status": "verified",
       "reason": null,

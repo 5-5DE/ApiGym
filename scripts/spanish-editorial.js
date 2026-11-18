@@ -1,6 +1,7 @@
 // Curated terminology, separate from machine drafts. Unrecognized combinations
 // are explicitly queued for review rather than treated as verified variants.
 export const sources = [
+  {id:'puregym-cable-kickbacks',url:'https://www.puregym.com/exercises/glutes/glute-kickbacks/cable-kickbacks/',scope:'Contraste específico de patada de glúteo en polea: tobillera, polea baja y orientación frente a la máquina. Reescritura propia contrastada con los tres cuadros de flow-0228; el original inglés conserva una orientación contradictoria.'},
   {id:'smartfit-mx-peso-libre',url:'https://smartfit.com.mx/news/comunidad-smart-fit/que-hay-en-un-gimnasio-smart-fit-conoce-el-area-de-peso-libre/',scope:'Uso mexicano: press, curl, desplantes, aperturas y equipo; no verifica todas las variantes.'},
   {id:'smartfit-mx-dominadas',url:'https://smartfit.com.mx/news/tips/tipos-de-dominadas-y-como-hacerlas-en-el-gimnasio/',scope:'Familia de dominadas y diferencias entre agarre prono, supino y neutro.'},
   {id:'smartfit-mx-agarres',url:'https://smartfit.com.mx/news/tips/diferentes-tipos-de-agarre-en-el-gym/',scope:'Nombres y orientación de los agarres; neutro o martillo no equivale a supino.'},

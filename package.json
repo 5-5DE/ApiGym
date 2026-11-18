@@ -4,9 +4,7 @@
   "description": "Catálogo REST de ejercicios para un tracker de gimnasio independiente",
   "private": true,
   "type": "module",
-  "engines": {
-    "node": ">=24"
-  },
+  "engines": { "node": ">=24" },
   "scripts": {
     "start": "node --env-file-if-exists=.env src/server.js",
     "dev": "node --watch --env-file-if-exists=.env src/server.js",
@@ -15,9 +13,19 @@
     "media:check": "node scripts/check-media.js",
     "media:import": "node scripts/import-media.js",
     "data:refresh": "node scripts/refresh-data.js",
+    "gymzong:audit": "node scripts/audit-gymzong.js",
+    "gymzong:export": "node scripts/export-gymzong-offline.js",
+    "gymzong:verify": "node scripts/verify-gymzong-offline.js",
     "localization:build": "node scripts/build-spanish-catalog.js",
     "localization:check": "node scripts/check-spanish-catalog.js",
-    "titles:compile": "node scripts/compile-title-review.js"
+    "titles:compile": "node scripts/compile-title-review.js",
+    "curation:compile": "node scripts/compile-gymzong-curation.js",
+    "curation:report": "node scripts/report-gymzong-curation.js",
+    "coverage:report": "node scripts/report-gymzong-coverage.js",
+    "quality:compile": "node scripts/compile-catalog-quality.js",
+    "quality:report": "node scripts/report-catalog-quality.js",
+    "research:compile": "node scripts/compile-metadata-research.js",
+    "research:report": "node scripts/report-metadata-research.js"
   },
   "license": "MIT"
 }

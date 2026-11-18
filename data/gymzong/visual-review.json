@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "scope": "Visual screening of all 57 frames from the 19 animated candidates. Observations are not professional form review or routine equivalence evidence.",
+  "evidence": "reports/P4-00-svg-contact-sheet.png",
+  "observations": {
+    "Barbell_Deadlift": {"observed": "Barra frente al cuerpo; posiciones de pie y flexión de cadera/rodillas.", "concern": "La secuencia estática no confirma ejecución convencional frente a otras variantes."},
+    "flow-1756": {"observed": "Bisagra unilateral con pierna libre atrás; se aprecian cargas separadas en las manos.", "concern": "El nombre/equipo declara barbell, pero el dibujo parece representar mancuernas. Revisar antes de uso."},
+    "flow-0198": {"observed": "Jalón sentado desde polea alta, barra ancha, manos sobre la cabeza y después frente al tronco.", "concern": "No identifica el agarre real de la rutina; revisar detalle del recorrido."},
+    "flow-0861": {"observed": "Remo sentado en polea baja con agarre próximo al tronco.", "concern": "El dibujo no identifica la barrita negra de la rutina."},
+    "flow-0237": {"observed": "De pie frente a polea alta; accesorio desciende con brazos largos hacia cadera.", "concern": "Confirmar accesorio de cuerda y articulaciones con el entrenador."},
+    "flow-0334": {"observed": "Elevación bilateral de mancuernas hacia los lados hasta altura de hombros.", "concern": "La rutina no especifica implemento ni postura."},
+    "flow-0372": {"observed": "Flexión de codos sentado con mancuernas; no se distingue apoyo inclinado de predicador bajo los brazos.", "concern": "Posible desacuerdo con preacher curl; exigir revisión del apoyo y posición del brazo."},
+    "flow-1757": {"observed": "Bisagra unilateral con carga manual y pierna libre hacia atrás.", "concern": "Confirmar implemento, apoyo y rango reales; no demuestra variante rumana."},
+    "flow-0577": {"observed": "Press sentado con respaldo casi vertical y brazos de máquina al frente.", "concern": "No identifica modelo, trayectoria ni agarre de Chest press original."},
+    "flow-0576": {"observed": "Otra vista de press sentado con máquina y respaldo.", "concern": "No fusionar con flow-0577 por nombre repetido; identidades históricas separadas."},
+    "flow-1299": {"observed": "Press sentado con respaldo inclinado y empuje al frente/arriba.", "concern": "El aparato y ángulo de la rutina no están documentados."},
+    "flow-1479": {"observed": "Otra representación de press inclinado en máquina.", "concern": "No asumir identidad con flow-1299 ni con máquina de planta baja."},
+    "flow-0596": {"observed": "Apertura/cierre de brazos sentado en máquina de fly.", "concern": "Confirmar apoyos y agarre frente a Pec tec real."},
+    "flow-0597": {"observed": "Máquina sentada; rodillas pasan de próximas a separadas.", "concern": "Compatible visualmente con abducción, pero equipo de la rutina sin verificar."},
+    "flow-0599": {"observed": "Rodillas parten flexionadas y piernas se elevan hacia extensión con rodillo anterior aparente.", "concern": "El recorrido parece extensión de rodilla en vez de flexión de curl femoral sentado. Conflicto aparente; requiere revisión profesional."},
+    "flow-0607": {"observed": "Máquina sentada; manos pasan del frente hacia la cabeza flexionando codos.", "concern": "No determina qué extensión de tríceps practica la rutina ni valida la técnica."},
+    "flow-0739": {"observed": "Prensa reclinada con plataforma sobre rieles diagonales.", "concern": "Confirmar inclinación, profundidad y postura; nombre upstream contiene mojibake."},
+    "flow-1463": {"observed": "Vista lateral de prensa reclinada en rieles diagonales.", "concern": "No identifica prensa original ni autoriza deduplicación con flow-0739."},
+    "flow-0743": {"observed": "Sentadilla en trineo con espalda hacia respaldo y apoyos de hombros.", "concern": "No demuestra Jack invertido de la rutina; no asignar automáticamente."}
+  }
+}
